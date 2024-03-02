@@ -73,6 +73,7 @@ body {
 }
 .menu-item:hover {
     background-color: #214E6F;
+    border-radius: 12px;
 }
 
 /* Navigation Menu - Dropdown Menu Stylings */
