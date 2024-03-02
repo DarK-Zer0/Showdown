@@ -33,7 +33,7 @@ body {
 /* Navigation Menu Stylings */
 .home-button {
     float: left;
-    padding: 10px 20px;
+    padding: 1vh;
     cursor: pointer;
 }
 .home-button img {
@@ -54,7 +54,7 @@ body {
 .menu-bar ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin-left: -8vh;
 }
 
 .menu-items {
