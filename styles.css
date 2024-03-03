@@ -202,6 +202,9 @@ ul {
 .page-nav-item:hover {
     color: #214E6F;
 }
+.selected {
+    color: #2D6A96;
+}
 
 /* Page Content Stylings */
 #content {
@@ -229,6 +232,9 @@ ul {
     object-fit: cover;
     height: 40vh;
 }
+.hero-info .details {
+    text-align: center;
+}
 .hero-info .label {
     font-weight: bold;
     font-size: 15px;
@@ -237,7 +243,8 @@ ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 5vh;
+    justify-content: center;
+    height: 8vh;
 }
 .archetype img, .weapons img {
     height: 100%;
@@ -245,4 +252,9 @@ ul {
 .hero-info .description {
     text-align: center;
     max-height: 30vh;
+}
+
+/* Reset Date Styling */
+#reset {
+    margin-bottom: 0;
 }

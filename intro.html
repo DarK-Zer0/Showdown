@@ -49,8 +49,8 @@
 			<ul class ="nav-items">
 				<li class="nav-item">Introduction
 					<div class="dropdown-content">
+						<a href="intro.html?option=2" class="dropdown-option">Getting Started</a>
 						<a href="intro.html?option=1" class="dropdown-option">Heroes</a>
-						<a href="intro.html?option=2" class="dropdown-option">Level System</a>
 						<a href="intro.html?option=3" class="dropdown-option">Glossary</a>
 					</div>
 				</li>
@@ -100,9 +100,9 @@
 		<!-- Page Navigation -->
 		<nav class="page-nav">
 			<ul class="page-nav-items">
-				<li><button onclick="showDiv(1)" class="page-nav-item">Heroes</button></li>
-				<li><button onclick="showDiv(2)" class="page-nav-item">Leveling System</button></li>
-				<li><button onclick="showDiv(3)" class="page-nav-item">Glossary</button></li>
+				<li><button onclick="showDiv(2, this)" class="page-nav-item">Getting Started</button></li>
+				<li><button onclick="showDiv(1, this)" class="page-nav-item">Heroes</button></li>
+				<li><button onclick="showDiv(3, this)" class="page-nav-item">Glossary</button></li>
 			</ul>
 		</nav>
 
@@ -116,7 +116,7 @@
 					<tbody>
 					  <tr>
 						<td><img src="img/portraits/viper.png" alt="Viper Ning" class="portrait"></td>
-						<td>
+						<td class="details">
 							<p class="label">Archetype:</p>
 							<p class="archetype"><img src="img/archetypes/aegis-break.png" alt="Axe"> Aegis-Breaker<img src="img/archetypes/dps.png" alt="Sword"> DPS</p>
 							<p class="label">Weapons:</p>
@@ -134,7 +134,7 @@
 					<tbody>
 					  <tr>
 						<td><img src="img/portraits/feria.png" alt="Feria Shen" class="portrait"></td>
-						<td>
+						<td class="details">
 							<p class="label">Archetype:</p>
 							<p class="archetype"><img src="img/archetypes/dps.png" alt="Sword"> DPS<img src="img/archetypes/aegis-break.png" alt="Axe"> Aegis-Breaker</p>
 							<p class="label">Weapons:</p>
@@ -153,7 +153,7 @@
 					<tbody>
 						<tr>
 							<td><img src="img/portraits/tianhai.png" alt="Tianhai" class="portrait"></td>
-							<td>
+							<td class="details">
 								<p class="label">Archetype:</p>
 								<p class="archetype"><img src="img/archetypes/tank.png" alt="Shield"> Tank<img src="img/archetypes/dps.png" alt="Sword"> DPS</p>
 								<p class="label">Weapons:</p>
@@ -172,7 +172,7 @@
 					<tbody>
 						<tr>
 							<td><img src="img/portraits/temulch.png" alt="Temulch" class="portrait"></td>
-							<td>
+							<td class="details">
 								<p class="label">Archetype:</p>
 								<p class="archetype"><img src="img/archetypes/dps.png" alt="Sword"> DPS<img src="img/archetypes/aegis-break.png" alt="Axe"> Aegis-Breaker</p>
 								<p class="label">Weapons:</p>
@@ -191,7 +191,7 @@
 					<tbody>
 						<tr>
 							<td><img src="img/portraits/tarka.png" alt="Tarka Ji" class="portrait"></td>
-							<td>
+							<td class="details">
 								<p class="label">Archetype:</p>
 								<p class="archetype"><img src="img/archetypes/dps.png" alt="Sword"> DPS</p>
 								<p class="label">Weapons:</p>
@@ -210,7 +210,7 @@
 					<tbody>
 						<tr>
 							<td><img src="img/portraits/kurumi.png" alt="Kurumi" class="portrait"></td>
-							<td>
+							<td class="details">
 								<p class="label">Archetype:</p>
 								<p class="archetype"><img src="img/archetypes/support.png" alt="Heart"> Support</p>
 								<p class="label">Weapons:</p>
@@ -229,7 +229,7 @@
 					<tbody>
 						<tr>
 							<td><img src="img/portraits/valda.png" alt="Valda Cui" class="portrait"></td>
-							<td>
+							<td class="details">
 								<p class="label">Archetype:</p>
 								<p class="archetype"><img src="img/archetypes/support.png" alt="Heart"> Support</p>
 								<p class="label">Weapons:</p>
@@ -247,7 +247,7 @@
 					<tbody>
 						<tr>
 							<td><img src="img/portraits/yueshan.png" alt="Yueshan" class="portrait"></td>
-							<td>
+							<td class="details">
 								<p class="label">Archetype:</p>
 								<p class="archetype"><img src="img/archetypes/dps.png" alt="Sword"> DPS<img src="img/archetypes/tank.png" alt="Shield"> Tank</p>
 								<p class="label">Weapons:</p>
@@ -266,7 +266,7 @@
 					<tbody>
 						<tr>
 							<td><img src="img/portraits/matari.png" alt="Matari" class="portrait"></td>
-							<td>
+							<td class="details">
 								<p class="label">Archetype:</p>
 								<p class="archetype"><img src="img/archetypes/dps.png" alt="Sword"> DPS</p>
 								<p class="label">Weapons:</p>
@@ -282,16 +282,41 @@
 				</table>
 			</div>
 
-			<!-- Leveling System -->
+			<!-- Getting Started -->
 			<div id="div2" class="content" style="display: none;">
-				<div class="title">Leveling System</div>
-				Content 2
+				<div class="title">Getting Started</div>
+				<p class="paragraph">When starting to play Naraka's Showdown Mode, I recommended that you choose one hero to main and two secondary choices. 
+					This is because when you pass Normal and Hard difficulty missions, Showdown does not allow duplicate heroes on the same team. 
+					Picking two secondary choices helps to ensure that you are not left in a tight spot because someone else locked in your favorite hero(es) first. 
+					Kurumi is recommended to be one of your main 3 because of her being the only hero that can heal & buff her teammates.</p>
+				<div class="header">Advancing through the Story</div>
+				<p class="paragraph">There are a total of 5 chapters currently in the game. 
+					4 of those chapters are in Morus Isle and 1 is in Holoroth.
+					In total, there are 13 missions among the regular story, with each mission having 3 difficulties.
+					Each mission has 2 heroes that it wants you to beat it on a certain difficulty with to unlock their corresponding lore segment.</p>
+				<div class="header">Difficulty Levels</div>
+				<p class="paragraph">As of right now there are 3 difficulty levels: <strong>Normal, Hard and Nightscream</strong>.
+					<br><strong>Normal</strong> difficulty can be considered the tutorial of the game.
+					Many of the missions will have limited mechanics, enemies will have smaller movesets and attack less often, and bosses are limited to 1 phase.
+					<br><strong>Hard</strong> difficulty introduces Omens, semi-random events that can make certain enemies stronger or add hazards to the battlefield.
+					Furthermore, it introduces more boss phases and more aggressive enemies.
+					<br><strong>Nightscream</strong> difficulty brings in mutliple Omens per mission and significantly more aggressive enemies.
+					This will be your first major difficulty spike that you'll face as everything hits harder and takes longer to kill.
+					However, at this point the missions here will have better loot pools to complete your Souljade builds with.</p>
+				<div class="header">Fatigue System</div>
+				<strong><p id="reset">Next Reset: </p></strong>
+				<p class="paragraph">At the time of the date above, the fatigue system is reset back to 0 as well as the weekly quests you have. 
+					<br>At <strong>0 to 600 fatigue</strong> you will recieve 150% rewards (50% more rewards).
+					<br>At <strong>601 to 1800 fatigue</strong> you will recieve 100% rewards.
+					<br>At <strong>1801 to 2400 fatigue</strong> you will recieve only 75% rewards.
+					<br>Once you have reached <strong>2400 fatigue</strong>, you can no longer receive any Showdown-based rewards until the next reset. 
+				</p>
 			</div>
 
 			<!-- Glossary -->
 			<div id="div3" class="content" style="display: none;">
 				<div class="title">Glossary</div>
-				Content 3
+				Coming Soon!
 			</div>
 		</div>
     </body>
