@@ -35,41 +35,53 @@
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"> 
 		<script src="https://kit.fontawesome.com/6d78549c29.js" crossorigin="anonymous"></script>
 		<link href="styles.css" rel="stylesheet">
+		<script src="src/navbar.js"></script>
     </head>
     <body>
-		<!-- <div class="logo-container">
-			<img src="img/site/logo1.png" alt="Logo Part 1">
-			<img src="img/site/logo2.png" alt="Logo Part 2">
-			<img src="img/site/logo3.png" alt="Logo Part 3">
-		</div> -->		
-
-		<div class="menu-bar">
+		<!-- Navigation Bar -->
+		<nav class="nav-bar">
 			<a href="index.html" class="home-button">
-				<img src="img/site/home.png" alt="Home">
+				<img src="img/site/logo.png" alt="Home">
 			</a>
-			<ul class ="menu-items">
-				<li class="menu-item">Introduction
+			<div class="mobile">
+				<button class="nav-toggle" aria-label="toggle navigation" onclick="toggleDropdown()">
+					<img src="img/site/menu.png" alt="Menu">
+				</button>
+				<div id="dropdownMenu" class="dropdown-content" style="display: none;">
+					<a href="intro.html?option=1" class="dropdown-option">Introduction</a>
+					<a href="progression.html?option=1" class="dropdown-option">Progression</a>
+					<a href="build.html?option=1" class="dropdown-option">Builds</a>
+					<a href="strategy.html?option=1" class="dropdown-option">Strategies</a>
+					<a href="endgame.html?option=1" class="dropdown-option">End Game</a>
+					<a href="https://docs.google.com/spreadsheets/d/1mFC-5BBNE49KBiTL_vjerDu-Dr8S3309pLkJZRp0D18/edit?usp=sharing" class="dropdown-option">Spreadsheet</a>
+					<a href="https://docs.google.com/document/d/1kooQyxEFcIqtrmerY3ZCQY6Cq7NIIX_booiPAYg2yFQ/edit?usp=sharing" class="dropdown-option">Original Document</a>
+					<a href="https://github.com/DarK-Zer0/Showdown" class="dropdown-option">Source</a>
+					<a href="changelog.html" class="dropdown-option">Changelog</a>
+				</div>
+			</div>
+			<ul class ="nav-items">
+				<li class="nav-item">Introduction
 					<div class="dropdown-content">
 						<a href="intro.html?option=1" class="dropdown-option">Heroes</a>
 						<a href="intro.html?option=2" class="dropdown-option">Level System</a>
 						<a href="intro.html?option=3" class="dropdown-option">Glossary</a>
 					</div>
 				</li>
-				<li class="menu-item">Progression
+				<li class="nav-item">Progression
 					<div class="dropdown-content">
 						<a href="progression.html?option=1" class="dropdown-option">Sense Level</a>
 						<a href="progression.html?option=2" class="dropdown-option">Hero Level</a>
 						<a href="progression.html?option=3" class="dropdown-option">Souljades</a>
 					</div>
 				</li>
-				<li class="menu-item">Builds
+				<li class="nav-item">Builds
 					<div class="dropdown-content">
 						<a href="build.html?option=1" class="dropdown-option">Potential Tree</a>
 						<a href="build.html?option=2" class="dropdown-option">Souljades</a>
 						<a href="build.html?option=3" class="dropdown-option">Current Meta</a>
 					</div>
 				</li>
-				<li class="menu-item">Strategies
+				<li class="nav-item">Strategies
 					<div class="dropdown-content">
 						<a href="strategy.html?option=1" class="dropdown-option">Attack Rotations</a>
 						<a href="strategy.html?option=2" class="dropdown-option">Dodge Canceling</a>
@@ -77,7 +89,7 @@
 						<a href="strategy.html?option=4" class="dropdown-option">Parry Chains</a>
 					</div>
 				</li>
-				<li class="menu-item">End Game
+				<li class="nav-item">End Game
 					<div class="dropdown-content">
 						<a href="endgame.html?option=1" class="dropdown-option">Doom</a>
 						<a href="endgame.html?option=2" class="dropdown-option">Doom-Racing</a>
@@ -86,28 +98,31 @@
 						<a href="endgame.html?option=5" class="dropdown-option">Leaderboard</a>
 					</div>
 				</li>
-				<li class="menu-item">Extras
+				<li class="nav-item">Extras
 					<div class="dropdown-content">
 						<a href="https://docs.google.com/spreadsheets/d/1mFC-5BBNE49KBiTL_vjerDu-Dr8S3309pLkJZRp0D18/edit?usp=sharing" class="dropdown-option">Spreadsheet</a>
 						<a href="https://docs.google.com/document/d/1kooQyxEFcIqtrmerY3ZCQY6Cq7NIIX_booiPAYg2yFQ/edit?usp=sharing" class="dropdown-option">Original Document</a>
+						<a href="https://github.com/DarK-Zer0/Showdown" class="dropdown-option">Source</a>
 						<a href="changelog.html" class="dropdown-option">Changelog</a>
 					</div>
 				</li>
 			</ul>
-		</div>
+		</nav>
 
+		<!-- Banner -->
 		<div class="banner">
 			<img src="img/site/banner.jpg" alt="Banner">
 		</div>
 
-		<div class="header">What is Showdown?</div>
+		<!-- What is Showdown? -->
+		<div class="title">What is Showdown?</div>
 		<div class="paragraph">
 			<p>Showdown is a PvE game mode in Naraka Bladepoint also referred to as its Campaign mode. 
 			Teams of up to 3 can face off against various enemies and bosses through varying levels of difficulty.
 			It can be great for players who are just starting Naraka as well as veterans seeking to mix things up.
-			Progression you make in this game mode however does not contribute to PvP and vice versa.</p>
-			<p>There are also rewards for playing it, such as its own game pass, exclusive badges & titles, and Limited Time Events.
-			To learn more, click one of the tabs at the top, they are ordered from left-to-right by how early it can help you on your Showdown journey.</p>
+			Progression you make in this game mode however does not contribute to PvP and vice versa. 
+			There are also rewards for playing it, such as its own Game Pass, Exclusive Badges & Titles, and Limited Time Events.</p>
+			<p>To learn more, click one of the tabs at the top, they are ordered from left-to-right by how early it can help you on your Showdown journey.</p>
 		</div>
     </body>
 </html>
