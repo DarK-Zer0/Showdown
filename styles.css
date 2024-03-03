@@ -2,12 +2,9 @@
 body {
     font-family: "Arial", serif;
 	font-size: 14pt;
-	background-color: lightgray;
+	background-color: lightyellow;
 	color: black;
     margin: 0px;
-}
-body .side {
-    background-color: white;
 }
 
 /* Text Stylings */
@@ -38,7 +35,9 @@ body .side {
     align-items: center;
     height: 8vh;
     background-color: #6F4221;
-    color: #fbffdb;
+    color: lightyellow;
+    border: 1px solid black;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, .2);
 }
 
 ul {
@@ -62,8 +61,7 @@ ul {
     position: relative;
 }
 .nav-item:hover {
-    color: #3986BD;
-    /*background-color: #214E6F;*/
+    color: #214E6F;
     border-radius: 12px;
 }
 
@@ -82,8 +80,9 @@ ul {
     display: none;
     position: absolute;
     background-color: #96592D;
+    border: 1px solid rgb(0, 0, 0);
     width: 200px;
-    top: 100%;
+    top: 80%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 3;
@@ -95,11 +94,12 @@ ul {
 .dropdown-option {
     display: block;
     padding: 10px;
-    color: #fbffdb;
+    color: lightyellow;
     text-decoration: none;
 }
 .dropdown-option:hover {
-    background-color: #2D6A96;
+    background-color: #214E6F;
+    color: lightyellow;
 }
 
 /* Website Navigation Bar - Mobile Stylings */
@@ -129,7 +129,8 @@ ul {
     display: block;
 }
 .mobile .dropdown-content a:hover {
-    background-color: #2D6A96;
+    background-color: #214E6F;
+    color: lightyellow;
 }
 
 @media (max-width: 1240px) {
@@ -169,10 +170,15 @@ ul {
     justify-content: space-between;
     position: absolute;
     width: auto;
+    padding-left: 1vw;
+    padding-right: 1vw;
     top: 18vh;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #BD7039;
+    background-color: #96592D;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, .2);
 }
 .page-nav-items {
     display: flex;
@@ -186,11 +192,57 @@ ul {
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
-    color: white;
+    border: 0;
+    background-color: #96592D;
+    color: lightyellow;
     cursor: pointer;
     position: relative;
+    border-radius: 12px;
 }
 .page-nav-item:hover {
-    color: #2D6A96;
-    border-radius: 12px;
+    color: #214E6F;
+}
+
+/* Page Content Stylings */
+#content {
+    position: relative;
+    top: 15vh;
+    left: 10%;
+    width: 80vw;
+    text-align: center;
+}
+
+/* Heroes Intro Stylings */
+.hero-info {
+    border-color: black;
+    background-color: whitesmoke;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+    margin-bottom: 1.5vh;
+}
+.hero-info .portrait {
+    object-fit: cover;
+    height: 40vh;
+}
+.hero-info .label {
+    font-weight: bold;
+    font-size: 15px;
+}
+.hero-info .archetype, .hero-info .weapons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 5vh;
+}
+.archetype img, .weapons img {
+    height: 100%;
+}
+.hero-info .description {
+    text-align: center;
+    max-height: 30vh;
 }
