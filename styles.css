@@ -31,6 +31,11 @@ img.example {
     width: 100%;
 }
 
+.nodot {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
 /* Webiste Navigation Bar Stylings */
 .nav-bar {
     position: sticky;
@@ -291,12 +296,16 @@ table.changelog th:nth-child(3), table.changelog td:nth-child(3) {
 table.ice {
     background-color: lightblue;
     border-collapse: collapse;
-    width: 100%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 table.lightning {
     background-color: palegoldenrod;
     border-collapse: collapse;
-    width: 100%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .ice th, .ice td, 
 .lightning th, .lightning td {
