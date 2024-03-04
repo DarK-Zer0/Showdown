@@ -13,15 +13,31 @@ body {
     font-size: 24pt;
     text-align: center;
     margin-top: 3vh;
+    margin-bottom: 2.5vh;
 }
 .header {
     font-style: italic;
     font-weight: bold;
     font-size: 18pt;
 }
-.paragraph {
+.sub-header {
+    font-weight: bold;
+    font-size: 14.5pt;
+}
+.paragraph, .caption{
     text-align: center;
-    padding: 1vw;
+    padding: 1vh;
+}
+.left {
+    text-align: left;
+}
+.gif {
+    height: 40vh;
+    width: auto;
+}
+.gif-small {
+    height: 25vh;
+    width: auto;
 }
 
 /* Webiste Navigation Bar Stylings */
@@ -40,7 +56,7 @@ body {
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, .2);
 }
 
-ul {
+ul.nav-bar, ul.page-nav-items {
     list-style: none;
     padding: 0;
     margin-left: 1vh;
@@ -216,7 +232,7 @@ ul {
 }
 
 /* Heroes Intro Stylings */
-.hero-info {
+table {
     border-color: black;
     background-color: whitesmoke;
     border-style: solid;
@@ -228,18 +244,18 @@ ul {
     word-break: normal;
     margin-bottom: 1.5vh;
 }
-.hero-info .portrait {
+table .portrait {
     object-fit: cover;
     height: 40vh;
 }
-.hero-info .details {
+table .details {
     text-align: center;
 }
-.hero-info .label {
+table .label {
     font-weight: bold;
     font-size: 15px;
 }
-.hero-info .archetype, .hero-info .weapons{
+table .archetype, table .weapons{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -249,7 +265,7 @@ ul {
 .archetype img, .weapons img {
     height: 100%;
 }
-.hero-info .description {
+table .description {
     text-align: center;
     max-height: 30vh;
 }
