@@ -59,6 +59,7 @@
 						<a href="progression.html?option=1" class="dropdown-option">Sense Level</a>
 						<a href="progression.html?option=2" class="dropdown-option">Hero Level</a>
 						<a href="progression.html?option=3" class="dropdown-option">Souljades</a>
+						<a href="progression.html?option=4" class="dropdown-option">Recasting</a>
 					</div>
 				</li>
 				<li class="nav-item">Builds
@@ -76,10 +77,10 @@
 						<a href="strategy.html?option=4" class="dropdown-option">Parry Chains</a>
 					</div>
 				</li>
-				<li class="nav-item">End Game
+				<li class="nav-item selected">End Game
 					<div class="dropdown-content">
 						<a href="endgame.html?option=1" class="dropdown-option">Doom</a>
-						<a href="endgame.html?option=2" class="dropdown-option">Doom-Racing</a>
+						<a href="endgame.html?option=2" class="dropdown-option">Speedrun</a>
 						<a href="endgame.html?option=3" class="dropdown-option">Enigma Domain</a>
 						<a href="endgame.html?option=4" class="dropdown-option">Yama's Abyss</a>
 						<a href="endgame.html?option=5" class="dropdown-option">Leaderboard</a>
@@ -96,12 +97,12 @@
 			</ul>
 		</nav>
 
-		<div class="title">END GAME</div>
+		<h1>END GAME</h1>
 		<!-- Page Navigation -->
 		<nav class="page-nav">
 			<ul class="page-nav-items">
 				<li><button onclick="showDiv(1, this)" class="page-nav-item">Doom</button></li>
-				<li><button onclick="showDiv(2, this)" class="page-nav-item">Doom-Racing</button></li>
+				<li><button onclick="showDiv(2, this)" class="page-nav-item">Speedrun</button></li>
 				<li><button onclick="showDiv(3, this)" class="page-nav-item">Enigma Domain</button></li>
 				<li><button onclick="showDiv(4, this)" class="page-nav-item">Yama's Abyss</button></li>
 				<li><button onclick="showDiv(5, this)" class="page-nav-item">Leaderboard</button></li>
@@ -109,10 +110,10 @@
 		</nav>
 
 		<!-- Page Content -->
-		<div class="content">
+		<div id="content">
 			<!-- Doom -->
 			<div id="div1" class="content" style="display: none;"></div>
-			<!-- Doom-Racing -->
+			<!-- Speedrun -->
 			<div id="div2" class="content" style="display: none;"></div>
 			<!-- Enigma Domain -->
 			<div id="div3" class="content" style="display: none;"></div>

@@ -54,11 +54,12 @@
 						<a href="intro.html?option=3" class="dropdown-option">Glossary</a>
 					</div>
 				</li>
-				<li class="nav-item">Progression
+				<li class="nav-item selected">Progression
 					<div class="dropdown-content">
 						<a href="progression.html?option=1" class="dropdown-option">Sense Level</a>
 						<a href="progression.html?option=2" class="dropdown-option">Hero Level</a>
 						<a href="progression.html?option=3" class="dropdown-option">Souljades</a>
+						<a href="progression.html?option=4" class="dropdown-option">Recasting</a>
 					</div>
 				</li>
 				<li class="nav-item">Builds
@@ -79,7 +80,7 @@
 				<li class="nav-item">End Game
 					<div class="dropdown-content">
 						<a href="endgame.html?option=1" class="dropdown-option">Doom</a>
-						<a href="endgame.html?option=2" class="dropdown-option">Doom-Racing</a>
+						<a href="endgame.html?option=2" class="dropdown-option">Speedrun</a>
 						<a href="endgame.html?option=3" class="dropdown-option">Enigma Domain</a>
 						<a href="endgame.html?option=4" class="dropdown-option">Yama's Abyss</a>
 						<a href="endgame.html?option=5" class="dropdown-option">Leaderboard</a>
@@ -96,24 +97,87 @@
 			</ul>
 		</nav>
 
-		<div class="title">PROGRESSION</div>
+		<h1>PROGRESSION</h1>
 		<!-- Page Navigation -->
 		<nav class="page-nav">
 			<ul class="page-nav-items">
 				<li><button onclick="showDiv(1, this)" class="page-nav-item">Sense Level</button></li>
 				<li><button onclick="showDiv(2, this)" class="page-nav-item">Hero Level</button></li>
 				<li><button onclick="showDiv(3, this)" class="page-nav-item">Souljades</button></li>
+				<li><button onclick="showDiv(4, this)" class="page-nav-item">Recasting</button></li>
 			</ul>
 		</nav>
 
 		<!-- Page Content -->
-		<div class="content">
+		<div id="content">
 			<!-- Sense Level -->
-			<div id="div1" class="content" style="display: none;"></div>
+			<div id="div1" class="content" style="display: none;">
+				<h2>Sense Level</h2>
+				<p class="paragraph left">Sense level affects your base attack, health, and armor.
+					You gain +1 Base Attack, +10 Health and +10 Armor for every 10 Sense Levels you have.
+					<br><br>For example, if you are at Sense Level 655, you'll have +65 (205 Total) Base Attack, +650 Health and +650 Armor.
+					It also determines if you deal/take more or less damage in a mission based on its Recommended Sense, which is known as Sense Suppression. 
+					Currently, the ultimate goal is to reach a total Sense of 700.</p>
+					<h3>Increasing Your Sense</h3>
+					<p class="paragraph left">You can increase your Sense Level by consuming other Souljades in the Showdown Souljade Enhance section. 
+						Consuming Souljades less than 15 levels below your selected Souljade's Sense will yield diminished XP. 
+						The ideal range for maximum XP gain is within 5 Sense Levels. 
+						It's best to level all 6 equipped Souljades evenly to minimize wasted XP.
+						<br><br>However, using Souljades over 20 Sense Levels higher than your selected Souljade will yield massively boosted XP. 
+						This allows you to quickly catch up any Souljades you may have left unleveled, bringing them on par with your main Souljades, as the image below demonstrates.</p>
+						<img src="img/progression/boosting.png" alt="Souljade Being Boosted from Sense 20 to 301" class="example">
+					<h3>Optimizing Sense Leveling</h3>
+					<p class="paragraph left">Choose a core set of 6 Souljades (e.g. Blue Attack II's) to share between your 3 main heroes as you level up Sense. 
+						You can replace these as you get better Souljades, but only if they are close in level so you don't lose progress.
+						<br><br>Try to quickly unlock Yama's Abyss by completing its unlock quest. 
+						Early Abyss stages drop Souljades up to 600 Sense. However, each full Abyss run consumes 30 fatigue instead of 15, so manage accordingly.
+						Unlocking the Void-Space stages will allow you to get drops up to 680 Sense with relative ease. 
+						Beware, they consume up to 60 fatigue for a full run! For more information on Yama's Abyss check <a href="endgame.html?option=4">this</a> out</p>
+			</div>
 			<!-- Hero Level -->
-			<div id="div2" class="content" style="display: none;"></div>
+			<div id="div2" class="content" style="display: none;">
+				<h2>Hero Level</h2>
+				<p class="paragraph left">There are two methods to increase your hero's level: 
+					by <strong>completing Showdown missions</strong> and by <strong>using Alchemical Crystallized Souls</strong>. 
+					Note that each hero has a maximum level cap of 20.</p>
+					<h3>Mission Experience</h3>
+					<p class="paragraph left">The experience gained from missions scales with your Sense level relative to the mission's recommended Sense level. 
+						Having a much higher Sense than recommended will reduce the experience earned. 
+						Therefore, it's advisable to farm missions within 25-50 Sense levels of your current Sense if your goal is to efficiently gain hero levels.</p>
+					<h3>Alchemical Crystallized Souls</h3>
+					<p class="paragraph left">Alchemical Crystallized Souls (ACS) are acquired by beating Showdown missions for the first time with certain heroes. 
+						They are useful for boosting hero levels on characters outside your main three that you don't plan to grind heavily. 
+						However, I don't recommend using ACS on characters you intend to play frequently, as you'll naturally gain their levels over time.
+						<br><br>To max a hero from level 1 to 20, it requires a total of 117 ACS.</p>
+					<img src="img/progression/acs.png" alt="Proof of 117 ACS Fully Leveling Hero" class="example">
+					<h3>Level Unlocks</h3>
+					<p class="paragraph left">Every 2 hero levels, starting at level 4, you will acquire a major upgrade, with every other level being a minor upgrade.
+						These upgrades are permanent, but only affect the corresponding hero.</p>
+						<h4>Level 4: AoE Attack</h4>
+						<p class="paragraph">At hero level 4, hero unlocks their AOE attack that generally helps a lot with clearing out mobs.</p>
+						<h4>Level 6: Armor Upgrade</h4>
+						<p class="paragraph">At hero level 6, hero's armor is upgraded from blue to purple permanently, giving an additional 250 armor.</p>
+						<h4>Level 8: Ranged Weapon Enhancement</h4>
+						<p class="paragraph">At hero level 8, hero receives their first ranged weapon skill, usually making their ranged weapon more efficient at what it does.</p>
+						<h4>Level 10: Weapon Upgrade</h4>
+						<p class="paragraph">At hero level 10, hero's melee weapon is upgraded from blue to purple permanently, giving a 16.7% damage increase.</p>
+						<h4>Level 12: Aegis-Break Martial Skill</h4>
+						<p class="paragraph">At hero level 12, hero will be able to use a melee attack that greatly damages enemies' astral aegis.</p>
+						<h4>Level 14: Ranged Weapon Upgrade</h4>
+						<p class="paragraph">At hero level 14, hero's ranged weapon is upgraded from blue to purple permanently, giving a 16.7% damage increase.</p>
+						<h4>Level 16: Ranged Weapon Enhancement</h4>
+						<p class="paragraph">At hero level 16, hero's ranged weapon will no longer suffer from a range penalty from any range.</p>
+						<h4>Level 18: Defuse Attack</h4>
+						<p class="paragraph">At hero level 18, hero will be able to use a special dodge that when successful at nullifying an attack, enables a melee attack that greatly damages astral aegis.</p>
+			</div>
 			<!-- Souljades -->
-			<div id="div3" class="content" style="display: none;"></div>
+			<div id="div3" class="content" style="display: none;">
+				<h2>Souljades</h2>
+			</div>
+			<!-- Recasting -->
+			<div id="div4" class="content" style="display: none;">
+				<h2>Recasting</h2>
+			</div>
 		</div>
     </body>
 </html>

@@ -23,7 +23,7 @@
 		<link href="styles.css" rel="stylesheet">
 		<script src="src/navbar.js"></script>
     </head>
-    <body>
+    <body class="background1">
         <!-- Navigation Bar -->
 		<nav class="nav-bar">
 			<a href="index.html" class="home-button">
@@ -31,7 +31,7 @@
 			</a>
 			<div class="mobile">
 				<button class="nav-toggle" aria-label="toggle navigation" onclick="toggleDropdown()">
-					<img src="img/site/menu.png" alt="Menu">
+					<img src="img/site/menu.png" alt="Toggle navigation menu">
 				</button>
 				<div id="dropdownMenu" class="dropdown-content" style="display: none;">
 					<a href="intro.html?option=1" class="dropdown-option">Introduction</a>
@@ -58,6 +58,7 @@
 						<a href="progression.html?option=1" class="dropdown-option">Sense Level</a>
 						<a href="progression.html?option=2" class="dropdown-option">Hero Level</a>
 						<a href="progression.html?option=3" class="dropdown-option">Souljades</a>
+						<a href="progression.html?option=4" class="dropdown-option">Recasting</a>
 					</div>
 				</li>
 				<li class="nav-item">Builds
@@ -78,13 +79,13 @@
 				<li class="nav-item">End Game
 					<div class="dropdown-content">
 						<a href="endgame.html?option=1" class="dropdown-option">Doom</a>
-						<a href="endgame.html?option=2" class="dropdown-option">Doom-Racing</a>
+						<a href="endgame.html?option=2" class="dropdown-option">Speedrun</a>
 						<a href="endgame.html?option=3" class="dropdown-option">Enigma Domain</a>
 						<a href="endgame.html?option=4" class="dropdown-option">Yama's Abyss</a>
 						<a href="endgame.html?option=5" class="dropdown-option">Leaderboard</a>
 					</div>
 				</li>
-				<li class="nav-item">Extras
+				<li class="nav-item selected">Extras
 					<div class="dropdown-content">
 						<a href="https://docs.google.com/spreadsheets/d/1mFC-5BBNE49KBiTL_vjerDu-Dr8S3309pLkJZRp0D18/edit?usp=sharing" class="dropdown-option">Spreadsheet</a>
 						<a href="https://docs.google.com/document/d/1kooQyxEFcIqtrmerY3ZCQY6Cq7NIIX_booiPAYg2yFQ/edit?usp=sharing" class="dropdown-option">Original Document</a>
@@ -95,6 +96,27 @@
 			</ul>
 		</nav>
 
-		<div class="title">CHANGELOG</div>
+		<h1>CHANGELOG</h1>
+
+		<div id="content" style="top: 10vh;">
+			<table class="changelog">
+				<thead>
+					<tr>
+						<th class="date">Date</th>
+						<th class="version">Version</th>
+						<th class="details">Details</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="date">March 4, 2024</td>
+						<td class="version">1.0</td>
+						<td class="details">
+							<p class="left">Initial Release</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
     </body>
 </html>
