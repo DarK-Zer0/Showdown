@@ -286,3 +286,27 @@ table.changelog th:nth-child(3), table.changelog td:nth-child(3) {
 #reset {
     margin-bottom: 0;
 }
+
+/* Souljade Set Ups Styling */
+table.ice {
+    background-color: lightblue;
+    border-collapse: collapse;
+    width: 100%;
+}
+table.lightning {
+    background-color: palegoldenrod;
+    border-collapse: collapse;
+    width: 100%;
+}
+.ice th, .ice td, 
+.lightning th, .lightning td {
+    padding: 8px;
+    width: 50%;
+    text-align: center;
+}
+.ice th.header, .lightning th.header {
+    font-weight: bold;
+}
+.ice tr.header, .lightning tr.header {
+    height: 32px;
+}
