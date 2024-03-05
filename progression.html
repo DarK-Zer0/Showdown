@@ -110,6 +110,7 @@
 
 		<!-- Page Content -->
 		<div id="content">
+
 			<!-- Sense Level -->
 			<div id="div1" class="content" style="display: none;">
 				<h2>Sense Level</h2>
@@ -136,6 +137,7 @@
 						Unlocking the Void-Space stages will allow you to get drops up to 680 Sense with relative ease. 
 						Beware, they consume up to 60 fatigue for a full run! For more information on Yama's Abyss check <a href="endgame.html?option=4">this</a> out</p>
 			</div>
+
 			<!-- Hero Level -->
 			<div id="div2" class="content" style="display: none;">
 				<h2>Hero Level</h2>
@@ -172,6 +174,7 @@
 						<h4>Level 18: Defuse Attack</h4>
 						<p class="paragraph">Hero will be able to use a special dodge that when successful at nullifying an attack, enables a melee attack that greatly damages astral aegis.</p>
 			</div>
+
 			<!-- Souljades -->
 			<div id="div3" class="content" style="display: none;">
 				<h2>Souljades</h2>
@@ -199,12 +202,75 @@
 					<p class="paragraph">For Souljades you haven't acquired before, you can check them out in the Narakapedia section to see where they drop.</p>
 						<img src="img/progression/narakapediasouljades.png" alt="Narakapedia Entry on Defuse Dash Counterattack" class="example">
 					<!-- Element Wielding -->
-					<h3 id="element-wielding">Element Wielding</h3>
+					<hr><h3 id="element-wielding">Element Wielding</h3>
+					<p class="paragraph left">Element Wielding is the acquisition of Souljades with either <a href="#ice-wielding"><img src="img/progression/icewielding.png" alt="Ice-Wielding"></a> or <a href="#thunder-wielding"><img src="img/progression/thunderwielding.png" alt="Thunder-Wielding"></a>. 
+						By equipping one with an element, it gives you unique effects. These effects stack up to +6.</p>
+						<h4 id="ice-wielding">Ice-Wielding</h4>
+						<p class="paragraph">Ice-Wielding can be quite confusing, but it can be very helpful to have built up as you enter Holoroth. 
+							It does 2 things:</p>
+							<ol class="left">
+								<li>Makes it harder for you to be frozen, 
+									by decreasing your Frostbite acquisition from all sources including Frost Omens, Matron of Yushan's attacks, or Ice Fall.</li>
+								<li>Increases the damage of your Ice Blasts by 100% per stack. 
+									Ice Blasts occur occasionally as you damage an enemy, with Ice-Wielding specific attacks building them up quicker.</li>
+							</ol>
+						<h4 id="thunder-wielding">Thunder-Wielding</h4>
+						<p class="paragraph">Thunder-Wielding is quite similar, but differs in that it:</p>
+							<ol class="left">
+								<li>Makes it take longer for you to suffer from Divine Thunder, by decreasing your Thundershock acquisition rate.</li>
+								<li>Increases the damage of your Divine Thunder to enemies by 100% per stack. Think of Divine Thunder as the Thunder equivalent to Ice Blasts.</li>
+								<li>Increases the damage to enemies from countered Divine Thunder (Thunder Counter).</li>
+							</ol>
 					<!-- Attributes -->
-					<h3 id="attributes">Attributes</h3>
+					<hr><h3 id="attributes">Attributes</h3>
+					<p class="paragraph">Located below your Souljade's effects will be your Attributes.
+						The number of Attributes present by default varies depending on the Souljade's rarity.</p>
+						<ul class="left">
+							<li>Common Rarity = 0 Attributes (Only)</li>
+							<li>Rare Rarity = 1 Attribute</li>
+							<li>Epic Rarity = 2 Attributes</li>
+							<li>Legendary Rarity = 3 Attributes</li>
+						</ul>
+					<p class="paragraph left">You can acquire up to 4 attributes on a Souljade through a process known as <a href="#" onclick="showDiv(4, this); return false;">Recasting</a>.
+						In terms of Attributes you want to go for, generally you want to go for what ever increases your damage.
+						<strong>[Windfall]</strong> if you can manage to acquire it is one of the best Attributes currently in the game. 
+						It will work with any build regardless of what you're aiming for.
+						<strong>Attack, Weapon-Specific Damage Bonus, DMG to Boss, Ice Blast DMG, Divine Thunder DMG, Charged Atk DMG,</strong> 
+						& <strong>Uncharged Atk DMG</strong> are your go-to's on a Souljade when going for a Melee-focused build.
+						<br><br><strong>No Depletion: Weaponry Chest, Aegis DMG, Rage/DMG,</strong> & <strong>Charged Aegis DMG (for Pistol-main)</strong> 
+						are your go-to's on a Souljade when going for a Ranged-focused build.</p>
+						<h4>Rare Attributes</h4>
+						<p class="paragraph left">Rare Attributes are Attributes with '[]' brackets around them.
+							As the name suggests, they are much rarer to acquire than normal attributes. 
+							However, they tend to have more active effects than other Attributes.</p>
+							<ul class="left">
+								<li><strong>[Windfall]</strong> makes all of the other Attributes on the same Souljade stronger by 30-50%.
+									<br>Example: Attack +4% with Windfall +30% will become Attack +5.2%</li>
+								<li><strong>[Moderation]</strong> reduces the cooldown of your ability by 15-25% 
+									whenever you activate an Ice Blast or Divine Thunder on an enemy. 
+									<br>Adds up to a cap of 100% from multiple [Moderation]s for instant cooldown on activation.</li>
+								<li><strong>[Scorching]</strong> makes your melee attacks following within 10 seconds from a successful parry 
+									apply a burning effect to enemies. 
+									Scales in levels, with a total cap at level 12 and a cap per Souljade at level 3. </li>
+							</ul>
 					<!-- Souljade Conversion -->
-					<h3 id="souljade-conversion">Souljade Conversion</h3>
+					<hr><h3 id="souljade-conversion">Souljade Conversion</h3>
+						<p class="paragraph left">The Showdown Souljade Conversion menu allows you to convert Souljades you don't want
+							into Souljades that you would possibly want at random.
+							You can only receive Souljades from conversion that you have unlocked from completing their corresponding mission.
+							You can see what you have unlocked by clicking on the <img src="img/progression/unlockedview.png" alt="Button Next to Convert" style="width: 3vw;"> 
+							button next to the convert button.
+							<br><br>There are two forms of conversion: <strong>Basic</strong> and <strong>Advanced</strong></p> 
+							<h4>Basic Conversion</h4>
+								<p class="paragraph">Basic Conversion allows you to convert 20 rare and common rarity Souljades into Epics or Legendaries.
+									<br>Chance of Epic = 90%<br>Chance of Legendary = 10%</p>
+								<img src="img/progression/basicconversion.png" alt="Basic Conversion Menu" class="example">
+							<h4>Advanced Conversion</h4>
+								<p class="paragraph">Advanced Conversion allows you to convert 3 Epics into a random Epic Souljade or
+									3 Legendaries into a random Legendary Souljade.</p>
+								<img src="img/progression/advancedconversion.png" alt="Advanced Conversion Menu" class="example">
 			</div>
+			
 			<!-- Recasting -->
 			<div id="div4" class="content" style="display: none;">
 				<h2>Recasting</h2>
