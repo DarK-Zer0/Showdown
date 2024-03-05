@@ -17,6 +17,7 @@ h1 {
 }
 .left {
     text-align: left;
+    list-style-position: inside;
 }
 .gif {
     height: 40vh;
