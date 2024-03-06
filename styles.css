@@ -20,9 +20,15 @@ body {
 h1 {
     text-align: center;
 }
+.with-caption {
+    margin-bottom: 1px;
+}
 .paragraph, .caption{
     text-align: center;
     padding: 1vh;
+}
+.caption {
+    margin-top: 1px;
 }
 .left {
     text-align: left;
