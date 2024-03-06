@@ -1,8 +1,17 @@
+/* Variables */
+:root {
+    --bg-color: lightyellow;
+    --main-nav-color: #6F4221;
+    --sec-nav-color: #96592D;
+    --hover-color: #214E6F;
+    --selected-color: #2D6A96;
+}
+
 /* Default Stylings */
 body {
     font-family: "Arial", serif;
 	font-size: 14pt;
-	background-color: lightyellow;
+	background-color: var(--bg-color);
 	color: black;
     margin: 0px;
 }
@@ -51,8 +60,8 @@ img.small-example {
     align-items: center;
     height: 8vh;
     width: 100%;
-    background-color: #6F4221;
-    color: lightyellow;
+    background-color: var(--main-nav-color);
+    color: var(--bg-color);
     border: 1px solid black;
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, .2);
 }
@@ -78,7 +87,7 @@ ul.nav-bar, ul.page-nav-items {
     position: relative;
 }
 .nav-item:hover {
-    color: #214E6F;
+    color: var(--hover-color);
     border-radius: 12px;
 }
 
@@ -96,7 +105,7 @@ ul.nav-bar, ul.page-nav-items {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #96592D;
+    background-color: var(--sec-nav-color);
     border: 1px solid rgb(0, 0, 0);
     width: 200px;
     top: 80%;
@@ -111,12 +120,12 @@ ul.nav-bar, ul.page-nav-items {
 .dropdown-option {
     display: block;
     padding: 10px;
-    color: lightyellow;
+    color: var(--bg-color);
     text-decoration: none;
 }
 .dropdown-option:hover {
-    background-color: #214E6F;
-    color: lightyellow;
+    background-color: var(--hover-color);
+    color: var(--bg-color);
 }
 
 /* Website Navigation Bar - Mobile Stylings */
@@ -146,8 +155,8 @@ ul.nav-bar, ul.page-nav-items {
     display: block;
 }
 .mobile .dropdown-content a:hover {
-    background-color: #214E6F;
-    color: lightyellow;
+    background-color: var(--hover-color);
+    color: var(--bg-color);
 }
 
 @media (max-width: 1240px) {
@@ -192,7 +201,7 @@ ul.nav-bar, ul.page-nav-items {
     top: 18vh;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #96592D;
+    background-color: var(--sec-nav-color);
     border: 1px solid black;
     border-radius: 20px;
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, .2);
@@ -210,17 +219,17 @@ ul.nav-bar, ul.page-nav-items {
     text-transform: uppercase;
     text-decoration: none;
     border: 0;
-    background-color: #96592D;
-    color: lightyellow;
+    background-color: var(--sec-nav-color);
+    color: var(--bg-color);
     cursor: pointer;
     position: relative;
     border-radius: 12px;
 }
 .page-nav-item:hover {
-    color: #214E6F;
+    color: var(--hover-color);
 }
 .selected {
-    color: #2D6A96;
+    color: var(--selected-color);
 }
 
 /* Page Content Stylings */
