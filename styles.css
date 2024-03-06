@@ -31,6 +31,9 @@ h1 {
 img.example {
     width: 100%;
 }
+img.small-example {
+    width: 20pt;
+}
 
 .nodot {
     list-style-type: none;
