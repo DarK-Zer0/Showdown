@@ -1,5 +1,6 @@
 /* Variables */
 :root {
+    /* Color Scheme */
     --bg-color: lightyellow;
     --main-nav-color: #6F4221;
     --sec-nav-color: #96592D;
@@ -16,13 +17,11 @@ body {
     margin: 0px;
 }
 
-/* Base Stylings */
+/* Text Stylings */
 h1 {
     text-align: center;
 }
-.with-caption {
-    margin-bottom: 1px;
-}
+
 .paragraph, .caption{
     text-align: center;
     padding: 1vh;
@@ -30,10 +29,18 @@ h1 {
 .caption {
     margin-top: 1px;
 }
+
 .left {
     text-align: left;
     list-style-position: inside;
 }
+
+.nodot {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+/* Media Stylings */
 .gif {
     height: 40vh;
     width: auto;
@@ -44,15 +51,14 @@ h1 {
 }
 
 img.example {
-    width: 100%;
+    width: 95%;
 }
 img.small-example {
     width: 20pt;
 }
 
-.nodot {
-    list-style-type: none;
-    padding-inline-start: 0;
+.with-caption {
+    margin-bottom: 1px;
 }
 
 /* Webiste Navigation Bar Stylings */
@@ -234,11 +240,13 @@ ul.nav-bar, ul.page-nav-items {
 .page-nav-item:hover {
     color: var(--hover-color);
 }
+
 .selected {
     color: var(--selected-color);
+    text-decoration: underline;
 }
 
-/* Page Content Stylings */
+/* Page Content Area Stylings */
 #content {
     position: relative;
     top: 15vh;
@@ -261,6 +269,7 @@ table {
 table .portrait {
     object-fit: cover;
     height: 40vh;
+    max-width: 30vw;
 }
 table .details {
     text-align: center;
@@ -290,7 +299,7 @@ table.changelog {
     background-color: whitesmoke;
     border-collapse: collapse;
     width: 80vw;
-    margin: 0 auto; /* center the table */
+    margin: 0 auto;
 }
 table.changelog th, table.changelog td {
     border: 1px solid black;
@@ -304,11 +313,6 @@ table.changelog th:nth-child(2), table.changelog td:nth-child(2) {
 }
 table.changelog th:nth-child(3), table.changelog td:nth-child(3) {
     width: 60vw; 
-}
-
-/* Reset Date Styling */
-#reset {
-    margin-bottom: 0;
 }
 
 /* Souljade Set Ups Styling */
