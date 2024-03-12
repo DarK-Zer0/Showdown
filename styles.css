@@ -1,7 +1,8 @@
 /* Variables */
 :root {
     /* Color Scheme */
-    --bg-color: lightyellow;
+    --bg-color: rgb(253, 253, 199);
+    --content-bg-color: lightyellow;
     --main-nav-color: #6F4221;
     --sec-nav-color: #96592D;
     --hover-color: #214E6F;
@@ -22,8 +23,9 @@ h1 {
     text-align: center;
 }
 
-.paragraph, .caption{
+.center, .caption{
     text-align: center;
+    list-style-position: inside;
     padding: 1vh;
 }
 .caption {
@@ -33,6 +35,7 @@ h1 {
 .left {
     text-align: left;
     list-style-position: inside;
+    padding: 1vh;
 }
 
 .nodot {
@@ -50,10 +53,17 @@ h1 {
     width: auto;
 }
 
-img.example {
+img.large-example {
+    display: block;
+    margin: 0 auto;
     width: 95%;
 }
-img.small-example {
+img.example {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+img.icon {
     width: 20pt;
 }
 
@@ -252,6 +262,8 @@ ul.nav-bar, ul.page-nav-items {
     top: 15vh;
     left: 10%;
     width: 80vw;
+    background-color: var(--content-bg-color);
+    border-radius: 25px;
     text-align: center;
 }
 
@@ -273,6 +285,10 @@ table .portrait {
 }
 table .details {
     text-align: center;
+    width: 50vw;
+}
+.details img {
+    width: 100%;
 }
 table .label {
     font-weight: bold;
@@ -287,6 +303,7 @@ table .archetype, table .weapons{
 }
 .archetype img, .weapons img {
     height: 100%;
+    width: auto;
 }
 table .description {
     text-align: center;

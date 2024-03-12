@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <title>Showdown Guide</title>
         <meta charset="UTF-8">
@@ -16,13 +17,13 @@
         <!-- Website -->
 		<link rel="shortcut icon" type="image/x-icon" href="img/site/icon.png">
 		<link rel="icon" href="img/site/icon.png" type="images" sizes="32x32"> 
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"> 
 		<script src="https://kit.fontawesome.com/6d78549c29.js" crossorigin="anonymous"></script>
 		<link href="styles.css" rel="stylesheet">
-		<script src="src/navbar.js"></script>
-		<script src="src/contents.js"></script>
+		<script type="text/javascript" src="src/navbar.js"></script>
+		<script type="text/javascript" src="src/contents.js"></script>
     </head>
     <body>
         <!-- Navigation Bar -->
@@ -49,8 +50,8 @@
 			<ul class ="nav-items">
 				<li class="nav-item">Introduction
 					<div class="dropdown-content">
-						<a href="intro.html?option=2" class="dropdown-option">Getting Started</a>
-						<a href="intro.html?option=1" class="dropdown-option">Heroes</a>
+						<a href="intro.html?option=1" class="dropdown-option">Getting Started</a>
+						<a href="intro.html?option=2" class="dropdown-option">Heroes</a>
 						<a href="intro.html?option=3" class="dropdown-option">Glossary</a>
 					</div>
 				</li>
@@ -115,19 +116,182 @@
 		<div id="content">
 
 			<!-- Doom -->
-			<div id="div1" class="content" style="display: none;"></div>
+			<div id="div1" class="content" style="display: none;">
+				<h2>Doom</h2>
+				<p class="caption">
+					You can access Doom missions by going to the Select Mode Map and clicking the ominious swirling whirlpool at the top right.
+					<img src="img/endgame/doom/map-doom-domain.png" alt="Showing Doom Domain on the Map" class="large-example">
+				</p>
+				<p class="left">
+					Doom consists of 3 missions with static Omens and 3 special objectives that grant you a star for completing each one.
+					These objectives are made up of the following:</p>
+					<ol class="left">
+						<li>Complete the Stage Successfully.</li>
+						<li>Complete the Stage Successfully within a Time Limit.</li>
+						<li>Complete the Stage Successfully with 1 of 4 Heroes.</li>
+					</ol>
+					<p class="left">Due to the overlap of the special objectives, it is possible to get 3 stars from a single run. 
+					However, it is not required to complete every single one of them in one run to get all 3.
+					They only have to be completed once per week. You can view the specifics when choosing a mission under Doom Domain.
+					<img src="img/endgame/doom1.png" alt="Showing Special Objectives of a Doom Stage" class="large-example"></p>
+					<p class="caption">For every 3 stars gained, you get a reward of 2 Epic or Legendary Souljades and 
+					800, 900 or 1000 Showdown Pass XP for 3, 6 and 9 stars.
+					<img src="img/endgame/doom/starrewards.png" alt="Showing Doom Star Rewards Bar" class="large-example">
+				</p>
+			</div>
 
 			<!-- Speedrun -->
-			<div id="div2" class="content" style="display: none;"></div>
+			<div id="div2" class="content" style="display: none;">
+				<h2>Speedrun</h2>
+				<p class="center">You can access Speedrun by going to the Select Mode Map and clicking the ominious swirling whirlpool at the top right.
+				<img src="img/endgame/doom/map-doom-domain.png" alt="Showing Doom Domain on the Map" class="large-example">
+				Speedrun is similar to Doom in that you can acquire 3 stars as well and it has static Omens. 
+				However, the selection of Omens it has are unique to the mode, often with them changing the way you have to play that mission.
+				Furthermore, the enemies are along the highest levels of Sense, so they hit much harder and have more health.</p>
+					<h3>Rank Titles</h3>
+					<p class="center">The main goal of Speedrun is to not only clear it, but to clear it as fast as possible to get a good rank on the leaderboards.
+					If you rank among the top 500, you will gain a title corresponding to it and a Legendary Souljade. 
+					You can only get one Legendary Souljade from this regardless of the number of servers you have accomplished this in.</p>
+					<p class="left">The rank specific titles are as follows:
+						<ol class="left">
+							<li>Ranks 1 - 10: Golden Title</li>
+							<li>Ranks 11 - 100: Silver Title</li>
+							<li>Ranks 101 - 500: Green Title</li>
+						</ol>
+					</p>
+			</div>
 
 			<!-- Enigma Domain -->
-			<div id="div3" class="content" style="display: none;"></div>
+			<div id="div3" class="content" style="display: none;">
+				<h2>Enigma Domain</h2>
+				<p class="center">Enigma Domain is a mission type in Morus Isle, that costs 30 fatigue per run and a 
+					<img src="img/endgame/enigma/runekey.png" alt="A Rune Key" class="icon"> Rune Key.
+					If you use a  
+					<img src="img/endgame/enigma/goldrunekey.png" alt="A Legendary Rune Key" class="icon"> Legendary Rune Key 
+					to enter, it'll boost the Luck for your whole team, resulting in slightly better drops.
+					It currently has two maps for it, the newest one being the area for chapter 2 and the old one from chapter 1. </p>
+					<h3>Enigma Topaz</h3>
+					<p class="center"></p>
+						<h4>General Strategy (for Group Play)</h4>
+						<ul class="left">
+							<li>Your team should have a designated Jungler, while the other two are Bossers.
+								<ul><li>Kurumi is recommended to be one of the Bossers as she can provide nice buffs and healing to her partner.</li></ul>
+							</li>
+							<li>Your Jungler's role is to get the enhance percentage to as close to 74% as they can (50% at the minimum).
+								<ul><li>Doing so will make it so when the boss is killed, the next boss spawn will have a high chance to
+									 be placed at the same location.</li>
+									<li>The boss spawn is determined when the enhance percentage reaches 75%.</li>
+									<li>Try to keep an eye on how much % you gain from killing certain enemy types and opening Stronghold chests.</li>
+								</ul>
+							</li>
+							<li>There will be 9 bosses total of increasing Sense Levels until they reach 700.
+								<ul><li>When the Sense Level reaches 700, 
+									try to fight the bosses that spawn as 3 people instead of two to clear it efficiently.</li></ul>
+							</li>
+							<li>Save the Demon Elixirs the bosses drop until the later ones so you can kill them faster.
+								<ul><li>The Jungler on the other hand should aim to pick up as many buffs as they can from the Strongholds.</li></ul>
+							</li>
+						</ul>
+						<h4>General Strategy (for Solo Play)</h4>
+						<iframe width="80%" height="450" src="https://www.youtube.com/embed/jQUtI9ZVOnc" title="Enigma Topaz Solo Strat Old Map" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe width="80%" height="450" src="https://www.youtube.com/embed/U_A6co48Q0U" title="Enigma Topaz Solo Strat New Map" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="with-caption"></iframe>
+						<p class="center">Clear mobs until boss spawns and reach enhance bar 66-74% then proceed to kill 3 bosses in a row then repeat. 
+							Doing this strat should guarantee that the boss spawn does not move at all, allowing you to get some insane clear speeds.</p>
+					<hr><h3>Enigma Peak</h3>
+						<h4>General Strategy</h4>
+						<ul class="left">
+							<li>Similar to Topaz, you should have a Jungler and two Bossers.
+								<ul><li>Kurumi is heavily recommended alongside Viper or Temulch for Bossers.</li>
+								</ul>
+							</li>
+							<li>Your Jungler's role is to get the enhance percentage to as close to 67% as they can (42% at the minimum).
+								<ul><li>The boss spawn is still determined when the enhance percentage reaches 75%, however,
+									bosses give +33% instead of +25% in Enigma Peak.
+								</li></ul>
+							</li>
+							<li>Eerie Bosses can begin spawning at Enhance 5 and up. I recommened fighting them as a team of 3 at this point.
+								<ul><li>Eerie Bosses have new movesets, deal much more damage and have more health than normal.</li></ul>
+							</li>
+							<li>Make sure to manage the Demon Elixirs dropped by bosses well as you'll have to squeeze every bit of damage you can.</li>
+							<li>To fully clear it, your build should be close to if not fully complete, including your Attributes being the way you want them.</li>
+						</ul>
+						<h4>Rewards</h4>
+						<ol class="center">
+							<li>For beating the 1st boss.
+								<img src="img/endgame/enigma/peakreward1.png" alt="1st Reward" class="example">
+								1 Epic Souljade Choice Gift + 1 Quench Crystal<br><br>
+							</li>
+							<li>For beating the 2nd boss.
+								<img src="img/endgame/enigma/peakreward2.png" alt="2nd Reward" class="example">
+								1 Epic Souljade Choice Gift + 1 Quench Crystal<br><br>
+							</li>
+							<li>For beating the 3rd boss.
+								<img src="img/endgame/enigma/peakreward3.png" alt="3rd Reward" class="example">
+								1 Epic Souljade Choice Gift + 2 Quench Crystals<br><br>
+							</li>
+							<li>For beating the 4th boss.
+								<img src="img/endgame/enigma/peakreward4.png" alt="4th Reward" class="example">
+								1 Epic Souljade Choice Gift + 2 Quench Crystals<br><br>
+							</li>
+							<li>For beating the 5th boss.
+								<img src="img/endgame/enigma/peakreward5.png" alt="5th Reward" class="example">
+								1 Legendary Rune Key + 3 Quench Crystals<br><br>
+							</li>
+							<li>For beating the 6th boss.
+								<img src="img/endgame/enigma/peakreward6.png" alt="6th Reward" class="example">
+								1 Legendary Rune Key + 3 Quench Crystals<br><br>
+							</li>
+							<li>For beating the 7th boss.
+								<img src="img/endgame/enigma/peakreward7.png" alt="7th Reward" class="example">
+								1 Legendary Souljade Choice Gift + 4 Quench Crystals<br><br>
+							</li>
+							<li>For completing Enigma Peak.
+								<img src="img/endgame/enigma/peakreward8.png" alt="8th Reward" class="example">
+								1 Legendary Souljade Choice Gift + Hero Seal<br><br>
+							</li>
+						</ol>
+			</div>
 
 			<!-- Yama's Abyss -->
-			<div id="div4" class="content" style="display: none;"></div>
+			<div id="div4" class="content" style="display: none;">
+				<h2>Yama's Abyss</h2>
+				<p class="center">Yama's Abyss is a roguelike mission type that consists zones. 
+					The number of zones depends on the type of Stage that you enter, with <a href="#main-stage">Main Stages</a> having 15 and <a href="#void-space">Void Space</a> Stages having 30.
+					Clearing enough Showdown stages will increase your rank up to Showdown Paragon when clearing <a href="#main-stage">Main Stage</a> 40.</p>
+					<hr><h3>Anima Rings & Collections</h3>
+					<p class="left">Yama's Abyss introduces new items known as Anima Rings that increase your power temporarily.
+						Each Anima Ring belongs to a Collection and you get a bonus for the number of them that you've acquired at least once before.
+						Each Collection generally contains Anima Rings that synergize with each other, with The Awakening Collection having Rings around Thunderbolts.
+						For maxing out your Collections it is recommended that you go into <a href="#void-space">Void Space</a>.
+					</p>
+						<h4>Favored Collections</h4>
+						<p class="left">In the current state of Yama's Abyss some Anima Ring Collections have proven to be significantly more effective than others.
+							With the utmost effective for dealing damage being the Anima Rings under the <strong>Element Collection</strong>.
+							This is because each of the Rings multiply on top of each other, giving you absolutely insane damage if you're lucky enough to acquire all 7 of them.
+							However, there is also the <strong>Currency Collection</strong>, specifically <strong>Special Offer</strong> and <strong>Showdown Smuggler</strong>.
+							<strong>Special Offer</strong> grants a 35% discount to the shop, making your money ~53% more effective!
+							<strong>Showdown Smuggler</strong> on the other hand spawns a shop with a 20% discount, however, you can spawn this shop in a boss room to get your refresh on your Souljades early!
+							Both of these Anima Rings play a key role and getting enough Anima Rings to be able to clear the later <a href="#main-stage">Main Stages</a> fast enough to not time out.
+						</p>
+						<h4>Secret Anima Ring</h4>
+						<p class="left">There exists a secret Anima Ring when you acquire the Lost curse and are sent into the "Lost" zone.
+							There will be two bosses, Fiery Monster and Mountain Ghost.
+							I recommend beating the Fiery Monster first and then lure the Mountain Ghost into the corner that sticks out inconspicuously.
+							Then you want the boss to hit the back wall of that corner until it breaks and there will be a green item on the ground.
+							Picking that up will grant your entire team the Secret Anima Ring, Divine Army from the Sky.
+							For a visual guide, check out this video:</p>
+							<iframe width="80%" height="450" src="https://www.youtube.com/embed/kRkeLt0mMa0" title="Acquiring the Secret Anima Ring" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="with-caption"></iframe>
+					<hr id="main-stage"><h3>Main Stages</h3>
+					<p class="left"></p>
+					<hr id="void-space"><h3>Void Space</h3>
+					<p class="left"></p>
+			</div>
 			
 			<!-- Leaderboard -->
-			<div id="div5" class="content" style="display: none;"></div>
+			<div id="div5" class="content" style="display: none;">
+				<h2>Leaderboard</h2>
+				<p class="left"></p>
+			</div>
 		</div>
     </body>
 </html>
