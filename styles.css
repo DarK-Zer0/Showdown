@@ -280,7 +280,7 @@ table {
 }
 table .portrait {
     object-fit: cover;
-    height: 40vh;
+    max-height: 40vh;
     max-width: 30vw;
 }
 table .details {
