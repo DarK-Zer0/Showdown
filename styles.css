@@ -309,6 +309,16 @@ table .description {
     text-align: center;
     max-height: 30vh;
 }
+.hero-info {
+    margin: 0 auto;
+}
+
+table.striped tr {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-collapse: separate;
+}
+
 
 /* Changelog Stylings */
 table.changelog {
