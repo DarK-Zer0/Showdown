@@ -314,11 +314,8 @@ table .description {
     margin: 0 auto;
 }
 
-table.striped thead {
-    border-top: 1px solid black;
-}
-table.striped thead:first-child {
-    border-top: none;
+table.attack .portrait {
+    width: 30vw;
 }
 
 
