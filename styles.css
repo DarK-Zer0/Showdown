@@ -181,29 +181,6 @@ ul.nav-bar, ul.page-nav-items {
     color: var(--bg-color);
 }
 
-@media (max-width: 1240px) {
-    .nav-toggle {
-        display: block;
-    }
-
-    .nav-items {
-        display: none;
-        flex-direction: column;
-    }
-
-    .nav-item {
-        display: none;
-    }
-
-    .nav-item.show {
-        display: block;
-    }
-
-    .home-button img {
-        width: 75vw;
-    }
-}
-
 /* Banner Image Styling */
 .banner img {
     z-index: 1;
@@ -367,4 +344,33 @@ table.lightning {
 }
 .ice tr.header, .lightning tr.header {
     height: 32px;
+}
+
+@media (max-width: 1240px) {
+    .nav-toggle {
+        display: block;
+    }
+    .nav-items {
+        display: none;
+        flex-direction: column;
+    }
+    .nav-item {
+        display: none;
+    }
+    .nav-item.show {
+        display: block;
+    }
+
+    .page-nav-items {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .home-button img {
+        width: 75vw;
+    }
+
+    #content {
+        top: 30vh;
+    }
 }
