@@ -1,12 +1,12 @@
 /* Variables */
 :root {
     /* Color Scheme */
-    --bg-primary: rgb(253, 253, 199);
-    --bg-secondary: lightyellow;
-    --nav-primary: #6F4221;
-    --nav-secondary: #96592D;
-    --hover: #214E6F;
-    --selected: #2D6A96;
+    --bg-primary: rgb(253, 253, 199); /* #fdfdc7 */
+    --bg-secondary: rgb(255, 255, 224); /* lightyellow */
+    --nav-primary: rgb(111,66,33); /* #6F4221 */
+    --nav-secondary: rgb(150,89,45); /* #96592D */
+    --hover: rgb(33,78,111); /* #214E6F */
+    --selected: rgb(66, 33, 111); /* #42216F */
 
     /* Text Stylings */
     font-family: "Arial", serif;
@@ -107,7 +107,7 @@ img.icon {
 }
 .nav-item:hover {
     color: var(--hover);
-    border-radius: 12px;
+    background-color: var(--nav-secondary);
 }
 
 .nav-items .nav-item::after {
@@ -153,6 +153,7 @@ img.icon {
     display: block;
     padding: 5px 15px;
     border-bottom: 1px solid black;
+    transition: background-color 0.3s ease;
     color: var(--bg-primary);
     text-decoration: none;
 }
@@ -199,7 +200,8 @@ img.icon {
 .banner img {
     z-index: 1;
     width: 100%;
-    object-fit: cover;
+    height: 92vh;
+    object-fit: fill;
 }
 
 /* Page Navigation Bar Stylings */
@@ -214,7 +216,7 @@ img.icon {
     top: 18vh;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--nav-secondary);
+    background-color: var(--nav-primary);
     border: 1px solid black;
     border-radius: 20px;
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, .2);
@@ -232,7 +234,7 @@ img.icon {
     text-transform: uppercase;
     text-decoration: none;
     border: 0;
-    background-color: var(--nav-secondary);
+    background-color: var(--nav-primary);
     color: var(--bg-primary);
     cursor: pointer;
     position: relative;
@@ -240,6 +242,7 @@ img.icon {
 }
 .page-nav-item:hover {
     color: var(--hover);
+    background-color: var(--nav-secondary);
 }
 
 .selected {
@@ -250,7 +253,7 @@ img.icon {
 /* Page Content Area Stylings */
 #content {
     position: relative;
-    top: 15vh;
+    top: 10vh;
     left: 10%;
     width: 80vw;
     background-color: var(--bg-secondary);
