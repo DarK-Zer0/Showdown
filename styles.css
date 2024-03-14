@@ -20,6 +20,10 @@ body {
     margin: 0;
     padding: 0;
 }
+hr {
+    width: 92%;
+    margin: 0 auto;
+}
 
 /* Text Stylings */
 h1 {
