@@ -112,6 +112,9 @@ img.icon {
 .nav-item:hover {
     color: var(--hover);
     background-color: var(--nav-secondary);
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 
 .nav-items .nav-item::after {
@@ -156,14 +159,14 @@ img.icon {
 .dropdown-option {
     display: block;
     padding: 5px 15px;
-    border-bottom: 1px solid black;
+    border-top: 1px solid black;
     transition: background-color 0.3s ease;
     color: var(--bg-primary);
     text-decoration: none;
 }
-.dropdown-option:last-child {
+/* .dropdown-option:last-child {
     border-bottom: none;
-}
+} */
 .dropdown-option:hover {
     background-color: var(--hover);
     color: var(--bg-primary);
