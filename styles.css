@@ -423,7 +423,7 @@ table.lightning {
     }
 
     .hero-table {     
-        display: flex;
+        display: inline-block;
         justify-content: center;
     }
 }
