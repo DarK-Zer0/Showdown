@@ -267,8 +267,12 @@ img.icon {
     border-radius: 25px;
     text-align: center;
 }
+.content {
+    width: 100%;
+    height: 100%;
+}
 
-/* Heroes Intro Stylings */
+/* Table Stylings */
 table {
     border: 1px solid black;
     background-color: whitesmoke;
@@ -279,23 +283,23 @@ table {
     word-break: normal;
     margin-bottom: 1.5vh;
 }
-table .portrait {
-    object-fit: cover;
+.portrait {
+    object-fit: contain;
     max-height: 40vh;
-    max-width: 30vw;
+    width: 30vw;
 }
-table .details {
+.details {
     text-align: center;
     width: 50vw;
 }
 .details img {
     width: 100%;
 }
-table .label {
+.label {
     font-weight: bold;
     font-size: 15px;
 }
-table .archetype, table .weapons{
+.archetype, .weapons{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -310,15 +314,32 @@ table .description {
     text-align: center;
     max-height: 30vh;
 }
-
-.hero-info {
-    margin: 0 auto;
-}
-
 table.attack .portrait {
     width: 30vw;
 }
 
+/* Hero Table Stylings */
+.hero-table {
+    display: flex;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    word-break: normal;
+    margin-bottom: 1.5vh;
+}
+
+.hero-table .row {
+    display: inline-flex;
+}
+.row .subject, .row .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* aligns items horizontally */
+    align-items: center; /* aligns items vertically */
+    text-align: center; /* centers text */
+}
 
 /* Changelog Stylings */
 table.changelog {
@@ -396,5 +417,10 @@ table.lightning {
 
     #content {
         top: 30vh;
+    }
+
+    .hero-table {     
+        display: flex;
+        justify-content: center;
     }
 }
