@@ -324,7 +324,7 @@ table.attack .portrait {
     border: 1px solid black;
     background-color: whitesmoke;
     font-family: Arial, sans-serif;
-    font-size: 14px;
+    font-size: 1.4vw;
     overflow: hidden;
     word-break: normal;
     margin-bottom: 1.5vh;
@@ -332,8 +332,11 @@ table.attack .portrait {
 
 .hero-table .row {
     display: inline-flex;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
-.row .subject, .row .details {
+.row .subject, 
+.row .details {
     display: flex;
     flex-direction: column;
     justify-content: center; /* aligns items horizontally */
