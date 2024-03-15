@@ -10,7 +10,7 @@
 
     /* Text Stylings */
     font-family: "Arial", serif;
-	font-size: 14pt;
+	font-size: clamp(14pt, 1.4vw, 18pt);
 }
 
 /* Default Stylings */
@@ -277,7 +277,7 @@ table {
     border: 1px solid black;
     background-color: whitesmoke;
     font-family: Arial, sans-serif;
-    font-size: 14px;
+    font-size: clamp(14px, 1.4vw, 18px);
     overflow: hidden;
     padding: 10px 5px;
     word-break: normal;
@@ -286,7 +286,7 @@ table {
 .portrait {
     object-fit: contain;
     max-height: 40vh;
-    width: 30vw;
+    width: auto;
 }
 .details {
     text-align: center;
@@ -324,7 +324,7 @@ table.attack .portrait {
     border: 1px solid black;
     background-color: whitesmoke;
     font-family: Arial, sans-serif;
-    font-size: 1.4vw;
+    font-size: clamp(14px, 1.4vw, 18px);
     overflow: hidden;
     word-break: normal;
     margin-bottom: 1.5vh;
@@ -422,7 +422,10 @@ table.lightning {
         top: 30vh;
     }
 
-    .hero-table {     
+    .hero-table {
+        display: flow;
+    }
+    .hero-table .row {     
         display: inline-block;
         justify-content: center;
     }
