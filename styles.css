@@ -220,6 +220,7 @@ img.icon {
     width: auto;
     padding-left: 1vw;
     padding-right: 1vw;
+    margin-top: 5vh;
     top: 18vh;
     left: 50%;
     transform: translateX(-50%);
@@ -260,7 +261,7 @@ img.icon {
 /* Page Content Area Stylings */
 #content {
     position: relative;
-    top: 10vh;
+    top: 12vh;
     left: 10%;
     width: 80vw;
     background-color: var(--bg-secondary);
@@ -418,8 +419,14 @@ table.lightning {
         width: 75vw;
     }
 
-    #content {
-        top: 30vh;
+    #content.nav3 {
+        margin-top: 10vh;   
+    }
+    #content.nav4 {
+        margin-top: 16vh;
+    }
+    #content.nav5 {
+        margin-top: 22vh;
     }
 
     .hero-table {
