@@ -149,9 +149,7 @@ img.icon {
     animation: slide-down .5s ease-out;
     animation-fill-mode: none;
     position: absolute;
-    background-color: var(--nav-secondary);
     width: 200px;
-    padding: 0 10px;
     z-index: 3;
     transform-origin: top center;
 }
@@ -172,8 +170,13 @@ img.icon {
 
 .dropdown-option {
     display: block;
-    padding: 10px 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 2px solid var(--nav-primary);
+    background-color: var(--nav-secondary);
     transition: background-color 0.3s ease;
     color: var(--bg-primary);
     text-decoration: none;
