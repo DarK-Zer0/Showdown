@@ -428,6 +428,10 @@ table.lightning {
         display: block;
     }
 
+    .banner img {
+        height: 50vh;
+    }
+
     .page-nav-items {
       flex-direction: column;
       align-items: center;
@@ -453,5 +457,24 @@ table.lightning {
     .hero-table .row {     
         display: inline-block;
         justify-content: center;
+    }
+}
+
+@media (max-width: 530px) {
+    #content.nav3 {
+        margin-top: 16vh;   
+    }
+    #content.nav4 {
+        margin-top: 22vh;
+    }
+    #content.nav5 {
+        margin-top: 28vh;
+    }
+
+    .gif {
+        height: 25vh;
+    }
+    .gif-small {
+        height: 15vh;
     }
 }
