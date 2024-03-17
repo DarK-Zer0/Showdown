@@ -156,7 +156,6 @@ img.icon {
 .nav-item:hover .dropdown-content {
     display: block;
 }
-
 @keyframes slide-down {
     from {
       opacity: 0;
@@ -165,6 +164,23 @@ img.icon {
     to {
       opacity: 1;
       transform: translateY(0) translateX(-50%);
+    }
+}
+
+#dropdownMenu.dropdown-content {
+    transform: none;
+    left: -92.5vw;
+    width: 100vw;
+    animation: slide-down-M .5s ease-out;
+}
+@keyframes slide-down-M {
+    from {
+      opacity: 0;
+      transform: translateY(-20vh);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
 }
 
@@ -280,8 +296,8 @@ img.icon {
 #content {
     position: relative;
     top: 12vh;
-    left: 10%;
-    width: 80vw;
+    left: 2.5%;
+    width: 95vw;
     background-color: var(--bg-secondary);
     border-radius: 25px;
     text-align: center;
@@ -416,6 +432,10 @@ table.lightning {
 @media (max-width: 1240px) {
     .nav-toggle {
         display: block;
+        border-top-color: var(--nav-secondary);
+        border-left-color: var(--nav-secondary);
+        border-bottom-color: black;
+        border-right-color: black;
     }
     .nav-items {
         display: none;
@@ -442,13 +462,13 @@ table.lightning {
     }
 
     #content.nav3 {
-        margin-top: 10vh;   
+        margin-top: 16vh;   
     }
     #content.nav4 {
-        margin-top: 16vh;
+        margin-top: 22vh;
     }
     #content.nav5 {
-        margin-top: 22vh;
+        margin-top: 28vh;
     }
 
     .hero-table {
