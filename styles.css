@@ -169,7 +169,7 @@ img.icon {
 
 #dropdownMenu.dropdown-content {
     transform: none;
-    left: -92.5vw;
+    left: 0vw;
     width: 100vw;
     animation: slide-down-M .5s ease-out;
 }
