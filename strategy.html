@@ -40,79 +40,16 @@
 		<script src="src/contents.js"></script>
     </head>
     <body>
-        <!-- Navigation Bar -->
-		<nav class="nav-bar">
-			<a href="index.html" class="home-button">
-				<img src="img/site/logo.png" alt="Home">
-			</a>
-			<!-- Dropdown Navigation Menu (for smaller screens)-->
-			<div class="mobile">
-				<button class="nav-toggle" aria-label="toggle navigation" onclick="toggleDropdown()">
-					<img src="img/site/menu.png" alt="Menu">
-				</button>
-			</div>
-			<div id="dropdownMenu" class="dropdown-content" style="display: none;">
-				<a href="intro.html?option=1" class="dropdown-option">Introduction</a>
-				<a href="progression.html?option=1" class="dropdown-option">Progression</a>
-				<a href="build.html?option=1" class="dropdown-option">Builds</a>
-				<a href="strategy.html?option=1" class="dropdown-option">Strategies</a>
-				<a href="endgame.html?option=1" class="dropdown-option">End Game</a>
-				<a href="https://docs.google.com/spreadsheets/d/1mFC-5BBNE49KBiTL_vjerDu-Dr8S3309pLkJZRp0D18/edit?usp=sharing" class="dropdown-option">Spreadsheet</a>
-				<a href="https://docs.google.com/document/d/1kooQyxEFcIqtrmerY3ZCQY6Cq7NIIX_booiPAYg2yFQ/edit?usp=sharing" class="dropdown-option">Original Document</a>
-				<a href="https://github.com/DarK-Zer0/Showdown" class="dropdown-option">Source</a>
-				<a href="changelog.html" class="dropdown-option">Changelog</a>
-			</div>
-			<!-- Default Navigation Menu -->
-			<div class ="nav-items">
-				<div class="nav-item">Introduction
-					<div class="dropdown-content">
-						<a href="intro.html?option=1" class="dropdown-option">Getting Started</a>
-						<a href="intro.html?option=2" class="dropdown-option">Heroes</a>
-						<a href="intro.html?option=3" class="dropdown-option">Glossary</a>
-					</div>
-				</div>
-				<div class="nav-item">Progression
-					<div class="dropdown-content">
-						<a href="progression.html?option=1" class="dropdown-option">Sense Level</a>
-						<a href="progression.html?option=2" class="dropdown-option">Hero Level</a>
-						<a href="progression.html?option=3" class="dropdown-option">Souljades</a>
-						<a href="progression.html?option=4" class="dropdown-option">Recasting</a>
-					</div>
-				</div>
-				<div class="nav-item">Builds
-					<div class="dropdown-content">
-						<a href="build.html?option=1" class="dropdown-option">Potential Plans</a>
-						<a href="build.html?option=2" class="dropdown-option">Jade Set Ups</a>
-						<a href="build.html?option=3" class="dropdown-option">Current Meta</a>
-					</div>
-				</div>
-				<div class="nav-item">Strategies
-					<div class="dropdown-content">
-						<a href="strategy.html?option=1" class="dropdown-option">Attack Rotations [WIP]</a>
-						<a href="strategy.html?option=2" class="dropdown-option">Dodge Canceling</a>
-						<a href="strategy.html?option=3" class="dropdown-option">Knowing Openings</a>
-						<a href="strategy.html?option=4" class="dropdown-option">Parry Chains</a>
-					</div>
-				</div>
-				<div class="nav-item">End Game
-					<div class="dropdown-content">
-						<a href="endgame.html?option=1" class="dropdown-option">Doom</a>
-						<a href="endgame.html?option=2" class="dropdown-option">Speedrun</a>
-						<a href="endgame.html?option=3" class="dropdown-option">Enigma Domain</a>
-						<a href="endgame.html?option=4" class="dropdown-option">Yama's Abyss</a>
-						<a href="endgame.html?option=5" class="dropdown-option">Leaderboard</a>
-					</div>
-				</div>
-				<div class="nav-item">Extras
-					<div class="dropdown-content">
-						<a href="https://docs.google.com/spreadsheets/d/1mFC-5BBNE49KBiTL_vjerDu-Dr8S3309pLkJZRp0D18/edit?usp=sharing" class="dropdown-option">Spreadsheet</a>
-						<a href="https://docs.google.com/document/d/1kooQyxEFcIqtrmerY3ZCQY6Cq7NIIX_booiPAYg2yFQ/edit?usp=sharing" class="dropdown-option">Original Document</a>
-						<a href="https://github.com/DarK-Zer0/Showdown" class="dropdown-option">Source</a>
-						<a href="changelog.html" class="dropdown-option">Changelog</a>
-					</div>
-				</div>
-			</div>
-		</nav>
+		<!-- Navigation Bar -->
+		<div id="navbar"></div>
+			<!-- Load Navigation Bar Script -->
+			<script>
+				fetch('navbar.html')
+					.then(response => response.text())
+					.then(data => {
+					document.getElementById('navbar').innerHTML = data;
+				});
+			</script>
 
 		<!-- Title -->
 		<h1>STRATEGIES</h1>
