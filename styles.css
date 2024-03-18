@@ -316,7 +316,7 @@ table {
     overflow: hidden;
     padding: 10px 5px;
     word-break: normal;
-    margin-bottom: 1.5vh;
+    margin: 1.5vh auto;
 }
 .portrait {
     object-fit: contain;
@@ -325,10 +325,13 @@ table {
 }
 .details {
     text-align: center;
-    width: 50vw;
+    width: 64vw;
 }
 .details img {
     width: 100%;
+}
+.subject {
+    width: 30vw;
 }
 .label {
     font-weight: bold;
@@ -477,6 +480,9 @@ table.lightning {
     .hero-table .row {     
         display: inline-block;
         justify-content: center;
+    }
+    .hero-table .row .subject {
+        margin: 0 auto;
     }
 }
 
