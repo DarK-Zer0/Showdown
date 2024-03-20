@@ -57,6 +57,10 @@ h1.alt {
     padding-inline-start: 0;
 }
 
+.square {
+    list-style-type: square;
+}
+
 /* Media Stylings */
 .alt-bg {
     position: fixed;
@@ -376,6 +380,13 @@ table.attack .portrait {
     width: 30vw;
 }
 
+.wielding .portrait {
+    width: 100%;
+}
+.wielding td:first-child {
+    width: calc(95vw - 64vw - 5px);
+}
+
 /* Hero Table Stylings */
 .hero-table {
     display: flex;
@@ -522,5 +533,10 @@ table.lightning {
     }
     .gif-small {
         height: 15vh;
+    }
+    
+    .ice img,
+    .lightning img {
+        max-width: 70vw;
     }
 }
