@@ -98,16 +98,18 @@ img.icon {
 }
 
 /* Webiste Navigation Bar Stylings */
-.nav-bar {
+#navbar {
     position: sticky;
     z-index: 3;
     top: 0;
+    height: 8vh;
+    width: 100%;
+}
+.nav-bar {
     display: flex;
     justify-content: space-between;
     text-align: center;
     align-items: center;
-    height: 8vh;
-    width: 100%;
     background-color: var(--nav-primary);
     color: var(--bg-primary);
     border: 1px solid black;
