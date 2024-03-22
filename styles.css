@@ -373,6 +373,7 @@ table {
 .archetype img, .weapons img {
     height: 100%;
     width: auto;
+    max-width: 20vw;
 }
 table .description {
     text-align: center;
