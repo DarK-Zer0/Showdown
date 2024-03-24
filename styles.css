@@ -440,7 +440,8 @@ table.changelog th:nth-child(3), table.changelog td:nth-child(3) {
 
 /* Souljade Set Ups Styling */
 table.ice,
-table.lightning {
+table.lightning,
+table.fire {
     border-collapse: collapse;
     width: 90%;
     margin-left: auto;
@@ -452,6 +453,9 @@ table.ice {
 }
 table.lightning {
     background-color: palegoldenrod;
+}
+table.fire {
+    background-color: lightsalmon;
 }
 .ice th, .ice td, 
 .lightning th, .lightning td {
