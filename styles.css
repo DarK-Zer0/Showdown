@@ -458,7 +458,8 @@ table.fire {
     background-color: lightsalmon;
 }
 .ice th, .ice td, 
-.lightning th, .lightning td {
+.lightning th, .lightning td,
+.fire th, .fire td {
     padding: 8px;
     width: 50%;
     text-align: center;
