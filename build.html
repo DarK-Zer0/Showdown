@@ -57,17 +57,607 @@
 		<!-- Page Navigation -->
 		<nav class="page-nav">
 			<div class="page-nav-items">
-				<button onclick="showDiv(1, this)" class="page-nav-item">Potential Plans</button>
-				<button onclick="showDiv(2, this)" class="page-nav-item">Jade Set Ups</button>
-				<button onclick="showDiv(3, this)" class="page-nav-item">Wielding Jades</button>
+				<button onclick="showDiv(1, this)" class="page-nav-item">Jade Set Ups</button>
+				<button onclick="showDiv(2, this)" class="page-nav-item">Wielding Jades</button>
+				<button onclick="showDiv(3, this)" class="page-nav-item">Potential Plans</button>
 			</div>
 		</nav>
 
 		<!-- Page Content -->
 		<div id="content" class="nav3">
+
+			<!-- Jade Set Ups -->
+			<div id="div1" class="content" style="display: none;">
+				<h1>Jade Set Ups</h1>
+				<p class="center">
+					This section will showcase the standard Souljade setups for each element, 
+					including their respective strengths and weaknesses. 
+					Ensure you replace the (Ice/Thunder)-Wielding Souljade with the one corresponding to your hero's favored element.
+					See <a href="#" onclick="showDiv(2, this); return false;">Wielding Jades</a> for more info.
+					<br><br>The following builds are listed with no particular order in mind aside from their main damage source. 
+					Difficulty does not denote how strong a build is, but rather how hard it is to use it effectively. 
+				</p>
+				
+				<!-- Fire Builds -->
+				<h2 style="color: orangered">Fire Builds</h2>
+				<!-- Ignited Riposte -->
+				<table class="fire">
+					<tr class="header">
+						<th colspan="2">Ignited Riposte</th>
+					</tr>
+					<tr>
+						<td>
+							<img src="img/builds/fire/ignitedriposte.png" alt="Skyfire, Defuse • Raging Flames, Defuse • Aegis-Break, Defuse • Solidification, Defuse • Flaming Blade, & Copper Ward" class="portrait">
+							<p class="caption">Potential Plans:
+								<br><a href="build.html?option=3#Blazing Flame">Blazing Flame</a>
+							</p>
+						</td>
+						<td>
+							<p class="label">Difficulty:</p> 
+								<!-- 4-Stars -->
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
+							<p class="label">Strengths:</p>
+							<ul class="left square">
+								<li>Highest DoT Burn build</li>
+								<li>Doesn't rely on good Attributes for high output</li>
+								<li>Ignores Impassable Omen immunity</li>
+							</ul>
+							<p class="label">Weaknesses:</p>
+							<ul class="left square">
+								<li>Requires constant defuses to maintain power</li>
+								<li>Heroes with Defuse • Solve (unreliable defuses)</li>
+								<li>Burns can only stack once individually</li>
+							</ul>
+							<p class="label">Recommended Heroes:</p>
+							<p class="center"><strong>Feria Shen, Tianhai, Tarka Ji, Yueshan </strong> & <strong>Wuchen</strong></p>
+						</td></td>
+					</tr>
+				</table>
+				<!-- Voltaic Discharger -->
+				<table class="fire">
+					<tr class="header">
+						<th colspan="2">Voltaic Discharger</th>
+					</tr>
+					<tr>
+						<td>
+							<img src="img/builds/fire/voltaicdischarger.png" alt="Skyfire, Defuse • Raging Flames, Stormstride Sword, Defuse • Solidification, Defuse • Flaming Blade, & Copper Ward" class="portrait">
+							<p class="caption">Potential Plans:
+								<br><a href="build.html?option=3#Blazing Flame">Blazing Flame</a>
+							</p>
+						</td>
+						<td>
+							<p class="label">Difficulty:</p> 
+								<!-- 4-Stars -->
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
+							<p class="label">Strengths:</p>
+							<ul class="left square">
+								<li>Charges Defuse • Raging Flames quickly</li>
+								<li>Greatly increases the DPS Defuse Counterattacks that otherwise would be low</li>
+								<li>Can pair with Honed Rage for powerful Aegis-Break martial skills</li>
+							</ul>
+							<p class="label">Weaknesses:</p>
+							<ul class="left square">
+								<li>Requires semi-constant defuses to maintain power</li>
+								<li>Heroes with Defuse • Solve (unreliable defuses)</li>
+								<li>Burns can only stack once individually</li>
+							</ul>
+							<p class="label">Recommended Heroes:</p>
+							<p class="center"><strong>Feria Shen, Tianhai, Tarka Ji, </strong> & <strong>Wuchen</strong></p>
+						</td></td>
+					</tr>
+				</table>
+				<!-- Scorched Maelstrom -->
+				<table class="fire">
+					<tr class="header">
+						<th colspan="2">Scorched Maelstrom</th>
+					</tr>
+					<tr>
+						<td>
+							<img src="img/builds/fire/scorchedmaelstrom.png" alt="Defuse • Raging Flames, Incineration, Ember, Draco Stride, Defuse • Flaming Blade, & Copper Ward" class="portrait">
+							<p class="caption">Potential Plans:
+								<br><a href="build.html?option=3#Blazing Flame">Blazing Flame</a> w/ Thunder-Wielding Souljades or 
+								<br><a href="build.html?option=3#Hydroflare">Hydroflare</a> w/ Ice-Wielding Souljades
+							</p>
+						</td>
+						<td>
+							<p class="label">Difficulty:</p> 
+								<!-- 4.5-Stars -->
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/halffilledstar.png" alt="Half-Filled Difficulty Star" class="icon">
+							<p class="label">Strengths:</p>
+							<ul class="left square">
+								<li>High bursts of damage from Hydroflares</li>
+								<li>Can instakill some mobs when Defused and Dodge Canceled</li>
+								<li>No wasted Burn ticks</li>
+							</ul>
+							<p class="label">Weaknesses:</p>
+							<ul class="left square">
+								<li>Applies self-burns</li>
+								<li>Heroes with Defuse • Solve</li>
+								<li>Can deal great damage to self from consecutive Hydroflares</li>
+							</ul>
+							<p class="label">Recommended Heroes:</p>
+							<p class="center"><strong>Feria Shen, Tianhai, Tarka Ji,</strong> & <strong>Yueshan</strong></p>
+						</td></td>
+					</tr>
+				</table>
+				<!-- Ember Martyr -->
+				<table class="fire">
+					<tr class="header">
+						<th colspan="2">Ember Martyr</th>
+					</tr>
+					<tr>
+						<td>
+							<img src="img/builds/fire/embermartyr.png" alt="Incineration, Ember, Draco Stride, Wielding Jade, Soul-Drawing, & Copper Ward" class="portrait">
+							<p class="caption">Potential Plans:
+								<br><a href="build.html?option=3#Blazing Flame">Blazing Flame</a> w/Thunder-Wielding Souljades or
+								<br><a href="build.html?option=3#Hydroflare">Hydroflare</a> w/ Ice-Wielding Souljades
+							</p>
+						</td>
+						<td>
+							<p class="label">Difficulty:</p> 
+								<!-- 5-Stars -->
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<p class="label">Strengths:</p>
+							<ul class="left square">
+								<li>Constant activation of Hydroflares</li>
+								<li>Doesn't rely on defuses to power</li>
+								<li>No wasted Burn ticks</li>
+							</ul>
+							<p class="label">Weaknesses:</p>
+							<ul class="left square">
+								<li>Can deal great damage to self from consecutive Hydroflares</li>
+								<li>Relatively low attack bonus</li>
+								<li>Equipping Honed Flame (Potential) will make your armor Burn-able</li>
+							</ul>
+							<p class="label">Recommended Heroes:</p>
+							<p class="center"><strong>Viper Ning, Temulch, Kurumi </strong> & <strong>Valda Cui</strong></p>
+						</td></td>
+					</tr>
+				</table>
+
+				<!-- Ice Builds -->
+				<hr><h2 style="color: aqua">Ice Builds</h2>
+				<!-- Absolute Zero -->
+				<table class="ice">
+					<tr class="header">
+						<th colspan="2">Absolute Zero</th>
+					</tr>
+					<tr>
+						<td>
+							<img src="img/builds/ice/absolutezero.png" alt="Successive Ice Blast, Frozen Blast, Ice-Wielding Jade, Defuse Thaw, Sub-Zero Seal & Tundra Might" class="portrait">
+							<p class="caption">Potential Plans:
+								<br><a href="build.html?option=3#Ice Blast">Ice Blast</a>
+							</p>
+						</td>
+						<td>
+							<p class="label">Difficulty:</p> 
+								<!-- 2.5-Stars -->
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/halffilledstar.png" alt="Half-Filled Difficulty Star" class="icon">
+								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
+								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
+							<p class="label">Strengths:</p>
+							<ul class="left square">
+								<li>Among the highest activation rate for Ice Blasts</li>
+								<li>Great for clearing mobs</li>
+								<li>Constant attack bonus</li>
+							</ul>
+							<p class="label">Weaknesses:</p>
+							<ul class="left square">
+								<li>Passive generation of Frostbite is a slightly faster</li>
+								<li>Relatively low attack bonus</li>
+								<li>Relies on Honed Darkness to be efficient</li>
+							</ul>
+							<p class="label">Recommended Heroes:</p>
+							<p class="center"><strong>Viper Ning, Matari, Tianhai, Temulch, Kurumi, Valda Cui, </strong> & <strong>Feria Shen</strong></p>
+						</td></td>
+					</tr>
+				</table>
+				<!-- Ice Nova -->
+				<table class="ice">
+					<tr class="header">
+						<th colspan="2">Ice Nova</th>
+					</tr>
+					<tr>
+						<td>
+							<img src="img/builds/ice/icenova.png" alt="Successive Ice Blast, Frozen Blast, Spring's Call, Ice-Wielding Jade, Defuse Thaw, & Sub-Zero Seal" class="portrait">
+							<p class="caption">Potential Plans:
+								<br><a href="build.html?option=3#Ice Blast">Ice Blast</a>
+							</p>
+						</td>
+						<td>
+							<p class="label">Difficulty:</p> 
+								<!-- 3-Stars -->
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
+								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
+							<p class="label">Strengths:</p>
+							<ul class="left square">
+								<li>Potentially high attack bonus</li>
+								<li>Clears mobs quickly</li>
+								<li>High burst damage</li>
+							</ul>
+							<p class="label">Weaknesses:</p>
+							<ul class="left square">
+								<li>Low base attack bonus</li>
+								<li>Passive generation of Frostbite is slightly faster</li>
+								<li>Requires a successful defuse to be at full power</li>
+							</ul>
+							<p class="label">Recommended Heroes:</p>
+							<p class="center"><strong>Viper Ning, Matari, Temulch, Valda Cui,</strong> & <strong>Feria Shen</strong></p>
+						</td>
+					</tr>
+				</table>
+				<!-- Icy Restorator -->
+				<table class="ice">
+					<tr class="header">
+						<th colspan="2">Icy Restorator</th>
+					</tr>
+					<tr>
+						<td>
+							<img src="img/builds/ice/icyrestorator.png" alt="Successive Ice Blast, Renewed Vigor, Soul Shiver, Ice-Wielding Jade, Defuse Thaw, & Sub-Zero Seal" class="portrait">
+							<p class="caption">Potential Plans:
+								<br><a href="build.html?option=3#Ice Blast">Ice Blast</a>
+							</p>
+						</td>
+						<td>
+							<p class="label">Difficulty:</p> 
+								<!-- 1-Star -->
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
+								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
+								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
+								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
+							<p class="label">Strengths:</p>
+							<ul class="left square">
+								<li>Constant healing when above 50% HP</li>
+								<li>Decently high constant Attack value</li>
+								<li>Extremely fault tolerant</li>
+							</ul>
+							<p class="label">Weaknesses:</p>
+							<ul class="left square">
+								<li>No reward for defusing/parrying</li>
+								<li>Slight Diminishing Returns from Attack</li>
+								<li>Build is essentially inactive when below 50% HP</li>
+							</ul>
+							<p class="label">Recommended Heroes:</p>
+							<p class="center"><strong>Viper Ning, Feria Shen, Tianhai, Temulch, Kurumi, Valda Cui, Matari,</strong> & <strong>Wuchen</strong></p>
+						</td>
+					</tr>
+				</table>
+
+				<!-- Thunder Builds -->
+				<hr><h2 style="color: saddlebrown">Thunder Builds</h2>
+				<!-- Stormcaller -->
+				<table class="lightning">
+					<tr class="header">
+						<th colspan="2">Stormcaller</th>
+					</tr>
+					<tr>
+						<td>
+							<img src="img/builds/thunder/stormcaller.png" alt="Thunderpull, Thunder Counter, Spring's Call, Thunder-Wielding Jade, Ice Break, & Sub-Zero Seal" class="portrait">
+							<p class="caption">Potential Plans:
+								<br><a href="build.html?option=3#Blazing Flame">Blazing Flame</a>
+							</p>
+						</td>
+						<td>
+							<p class="label">Difficulty:</p> 
+								<!-- 3-Stars -->
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
+								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
+							<p class="label">Strengths:</p>
+							<ul class="left square">
+								<li>Thunder Counters are always at full power</li>
+								<li>Can unleash full power from regular parries and Thunder Counter</li>
+								<li>Highest potential Attack value</li>
+							</ul>
+							<p class="label">Weaknesses:</p>
+							<ul class="left square">
+								<li>Frostbite builds on self gradually</li>
+								<li>Loses damage buff while below 50% HP</li>
+								<li>May be hard to get a parry in Trios</li>
+							</ul>
+							<p class="label">Recommended Heroes:</p>
+							<p class="center"><strong>Feria Shen, Tianhai, Tarka Ji, Kurumi, Yueshan</strong> & <strong>Wuchen</strong></p>
+						</td>
+					</tr>
+				</table>
+				<!-- Arc Reactor -->
+				<table class="lightning">
+					<tr class="header">
+						<th colspan="2">Arc Reactor</th>
+					</tr>
+					<tr>
+						<td>
+							<img src="img/builds/thunder/arcreactor.png" alt="Thunderpull, Thunder Counter, Spring's Call, Ice Break, Sub-Zero Seal, & Thunderproof" class="portrait">
+							<p class="caption">Potential Plans:
+								<br><a href="build.html?option=3#Blazing Flame">Blazing Flame</a>
+							</p>
+						</td>
+						<td>
+							<p class="label">Difficulty:</p> 
+								<!-- 2.5-Stars -->
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/halffilledstar.png" alt="Half-Filled Difficulty Star" class="icon">
+								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
+								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
+							<p class="label">Strengths:</p>
+							<ul class="left square">
+								<li>Fast build-up from Thunderpull for Thunder Counters</li>
+								<li>Universal Souljades (not hero specific)</li>
+								<li>No flinching from Divine Thunder on yourself</li>
+							</ul>
+							<p class="label">Weaknesses:</p>
+							<ul class="left square">
+								<li>Lacks a Wielding Souljade for activating Divine Thunder on enemies easier</li>
+								<li>Relies on more openings to land Thunder Counters safely</li>
+								<li>Requires high Divine Thunder DMG to compensate for lack of base DPS</li>
+							</ul>
+							<p class="label">Recommended Heroes:</p>
+							<p class="center"><strong>Feria Shen, Viper Ning, Tianhai</strong> & <strong>Wuchen</strong></p>
+						</td>
+					</tr>
+				</table>
+				<!-- Lightning Fury -->
+				<table class="lightning">
+					<tr class="header">
+						<th colspan="2">Lightning Fury</th>
+					</tr>
+					<tr>
+						<td>
+							<img src="img/builds/thunder/lightningfury.png" alt="Thunderpull, Thunder Counter, Desperation, Stormstride, -Wielding Souljade, & Backfire" class="portrait">
+							<p class="caption">Potential Plans:
+								<br><a href="build.html?option=3#Blazing Flame">Blazing Flame</a>
+							</p>
+						</td>
+						<td>
+							<p class="label">Difficulty:</p> 
+								<!-- 4-Stars -->
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
+							<p class="label">Strengths:</p>
+							<ul class="left square">
+								<li>Consistent high damage output</li>
+								<li>Doesn't build frostbite</li>
+								<li>Bonus DPS from dodge canceling & dodges</li>
+							</ul>
+							<p class="label">Weaknesses:</p>
+							<ul class="left square">
+								<li>Vulnerable to burn, poison, and corruption ailments</li>
+								<li>Loses damage buff above 50% HP</li>
+								<li>Has a lower cap in its full power</li>
+							</ul>
+							<p class="label">Recommended Heroes:</p>
+							<p class="center"><strong>Feria Shen, Tianhai, Tarka Ji, Kurumi, </strong> & <strong>Yueshan</strong></p>
+						</td>
+					</tr>
+				</table>
+				<!-- Hemostatic Shock -->
+				<table class="lightning">
+					<tr class="header">
+						<th colspan="2">Hemostatic Shock</th>
+					</tr>
+					<tr>
+						<td>
+							<img src="img/builds/thunder/hemostaticshock.png" alt="Thunderpull, Thunder Counter, Stormstride, Weapon Sap, -Wielding Souljade, & Backfire" class="portrait">
+							<p class="caption">Potential Plans:
+								<br><a href="build.html?option=3#Blazing Flame">Blazing Flame</a>
+							</p>
+						</td>
+						<td>
+							<p class="label">Difficulty:</p> 
+								<!-- 3.5-Stars -->
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+								<img src="img/site/halffilledstar.png" alt="Half-Filled Difficulty Star" class="icon">
+								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
+							<p class="label">Strengths:</p>
+							<ul class="left square">
+								<li>Consistent high damage output</li>
+								<li>Allows the use of Sap Souljades (replace with corresponding weapon sap)</li>
+								<li>Bonus DPS from dodge canceling & dodges</li>
+							</ul>
+							<p class="label">Weaknesses:</p>
+							<ul class="left square">
+								<li>Heal from Sap may be limited due to Backfire</li>
+								<li>Somewhat vulnerable to burn, poison and corruption ailments</li>
+								<li>Has a lower cap in its full power</li>
+							</ul>
+							<p class="label">Recommended Heroes:</p>
+							<p class="center"><strong>Feria Shen, Tianhai, Tarka Ji, Kurumi, </strong> & <strong>Yueshan</strong></p>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<!-- Wielding Jades -->
+			<div id="div2" class="content" style="display: none;">
+				<h1>Wielding Jades</h1>
+				<p class="center">With so many choices in Souljades and Potential Plans, it can be hard to know what build to go with.
+					This section will help for choosing the most optimal Wielding Souljades as well as what Potential Plans they best combo with.
+					Souljades with "-Wielding" in their name gain bonus elemental damage for that corresponding type, making it so you're able to activate
+					Ice Blasts or Divine Thunder faster on enemies using the special attacks they give. 
+					They also generally have better DPS than their base counterpart.
+				</p>
+				<h3>Viper Ning</h3>
+					<!-- Viper Ning -->
+					<table class="hero-info wielding">
+						<tbody>
+						<tr>
+							<td><img src="img/portraits/viper.png" alt="Viper Ning" class="portrait"></td>
+							<td class="details">
+								<img src="img/builds/wielding/horizontalenergy.png" alt="Horizontal Energy • Ice-Wielding" class="with-caption">
+								<p class="description">Best used with <a href="build.html?option=3#Ice Blast">Ice Blast</a> Potential Plans.</p>
+								<img src="img/builds/wielding/verticalenergy.png" alt="Vertical Energy • Thunder-Wielding" class="with-caption">
+								<p class="description">Best used with <a href="build.html?option=3#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+					<h3>Feria Shen</h3>
+					<!-- Feria Shen -->
+					<table class="hero-info wielding">
+						<tbody>
+						<tr>
+							<td><img src="img/portraits/feria.png" alt="Feria Shen" class="portrait"></td>
+							<td class="details">
+								<img src="img/builds/wielding/velocityuntold.png" alt="Velocity Untold • Ice-Wielding" class="with-caption">
+								<p class="description">Best used with <a href="build.html?option=3#Ice Blast">Ice Blast</a> Potential Plans.</p>
+								<img src="img/builds/wielding/velocityuntold2.png" alt="Velocity Untold • Thunder-Wielding" class="with-caption">
+								<p class="description">Best used with <a href="build.html?option=3#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+					<h3>Tianhai</h3>
+					<!-- Tianhai -->
+					<table class="hero-info wielding">
+						<tbody>
+							<tr>
+								<td><img src="img/portraits/tianhai.png" alt="Tianhai" class="portrait"></td>
+								<td class="details">
+									<img src="img/builds/wielding/jabbing.png" alt="Jabbing • Ice-Wielding" class="with-caption">
+									<p class="description">Best used with <a href="build.html?option=3#Ice Blast">Ice Blast</a> or 
+										<a href="build.html?option=3#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
+									<img src="img/builds/wielding/onslaught.png" alt="Onslaught • Thunder-Wielding" class="with-caption">
+									<p class="description">Best used with <a href="build.html?option=3#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<h3>Temulch</h3>
+					<!-- Temulch -->
+					<table class="hero-info wielding">
+						<tbody>
+							<tr>
+								<td><img src="img/portraits/temulch.png" alt="Temulch" class="portrait"></td>
+								<td class="details">
+									<img src="img/builds/wielding/aerialrend.png" alt="Aerial Rend • Ice-Wielding" class="with-caption">
+									<p class="description">Best used with <a href="build.html?option=3#Ice Blast">Ice Blast</a> Potential Plans</p>
+									<img src="img/builds/wielding/rockfallslash.png" alt="Rockfall Slash • Thunder-Wielding" class="with-caption">
+									<p class="description">Best used with <a href="build.html?option=3#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<h3>Tarka Ji</h3>
+					<!-- Tarka Ji -->
+					<table class="hero-info wielding">
+						<tbody>
+							<tr>
+								<td><img src="img/portraits/tarka.png" alt="Tarka Ji" class="portrait"></td>
+								<td class="details">
+									<img src="img/builds/wielding/petalfallflurry.png" alt="Petal Fall Flurry • Thunder-Wielding" class="with-caption">
+									<p class="description">Best used with <a href="build.html?option=3#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<h3>Kurumi</h3>
+					<!-- Kurumi -->
+					<table class="hero-info wielding">
+						<tbody>
+							<tr>
+								<td><img src="img/portraits/kurumi.png" alt="Kurumi" class="portrait"></td>
+								<td class="details">
+									<img src="img/builds/wielding/horizontalblinkstrike.png" alt="Horizontal Blink Strike • Ice-Wielding" class="with-caption">
+									<p class="description">Best used with <a href="build.html?option=3#Ice Blast">Ice Blast</a> or 
+										<a href="build.html?option=3#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
+									<img src="img/builds/wielding/verticalblinkstrike.png" alt="Vertical Blink Strike • Thunder-Wielding" class="with-caption">
+									<p class="description">Best used with <a href="build.html?option=3#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<h3>Valda Cui</h3>
+					<!-- Valda Cui -->
+					<table class="hero-info wielding">
+						<tbody>
+							<tr>
+								<td><img src="img/portraits/valda.png" alt="Valda Cui" class="portrait"></td>
+								<td class="details">
+									<img src="img/builds/wielding/crescentslam-I.png" alt="Crescent Slam • Ice-Wielding" class="with-caption">
+									<p class="description">Best used with <a href="build.html?option=3#Ice Blast">Ice Blast</a> or 
+										<a href="build.html?option=3#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
+									<img src="img/builds/wielding/crescentslam-T.png" alt="Crescent Slam • Thunder-Wielding" class="with-caption">
+									<p class="description">Best used with <a href="build.html?option=3#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<h3>Yueshan</h3>
+					<!-- Yueshan -->
+					<table class="hero-info wielding">
+						<tbody>
+							<tr>
+								<td><img src="img/portraits/yueshan.png" alt="Yueshan" class="portrait"></td>
+								<td class="details">
+									<img src="img/builds/wielding/torrentflow.png" alt="Torrent Flow • Thunder-Wielding" class="with-caption">
+									<p class="description">Best used with <a href="build.html?option=3#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<h3>Matari</h3>
+					<!-- Matari -->
+					<table class="hero-info wielding">
+						<tbody>
+							<tr>
+								<td><img src="img/portraits/matari.png" alt="Matari" class="portrait"></td>
+								<td class="details">
+									<img src="img/builds/wielding/assassinlunge.png" alt="Assassin's Lunge • Ice-Wielding" class="with-caption">
+									<p class="description">Best used with <a href="build.html?option=3#Ice Blast">Ice Blast</a> Potential Plans.</p>
+									<img src="img/builds/wielding/uppercutrush.png" alt="Uppercut Rush • Ice-Wielding" class="with-caption">
+									<p class="description">Best used with <a href="build.html?option=3#Ice Blast">Ice Blast</a> or 
+										<a href="build.html?option=3#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<h3>Wuchen</h3>
+					<!-- Wuchen -->
+					<table class="hero-info wielding">
+						<tbody>
+							<tr>
+								<td><img src="img/portraits/wuchen.png" alt="Wuchen" class="portrait"></td>
+								<td class="details">
+									<img src="img/builds/wielding/windytrinity.png" alt="Windy Trinity • Wielding" class="with-caption">
+									<p class="description">Best used with <a href="build.html?option=3#Ice Blast">Ice Blast</a> Potential Plans.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+			</div>
 			
 			<!-- Potential Plans -->
-			<div id="div1" class="content" style="display: none;">
+			<div id="div3" class="content" style="display: none;">
 				<h1>Potential Plans</h1>
 				<p class="center">The way you design your Potential Plans will be the backbone of your playstyle.
 					This page will show you a variety of viable Potential Plans you can work with and where they are most effective.</p>
@@ -85,7 +675,7 @@
 						<img src="img/builds/trees/bf-ms.png" alt="Blazing Flame Path with Divine Aegis-Break" class="large-example with-caption">
 						<p class="caption">Focuses on spamming your Aegis-Break for damage output and procing Divine Thunder on enemies, 
 							which then apply a Burn for further increased Honed Duration.
-							Main variant recommended for Thunder builds.
+							This variant is recommended for all Thunder builds.
 							<br><strong>Recommended Heroes: Viper Ning, Tianhai, Kurumi, Valda Cui, & Wuchen</strong>
 						</p>
 					<h4 id="BF-SB">Self Burn Variant</h4>
@@ -149,540 +739,6 @@
 						<br><br><strong>Recommended Heroes: Viper Ning, Feria Shen, Tianhai, Temulch, Kurumi, & Valda Cui</strong>
 					</p>
 						<img src="img/builds/trees/hf.png" alt="Hydroflare Path" class="large-example with-caption">
-			</div>
-
-			<!-- Jade Set Ups -->
-			<div id="div2" class="content" style="display: none;">
-				<h1>Jade Set Ups</h1>
-				<p class="center">
-					This section will showcase the standard Souljade setups for each element, 
-					including their respective strengths and weaknesses. 
-					Ensure you replace the (Ice/Thunder)-Wielding Souljade with the one corresponding to your hero's favored element.
-					See <a href="#" onclick="showDiv(3, this); return false;">Wielding Jades</a> for more info.
-					<br><br>The following builds are listed with no particular order in mind aside from their main damage source. 
-					Difficulty does not denote how strong a build is, but rather how hard it is to use it effectively. 
-				</p>
-				
-				<!-- Fire Builds -->
-				<h2 style="color: orangered">Fire Builds</h2>
-				<!-- Ignited Riposte -->
-				<table class="fire">
-					<tr class="header">
-						<th colspan="2">Ignited Riposte</th>
-					</tr>
-					<tr>
-						<td><img src="img/builds/fire/ignitedriposte.png" alt="Skyfire, Defuse • Raging Flames, Defuse • Aegis-Break, Defuse • Solidification, Defuse • Flaming Blade, & Copper Ward" class="portrait"></td>
-						<td>
-							<p class="label">Difficulty:</p> 
-								<!-- 4-Stars -->
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
-							<p class="label">Strengths:</p>
-							<ul class="left square">
-								<li>Highest DoT Burn build</li>
-								<li>Doesn't rely on good Attributes for high output</li>
-								<li>Ignores Impassable Omen immunity</li>
-							</ul>
-							<p class="label">Weaknesses:</p>
-							<ul class="left square">
-								<li>Requires constant defuses to maintain power</li>
-								<li>Heroes with Defuse • Solve (unreliable defuses)</li>
-								<li>Burns can only stack once individually</li>
-							</ul>
-							<p class="label">Recommended Heroes:</p>
-							<p class="center"><strong>Feria, Tianhai, Tarka Ji, Yueshan </strong> & <strong>Wuchen</strong></p>
-						</td></td>
-					</tr>
-				</table>
-				<!-- Voltaic Discharger -->
-				<table class="fire">
-					<tr class="header">
-						<th colspan="2">Voltaic Discharger</th>
-					</tr>
-					<tr>
-						<td><img src="img/builds/fire/voltaicdischarger.png" alt="Skyfire, Defuse • Raging Flames, Stormstride Sword, Defuse • Solidification, Defuse • Flaming Blade, & Copper Ward" class="portrait"></td>
-						<td>
-							<p class="label">Difficulty:</p> 
-								<!-- 4-Stars -->
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
-							<p class="label">Strengths:</p>
-							<ul class="left square">
-								<li>Charges Defuse • Raging Flames quickly</li>
-								<li>Greatly increases the DPS Defuse Counterattacks that otherwise would be low</li>
-								<li>Can pair with Honed Rage for powerful Aegis-Break martial skills</li>
-							</ul>
-							<p class="label">Weaknesses:</p>
-							<ul class="left square">
-								<li>Requires semi-constant defuses to maintain power</li>
-								<li>Heroes with Defuse • Solve (unreliable defuses)</li>
-								<li>Burns can only stack once individually</li>
-							</ul>
-							<p class="label">Recommended Heroes:</p>
-							<p class="center"><strong>Feria, Tianhai, Tarka Ji, </strong> & <strong>Wuchen</strong></p>
-						</td></td>
-					</tr>
-				</table>
-				<!-- Scorched Maelstrom -->
-				<table class="fire">
-					<tr class="header">
-						<th colspan="2">Scorched Maelstrom</th>
-					</tr>
-					<tr>
-						<td><img src="img/builds/fire/scorchedmaelstrom.png" alt="Defuse • Raging Flames, Incineration, Ember, Draco Stride, Defuse • Flaming Blade, & Copper Ward" class="portrait"></td>
-						<td>
-							<p class="label">Difficulty:</p> 
-								<!-- 4.5-Stars -->
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/halffilledstar.png" alt="Half-Filled Difficulty Star" class="icon">
-							<p class="label">Strengths:</p>
-							<ul class="left square">
-								<li>High bursts of damage from Hydroflares</li>
-								<li>Can instakill some mobs when Defused and Dodge Canceled</li>
-								<li>No wasted Burn ticks</li>
-							</ul>
-							<p class="label">Weaknesses:</p>
-							<ul class="left square">
-								<li>Applies self-burns</li>
-								<li>Heroes with Defuse • Solve</li>
-								<li>Can deal great damage to self from consecutive Hydroflares</li>
-							</ul>
-							<p class="label">Recommended Heroes:</p>
-							<p class="center"><strong>Feria, Tianhai, Tarka Ji,</strong> & <strong>Yueshan</strong></p>
-						</td></td>
-					</tr>
-				</table>
-				<!-- Ember Martyr -->
-				<table class="fire">
-					<tr class="header">
-						<th colspan="2">Ember Martyr</th>
-					</tr>
-					<tr>
-						<td><img src="img/builds/fire/embermartyr.png" alt="Incineration, Ember, Draco Stride, Wielding Jade, Soul-Drawing, & Copper Ward" class="portrait"></td>
-						<td>
-							<p class="label">Difficulty:</p> 
-								<!-- 5-Stars -->
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<p class="label">Strengths:</p>
-							<ul class="left square">
-								<li>Constant activation of Hydroflares</li>
-								<li>Doesn't rely on defuses to power</li>
-								<li>No wasted Burn ticks</li>
-							</ul>
-							<p class="label">Weaknesses:</p>
-							<ul class="left square">
-								<li>Can deal great damage to self from consecutive Hydroflares</li>
-								<li>Relatively low attack bonus</li>
-								<li>Equipping Honed Flame (Potential) will make your armor Burn-able</li>
-							</ul>
-							<p class="label">Recommended Heroes:</p>
-							<p class="center"><strong>Viper Ning, Temulch, Kurumi </strong> & <strong>Valda Cui</strong></p>
-						</td></td>
-					</tr>
-				</table>
-
-				<!-- Ice Builds -->
-				<hr><h2 style="color: aqua">Ice Builds</h2>
-				<!-- Absolute Zero -->
-				<table class="ice">
-					<tr class="header">
-						<th colspan="2">Absolute Zero</th>
-					</tr>
-					<tr>
-						<td><img src="img/builds/ice/absolutezero.png" alt="Successive Ice Blast, Frozen Blast, Ice-Wielding Jade, Defuse Thaw, Sub-Zero Seal & Tundra Might" class="portrait"></td>
-						<td>
-							<p class="label">Difficulty:</p> 
-								<!-- 2.5-Stars -->
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/halffilledstar.png" alt="Half-Filled Difficulty Star" class="icon">
-								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
-								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
-							<p class="label">Strengths:</p>
-							<ul class="left square">
-								<li>Among the highest activation rate for Ice Blasts</li>
-								<li>Great for clearing mobs</li>
-								<li>Constant attack bonus</li>
-							</ul>
-							<p class="label">Weaknesses:</p>
-							<ul class="left square">
-								<li>Passive generation of Frostbite is a slightly faster</li>
-								<li>Relatively low attack bonus</li>
-								<li>Relies on Honed Darkness to be efficient</li>
-							</ul>
-							<p class="label">Recommended Heroes:</p>
-							<p class="center"><strong>Viper Ning, Matari, Tianhai, Temulch, Kurumi, Valda Cui, </strong> & <strong>Feria Shen</strong></p>
-						</td></td>
-					</tr>
-				</table>
-				<!-- Ice Nova -->
-				<table class="ice">
-					<tr class="header">
-						<th colspan="2">Ice Nova</th>
-					</tr>
-					<tr>
-						<td><img src="img/builds/ice/icenova.png" alt="Successive Ice Blast, Frozen Blast, Spring's Call, Ice-Wielding Jade, Defuse Thaw, & Sub-Zero Seal" class="portrait"></td>
-						<td>
-							<p class="label">Difficulty:</p> 
-								<!-- 3-Stars -->
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
-								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
-							<p class="label">Strengths:</p>
-							<ul class="left square">
-								<li>Potentially high attack bonus</li>
-								<li>Clears mobs quickly</li>
-								<li>High burst damage</li>
-							</ul>
-							<p class="label">Weaknesses:</p>
-							<ul class="left square">
-								<li>Low base attack bonus</li>
-								<li>Passive generation of Frostbite is slightly faster</li>
-								<li>Requires a successful defuse to be at full power</li>
-							</ul>
-							<p class="label">Recommended Heroes:</p>
-							<p class="center"><strong>Viper Ning, Matari, Temulch, Valda Cui,</strong> & <strong>Feria Shen</strong></p>
-						</td>
-					</tr>
-				</table>
-				<!-- Icy Restoration -->
-				<table class="ice">
-					<tr class="header">
-						<th colspan="2">Icy Restoration</th>
-					</tr>
-					<tr>
-						<td><img src="img/builds/ice/icyrestoration.png" alt="Successive Ice Blast, Renewed Vigor, Soul Shiver, Ice-Wielding Jade, Defuse Thaw, & Sub-Zero Seal" class="portrait"></td>
-						<td>
-							<p class="label">Difficulty:</p> 
-								<!-- 1-Star -->
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
-								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
-								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
-								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
-							<p class="label">Strengths:</p>
-							<ul class="left square">
-								<li>Constant healing when above 50% HP</li>
-								<li>Decently high constant Attack value</li>
-								<li>Extremely fault tolerant</li>
-							</ul>
-							<p class="label">Weaknesses:</p>
-							<ul class="left square">
-								<li>No reward for defusing/parrying</li>
-								<li>Slight Diminishing Returns from Attack</li>
-								<li>Build is essentially inactive when below 50% HP</li>
-							</ul>
-							<p class="label">Recommended Heroes:</p>
-							<p class="center"><strong>Viper Ning, Matari, Tianhai, Temulch, Kurumi, Valda Cui, </strong> & <strong>Feria Shen</strong></p>
-						</td>
-					</tr>
-				</table>
-
-				<!-- Thunder Builds -->
-				<hr><h2 style="color: saddlebrown">Thunder Builds</h2>
-				<!-- Stormcaller -->
-				<table class="lightning">
-					<tr class="header">
-						<th colspan="2">Stormcaller</th>
-					</tr>
-					<tr>
-						<td><img src="img/builds/thunder/stormcaller.png" alt="Thunderpull, Thunder Counter, Spring's Call, Thunder-Wielding Jade, Ice Break, & Sub-Zero Seal" class="portrait"></td>
-						<td>
-							<p class="label">Difficulty:</p> 
-								<!-- 3-Stars -->
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
-								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
-							<p class="label">Strengths:</p>
-							<ul class="left square">
-								<li>Thunder Counters are always at full power</li>
-								<li>Can unleash full power from regular parries and Thunder Counter</li>
-								<li>Highest potential Attack value</li>
-							</ul>
-							<p class="label">Weaknesses:</p>
-							<ul class="left square">
-								<li>Frostbite builds on self gradually</li>
-								<li>Loses damage buff while below 50% HP</li>
-								<li>May be hard to get a parry in Trios</li>
-							</ul>
-							<p class="label">Recommended Heroes:</p>
-							<p class="center"><strong>Tianhai, Tarka Ji, Kurumi, Yueshan</strong> & <strong>Wuchen</strong></p>
-						</td>
-					</tr>
-				</table>
-				<!-- Arc Reactor -->
-				<table class="lightning">
-					<tr class="header">
-						<th colspan="2">Arc Reactor</th>
-					</tr>
-					<tr>
-						<td><img src="img/builds/thunder/arcreactor.png" alt="Thunderpull, Thunder Counter, Spring's Call, Ice Break, Sub-Zero Seal, & Thunderproof" class="portrait"></td>
-						<td>
-							<p class="label">Difficulty:</p> 
-								<!-- 2.5-Stars -->
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/halffilledstar.png" alt="Half-Filled Difficulty Star" class="icon">
-								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
-								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
-							<p class="label">Strengths:</p>
-							<ul class="left square">
-								<li>Fast build-up from Thunderpull for Thunder Counters</li>
-								<li>Universal Souljades (not hero specific)</li>
-								<li>No flinching from Divine Thunder on yourself</li>
-							</ul>
-							<p class="label">Weaknesses:</p>
-							<ul class="left square">
-								<li>Lacks a Wielding Souljade for activating Divine Thunder on enemies easier</li>
-								<li>Relies on more openings to land Thunder Counters safely</li>
-								<li>Requires high Divine Thunder DMG to compensate for lack of base DPS</li>
-							</ul>
-							<p class="label">Recommended Heroes:</p>
-							<p class="center"><strong>Viper Ning, Tianhai</strong> & <strong>Wuchen</strong></p>
-						</td>
-					</tr>
-				</table>
-				<!-- Lightning Fury -->
-				<table class="lightning">
-					<tr class="header">
-						<th colspan="2">Lightning Fury</th>
-					</tr>
-					<tr>
-						<td><img src="img/builds/thunder/lightningfury.png" alt="Thunderpull, Thunder Counter, Desperation, Stormstride, -Wielding Souljade, & Backfire" class="portrait"></td>
-						<td>
-							<p class="label">Difficulty:</p> 
-								<!-- 4-Stars -->
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
-							<p class="label">Strengths:</p>
-							<ul class="left square">
-								<li>Consistent high damage output</li>
-								<li>Doesn't build frostbite</li>
-								<li>Bonus DPS from dodge canceling & dodges</li>
-							</ul>
-							<p class="label">Weaknesses:</p>
-							<ul class="left square">
-								<li>Vulnerable to burn, poison, and corruption ailments</li>
-								<li>Loses damage buff above 50% HP</li>
-								<li>Has a lower cap in its full power</li>
-							</ul>
-							<p class="label">Recommended Heroes:</p>
-							<p class="center"><strong>Tianhai, Tarka Ji, Kurumi, </strong> & <strong>Yueshan</strong></p>
-						</td>
-					</tr>
-				</table>
-				<!-- Hemostatic Shock -->
-				<table class="lightning">
-					<tr class="header">
-						<th colspan="2">Hemostatic Shock</th>
-					</tr>
-					<tr>
-						<td><img src="img/builds/thunder/hemostaticshock.png" alt="Thunderpull, Thunder Counter, Stormstride, Weapon Sap, -Wielding Souljade, & Backfire" class="portrait"></td>
-						<td>
-							<p class="label">Difficulty:</p> 
-								<!-- 3.5-Stars -->
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-								<img src="img/site/halffilledstar.png" alt="Half-Filled Difficulty Star" class="icon">
-								<img src="img/site/unfilledstar.png" alt="Unfilled Difficulty Star" class="icon">
-							<p class="label">Strengths:</p>
-							<ul class="left square">
-								<li>Consistent high damage output</li>
-								<li>Allows the use of Sap Souljades (replace with corresponding weapon sap)</li>
-								<li>Bonus DPS from dodge canceling & dodges</li>
-							</ul>
-							<p class="label">Weaknesses:</p>
-							<ul class="left square">
-								<li>Heal from Sap may be limited due to Backfire</li>
-								<li>Somewhat vulnerable to burn, poison and corruption ailments</li>
-								<li>Has a lower cap in its full power</li>
-							</ul>
-							<p class="label">Recommended Heroes:</p>
-							<p class="center"><strong>Tianhai, Tarka Ji, Kurumi, </strong> & <strong>Yueshan</strong></p>
-						</td>
-					</tr>
-				</table>
-			</div>
-
-			<!-- Wielding Jades -->
-			<div id="div3" class="content" style="display: none;">
-				<h1>Wielding Jades</h1>
-				<p class="center">With so many choices in Souljades and Potential Plans, it can be hard to know what build to go with.
-					This section will help for choosing the most optimal Wielding Souljades as well as what Potential Plans they best combo with.
-					Souljades with "-Wielding" in their name gain bonus elemental damage for that corresponding type, making it so you're able to activate
-					Ice Blasts or Divine Thunder faster on enemies using the special attacks they give. 
-					They also generally have better DPS than their base counterpart.
-				</p>
-				<h3>Viper Ning</h3>
-					<!-- Viper Ning -->
-					<table class="hero-info wielding">
-						<tbody>
-						<tr>
-							<td><img src="img/portraits/viper.png" alt="Viper Ning" class="portrait"></td>
-							<td class="details">
-								<img src="img/builds/wielding/horizontalenergy.png" alt="Horizontal Energy • Ice-Wielding" class="with-caption">
-								<p class="description">Best used with <a href="build.html?option=1#Ice Blast">Ice Blast</a> Potential Plans.</p>
-								<img src="img/builds/wielding/verticalenergy.png" alt="Vertical Energy • Thunder-Wielding" class="with-caption">
-								<p class="description">Best used with <a href="build.html?option=1#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
-							</td>
-						</tr>
-						</tbody>
-					</table>
-					<h3>Feria Shen</h3>
-					<!-- Feria Shen -->
-					<table class="hero-info wielding">
-						<tbody>
-						<tr>
-							<td><img src="img/portraits/feria.png" alt="Feria Shen" class="portrait"></td>
-							<td class="details">
-								<img src="img/builds/wielding/velocityuntold.png" alt="Velocity Untold • Ice-Wielding" class="with-caption">
-								<p class="description">Best used with <a href="build.html?option=1#Ice Blast">Ice Blast</a> Potential Plans.</p>
-								<img src="img/builds/wielding/velocityuntold2.png" alt="Velocity Untold • Thunder-Wielding" class="with-caption">
-								<p class="description">Best used with <a href="build.html?option=1#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
-							</td>
-						</tr>
-						</tbody>
-					</table>
-					<h3>Tianhai</h3>
-					<!-- Tianhai -->
-					<table class="hero-info wielding">
-						<tbody>
-							<tr>
-								<td><img src="img/portraits/tianhai.png" alt="Tianhai" class="portrait"></td>
-								<td class="details">
-									<img src="img/builds/wielding/jabbing.png" alt="Jabbing • Ice-Wielding" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=1#Ice Blast">Ice Blast</a> or 
-										<a href="build.html?option=1#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
-									<img src="img/builds/wielding/onslaught.png" alt="Onslaught • Thunder-Wielding" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=1#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<h3>Temulch</h3>
-					<!-- Temulch -->
-					<table class="hero-info wielding">
-						<tbody>
-							<tr>
-								<td><img src="img/portraits/temulch.png" alt="Temulch" class="portrait"></td>
-								<td class="details">
-									<img src="img/builds/wielding/aerialrend.png" alt="Aerial Rend • Ice-Wielding" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=1#Ice Blast">Ice Blast</a> Potential Plans</p>
-									<img src="img/builds/wielding/rockfallslash.png" alt="Rockfall Slash • Thunder-Wielding" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=1#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<h3>Tarka Ji</h3>
-					<!-- Tarka Ji -->
-					<table class="hero-info wielding">
-						<tbody>
-							<tr>
-								<td><img src="img/portraits/tarka.png" alt="Tarka Ji" class="portrait"></td>
-								<td class="details">
-									<img src="img/builds/wielding/petalfallflurry.png" alt="Petal Fall Flurry • Thunder-Wielding" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=1#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<h3>Kurumi</h3>
-					<!-- Kurumi -->
-					<table class="hero-info wielding">
-						<tbody>
-							<tr>
-								<td><img src="img/portraits/kurumi.png" alt="Kurumi" class="portrait"></td>
-								<td class="details">
-									<img src="img/builds/wielding/horizontalblinkstrike.png" alt="Horizontal Blink Strike • Ice-Wielding" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=1#Ice Blast">Ice Blast</a> or 
-										<a href="build.html?option=1#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
-									<img src="img/builds/wielding/verticalblinkstrike.png" alt="Vertical Blink Strike • Thunder-Wielding" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=1#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<h3>Valda Cui</h3>
-					<!-- Valda Cui -->
-					<table class="hero-info wielding">
-						<tbody>
-							<tr>
-								<td><img src="img/portraits/valda.png" alt="Valda Cui" class="portrait"></td>
-								<td class="details">
-									<img src="img/builds/wielding/crescentslam-I.png" alt="Crescent Slam • Ice-Wielding" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=1#Ice Blast">Ice Blast</a> or 
-										<a href="build.html?option=1#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
-									<img src="img/builds/wielding/crescentslam-T.png" alt="Crescent Slam • Thunder-Wielding" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=1#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<h3>Yueshan</h3>
-					<!-- Yueshan -->
-					<table class="hero-info wielding">
-						<tbody>
-							<tr>
-								<td><img src="img/portraits/yueshan.png" alt="Yueshan" class="portrait"></td>
-								<td class="details">
-									<img src="img/builds/wielding/torrentflow.png" alt="Torrent Flow • Thunder-Wielding" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=1#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<h3>Matari</h3>
-					<!-- Matari -->
-					<table class="hero-info wielding">
-						<tbody>
-							<tr>
-								<td><img src="img/portraits/matari.png" alt="Matari" class="portrait"></td>
-								<td class="details">
-									<img src="img/builds/wielding/assassinlunge.png" alt="Assassin's Lunge • Ice-Wielding" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=1#Ice Blast">Ice Blast</a> Potential Plans.</p>
-									<img src="img/builds/wielding/uppercutrush.png" alt="Uppercut Rush • Ice-Wielding" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=1#Ice Blast">Ice Blast</a> or 
-										<a href="build.html?option=1#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<h3>Wuchen</h3>
-					<!-- Wuchen -->
-					<table class="hero-info wielding">
-						<tbody>
-							<tr>
-								<td><img src="img/portraits/wuchen.png" alt="Wuchen" class="portrait"></td>
-								<td class="details">
-									<img src="img/builds/wielding/windytrinity.png" alt="Windy Trinity • Wielding" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=1#Ice Blast">Ice Blast</a> Potential Plans.</p>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
 			</div>
 		</div>
     </body>
