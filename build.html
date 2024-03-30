@@ -59,7 +59,7 @@
 			<div class="page-nav-items">
 				<button onclick="showDiv(1, this)" class="page-nav-item">Potential Plans</button>
 				<button onclick="showDiv(2, this)" class="page-nav-item">Jade Set Ups</button>
-				<button onclick="showDiv(3, this)" class="page-nav-item">Current Meta</button>
+				<button onclick="showDiv(3, this)" class="page-nav-item">Wielding Jades</button>
 			</div>
 		</nav>
 
@@ -78,22 +78,23 @@
 				<hr id="Blazing Flame"><h3>Blazing Flame</h3>
 					<p class="center">This Potential Path focuses on the left Green side.
 						It increases the damage of your Burns by 55% at base, that scales with any Health % bonuses that you have, including the 20% from hero levels.
-						Furthermore, it makes your Divine Thunder (excluding Thunder Counter) apply a decent Burn alongside boosting your martial skills Aegis-Break and Defuse. 
+						Furthermore, it makes your Divine Thunder (excluding Thunder Counter) apply a decent Burn alongside boosting your martial skills Aegis-Break and Defuse.
 						<br><br><strong>Recommended Heroes: All</strong>
 					</p>
-					<h4>Martial Skill Variant</h4>
+					<h4 id="BF-MS">Martial Skill Variant</h4>
 						<img src="img/builds/trees/bf-ms.png" alt="Blazing Flame Path with Divine Aegis-Break" class="large-example with-caption">
 						<p class="caption">Focuses on spamming your Aegis-Break for damage output and procing Divine Thunder on enemies, 
 							which then apply a Burn for further increased Honed Duration.
+							Can also be used for Thunder-focused Builds.
 							<br><strong>Recommended Heroes: Viper Ning, Tianhai, Kurumi, Valda Cui, & Wuchen</strong>
 						</p>
-					<h4>Self Burn Variant</h4>
+					<h4 id="BF-SB">Self Burn Variant</h4>
 						<img src="img/builds/trees/bf-sb.png" alt="Blazing Flame Path with Fire Transcendence" class="large-example with-caption">
 						<p class="caption">Synergizes with the Incineration + Ember Souljades in that it makes Self-Burns non-lethal 
 							while also granting Honed Status from them alongside successful Defuses.
 							<br><strong>Recommended Heroes: Feria Shen, Tianhai, Temulch, Tarka Ji, Yueshan, & Matari</strong>
 						</p>
-					<h4>Stormstride Sword Variant</h4>
+					<h4 id="BF-SS">Stormstride Sword Variant</h4>
 						<img src="img/builds/trees/bf-ss.png" alt="Blazing Flame Path with Thunder Transcendence" class="large-example with-caption">
 						<p class="caption">For heroes who have lots of hits on their Defuse Counterattacks (and martial skills) that can make great use of Stormstride Sword.
 							Grants additional Honed Status duration for every 5 Thunderbolts landed.
@@ -445,12 +446,15 @@
 				</table>
 			</div>
 
-			<!-- Current Meta -->
+			<!-- Wielding Jades -->
 			<div id="div3" class="content" style="display: none;">
-				<h1>Current Meta</h1>
+				<h1>Wielding Jades</h1>
 				<p class="center">With so many choices in Souljades and Potential Plans, it can be hard to know what build to go with.
-					This section will help for choosing the most optimal -Wielding Souljades as well as what Potential Plans they combo with.</p>
-				<h2>Wielding Souljades</h2>
+					This section will help for choosing the most optimal Wielding Souljades as well as what Potential Plans they best combo with.
+					Souljades with "-Wielding" in their name gain bonus elemental damage for that corresponding type, making it so you're able to activate
+					Ice Blasts or Divine Thunder faster on enemies using the special attacks they give. 
+					They also generally have better DPS than their base counterpart.
+				</p>
 				<h3>Viper Ning</h3>
 					<!-- Viper Ning -->
 					<table class="hero-info wielding">
@@ -459,10 +463,9 @@
 							<td><img src="img/portraits/viper.png" alt="Viper Ning" class="portrait"></td>
 							<td class="details">
 								<img src="img/builds/wielding/horizontalenergy.png" alt="Horizontal Energy • Ice-Wielding" class="with-caption">
-								<p class="description">Best used with <a href="build.html?option=1#Honed Darkness">Honed Darkness</a> or 
-									<a href="build.html?option=1#Honed Tyranny">Honed Tyranny</a> Potential Plans.</p>
+								<p class="description">Best used with <a href="build.html?option=1#Ice Blast">Ice Blast</a> Potential Plans.</p>
 								<img src="img/builds/wielding/verticalenergy.png" alt="Vertical Energy • Thunder-Wielding" class="with-caption">
-								<p class="description">Best used with <a href="build.html?option=1#Honed Tyranny">Honed Tyranny</a> Potential Plans.</p>
+								<p class="description">Best used with <a href="build.html?option=1#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
 							</td>
 						</tr>
 						</tbody>
@@ -475,8 +478,9 @@
 							<td><img src="img/portraits/feria.png" alt="Feria Shen" class="portrait"></td>
 							<td class="details">
 								<img src="img/builds/wielding/velocityuntold.png" alt="Velocity Untold • Ice-Wielding" class="with-caption">
-								<p class="description">Best used with <a href="build.html?option=1#Honed Darkness">Honed Darkness</a> or 
-									<a href="build.html?option=1#Honed Tyranny">Honed Tyranny</a> Potential Plans.</p>
+								<p class="description">Best used with <a href="build.html?option=1#Ice Blast">Ice Blast</a> Potential Plans.</p>
+								<img src="img/builds/wielding/velocityuntold2.png" alt="Velocity Untold • Thunder-Wielding" class="with-caption">
+								<p class="description">Best used with <a href="build.html?option=1#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
 							</td>
 						</tr>
 						</tbody>
@@ -489,10 +493,10 @@
 								<td><img src="img/portraits/tianhai.png" alt="Tianhai" class="portrait"></td>
 								<td class="details">
 									<img src="img/builds/wielding/jabbing.png" alt="Jabbing • Ice-Wielding" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=1#Honed Darkness">Honed Darkness</a> or 
-										<a href="build.html?option=1#Honed Tyranny">Honed Tyranny</a> Potential Plans.</p>
+									<p class="description">Best used with <a href="build.html?option=1#Ice Blast">Ice Blast</a> or 
+										<a href="build.html?option=1#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
 									<img src="img/builds/wielding/onslaught.png" alt="Onslaught • Thunder-Wielding" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=1#Honed Tyranny">Honed Tyranny</a> Potential Plans.</p>
+									<p class="description">Best used with <a href="build.html?option=1#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
 								</td>
 							</tr>
 						</tbody>
@@ -505,10 +509,9 @@
 								<td><img src="img/portraits/temulch.png" alt="Temulch" class="portrait"></td>
 								<td class="details">
 									<img src="img/builds/wielding/aerialrend.png" alt="Aerial Rend • Ice-Wielding" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=1#Honed Darkness">Honed Darkness</a> or 
-										<a href="build.html?option=1#Honed Tyranny">Honed Tyranny</a> Potential Plans.</p>
+									<p class="description">Best used with <a href="build.html?option=1#Ice Blast">Ice Blast</a> Potential Plans</p>
 									<img src="img/builds/wielding/rockfallslash.png" alt="Rockfall Slash • Thunder-Wielding" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=1#Honed Tyranny">Honed Tyranny</a> Potential Plans.</p>
+									<p class="description">Best used with <a href="build.html?option=1#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
 								</td>
 							</tr>
 						</tbody>
@@ -521,7 +524,7 @@
 								<td><img src="img/portraits/tarka.png" alt="Tarka Ji" class="portrait"></td>
 								<td class="details">
 									<img src="img/builds/wielding/petalfallflurry.png" alt="Petal Fall Flurry • Thunder-Wielding" class="with-caption">
-									<p class="description">Best used with a <a href="build.html?option=1#Hybrid">Hybrid</a> Potential Plan.</p>
+									<p class="description">Best used with <a href="build.html?option=1#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
 								</td>
 							</tr>
 						</tbody>
@@ -534,10 +537,10 @@
 								<td><img src="img/portraits/kurumi.png" alt="Kurumi" class="portrait"></td>
 								<td class="details">
 									<img src="img/builds/wielding/horizontalblinkstrike.png" alt="Horizontal Blink Strike • Ice-Wielding" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=1#Honed Darkness">Honed Darkness</a> or 
-										<a href="build.html?option=1#Honed Tyranny">Honed Tyranny</a> Potential Plans.</p>
+									<p class="description">Best used with <a href="build.html?option=1#Ice Blast">Ice Blast</a> or 
+										<a href="build.html?option=1#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
 									<img src="img/builds/wielding/verticalblinkstrike.png" alt="Vertical Blink Strike • Thunder-Wielding" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=1#Honed Tyranny">Honed Tyranny</a> Potential Plans.</p>
+									<p class="description">Best used with <a href="build.html?option=1#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
 								</td>
 							</tr>
 						</tbody>
@@ -550,10 +553,10 @@
 								<td><img src="img/portraits/valda.png" alt="Valda Cui" class="portrait"></td>
 								<td class="details">
 									<img src="img/builds/wielding/crescentslam-I.png" alt="Crescent Slam • Ice-Wielding" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=1#Honed Darkness">Honed Darkness</a> or 
-										<a href="build.html?option=1#Honed Tyranny">Honed Tyranny</a> Potential Plans.</p>
+									<p class="description">Best used with <a href="build.html?option=1#Ice Blast">Ice Blast</a> or 
+										<a href="build.html?option=1#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
 									<img src="img/builds/wielding/crescentslam-T.png" alt="Crescent Slam • Thunder-Wielding" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=1#Honed Tyranny">Honed Tyranny</a> Potential Plans.</p>
+									<p class="description">Best used with <a href="build.html?option=1#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
 								</td>
 							</tr>
 						</tbody>
@@ -566,7 +569,7 @@
 								<td><img src="img/portraits/yueshan.png" alt="Yueshan" class="portrait"></td>
 								<td class="details">
 									<img src="img/builds/wielding/torrentflow.png" alt="Torrent Flow • Thunder-Wielding" class="with-caption">
-									<p class="description">Best used with a <a href="build.html?option=1#Hybrid">Hybrid</a> Potential Plan.</p>
+									<p class="description">Best used with <a href="build.html?option=1#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
 								</td>
 							</tr>
 						</tbody>
@@ -579,11 +582,10 @@
 								<td><img src="img/portraits/matari.png" alt="Matari" class="portrait"></td>
 								<td class="details">
 									<img src="img/builds/wielding/assassinlunge.png" alt="Assassin's Lunge • Ice-Wielding" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=1#Honed Darkness">Honed Darkness</a> or 
-										<a href="build.html?option=1#Honed Tyranny">Honed Tyranny</a> Potential Plans.</p>
+									<p class="description">Best used with <a href="build.html?option=1#Ice Blast">Ice Blast</a> Potential Plans.</p>
 									<img src="img/builds/wielding/uppercutrush.png" alt="Uppercut Rush • Ice-Wielding" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=1#Honed Darkness">Honed Darkness</a> or 
-										<a href="build.html?option=1#Honed Tyranny">Honed Tyranny</a> Potential Plans.</p>
+									<p class="description">Best used with <a href="build.html?option=1#Ice Blast">Ice Blast</a> or 
+										<a href="build.html?option=1#Blazing Flame">Blazing Flame</a> Potential Plans.</p>
 								</td>
 							</tr>
 						</tbody>
@@ -596,8 +598,7 @@
 								<td><img src="img/portraits/wuchen.png" alt="Wuchen" class="portrait"></td>
 								<td class="details">
 									<img src="img/builds/wielding/windytrinity.png" alt="Windy Trinity • Wielding" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=1#Honed Darkness">Honed Darkness</a> or 
-										<a href="build.html?option=1#Honed Tyranny">Honed Tyranny</a> Potential Plans.</p>
+									<p class="description">Best used with <a href="build.html?option=1#Ice Blast">Ice Blast</a> Potential Plans.</p>
 								</td>
 							</tr>
 						</tbody>
