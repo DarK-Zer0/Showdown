@@ -441,7 +441,8 @@ table.changelog th:nth-child(3), table.changelog td:nth-child(3) {
 /* Souljade Set Ups Styling */
 table.ice,
 table.lightning,
-table.fire {
+table.fire,
+table.thunderbolt {
     border-collapse: collapse;
     width: 90%;
     margin-left: auto;
@@ -457,17 +458,19 @@ table.lightning {
 table.fire {
     background-color: lightsalmon;
 }
-.ice th, .ice td, 
-.lightning th, .lightning td,
-.fire th, .fire td {
+table.thunderbolt {
+    background-color: rgb(255, 159, 255);
+}
+
+.jade-set-up th, .jade-set-up td {
     padding: 8px;
     width: 50%;
     text-align: center;
 }
-.ice th.header, .lightning th.header {
+.jade-set-up th.header {
     font-weight: bold;
 }
-.ice tr.header, .lightning tr.header {
+.jade-set-up tr.header {
     height: 32px;
 }
 
