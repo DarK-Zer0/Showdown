@@ -549,9 +549,4 @@ table.thunderbolt {
     .portrait {
         max-width: 40vw;
     }
-    
-    .ice img,
-    .lightning img {
-        max-width: 70vw;
-    }
 }
