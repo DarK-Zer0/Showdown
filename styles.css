@@ -545,6 +545,10 @@ table.thunderbolt {
     .gif-small {
         height: 15vh;
     }
+
+    .portrait {
+        max-width: 40vw;
+    }
     
     .ice img,
     .lightning img {
