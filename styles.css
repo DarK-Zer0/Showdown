@@ -1,12 +1,18 @@
 /* Variables */
 :root {
     /* Color Scheme */
-    --bg-primary: rgb(253, 253, 199); /* #fdfdc7 */
-    --bg-secondary: rgb(255, 255, 224); /* #ffffe0 = lightyellow */
-    --nav-primary: rgb(111,66,33); /* #6F4221 */
-    --nav-secondary: rgb(150,89,45); /* #96592D */
-    --hover: rgb(33,78,111); /* #214E6F */
-    --selected: rgb(66, 33, 111); /* #42216F */
+    /* --bg-primary: rgb(253, 253, 199); /* #fdfdc7 */
+    /* --bg-secondary: rgb(255, 255, 224); /* #ffffe0 = lightyellow */
+    /* --nav-primary: rgb(111,66,33); /* #6F4221 */
+    /* --nav-secondary: rgb(150,89,45); /* #96592D */
+    /* --hover: rgb(33,78,111); /* #214E6F */
+    /* --selected: rgb(66, 33, 111); /* #42216F */
+    --bg-primary: rgb(226, 199, 253); /* #fdfdc7 */
+    --bg-secondary: rgb(239, 224, 255); /* #ffffe0 = lightyellow */
+    --nav-primary: #47216f; /* #6F4221 */
+    --nav-secondary: rgb(83, 45, 150); /* #96592D */
+    --hover: #6F4721; /* #214E6F */
+    --selected: #216F47; /* #42216F */
 
     /* Text Stylings */
     font-family: "Arial", serif;
@@ -131,7 +137,7 @@ img.icon {
     position: relative;
 }
 .nav-item:hover {
-    color: var(--hover);
+    /* color: var(--hover); */
     background-color: var(--nav-secondary);
     border-top: 1px solid black;
     border-left: 1px solid black;
@@ -223,7 +229,7 @@ img.icon {
 }
 .dropdown-option:hover {
     background-color: var(--hover);
-    color: var(--bg-primary);
+    /* color: var(--bg-primary); */
 }
 
 /* Website Navigation Bar - Mobile Stylings */
@@ -304,7 +310,7 @@ img.icon {
     border-radius: 12px;
 }
 .page-nav-item:hover {
-    color: var(--hover);
+    /* color: var(--hover); */
     background-color: var(--nav-secondary);
 }
 
