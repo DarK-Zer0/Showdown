@@ -19,12 +19,30 @@
 	font-size: clamp(14pt, 1.4vw, 18pt);
 }
 
+/* Scrollbar Stylings */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--nav-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bg-primary);
+    border-radius: 10px;
+    border: 3px solid var(--nav-primary);
+}
+
 /* Default Stylings */
 body {
 	color: black;
 	background-color: var(--bg-primary);
     margin: 0;
     padding: 0;
+    /* Scrollbar Stylings for Firefox */
+    scrollbar-color: var(--nav-primary) var(--bg-primary);
+    scrollbar-width: thin;
 }
 hr {
     width: 92%;
