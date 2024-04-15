@@ -488,7 +488,7 @@ table.thunderbolt {
 
 .jade-set-up th, .jade-set-up td {
     padding: 8px;
-    width: 50%;
+    width: 65%;
     text-align: center;
 }
 .jade-set-up th.header {
@@ -496,6 +496,9 @@ table.thunderbolt {
 }
 .jade-set-up tr.header {
     height: 32px;
+}
+.jade-set-up td:first-child {
+    width: 35%;
 }
 
 @media (max-width: 1240px) {
