@@ -11,7 +11,7 @@
     --bg-secondary: rgb(239, 224, 255); /* #ffffe0 = lightyellow */
     --nav-primary: #47216f; /* #6F4221 */
     --nav-secondary: rgb(83, 45, 150); /* #96592D */
-    --hover: #6F4721; /* #214E6F */
+    --hover: #ffc490; /* #214E6F */
     --selected: #216F47; /* #42216F */
 
     /* Text Stylings */
@@ -117,6 +117,11 @@ img.icon {
     width: 20pt;
 }
 
+.large-example.potential {
+    border-top-left-radius: 50vw;
+    border-top-right-radius: 50vw;
+}
+
 .with-caption {
     margin-bottom: 1px;
 }
@@ -155,7 +160,7 @@ img.icon {
     position: relative;
 }
 .nav-item:hover {
-    /* color: var(--hover); */
+    color: var(--hover);
     background-color: var(--nav-secondary);
     border-top: 1px solid black;
     border-left: 1px solid black;
@@ -194,7 +199,7 @@ img.icon {
     animation: slide-down .5s ease-out;
     animation-fill-mode: none;
     position: absolute;
-    width: 200px;
+    width: 10rem;
     z-index: 3;
     transform-origin: top center;
 }
@@ -233,10 +238,10 @@ img.icon {
     display: block;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-top: 1px solid black;
     border-left: 1px solid black;
     border-right: 1px solid black;
-    border-bottom: 2px solid var(--nav-primary);
+    /* border-top: 1px solid black;
+    border-bottom: 2px solid var(--nav-primary); */
     background-color: var(--nav-secondary);
     transition: background-color 0.3s ease;
     color: var(--bg-primary);
@@ -246,7 +251,7 @@ img.icon {
     border-bottom: 1px solid black;
 }
 .dropdown-option:hover {
-    background-color: var(--hover);
+    color: var(--hover);
     /* color: var(--bg-primary); */
 }
 
@@ -328,7 +333,7 @@ img.icon {
     border-radius: 12px;
 }
 .page-nav-item:hover {
-    /* color: var(--hover); */
+    color: var(--hover);
     background-color: var(--nav-secondary);
 }
 
@@ -440,7 +445,7 @@ table.attack .portrait {
     text-align: center; /* centers text */
 }
 
-/* Changelog Stylings */
+/* Changelog Table Stylings */
 table.changelog {
     border: 1px solid black;
     background-color: whitesmoke;
@@ -462,11 +467,12 @@ table.changelog th:nth-child(3), table.changelog td:nth-child(3) {
     width: 60vw; 
 }
 
-/* Souljade Set Ups Styling */
+/* Souljade Set Ups Table Styling */
 table.ice,
 table.lightning,
 table.fire,
 table.thunderbolt {
+    border-radius: 5vw;
     border-collapse: collapse;
     width: 90%;
     margin-left: auto;
