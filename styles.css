@@ -1,8 +1,8 @@
 /* Variables */
 :root {
     /* Color Scheme */
-    --bg-primary: rgb(226, 199, 253); /* #fdfdc7 */
-    --bg-secondary: rgb(239, 224, 255); /* #ffffe0 = lightyellow */
+    --bg-primary: lightgrey; /* #fdfdc7 */
+    --bg-secondary: white; /* #ffffe0 = lightyellow */
     --nav-primary: #47216f; /* #6F4221 */
     --nav-secondary: rgb(83, 45, 150); /* #96592D */
     --hover: #ffc490; /* #214E6F */
@@ -14,7 +14,7 @@
 }
 
 /* Scrollbar Stylings */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 12px;
 }
 
@@ -26,7 +26,7 @@
     background: var(--bg-primary);
     border-radius: 10px;
     border: 3px solid var(--nav-primary);
-}
+} */
 
 #back-to-top {
     display: none; /* Hide the button by default */
@@ -250,8 +250,8 @@ img.icon {
     display: block;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    /* border-left: 1px solid black;
+    border-right: 1px solid black; */
     /* border-top: 1px solid black;
     border-bottom: 2px solid var(--nav-primary); */
     background-color: var(--nav-secondary);
@@ -261,9 +261,13 @@ img.icon {
 }
 .dropdown-option:first-child {
     border-top: 1px solid black;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 .dropdown-option:last-child {
     border-bottom: 1px solid black;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 .dropdown-option:hover {
     color: var(--hover);
