@@ -64,8 +64,8 @@ hr {
 h1 {
     text-align: center;
     background-color: var(--bg-secondary);
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: calc(25% - 12rem);
+    margin-right: calc(25% - 12rem);
     border-radius: 20px;
 }
 h1.alt {
