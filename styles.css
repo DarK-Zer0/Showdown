@@ -63,6 +63,10 @@ hr {
 /* Text Stylings */
 h1 {
     text-align: center;
+    background-color: var(--bg-secondary);
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 20px;
 }
 h1.alt {
     background-color: var(--bg-primary);
