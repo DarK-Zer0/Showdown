@@ -63,10 +63,6 @@ hr {
 /* Text Stylings */
 h1 {
     text-align: center;
-    background-color: var(--bg-secondary);
-    margin-left: calc(25% - 12rem);
-    margin-right: calc(25% - 12rem);
-    border-radius: 20px;
 }
 h1.alt {
     background-color: var(--bg-primary);
@@ -74,6 +70,13 @@ h1.alt {
     margin: 5vh auto;
     padding: 1px;
     border-radius: 25px;
+}
+
+#title {
+    background-color: var(--bg-secondary);
+    margin-left: calc(25% - 12rem);
+    margin-right: calc(25% - 12rem);
+    border-radius: 20px;
 }
 
 .center, .caption{
