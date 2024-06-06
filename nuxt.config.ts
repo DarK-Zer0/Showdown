@@ -1,7 +1,73 @@
+import vuetify from 'vite-plugin-vuetify';
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
+// noinspection JSUnusedGlobalSymbols
 export default defineNuxtConfig({
+  app: {
+    head: {
+      charset: "utf-8",
+      meta: [
+        {
+          name: "site_name", content: "Showdown Guide"
+        },
+        /* Twitter */
+        {
+          name: "twitter:card", content: "summary"
+        },
+        {
+          name: "twitter:image", content: "https://dark-zer0.github.io/Showdown/img/site/banner.jpg"
+        },
+        /* Open Graph */
+        {
+          property: "og:type", content: "article"
+        },
+        {
+          property: "og:url", content: "https://dark-zer0.github.io/Showdown/"
+        },
+        {
+          property: "og:image", content: "https://dark-zer0.github.io/Showdown/img/site/banner.jpg"
+        },
+        /* Capabilities  */
+        {
+          name: "background-color", content: "#F7F7F9"
+        },
+        {
+          name: "apple-mobile-web-app-capable", content: "yes"
+        },
+        {
+          name: "apple-mobile-web-app-status-bar-style", content: "black-translucent"
+        }
+      ]
+    }
+  },
+  build: {
+    transpile: ['vuetify']
+  },
   devtools: { enabled: true },
   modules: [
-    '@nuxtjs/tailwindcss'
-  ]
+    (_options, nuxt) => {
+      nuxt.hooks.hook('vite:extendConfig', (config) => {
+        config.plugins!.push(vuetify({ autoImport: true }))
+      })
+    },
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/sitemap',
+    'nuxt-simple-robots'
+  ],
+  googleFonts: {
+    display: "swap",
+    families: {
+      Roboto: [100, 300, 400, 500, 700, 900]
+    }
+  },
+  nitro: {
+    compressPublicAssets: true,
+    prerender: {
+      crawlLinks: true
+    },
+    static: true
+  },
+  site: {
+    url: "https://dark-zer0.github.io/Showdown/"
+  }
 })
