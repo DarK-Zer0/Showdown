@@ -45,7 +45,7 @@ export default function () {
     },
     abyss: {
       title: 'Yama\'s Abyss',
-      objective: 'Clear all 15 rooms (30 rooms in Void-Space).',
+      objective: 'Clear all 15 rooms (24 rooms in Void-Space).',
       /* TODO: Shouldn't it be stage 50 something? */
       description: 'The new longest mission type we have as of now. Gets progressively difficult as you make it down the stages, with only the best of the best being able to achieve the rank of Showdown Paragon and clearing up to stage 48.'
     }

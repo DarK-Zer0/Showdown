@@ -85,8 +85,9 @@ const mission = ref<string>(missions.list[0].name);
     </v-list>
 
     <v-article-text>
-<!--  TODO: Should we specify that we are able to disable fatigue before launching a mission?    -->
-      Every mission consumes fatigue when ran, with the amount consumed depending on the type of mission and how much of it you completed.
+      Every mission consumes fatigue when ran, with the amount consumed depending on the type of mission and how much of it you completed. 
+      Fatigue consumption can be disabled before running a mission at the cost of no Showdown-based rewards. 
+      Beware: in Enigma Domain, a Rune Key is consumed each time you enter.
     </v-article-text>
 
     <v-article-section name="Missions" />
