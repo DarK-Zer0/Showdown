@@ -165,7 +165,7 @@ const mission = ref<string>(missions.list[0].name);
                       </v-list-item>
                       <v-list-item class="text-body-1">
                         Level Objective: <v-bold>{{ level.category.objective }}</v-bold>
-                        <v-list-item-subtitle>
+                        <v-list-item-subtitle class="text-wrap">
                           {{ level.category.description }}
                         </v-list-item-subtitle>
                       </v-list-item>
