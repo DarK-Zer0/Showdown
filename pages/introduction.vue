@@ -1,6 +1,8 @@
 <template>
-  <v-container>
-    <h1 class="text-h4 text-md-h2">Introduction</h1>
+  <v-container class="py-8">
+    <div class="d-flex justify-center">
+      <v-chip variant="flat" color="transparent">Introduction</v-chip>
+    </div>
     <nuxt-page />
   </v-container>
 </template>
