@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ChevronRightIcon } from '@heroicons/vue/16/solid';
 import { useDisplay } from 'vuetify';
 
 const date = new Date();
@@ -19,7 +18,7 @@ const mission = ref<string>(missions.list[0].name);
       When starting to play <v-link-naraka />'s Showdown Mode, <v-bold>I recommended that you choose one <v-link to="/introduction/heroes">hero</v-link> to main and two secondary choices.</v-bold>
       This is because when you pass Normal and Hard difficulty missions, Showdown does not allow duplicate heroes on the same team.
       Picking two secondary choices helps to ensure that you are not left in a tight spot because someone else locked in your favorite hero(es) first.
-      <v-link to="/introduction/heroes">Kurumi</v-link> is recommended to be one of your main 3 because of her being the only hero that can heal & buff her teammates.
+      <v-link to="/introduction/heroes#kurumi">Kurumi</v-link> is recommended to be one of your main 3 because of her being the only hero that can heal & buff her teammates.
     </v-article-text>
 
     <v-article-section name="Advancing through the Story" />
@@ -85,8 +84,8 @@ const mission = ref<string>(missions.list[0].name);
     </v-list>
 
     <v-article-text>
-      Every mission consumes fatigue when ran, with the amount consumed depending on the type of mission and how much of it you completed. 
-      Fatigue consumption can be disabled before running a mission at the cost of no Showdown-based rewards. 
+      Every mission consumes fatigue when ran, with the amount consumed depending on the type of mission and how much of it you completed.
+      Fatigue consumption can be disabled before running a mission at the cost of no Showdown-based rewards.
       Beware: in Enigma Domain, a Rune Key is consumed each time you enter.
     </v-article-text>
 
@@ -111,18 +110,14 @@ const mission = ref<string>(missions.list[0].name);
       <v-lazy>
         <v-expand-transition>
           <v-container v-if="mobile">
-            <v-slide-group
-              v-model="mission" :show-arrows="false" :mandatory="true" :mobile="true"
-            >
-              <v-slide-group-item
-                v-for="level in missions.list" :key="`mobile-activator-${level.name}`" v-slot="{ isSelected, toggle }" :value="level.name"
-              >
-                <v-card
-                  variant="tonal" :title="level.name" class="level-card me-1" :color="isSelected ? 'primary' : undefined"
-                  @click="toggle"
+            <v-card variant="tonal" class="level-card">
+              <v-card-item>
+                <v-select
+                  v-model="mission" variant="solo" :required="true" :items="missions.list.map(m => m.name)"
+                  :hide-details="true"
                 />
-              </v-slide-group-item>
-            </v-slide-group>
+              </v-card-item>
+            </v-card>
           </v-container>
         </v-expand-transition>
       </v-lazy>
@@ -132,12 +127,13 @@ const mission = ref<string>(missions.list[0].name);
           <v-expand-x-transition>
             <v-col v-if="!mobile" cols="4" xl="2">
               <v-list
-                v-model:selected="mission" bg-color="transparent" color="primary" rounded="lg" :mandatory="true"
+                v-model:selected="mission" bg-color="transparent" color="primary" rounded="lg"
+                :mandatory="true"
               >
                 <v-list-item
                   v-for="level in missions.list" :key="`desktop-activator-${level.name}`" :value="level.name" class="level-card mb-1"
                   :title="level.name" :subtitle="level.chapter !== undefined ? `Chapter ${level.chapter}` : undefined" rounded="lg"
-                  :append-icon="ChevronRightIcon"
+                  append-icon="$next"
                 />
               </v-list>
             </v-col>
@@ -150,25 +146,33 @@ const mission = ref<string>(missions.list[0].name);
               <v-window-item
                 v-for="level in missions.list" :key="`window-${level.name}`" :value="level.name"
               >
-                <v-container>
+                <v-container class="px-0 px-lg-4">
                   <v-card
                     variant="tonal" :title="level.name" class="level-card" rounded="xl"
                   >
                     <v-list bg-color="transparent" density="comfortable">
                       <v-list-item class="text-body-1">
-                        Level Map: <v-bold>{{ level.map }}</v-bold>
+                        <v-list-item-title class="d-flex flex-column flex-lg-row text-wrap">
+                          Level Map: <v-bold>{{ level.map }}</v-bold>
+                        </v-list-item-title>
                       </v-list-item>
                       <v-list-item v-if="level.chapter" class="text-body-1">
-                        Level Chapter: <v-bold>{{ level.chapter }}</v-bold>
+                        <template #title>
+                          Level Chapter: <v-bold>{{ level.chapter }}</v-bold>
+                        </template>
                       </v-list-item>
                       <v-list-item class="text-body-1">
-                        Level Type: <v-bold>{{ level.category.title }}</v-bold>
+                        <v-list-item-title class="d-flex flex-column flex-lg-row text-wrap">
+                          Level Type: <v-bold>{{ level.category.title }}</v-bold>
+                        </v-list-item-title>
                       </v-list-item>
                       <v-list-item class="text-body-1">
-                        Level Objective: <v-bold>{{ level.category.objective }}</v-bold>
-                        <v-list-item-subtitle class="text-wrap">
+                        <v-list-item-title class="d-flex flex-column flex-lg-row text-wrap">
+                          Level Objective: <v-bold>{{ level.category.objective }}</v-bold>
+                        </v-list-item-title>
+                        <p class="text-wrap text-body-2 font-weight-medium opacity-90">
                           {{ level.category.description }}
-                        </v-list-item-subtitle>
+                        </p>
                       </v-list-item>
                     </v-list>
                   </v-card>
@@ -186,6 +190,7 @@ const mission = ref<string>(missions.list[0].name);
 
 <style scoped>
 .level-card {
+  /*noinspection CssUnresolvedCustomProperty*/
   background: rgba(var(--v-theme-surface), .6);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);

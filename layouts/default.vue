@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { Bars3Icon, ChevronDownIcon, ChevronUpIcon } from '@heroicons/vue/16/solid';
 import { useDisplay } from 'vuetify';
 
 const { mobile } = useDisplay();
@@ -111,14 +110,14 @@ const navigations = [
   <v-app>
     <v-app-bar scroll-behavior="hide" :scroll-threshold="120">
 
-      <v-app-bar-nav-icon v-if="mobile" :icon="Bars3Icon" @click="drawer = !drawer;" />
+      <v-app-bar-nav-icon v-if="mobile" @click="drawer = !drawer;" />
 
       <template v-if="!mobile">
         <template v-for="(navigation, index) in navigations" :key="navigation.title">
           <v-menu :open-on-hover="true">
             <template #activator="{ props }">
               <v-btn
-                v-bind="props" :text="navigation.title" class="text-body-1" :append-icon="ChevronDownIcon"
+                v-bind="props" :text="navigation.title" class="text-body-1" append-icon="$dropdown"
               />
             </template>
             <v-card rounded="lg">
@@ -145,10 +144,9 @@ const navigations = [
         />
         <template v-for="navigation in navigations" :key="navigation.title">
           <v-list-group>
-            <template #activator="{ props, isOpen }">
+            <template #activator="{ props }">
               <v-list-item
                 v-bind="props" :title="navigation.title" class="text-body-1"
-                :append-icon="!isOpen ? ChevronDownIcon : ChevronUpIcon"
               />
             </template>
             <v-list-item
@@ -167,7 +165,17 @@ const navigations = [
     <v-footer>
       &copy; {{ new Date().getFullYear() }} All rights reserved.
       <span class="text-medium-emphasis">
-        We are not affiliated with <a class="text-decoration-none text-primary" href="https://www.neteasegames.com/" target="_blank" rel="nofollow">NetEase</a> or <a class="text-decoration-none text-primary" href="https://www.24-ent.com/" target="_blank" rel="nofollow">24 Entertainment</a>.
+        We are not affiliated with
+        <a
+          class="text-decoration-none text-primary" href="https://www.neteasegames.com/" target="_blank" rel="nofollow"
+        >
+          NetEase
+        </a> or
+        <a
+          class="text-decoration-none text-primary" href="https://www.24-ent.com/" target="_blank" rel="nofollow"
+        >
+          24 Entertainment
+        </a>.
       </span>
     </v-footer>
   </v-app>
