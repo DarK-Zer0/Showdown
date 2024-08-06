@@ -180,10 +180,8 @@ img.icon {
 .nav-item:hover {
     color: var(--hover);
     background-color: var(--nav-secondary);
-    border-top: 1px solid black;
+    padding-bottom: 9px;
     border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
 }
 
 .nav-items .nav-item::after {
@@ -191,17 +189,24 @@ img.icon {
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 1px;
+    width: 0.05vw;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
     right: -1px;
 }
-.nav-items .nav-item:last-child::after {
-    content: none;
+.nav-items .nav-item:first-child::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0.05vw;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+    left: -1px;
 }
 
 .home-button {
     float: left;
     padding: 1vh;
+    margin-right: 0.4vw;
     cursor: pointer;
 }
 .home-button img {
@@ -212,11 +217,11 @@ img.icon {
 /* Website Navigation Bar - Dropdown Menu Stylings */
 .dropdown-content {
     display: none;
-    top: 100%;
+    top: 101%;
     transform: translateX(-50%);
     left: 50%;
-    animation: slide-down .5s ease-out;
-    animation-fill-mode: none;
+    /* animation: slide-down .5s ease-out;
+    animation-fill-mode: none; */
     position: absolute;
     width: 10rem;
     z-index: 3;
@@ -225,7 +230,7 @@ img.icon {
 .nav-item:hover .dropdown-content {
     display: block;
 }
-@keyframes slide-down {
+/* @keyframes slide-down {
     from {
       opacity: 0;
       transform: translateY(-10px) translateX(-50%);
@@ -234,7 +239,7 @@ img.icon {
       opacity: 1;
       transform: translateY(0) translateX(-50%);
     }
-}
+} */
 
 #dropdownMenu.dropdown-content {
     transform: none;
@@ -266,7 +271,7 @@ img.icon {
     color: var(--bg-primary);
     text-decoration: none;
 }
-.dropdown-option:first-child {
+/* .dropdown-option:first-child {
     border-top: 1px solid black;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -275,7 +280,7 @@ img.icon {
     border-bottom: 1px solid black;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-}
+} */
 .dropdown-option:hover {
     color: var(--hover);
 }
