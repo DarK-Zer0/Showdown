@@ -8,6 +8,11 @@
     --hover: #ffc490; /* #214E6F */
     --selected: #216F47; /* #42216F */
 
+    --color-burn: orangered;
+    --color-thunder: saddlebrown;
+    --color-thunderbolt: darkviolet;
+    --color-ice: aqua;
+
     /* Text Stylings */
     font-family: "Arial", serif;
 	font-size: clamp(14pt, 1.4vw, 18pt);
@@ -101,6 +106,19 @@ h1.alt {
 
 .square {
     list-style-type: square;
+}
+
+.burn-txt {
+    color: var(--color-burn);
+}
+.thunder-txt {
+    color: var(--color-thunder);
+}
+.thunderbolt-txt {
+    color: var(--color-thunderbolt);
+}
+.ice-txt {
+    color: var(--color-ice);
 }
 
 /* Media Stylings */
