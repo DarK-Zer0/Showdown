@@ -1,16 +1,16 @@
 /* Variables */
 :root {
     /* Color Scheme */
-    --bg-primary: rgb(85, 85, 85); /* #fdfdc7 */
-    --bg-secondary: rgba(17, 17, 17, 0.548); /* #ffffe0 = lightyellow */
-    --nav-primary: #47216f; /* #6F4221 */
+    --bg-primary: rgb(85, 85, 85);
+    --bg-secondary: rgba(17, 17, 17, 0.897); 
+    --nav-primary: #47216f;
     --nav-primary-tr: #47216ff1;
-    --nav-secondary: rgb(83, 45, 150); /* #96592D */
+    --nav-secondary: rgb(83, 45, 150); 
     --nav-top: rgb(27, 17, 43);
     --nav-bottom: rgb(106, 84, 145);
     --nav-text: white;
-    --hover: #ffc490; /* #214E6F */
-    --selected: #216F47; /* #42216F */
+    --hover: #ffc490; 
+    --selected: #216F47;
 
     --color-burn: rgb(255, 177, 148);
     --color-thunder: rgb(133, 96, 70);
@@ -79,6 +79,11 @@ a:hover {
     padding-left: 25px;
     transform: translateX(-50%);
     border-radius: 20px;
+}
+
+p {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 .center, .caption{
@@ -403,86 +408,69 @@ img.icon {
 }
 
 /* Table Stylings */
-table {
-    border: 1px solid black;
-    background-color: whitesmoke;
-    font-family: Arial, sans-serif;
-    font-size: clamp(14px, 1.4vw, 18px);
-    overflow: hidden;
-    padding: 10px 5px;
-    word-break: normal;
-    margin: 1.5vh auto;
-}
-.portrait {
-    object-fit: contain;
-    max-height: 40vh;
-    width: auto;
-}
-.details {
-    text-align: center;
-    width: 64vw;
-}
-.details img {
-    width: 100%;
-}
-.subject {
-    width: 30vw;
-}
 .label {
     font-weight: bold;
-    font-size: 15px;
-}
-.archetype, .weapons{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 8vh;
-}
-.archetype img, .weapons img {
-    height: 100%;
-    width: auto;
-    max-width: 20vw;
-}
-table .description {
-    text-align: center;
-    max-height: 30vh;
-}
-table.attack .portrait {
-    width: 30vw;
-}
-
-.wielding .portrait {
-    width: 100%;
-}
-.wielding td:first-child {
-    width: calc(95vw - 64vw - 5px);
+    text-decoration: underline;
+    margin-bottom: 0;
 }
 
 /* Hero Table Stylings */
+.heroes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hero-bg {
+    background-image: url(./img/site/heroes.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+    min-width: 25rem;
+    max-width: 40vw;
+}
+
 .hero-table {
     display: flex;
-    border: 1px solid black;
-    background-color: whitesmoke;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+    margin-bottom: 1.5vh;
+    z-index: 3;
+
     font-family: Arial, sans-serif;
     font-size: clamp(14px, 1.4vw, 18px);
     overflow: hidden;
     word-break: normal;
-    margin-bottom: 1.5vh;
+    border: 1px solid black;
+    background-color: var(--bg-secondary);
 }
-
-.hero-table .row {
-    display: inline-flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-}
-.row .subject, 
-.row .details {
+.hero-table .column {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* aligns items horizontally */
-    align-items: center; /* aligns items vertically */
-    text-align: center; /* centers text */
+    align-items: center;
+}
+.hero-table .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+.hero-table .portrait {
+    width: 20rem;
+}
+.hero-table .description {
+    max-width: 66%;
+}
+
+.archetype img {
+    width: 5rem;
+    height: auto;
 }
 
 /* Changelog Table Stylings */
@@ -514,6 +502,7 @@ table.fire,
 table.thunderbolt {
     border-radius: 5vw;
     border-collapse: collapse;
+    color: black;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -532,6 +521,9 @@ table.thunderbolt {
     background-color: rgb(255, 159, 255);
 }
 
+.jade-set-up {
+    margin-bottom: 5rem;
+}
 .jade-set-up th, .jade-set-up td {
     padding: 8px;
     width: 65%;
@@ -584,6 +576,10 @@ table.thunderbolt {
       align-items: center;
     }
 
+    .hero-table .description {
+        max-width: none;
+    }
+
     .home-button {
         padding: 0;
         margin-top: 1vw;
@@ -593,17 +589,6 @@ table.thunderbolt {
     }
     .home-button img {
         width: 25vw;
-    }
-    
-    .hero-table {
-        display: flow;
-    }
-    .hero-table .row {     
-        display: inline-block;
-        justify-content: center;
-    }
-    .hero-table .row .subject {
-        margin: 0 auto;
     }
 }
 
