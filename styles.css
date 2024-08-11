@@ -1,10 +1,12 @@
 /* Variables */
 :root {
     /* Color Scheme */
-    --bg-primary: lightgrey; /* #fdfdc7 */
-    --bg-secondary: white; /* #ffffe0 = lightyellow */
+    --bg-primary: rgb(85, 85, 85); /* #fdfdc7 */
+    --bg-secondary: rgba(17, 17, 17, 0.548); /* #ffffe0 = lightyellow */
     --nav-primary: #47216f; /* #6F4221 */
     --nav-secondary: rgb(83, 45, 150); /* #96592D */
+    --nav-bottom: rgb(106, 84, 145);
+    --nav-text: white;
     --hover: #ffc490; /* #214E6F */
     --selected: #216F47; /* #42216F */
 
@@ -17,21 +19,6 @@
     font-family: "Arial", serif;
 	font-size: clamp(14pt, 1.4vw, 18pt);
 }
-
-/* Scrollbar Stylings */
-/* ::-webkit-scrollbar {
-    width: 12px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--nav-primary);
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--bg-primary);
-    border-radius: 10px;
-    border: 3px solid var(--nav-primary);
-} */
 
 #back-to-top {
     display: none; /* Hide the button by default */
@@ -52,13 +39,10 @@
 
 /* Default Stylings */
 body {
-	color: black;
+	color: white;
 	background-color: var(--bg-primary);
     margin: 0;
     padding: 0;
-    /* Scrollbar Stylings for Firefox */
-    scrollbar-color: var(--nav-primary) var(--bg-primary);
-    scrollbar-width: thin;
 }
 hr {
     width: 92%;
@@ -75,6 +59,13 @@ h1.alt {
     margin: 5vh auto;
     padding: 1px;
     border-radius: 25px;
+}
+
+a {
+    color: #6a6af0;
+}
+a:hover {
+    color:#F0F06A;
 }
 
 #title {
@@ -167,28 +158,29 @@ img.icon {
     position: sticky;
     z-index: 3;
     top: 0;
-    height: 8vh;
     width: 100%;
 }
 .nav-bar {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     text-align: center;
     align-items: center;
     background-color: var(--nav-primary);
-    color: var(--bg-primary);
-    border: 1px solid black;
+    color: var(--nav-text);
+    border-bottom: 1px solid black;
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, .2);
 }
 
 .nav-items {
     display: flex;
-    justify-content: left;
-    flex-grow: 1;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 .nav-item {
-    display: inline-block;
     padding: 10px 20px;
+    margin-right: 0.05vw;
+    margin-left: 0.05vw;
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
@@ -199,7 +191,7 @@ img.icon {
     color: var(--hover);
     background-color: var(--nav-secondary);
     padding-bottom: 9px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--nav-bottom);
 }
 
 .nav-items .nav-item::after {
@@ -209,7 +201,7 @@ img.icon {
     bottom: 0;
     width: 0.05vw;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
-    right: -1px;
+    right: -0.1vw;
 }
 .nav-items .nav-item:first-child::before {
     content: "";
@@ -218,7 +210,7 @@ img.icon {
     bottom: 0;
     width: 0.05vw;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
-    left: -1px;
+    left: -0.1vw;
 }
 
 .home-button {
@@ -228,18 +220,18 @@ img.icon {
     cursor: pointer;
 }
 .home-button img {
-    height: 6vh;
+    height: 7.5vh;
     background: transparent;
 }
 
 /* Website Navigation Bar - Dropdown Menu Stylings */
 .dropdown-content {
     display: none;
-    top: 101%;
+    top: 100%;
     transform: translateX(-50%);
     left: 50%;
-    /* animation: slide-down .5s ease-out;
-    animation-fill-mode: none; */
+    animation: slide-down .5s ease-out;
+    animation-fill-mode: none;
     position: absolute;
     width: 10rem;
     z-index: 3;
@@ -248,7 +240,7 @@ img.icon {
 .nav-item:hover .dropdown-content {
     display: block;
 }
-/* @keyframes slide-down {
+@keyframes slide-down {
     from {
       opacity: 0;
       transform: translateY(-10px) translateX(-50%);
@@ -257,12 +249,12 @@ img.icon {
       opacity: 1;
       transform: translateY(0) translateX(-50%);
     }
-} */
+}
 
 #dropdownMenu.dropdown-content {
     transform: none;
     left: 0vw;
-    width: 100vw;
+    width: 100%;
     animation: slide-down-M .5s ease-out;
 }
 @keyframes slide-down-M {
@@ -280,25 +272,20 @@ img.icon {
     display: block;
     padding-top: 10px;
     padding-bottom: 10px;
-    /* border-left: 1px solid black;
-    border-right: 1px solid black; */
-    /* border-top: 1px solid black;
-    border-bottom: 2px solid var(--nav-primary); */
+    border-bottom: 1.5px solid var(--nav-bottom);
     background-color: var(--nav-secondary);
     transition: background-color 0.3s ease;
-    color: var(--bg-primary);
+    color: var(--nav-text);
     text-decoration: none;
 }
 /* .dropdown-option:first-child {
     border-top: 1px solid black;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-}
-.dropdown-option:last-child {
-    border-bottom: 1px solid black;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
 } */
+.dropdown-option:last-child {
+    border-bottom: none;
+}
 .dropdown-option:hover {
     color: var(--hover);
 }
@@ -306,10 +293,9 @@ img.icon {
 /* Website Navigation Bar - Mobile Stylings */
 .nav-toggle {
     display: none;
-    height: 6vh;
-    width: 6vh;
+    height: 8vw;
+    width: 8vw;
     border-radius: 12px;
-    margin-right: 1vh;
     z-index: 3;
     background: transparent;
 }
@@ -318,9 +304,6 @@ img.icon {
     height: 100%;
 }
 
-.mobile {
-    position: relative;
-}
 .mobile .dropdown-content {
     top: 7vh;
     left: -100%;
@@ -375,7 +358,7 @@ img.icon {
     transition: background-color 0.3s ease;
     border: 0;
     background-color: var(--nav-primary);
-    color: var(--bg-primary);
+    color: var(--nav-text);
     cursor: pointer;
     position: relative;
     border-radius: 12px;
@@ -556,6 +539,11 @@ table.thunderbolt {
 }
 
 @media (max-width: 1240px) {
+    .nav-bar {
+        padding-left: 3%;
+        padding-right: 3%;
+        justify-content: left;
+    }
     .nav-toggle {
         display: block;
         border-top-color: var(--nav-secondary);
@@ -577,14 +565,25 @@ table.thunderbolt {
     .banner img {
         height: 50vh;
     }
+    #title {
+        margin-right: 0;
+        margin-left: 0;
+    }
 
     .page-nav-items {
       flex-direction: column;
       align-items: center;
     }
 
+    .home-button {
+        padding: 0;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        margin-right: 0;
+        margin-left: calc(50% - 8vw - 14%);
+    }
     .home-button img {
-        width: 75vw;
+        width: 25vw;
     }
 
     #content.nav3 {
