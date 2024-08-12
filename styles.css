@@ -392,7 +392,7 @@ img.icon {
     position: relative;
     top: 4vh;
     left: 2.5%;
-    width: 95vw;
+    width: 95%;
     padding-top: 2vh;
     padding-bottom: 2vh;
     background-color: var(--bg-secondary);
@@ -429,7 +429,7 @@ img.icon {
     background-repeat: no-repeat;
     background-position: center;
     flex-shrink: 0;
-    min-width: 25rem;
+    min-width: 24.5rem;
     max-width: 40vw;
 }
 
@@ -471,6 +471,9 @@ img.icon {
 .archetype img {
     width: 5rem;
     height: auto;
+}
+.weapons img {
+    max-width: 8rem;
 }
 
 /* Changelog Table Stylings */
@@ -576,10 +579,6 @@ table.thunderbolt {
       align-items: center;
     }
 
-    .hero-table .description {
-        max-width: none;
-    }
-
     .home-button {
         padding: 0;
         margin-top: 1vw;
@@ -593,16 +592,6 @@ table.thunderbolt {
 }
 
 @media (max-width: 530px) {
-    #content.nav3 {
-        margin-top: 16vh;   
-    }
-    #content.nav4 {
-        margin-top: 22vh;
-    }
-    #content.nav5 {
-        margin-top: 28vh;
-    }
-
     .gif {
         height: 25vh;
     }
