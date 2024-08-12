@@ -1,21 +1,21 @@
 /* Variables */
 :root {
     /* Color Scheme */
-    --bg-primary: rgb(85, 85, 85);
-    --bg-secondary: rgba(17, 17, 17, 0.897); 
-    --nav-primary: #47216f;
-    --nav-primary-tr: #47216ff1;
-    --nav-secondary: rgb(83, 45, 150); 
-    --nav-top: rgb(27, 17, 43);
-    --nav-bottom: rgb(106, 84, 145);
-    --nav-text: white;
-    --hover: #ffc490; 
-    --selected: #216F47;
+    --bg-primary: hsl(0, 0%, 33%);
+    --bg-secondary: hsla(0, 0%, 7%, 0.9);
+    --nav-primary: hsl(269, 54%, 28%);
+    --nav-primary-tr: hsla(269, 54%, 28%, 0.945);
+    --nav-secondary: hsl(262, 54%, 38%); 
+    --nav-top: hsl(263, 43%, 12%);
+    --nav-bottom: hsl(262, 27%, 45%);
+    --nav-text: hsl(0, 0%, 100%);
+    --hover: hsl(28, 100%, 78%); 
+    --selected: hsl(149, 54%, 28%);
 
-    --color-burn: rgb(255, 177, 148);
-    --color-thunder: rgb(133, 96, 70);
-    --color-thunderbolt: rgb(190, 142, 211);
-    --color-ice: rgb(151, 252, 252);
+    --color-burn: hsl(16, 100%, 79%);
+    --color-thunder: hsl(25, 31%, 40%);
+    --color-thunderbolt: hsl(282, 44%, 69%);
+    --color-ice: hsl(180, 94%, 79%);
 
     /* Text Stylings */
     font-family: "Arial", serif;
@@ -75,6 +75,8 @@ a:hover {
     display: inline-block;
     position: relative;
     left: 50%;
+    margin-top: 4vh;
+    margin-bottom: 0;
     padding-right: 25px;
     padding-left: 25px;
     transform: translateX(-50%);
@@ -99,6 +101,10 @@ p {
     text-align: left;
     list-style-position: inside;
     padding: 1vh;
+}
+ul.left {
+    padding-right: calc(20% - 7rem);
+    padding-left: calc(20% - 7rem);
 }
 
 .nodot {
@@ -125,11 +131,17 @@ p {
 
 /* Media Stylings */
 .alt-bg {
+    background-image: url(./img/site/background1.png);
+    background-size: cover;
     position: fixed;
     width: 100%;
     height: 100%;
-    object-fit: fill;
     z-index: -1;
+}
+.alt-bg div {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18, 105, 139, 0.288);
 }
 
 .gif {
@@ -240,7 +252,7 @@ img.icon {
 /* Website Navigation Bar - Dropdown Menu Stylings */
 .dropdown-content {
     display: none;
-    top: 102%;
+    top: 100%;
     transform: translateX(-50%);
     left: 50%;
     animation: slide-down .3s ease-out;
@@ -336,6 +348,7 @@ img.icon {
 /* Page Navigation Bar Stylings */
 .page-nav {
     position: relative;
+    margin-top: 4vh;
     width: 90%;
     left: 50%;
     transform: translateX(-50%);
@@ -361,6 +374,7 @@ img.icon {
     border-left: 1px solid var(--nav-bottom);
     border-bottom: 1px solid var(--nav-top);
     border-right: 1px solid var(--nav-top);
+    border-radius: 4px;
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, .2);
     color: var(--nav-text);
     cursor: pointer;
@@ -420,7 +434,7 @@ img.icon {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .hero-bg {
@@ -447,7 +461,10 @@ img.icon {
     font-size: clamp(14px, 1.4vw, 18px);
     overflow: hidden;
     word-break: normal;
-    border: 1px solid black;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-bottom: 2px solid rgb(75, 75, 75);
+    border-right: 2px solid rgb(75, 75, 75);
     background-color: var(--bg-secondary);
 }
 .hero-table .column {
@@ -479,9 +496,10 @@ img.icon {
 /* Changelog Table Stylings */
 table.changelog {
     border: 1px solid black;
+    color: black;
     background-color: whitesmoke;
     border-collapse: collapse;
-    width: 80vw;
+    width: 80%;
     margin: 0 auto;
 }
 table.changelog th, table.changelog td {
@@ -503,7 +521,7 @@ table.ice,
 table.lightning,
 table.fire,
 table.thunderbolt {
-    border-radius: 5vw;
+    /* border-radius: 5vw; */
     border-collapse: collapse;
     color: black;
     width: 90%;
@@ -512,16 +530,32 @@ table.thunderbolt {
 }
 
 table.ice {
-    background-color: lightblue;
+    background-color: var(--color-ice);
+    border-top: 3px solid hsl(180, 94%, 90%);
+    border-bottom: 3px solid hsl(180, 94%, 30%);
+    border-right: 3px solid hsl(180, 94%, 30%);
+    border-left: 3px solid hsl(180, 94%, 90%);
 }
 table.lightning {
-    background-color: palegoldenrod;
+    background-color: var(--color-thunder);
+    border-top: 3px solid hsl(25, 31%, 90%);
+    border-bottom: 3px solid hsl(25, 31%, 30%);
+    border-right: 3px solid hsl(25, 31%, 30%);
+    border-left: 3px solid hsl(25, 31%, 90%);
 }
 table.fire {
-    background-color: lightsalmon;
+    background-color: var(--color-burn);
+    border-top: 3px solid hsl(16, 100%, 60%);
+    border-bottom: 3px solid hsl(16, 100%, 30%);
+    border-right: 3px solid hsl(16, 100%, 30%);
+    border-left: 3px solid hsl(16, 100%, 60%);
 }
 table.thunderbolt {
-    background-color: rgb(255, 159, 255);
+    background-color: var(--color-thunderbolt);
+    border-top: 3px solid hsl(282, 44%, 90%);
+    border-bottom: 3px solid hsl(282, 44%, 30%);
+    border-right: 3px solid hsl(282, 44%, 30%);
+    border-left: 3px solid hsl(282, 44%, 90%);
 }
 
 .jade-set-up {
