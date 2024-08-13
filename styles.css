@@ -443,7 +443,7 @@ img.icon {
     background-repeat: no-repeat;
     background-position: center;
     flex-shrink: 0;
-    min-width: 24.5rem;
+    min-width: 20rem;
     max-width: 40vw;
 }
 
@@ -476,7 +476,7 @@ img.icon {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 10px;
+    gap: 2rem;
 }
 .hero-table .portrait {
     width: 20rem;
@@ -491,6 +491,10 @@ img.icon {
 }
 .weapons img {
     max-width: 8rem;
+}
+p.archetype, p.weapons {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 /* Changelog Table Stylings */
@@ -523,7 +527,7 @@ table.fire,
 table.thunderbolt {
     border-collapse: collapse;
     color: black;
-    width: 90%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -627,6 +631,10 @@ table.thunderbolt {
     }
     .home-button img {
         width: 25vw;
+    }
+
+    .hero-bg {
+        min-width: 98%;
     }
 }
 
