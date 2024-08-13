@@ -103,8 +103,8 @@ p {
     padding: 1vh;
 }
 ul.left {
-    padding-right: calc(20% - 7rem);
-    padding-left: calc(20% - 7rem);
+    padding-right: calc(20% - 4rem);
+    padding-left: calc(20% - 4rem);
 }
 
 .nodot {
@@ -521,7 +521,6 @@ table.ice,
 table.lightning,
 table.fire,
 table.thunderbolt {
-    /* border-radius: 5vw; */
     border-collapse: collapse;
     color: black;
     width: 90%;
@@ -542,6 +541,12 @@ table.lightning {
     border-bottom: 3px solid hsl(25, 31%, 30%);
     border-right: 3px solid hsl(25, 31%, 30%);
     border-left: 3px solid hsl(25, 31%, 90%);
+}
+table.lightning a {
+    color: #614686;
+}
+table.lightning a:hover {
+    color: var(--hover);
 }
 table.fire {
     background-color: var(--color-burn);
