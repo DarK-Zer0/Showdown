@@ -447,6 +447,18 @@ img.icon {
     max-width: 40vw;
 }
 
+.hero-info.wielding {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%
+}
+.hero-info.wielding .portrait {
+    width: 100%;
+}
+.details img {
+    width: 100%;
+}
+
 .hero-table {
     display: flex;
     flex-direction: column;
