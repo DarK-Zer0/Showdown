@@ -1,0 +1,20 @@
+.bg-transparent {
+  background: #FFFFFF00 !important;
+}
+
+.v-icon__svg {
+  fill: none !important;
+}
+
+.frosted {
+   backdrop-filter: blur(8px);
+   background-color: rgba(var(--v-theme-primary), 0.45) !important;
+
+  &.bg-background {
+    background-color: rgba(var(--v-theme-background), 0.45) !important;
+  }
+
+  &.bg-surface {
+    background-color: rgba(var(--v-theme-surface), 0.45) !important;
+  }
+}

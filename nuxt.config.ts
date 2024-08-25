@@ -15,7 +15,7 @@ export default defineNuxtConfig({
           name: 'twitter:card', content: 'summary'
         },
         {
-          name: 'twitter:image', content: 'https://dark-zer0.github.io/Showdown/images/banner.jpg'
+          name: 'twitter:image', content: '/images/banner.jpg'
         },
         /* Open Graph */
         {
@@ -25,17 +25,41 @@ export default defineNuxtConfig({
           property: 'og:url', content: 'https://dark-zer0.github.io/Showdown/'
         },
         {
-          property: 'og:image', content: 'https://dark-zer0.github.io/Showdown/images/banner.jpg'
+          property: 'og:image', content: '/images/banner.jpg'
         },
         /* Capabilities  */
         {
           name: 'background-color', content: '#F7F7F9'
         },
         {
+          name: 'theme-color', content: '#F7F7F9'
+        },
+        {
+          name: 'mobile-web-app-capable', content: 'yes'
+        },
+        {
           name: 'apple-mobile-web-app-capable', content: 'yes'
         },
         {
-          name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent'
+          name: 'apple-mobile-web-app-status-bar-style', content: 'default'
+        }
+      ],
+      link: [
+        /* Icons */
+        {
+          rel: 'shortcut icon', href: '/favicon.ico'
+        },
+        {
+          rel: 'icon', href: '/favicon-16x16.png', type: 'image/png', sizes: '16x16'
+        },
+        {
+          rel: 'icon', href: '/favicon-32x32.png', type: 'image/png', sizes: '32x32'
+        },
+        {
+          rel: 'apple-touch-icon', href: '/apple-touch-icon.png'
+        },
+        {
+          rel: 'manifest', href: '/site.webmanifest'
         }
       ]
     }
@@ -43,37 +67,51 @@ export default defineNuxtConfig({
   build: {
     transpile: ['vuetify']
   },
+  compatibilityDate: '2023-04-03',
+  components: [
+    {
+      path: '~/components',
+      prefix: 'V'
+    }
+  ],
+  css: [
+    '~/assets/scss/main.scss',
+    '~/assets/scss/styles.scss'
+  ],
   devtools: { enabled: true },
   modules: [
     (_options, nuxt) => {
       nuxt.hooks.hook('vite:extendConfig', (config) => {
-        config.plugins!.push(vuetify({ autoImport: true }));
+        config.plugins!.push(vuetify({
+          autoImport: true,
+          styles: {
+            configFile: 'assets/scss/_settings.scss'
+          }
+        }));
       });
     },
     '@nuxtjs/google-fonts',
     '@nuxtjs/sitemap',
-    'nuxt-simple-robots',
+    '@nuxtjs/robots',
     '@nuxt/image',
-    '@nuxt/eslint'
+    '@nuxt/eslint',
+    '@vueuse/nuxt'
   ],
   googleFonts: {
     display: 'swap',
     families: {
-      Roboto: [100, 300, 400, 500, 700, 900]
+      Poppins: [100, 200, 300, 400, 500, 600, 700, 800, 900]
     }
-  },
-  image: {
-    quality: 80,
-    provider: 'ipxStatic'
   },
   nitro: {
     compressPublicAssets: true,
     prerender: {
       crawlLinks: true
-    },
-    static: true
+    }
   },
   site: {
     url: 'https://dark-zer0.github.io/'
-  }
+  },
+  sourcemap: false,
+  ssr: true
 });

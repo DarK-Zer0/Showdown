@@ -1,0 +1,18 @@
+@use "vuetify/settings" with (
+  $color-pack: false,
+  $button-text-letter-spacing: .05em,
+  $button-text-transform: capitalize,
+  $list-item-nav-title-font-size: 1rem,
+  $utilities: (
+    "float-ltr": false,
+    "float-rtl": false,
+    "float": false,
+    "font-italic": false,
+    "order": false,
+    "overflow-wrap": false,
+    "overflow-x": false,
+    "overflow-y": false,
+    "overflow": false,
+    "text-mono": false
+  )
+);
