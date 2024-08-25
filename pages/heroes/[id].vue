@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { Hero } from '~/@types';
-import { useDisplay } from 'vuetify';
 
 definePageMeta({
   validate: ({ params }) => {
@@ -10,13 +9,12 @@ definePageMeta({
 });
 
 const { id } = useRoute().params;
-const { mobile } = useDisplay();
 const img = useImage();
 const heroes = useHeroes();
 const hero = computed<Hero | undefined>(() => heroes.all.find(hero => hero.name.toLowerCase().replace(' ','-') == id));
 const lazySource = computed(() => hero.value === undefined ? undefined : img(`/banners/heroes/${hero.value.name}.webp`, { quality: 20 }));
 
-if (lazySource.value !== undefined && !mobile.value)
+if (hero.value && lazySource.value) {
   useHead({
     link: [
       {
@@ -27,16 +25,28 @@ if (lazySource.value !== undefined && !mobile.value)
       }
     ]
   });
+
+  useSeoMeta({
+    title: hero.value.name,
+    description: hero.value.description,
+    ogTitle: `${hero.value.name} - Showdown Guide`,
+    ogDescription: hero.value.description,
+    twitterTitle: `${hero.value.name} - Showdown Guide`,
+    twitterDescription: hero.value.description,
+    ogImage: `/banners/heroes/${hero.value.name}.webp`,
+    twitterImage: `/banners/heroes/${hero.value.name}.webp`
+  });
+}
 </script>
 
 <template>
-  <v-page :fluid="!mobile" :class="[!mobile ? 'pa-0' : 'page-offset']">
+  <v-page :fluid="true" class="pa-sm-0 page-offset page-offset-sm-0">
 
     <template v-if="hero">
 
       <v-parallax
-        v-if="!mobile" :src="`/banners/heroes/${hero.name}.webp`" :lazy-src="lazySource" :alt="`${hero.name}'s banner, from the Naraka Bladepoint game`"
-        class="h-page"
+        :src="`/banners/heroes/${hero.name}.webp`" :lazy-src="lazySource" :alt="`${hero.name}'s banner, from the Naraka Bladepoint game`"
+        class="h-page d-none d-sm-block"
       />
 
       <div class="d-flex justify-center align-center h-title">
@@ -54,7 +64,7 @@ if (lazySource.value !== undefined && !mobile.value)
       <v-container class="d-flex flex-column align-center flex-md-row">
         <v-card rounded="xl" :flat="true" color="transparent">
           <v-img
-            :src="`/stats/heroes/${hero.name}.png`" :lazy-src="img(`/stats/heroes/${hero.name}.png`, { quality: 20 })"
+            :src="`/stats/heroes/${hero.name}.webp`" :lazy-src="img(`/stats/heroes/${hero.name}.webp`, { quality: 20 })"
             :alt="`${hero.name}'s stats, from the Naraka Bladepoint game`" class="h-stats"
           />
         </v-card>

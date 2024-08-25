@@ -3,7 +3,7 @@ const description = 'A guide designed to help players progress in Naraka\'s Camp
 
 useHead({
   htmlAttrs: {
-    lang: "en"
+    lang: 'en'
   }
 });
 

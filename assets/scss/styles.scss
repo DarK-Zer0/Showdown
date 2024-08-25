@@ -8,6 +8,12 @@
 
 .page-offset {
   padding-top: 98px !important;
+
+  &-sm-0 {
+    @media (min-width: 600px) {
+      padding-top: 0 !important;
+    }
+  }
 }
 
 .frosted {

@@ -1,5 +1,11 @@
 <script setup lang="ts">
 const heroes = useHeroes();
+
+useSeoMeta({
+  title: 'Heroes - Showdown Guide',
+  ogTitle: 'Heroes - Showdown Guide',
+  twitterTitle: 'Heroes - Showdown Guide'
+});
 </script>
 
 <template>
