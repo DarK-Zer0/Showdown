@@ -1,4 +1,4 @@
-$default-font-family: 'Poppins' sans-serif;
+$default-font-family: 'Poppins', sans-serif;
 
 @use "vuetify" with (
   $body-font-family: $default-font-family,
