@@ -5,13 +5,20 @@ import aliases from '~/iconsets/stroke';
 import { md3 } from 'vuetify/blueprints';
 import { VContainer } from 'vuetify/components';
 
+const palette: Partial<ThemeDefinition['colors']> = {
+  primary: '#4CA30D',
+  'on-primary': '#15290A'
+};
+
 const light: ThemeDefinition = {
   dark: false,
   colors: {
     background: '#FFFFFF',
     'on-background': '#282A30',
     surface: '#F4F5F8',
-    'on-surface': '#3C4149'
+    'on-surface': '#3C4149',
+
+    ...palette
   }
 };
 
@@ -21,7 +28,9 @@ const dark: ThemeDefinition = {
     background: '#060606',
     'on-background': '#F7F8F8',
     surface: '#131315',
-    'on-surface': '#D0D6E0'
+    'on-surface': '#D0D6E0',
+
+    ...palette
   }
 };
 

@@ -26,7 +26,8 @@ const heroes = useHeroes();
 
             <v-card-item>
               <v-btn
-                variant="tonal" :block="true" text="Learn more" append-icon="$next" :readonly="true"
+                variant="tonal" :block="true" text="Learn more" append-icon="$next"
+                :readonly="true"
               />
             </v-card-item>
           </v-card-text>
