@@ -1,13 +1,13 @@
 <script lang="ts" setup>
 const img = useImage();
-const lazySource = img('/images/banner.jpg');
+const lazySource = img('/images/banner.webp');
 
 useHead({
   link: [
     {
       rel: 'preload',
       as: 'image',
-      href: '/images/banner.webp',
+      href: lazySource,
       type: 'image/webp'
     }
   ]
@@ -18,7 +18,7 @@ useHead({
   <v-page :fluid="true" class="pa-0">
 
     <v-parallax
-      src="/images/banner.webp" :lazy-src="lazySource" class="h-page"
+      src="/images/banner.webp" :lazy-src="lazySource" alt="Banner for the upcoming Showdown season" class="h-page"
     />
 
     <v-container class="h-page">

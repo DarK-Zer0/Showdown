@@ -61,13 +61,64 @@ if (hero.value && lazySource.value) {
         </p>
       </v-container>
 
-      <v-container class="d-flex flex-column align-center flex-md-row">
-        <v-card rounded="xl" :flat="true" color="transparent">
+      <h2 class="text-h4 py-4 text-center">
+        Hero Overview
+      </h2>
+
+      <v-container class="d-flex flex-column align-center flex-md-row-reverse">
+
+        <v-card rounded="xl" :flat="true" color="transparent" class="h-stats">
           <v-img
             :src="`/stats/heroes/${hero.name}.webp`" :lazy-src="img(`/stats/heroes/${hero.name}.webp`, { quality: 20 })"
-            :alt="`${hero.name}'s stats, from the Naraka Bladepoint game`" class="h-stats"
+            :alt="`${hero.name}'s stats, from the Naraka Bladepoint game`"
           />
         </v-card>
+
+
+        <v-container>
+
+          <h3 class="text-h5 text-center">
+            Hero Weapons
+          </h3>
+
+          <v-row class="py-4">
+            <v-col cols="12" sm="6">
+              <v-card title="Melee Weapon" class="d-flex flex-column align-center" @click.prevent>
+                <v-img
+                  :src="`/avatars/weapons/${hero.melee.name}.svg`"
+                  :alt="hero.melee.name" class="weapon-size my-4"
+                />
+
+                <v-card-text class="text-center text-body-1">
+                  {{ hero.melee.name }}
+                </v-card-text>
+              </v-card>
+            </v-col>
+            <v-col cols="12" sm="6">
+              <v-card title="Melee Weapon" class="d-flex flex-column align-center" @click.prevent>
+                <v-img
+                  :src="`/avatars/weapons/${hero.ranged.name}.svg`"
+                  :alt="hero.ranged.name" class="weapon-size my-4"
+                />
+
+                <v-card-text class="text-center text-body-1">
+                  {{ hero.ranged.name }}
+                </v-card-text>
+              </v-card>
+            </v-col>
+          </v-row>
+
+          <h4 class="text-h5 text-center py-4">
+            Recommended Builds
+          </h4>
+
+          <v-card rounded="lg">
+            <v-list>
+              <v-list-item title="Pending to add" />
+            </v-list>
+          </v-card>
+        </v-container>
+
       </v-container>
 
     </template>
@@ -96,5 +147,16 @@ $height-title: 90px;
   min-width: 272px !important;
   width: 272px !important;
   max-width: 272px !important;
+}
+
+.weapon-size {
+  max-width: 75% !important;
+  width: 100% !important;
+  max-height: 100px !important;
+  height: 100px !important;
+  @media (min-width: 600px) {
+    max-height: 150px !important;
+    height: 150px !important;
+  }
 }
 </style>

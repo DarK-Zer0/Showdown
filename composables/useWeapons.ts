@@ -1,110 +1,175 @@
-enum WeaponType {
-  Melee, Ranged
-}
-
-enum WeaponCategory {
-  SingleEdged, HeavySword, LongHandle, ShortHandle, DualWield, Nunchunks
-}
-
-export interface Weapon {
-  name: string;
-  type: WeaponType;
-  category: WeaponCategory | null;
-}
+import type { Weapon, MeleeWeapon, RangedWeapon, HeavyMeleeWeapon } from '~/@types';
 
 // noinspection JSUnusedGlobalSymbols
 export default function () {
 
-  const longsword: Weapon = {
-    name: 'Longsword', type: WeaponType.Melee, category: null
+  const longsword: MeleeWeapon = {
+    name: 'Longsword',
+    melee: true
   };
 
-  const katana: Weapon = {
-    name: 'Katana', type: WeaponType.Melee, category: WeaponCategory.SingleEdged
+  const polesword: HeavyMeleeWeapon = {
+    name: 'Polesword',
+    melee: true,
+    heavy: true
   };
 
-  const hengSword: Weapon = {
-    name: 'Heng Sword', type: WeaponType.Melee, category: WeaponCategory.SingleEdged
+  const greatsword: HeavyMeleeWeapon = {
+    name: 'Greatsword',
+    melee: true,
+    heavy: true
   };
 
-  const greatsword: Weapon = {
-    name: 'Greatsword', type: WeaponType.Melee, category: WeaponCategory.HeavySword
+  const katana: MeleeWeapon = {
+    name: 'Katana',
+    melee: true
   };
 
-  const polesword: Weapon = {
-    name: 'Polesword', type: WeaponType.Melee, category: WeaponCategory.HeavySword
+  const hengsword: MeleeWeapon = {
+    name: 'Hengsword',
+    melee: true
   };
 
-  const spear: Weapon = {
-    name: 'Spear', type: WeaponType.Melee, category: WeaponCategory.LongHandle
+  const dagger: MeleeWeapon = {
+    name: 'Dagger',
+    melee: true
   };
 
-  const staff: Weapon = {
-    name: 'Staff', type: WeaponType.Melee, category: WeaponCategory.LongHandle
+  const fan: MeleeWeapon = {
+    name: 'Fan',
+    melee: true
   };
 
-  const dagger: Weapon = {
-    name: 'Dagger', type: WeaponType.Melee, category: WeaponCategory.ShortHandle
+  const spear: MeleeWeapon = {
+    name: 'Spear',
+    melee: true
   };
 
-  const fan: Weapon = {
-    name: 'Fan', type: WeaponType.Melee, category: WeaponCategory.ShortHandle
+  const staff: MeleeWeapon = {
+    name: 'Staff',
+    melee: true
   };
 
-  const dualBlades: Weapon = {
-    name: 'Dual Blades', type: WeaponType.Melee, category: WeaponCategory.DualWield
+  const nunchuks: MeleeWeapon = {
+    name: 'Nunchuks',
+    melee: true
   };
 
-  const dualHalberds: Weapon = {
-    name: 'Dual Halberds', type: WeaponType.Melee, category: WeaponCategory.DualWield
+  const dualBlades: MeleeWeapon = {
+    name: 'Dual Blades',
+    melee: true
   };
 
-  const nunchunks: Weapon = {
-    name: 'Nunchunks', type: WeaponType.Melee, category: WeaponCategory.Nunchunks
+  const dualHalberds: MeleeWeapon = {
+    name: 'Dual Halberds',
+    melee: true
   };
 
-  const repeatingCrossbow: Weapon = {
-    name: 'Repeating Crossbow', type: WeaponType.Ranged, category: null
+  const fistblades: MeleeWeapon = {
+    name: 'Fistblades',
+    melee: true
   };
 
-  const musket: Weapon = {
-    name: 'Musket', type: WeaponType.Ranged, category: null
+  const swarm: RangedWeapon = {
+    name: 'Swarm',
+    ranged: true
   };
 
-  const cannon: Weapon = {
-    name: 'Cannon', type: WeaponType.Ranged, category: null
+  const pistol: RangedWeapon = {
+    name: 'Pistol',
+    ranged: true
   };
 
-  const pistol: Weapon = {
-    name: 'Pistol', type: WeaponType.Ranged, category: null
+  const flamebringer: RangedWeapon = {
+    name: 'Flamebringer',
+    ranged: true
   };
 
-  const bow: Weapon = {
-    name: 'Bow', type: WeaponType.Ranged, category: null
+  const musket: RangedWeapon = {
+    name: 'Musket',
+    ranged: true
   };
 
-  const swarm: Weapon = {
-    name: 'Swarm', type: WeaponType.Ranged, category: null
+  const repeatingCrossbow: RangedWeapon = {
+    name: 'Repeating Crossbow',
+    ranged: true
   };
 
-  const melee: Weapon[] = [
-    longsword, katana, hengSword, greatsword, polesword, spear, staff, dagger, fan, dualBlades, dualHalberds, nunchunks
+  const cannon: RangedWeapon = {
+    name: 'Cannon',
+    ranged: true
+  };
+
+  const bow: RangedWeapon = {
+    name: 'Bow',
+    ranged: true
+  };
+
+  const bloodripper: RangedWeapon = {
+    name: 'Bloodripper',
+    ranged: true
+  };
+
+  const melee: MeleeWeapon[] = [
+    longsword,
+    polesword,
+    greatsword,
+    katana,
+    hengsword,
+    dagger,
+    fan,
+    spear,
+    staff,
+    nunchuks,
+    dualBlades,
+    dualHalberds,
+    fistblades
   ];
 
-  const ranged: Weapon[] = [
-    repeatingCrossbow, musket, cannon, pistol, bow, swarm
+  const ranged: RangedWeapon[] = [
+    swarm,
+    pistol,
+    flamebringer,
+    musket,
+    repeatingCrossbow,
+    cannon,
+    bow,
+    bloodripper
   ];
 
-  const weapons: Weapon[] = [
+  const all: Weapon[] = [
     ...melee,
     ...ranged
   ];
 
-  return ({
-    longsword, katana, hengSword, greatsword, polesword, spear, staff, dagger, fan, dualBlades, dualHalberds, nunchunks,
-    repeatingCrossbow, musket, cannon, pistol, bow, swarm,
-    list: weapons,
+  return {
+    all,
+
     melee,
-    ranged
-  });
+    ranged,
+
+    longsword,
+    polesword,
+    greatsword,
+    katana,
+    hengsword,
+    dagger,
+    fan,
+    spear,
+    staff,
+    nunchuks,
+    dualBlades,
+    dualHalberds,
+    fistblades,
+
+    swarm,
+    pistol,
+    flamebringer,
+    musket,
+    repeatingCrossbow,
+    cannon,
+    bow,
+    bloodripper
+  };
+
 }

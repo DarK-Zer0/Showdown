@@ -29,10 +29,16 @@ export default defineNuxtConfig({
         },
         /* Capabilities  */
         {
-          name: 'background-color', content: '#F7F7F9'
+          name: 'background-color', content: '#FFFFFF', media: '(prefers-color-scheme: light)'
         },
         {
-          name: 'theme-color', content: '#F7F7F9'
+          name: 'background-color', content: '#060606', media: '(prefers-color-scheme: dark)'
+        },
+        {
+          name: 'theme-color', content: '#FFFFFF', media: '(prefers-color-scheme: light)'
+        },
+        {
+          name: 'theme-color', content: '#060606', media: '(prefers-color-scheme: dark)'
         },
         {
           name: 'mobile-web-app-capable', content: 'yes'
