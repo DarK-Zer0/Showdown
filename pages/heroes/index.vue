@@ -10,6 +10,13 @@ useSeoMeta({
 
 <template>
   <v-page class="page-offset">
+
+    <v-container>
+      <h1 class="text-h3">
+        Heroes
+      </h1>
+    </v-container>
+
     <v-row>
       <v-col v-for="hero in heroes.all" :key="hero.name" cols="12">
         <v-card class="d-flex flex-column flex-sm-row" :to="`/heroes/${heroes.toUrl(hero)}`">

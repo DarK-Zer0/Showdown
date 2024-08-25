@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { useTheme } from 'vuetify';
-import { hiMoon02, hiPaintBoard, hiSun03, hiUserGroup } from '~/iconsets/stroke';
+import { hiDice, hiMoon02, hiPaintBoard, hiSun03, hiUserGroup } from '~/iconsets/stroke';
 import type { IconValue } from '~/iconsets';
 
 interface Route {
@@ -17,7 +17,8 @@ const toggleTheme = () =>
   colorMode.value = theme.global.name.value = theme.current.value.dark ? 'light' : 'dark';
 
 const routes: Route[] = [
-  { title: 'Heroes', to: '/heroes', icon: hiUserGroup }
+  { title: 'Heroes', to: '/heroes', icon: hiUserGroup },
+  { title: 'Builds', to: '/builds', icon: hiDice }
 ];
 
 onMounted(() => theme.global.name.value = (colorMode.value === 'auto' ? colorMode.system.value : colorMode.value));
@@ -28,7 +29,9 @@ onMounted(() => theme.global.name.value = (colorMode.value === 'auto' ? colorMod
 
     <v-navigation-drawer v-model="nav" :disable-resize-watcher="true" :temporary="true">
 
-      <v-list :nav="true" aria-label="Navigation links">
+      <v-list
+        :nav="true" aria-label="Navigation links" color="primary"
+      >
         <v-list-item
           v-for="route in routes" :key="route.to" append-icon="$next"
           rounded="xl s-lg" :title="route.title" :to="route.to" role="option"
@@ -87,6 +90,10 @@ onMounted(() => theme.global.name.value = (colorMode.value === 'auto' ? colorMod
               <v-tabs class="d-none d-md-flex" :mandatory="true">
                 <v-tab
                   text="Heroes" :rounded="0" :prepend-icon="hiUserGroup" to="/heroes"
+                  class="font-weight-bold"
+                />
+                <v-tab
+                  text="Builds" :rounded="0" :prepend-icon="hiDice" to="/builds"
                   class="font-weight-bold"
                 />
               </v-tabs>

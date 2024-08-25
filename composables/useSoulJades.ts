@@ -1,5 +1,5 @@
 import type { SoulJade } from '~/@types';
-import { SoulJadeCategory, SoulJadeRarity, SoulJadeType } from '~/@types/index.d';
+import { SoulJadeCategory, SoulJadeRarity, SoulJadeType, WieldingType } from '~/@types/index.d';
 
 // noinspection JSUnusedGlobalSymbols
 export default function () {
@@ -449,7 +449,7 @@ export default function () {
     description: 'Alters Spear\'s charged vertical strikes',
     rarity: SoulJadeRarity.Epic,
     type: SoulJadeType.Health,
-    category: SoulJadeCategory.Melee,
+    category: SoulJadeCategory.SpecialBuff,
     baseStat: 12,
     exclusive: weapons.spear,
     upgradable: true
@@ -460,7 +460,7 @@ export default function () {
     description: 'Burns enemies hit with melee weapon\'s Grappling Strikes, dealing damage over time',
     rarity: SoulJadeRarity.Epic,
     type: SoulJadeType.Health,
-    category: SoulJadeCategory.Melee,
+    category: SoulJadeCategory.SpecialBuff,
     baseStat: 12,
     exclusive: weapons.melee,
     upgradable: true
@@ -471,7 +471,7 @@ export default function () {
     description: 'Alters Quick Dash horizontal strikes',
     rarity: SoulJadeRarity.Epic,
     type: SoulJadeType.Health,
-    category: SoulJadeCategory.Melee,
+    category: SoulJadeCategory.SpecialBuff,
     baseStat: 12,
     exclusive: weapons.dagger,
     upgradable: true
@@ -772,6 +772,331 @@ export default function () {
     baseStat: 12
   };
 
+  const incineration: SoulJade = {
+    name: 'Incineration',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4
+  };
+
+  const ember: SoulJade = {
+    name: 'Ember',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.SpecialBuff,
+    baseStat: 4
+  };
+
+  const defuseRagingFlame: SoulJade = {
+    name: 'Defuse · Raging Flame',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.Melee,
+    baseStat: 6
+  };
+
+  const dracoStride: SoulJade = {
+    name: 'Draco Stride',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.Health,
+    category: SoulJadeCategory.SpecialMovement,
+    baseStat: 12
+  };
+
+  const defuseFlamingBlade = {
+    name: 'Defuse · Flaming Blade',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.Melee,
+    baseStat: 6
+  };
+
+  const copperWard: SoulJade = {
+    name: 'Copper Ward',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.SpecialBuff,
+    baseStat: 6
+  };
+
+  const stormstrideSword: SoulJade = {
+    name: 'Stormstride · Sword',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4
+  };
+
+  const skyfire: SoulJade = {
+    name: 'Skyfire',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4
+  };
+
+  const defuseAegisBreak: SoulJade = {
+    name: 'Defuse · Aegis-break',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.Melee,
+    baseStat: 6
+  };
+
+  const defuseSolidification: SoulJade = {
+    name: 'Defuse · Solidification',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.Melee,
+    baseStat: 6
+  };
+
+  const torrentFlowThunderWielding: SoulJade = {
+    name: 'Torrent Flow · Thunder-Wielding',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4,
+    exclusive: weapons.polesword,
+    wieldingType: WieldingType.Thunder
+  };
+
+  const defuseSoulsnatch: SoulJade = {
+    name: 'Defuse · Soul-snatch',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.Melee,
+    baseStat: 6
+  };
+
+  const thunderpull: SoulJade = {
+    name: 'Thunderpull',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4
+  };
+
+  const thunderCounter: SoulJade = {
+    name: 'Thunder Counter',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.Melee,
+    baseStat: 6
+  };
+
+  const springsCall: SoulJade = {
+    name: 'Spring\'s Call',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.Health,
+    category: SoulJadeCategory.SpecialMovement,
+    baseStat: 12
+  };
+
+  const velocityUntoldThunderWielding: SoulJade = {
+    name: 'Velocity Untold · Thunder-Wielding',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4,
+    exclusive: weapons.nunchuks,
+    wieldingType: WieldingType.Thunder
+  };
+
+  const iceBreak: SoulJade = {
+    name: 'Ice Break',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.Melee,
+    baseStat: 6
+  };
+
+  const subZeroSeal: SoulJade = {
+    name: 'Sub-Zero Seal',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Health,
+    category: SoulJadeCategory.SpecialMovement,
+    baseStat: 12
+  };
+
+  const thunderproof: SoulJade = {
+    name: 'Thunderproof',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.Melee,
+    baseStat: 6
+  };
+
+  const backfire: SoulJade = {
+    name: 'Backfire',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4
+  };
+
+  const thunderSword: SoulJade = {
+    name: 'Thunder Sword',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4
+  };
+
+  const thunderMastery: SoulJade = {
+    name: 'Thunder Mastery',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4
+  };
+
+  const verticalBlinkStrikeThunderWielding: SoulJade = {
+    name: 'Vertical Blink Strike · Thunder-Wielding',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4,
+    exclusive: weapons.katana,
+    wieldingType: WieldingType.Thunder
+  };
+
+  const assasinsLungeIceWielding: SoulJade = {
+    name: 'Assassin\'s Lunge · Ice-Wielding',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4,
+    wieldingType: WieldingType.Ice
+  };
+
+  const quickAttack: SoulJade = {
+    name: 'Quick Attack',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4
+  };
+
+  const crescentSlamThunderWielding: SoulJade = {
+    name: 'Crescent Slam · Thunder-Wielding',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4,
+    exclusive: weapons.spear,
+    wieldingType: WieldingType.Thunder
+  };
+
+  const successiveIceBlast: SoulJade = {
+    name: 'Successive Ice Blast',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4
+  };
+
+  const depthsBlast: SoulJade = {
+    name: 'Depths Blast',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4
+  };
+
+  const yushanShadows: SoulJade = {
+    name: 'Yushan Shadows',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4
+  };
+
+  const frozenBlast: SoulJade = {
+    name: 'Frozen Blast',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4
+  };
+
+  const tundraMight: SoulJade = {
+    name: 'Tundra Might',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Health,
+    category: SoulJadeCategory.SpecialMovement,
+    baseStat: 12
+  };
+
+  const defuseThaw: SoulJade = {
+    name: 'Defuse · Thaw',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.Melee,
+    baseStat: 6
+  };
+
+  const arcaneThunder: SoulJade = {
+    name: 'Arcane Thunder',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.Health,
+    category: SoulJadeCategory.SpecialMovement,
+    baseStat: 12
+  };
+
+  const flamebreath: SoulJade = {
+    name: 'Flamebreath',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Ranged,
+    baseStat: 4,
+    exclusive: weapons.cannon
+  };
+
+  const cinderfrost: SoulJade = {
+    name: 'Cinderfrost',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.Melee,
+    baseStat: 6
+  };
+
   const all: SoulJade[] = [
     health1,
     attack1,
@@ -849,8 +1174,60 @@ export default function () {
     soulRelease,
     skyforce,
     repairRoll,
-    desperation
+    desperation,
+
+    incineration,
+    ember,
+    defuseRagingFlame,
+    dracoStride,
+    defuseFlamingBlade,
+    copperWard,
+    stormstrideSword,
+    skyfire,
+    defuseAegisBreak,
+    defuseSolidification,
+    torrentFlowThunderWielding,
+    defuseSoulsnatch,
+    thunderpull,
+    thunderCounter,
+    springsCall,
+    velocityUntoldThunderWielding,
+    iceBreak,
+    subZeroSeal,
+    thunderproof,
+    backfire,
+    thunderSword,
+    thunderMastery,
+    verticalBlinkStrikeThunderWielding,
+    assasinsLungeIceWielding,
+    quickAttack,
+    crescentSlamThunderWielding,
+    successiveIceBlast,
+    depthsBlast,
+    yushanShadows,
+    frozenBlast,
+    tundraMight,
+    defuseThaw,
+    arcaneThunder,
+    flamebreath,
+    cinderfrost
   ];
+
+  const thumbnail = (souljade: SoulJade) =>
+    `/avatars/souljades/${souljade.rarity}/${
+      souljade.consumable
+        ? 'Consumable/'
+        : souljade.upgradable
+          ? 'Upgradable/'
+          : ''}${
+      (souljade.rarity === SoulJadeRarity.Epic || souljade.rarity === SoulJadeRarity.Legendary) && souljade.type === SoulJadeType.Health && souljade.upgradable !== true
+        ? `Health/${souljade.category}`
+        : (souljade.rarity === SoulJadeRarity.Common || souljade.rarity === SoulJadeRarity.Rare) && souljade.type !== SoulJadeType.Attack
+          ? 'Stat'
+          : souljade.upgradable === true
+            ? souljade.category
+            : souljade.type
+    }.webp`;
 
   return {
     all,
@@ -931,7 +1308,46 @@ export default function () {
     soulRelease,
     skyforce,
     repairRoll,
-    desperation
+    desperation,
+
+    incineration,
+    ember,
+    defuseRagingFlame,
+    dracoStride,
+    defuseFlamingBlade,
+    copperWard,
+    stormstrideSword,
+    skyfire,
+    defuseAegisBreak,
+    defuseSolidification,
+    torrentFlowThunderWielding,
+    defuseSoulsnatch,
+    thunderpull,
+    thunderCounter,
+    springsCall,
+    velocityUntoldThunderWielding,
+    iceBreak,
+    subZeroSeal,
+    thunderproof,
+    backfire,
+    thunderSword,
+    thunderMastery,
+    verticalBlinkStrikeThunderWielding,
+    assasinsLungeIceWielding,
+    quickAttack,
+    crescentSlamThunderWielding,
+    successiveIceBlast,
+    depthsBlast,
+    yushanShadows,
+    frozenBlast,
+    tundraMight,
+    defuseThaw,
+    arcaneThunder,
+    flamebreath,
+    cinderfrost,
+
+
+    thumbnail
   };
 
 }

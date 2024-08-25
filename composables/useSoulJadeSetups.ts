@@ -5,6 +5,7 @@ import { hiCloudAngledZap, hiFire, hiSnow, hiZap } from '~/iconsets/stroke';
 // noinspection JSUnusedGlobalSymbols
 export default function () {
   const heroes = useHeroes();
+  const jades = useSoulJades();
 
   const burn: SoulJadeSetupCategory = {
     name: 'Burn',
@@ -28,7 +29,10 @@ export default function () {
 
   const incinerate: SoulJadeSetup = {
     name: 'Incinerate',
-    jades: [],
+    difficulty: 4.5,
+    jades: [
+      jades.incineration, jades.ember, jades.defuseRagingFlame, jades.dracoStride, jades.defuseFlamingBlade, jades.copperWard
+    ],
     wieldingType: WieldingType.Thunder,
     heroes: [
       heroes.feriaShen, heroes.tarkaJi, heroes.tianhai, heroes.matari
@@ -38,7 +42,11 @@ export default function () {
 
   const skyfireStorm: SoulJadeSetup = {
     name: 'Skyfire Storm',
-    jades: [],
+    difficulty: 3,
+    jades: [
+      jades.stormstrideSword, jades.skyfire, jades.defuseRagingFlame, jades.defuseAegisBreak, jades.defuseSolidification,
+      jades.defuseFlamingBlade
+    ],
     wieldingType: WieldingType.Thunder,
     heroes: [
       heroes.feriaShen, heroes.wuchen
@@ -48,7 +56,11 @@ export default function () {
 
   const torrentFlames: SoulJadeSetup = {
     name: 'Torrent Flames',
-    jades: [],
+    difficulty: 2.5,
+    jades: [
+      jades.skyfire, jades.defuseRagingFlame, jades.torrentFlowThunderWielding, jades.defuseAegisBreak, jades.defuseSolidification,
+      jades.defuseFlamingBlade
+    ],
     wieldingType: WieldingType.Thunder,
     heroes: [
       heroes.yueshan
@@ -58,7 +70,10 @@ export default function () {
 
   const cauterize: SoulJadeSetup = {
     name: 'Cauterize',
-    jades: [],
+    difficulty: 3.5,
+    jades: [
+      jades.incineration, jades.ember, jades.defuseSoulsnatch, jades.defuseRagingFlame, jades.dracoStride, jades.defuseFlamingBlade
+    ],
     wieldingType: WieldingType.Ice,
     heroes: [
       heroes.tianhai, heroes.tarkaJi, heroes.matari
@@ -68,7 +83,11 @@ export default function () {
 
   const thunderWielder: SoulJadeSetup = {
     name: 'Thunder Wielder',
-    jades: [],
+    difficulty: 3,
+    jades: [
+      jades.thunderpull, jades.thunderCounter, jades.springsCall, jades.velocityUntoldThunderWielding, jades.iceBreak,
+      jades.subZeroSeal
+    ],
     wieldingType: WieldingType.Thunder,
     heroes: [
       heroes.feriaShen, heroes.tianhai, heroes.telmuch, heroes.tarkaJi, heroes.kurumi, heroes.yueshan, heroes.wuchen
@@ -78,7 +97,10 @@ export default function () {
 
   const lightningRod: SoulJadeSetup = {
     name: 'Lightning Rod',
-    jades: [],
+    difficulty: 2.5,
+    jades: [
+      jades.thunderpull, jades.thunderCounter, jades.springsCall, jades.thunderproof, jades.iceBreak, jades.subZeroSeal
+    ],
     wieldingType: WieldingType.Thunder,
     heroes: [
       heroes.viperNing, heroes.tianhai, heroes.wuchen
@@ -88,7 +110,11 @@ export default function () {
 
   const divineDesperation: SoulJadeSetup = {
     name: 'Divine Desperation',
-    jades: [],
+    difficulty: 4,
+    jades: [
+      jades.thunderpull, jades.thunderCounter, jades.desperation, jades.stormstride, jades.velocityUntoldThunderWielding,
+      jades.backfire
+    ],
     wieldingType: WieldingType.Thunder,
     heroes: [
       heroes.viperNing, heroes.feriaShen, heroes.tianhai, heroes.telmuch, heroes.tarkaJi, heroes.kurumi, heroes.valdaCui,
@@ -99,7 +125,11 @@ export default function () {
 
   const thunderSap: SoulJadeSetup = {
     name: 'Thunder Sap',
-    jades: [],
+    difficulty: 3.5,
+    jades: [
+      jades.thunderpull, jades.thunderCounter, jades.stormstride, jades.sap, jades.velocityUntoldThunderWielding,
+      jades.backfire
+    ],
     wieldingType: WieldingType.Thunder,
     heroes: [
       heroes.viperNing, heroes.feriaShen, heroes.tianhai, heroes.telmuch, heroes.tarkaJi, heroes.kurumi, heroes.valdaCui,
@@ -110,7 +140,11 @@ export default function () {
 
   const blinkStrike: SoulJadeSetup = {
     name: 'Blink Strike',
-    jades: [],
+    difficulty: 2.5,
+    jades: [
+      jades.thunderSword, jades.thunderpull, jades.thunderMastery, jades.thunderCounter, jades.stormstride,
+      jades.verticalBlinkStrikeThunderWielding
+    ],
     wieldingType: WieldingType.Thunder,
     heroes: [
       heroes.kurumi
@@ -120,7 +154,11 @@ export default function () {
 
   const lightningDash: SoulJadeSetup = {
     name: 'Lightning Dash',
-    jades: [],
+    difficulty: 2,
+    jades: [
+      jades.stormstrideSword, jades.thunderMastery, jades.stormstride, jades.arcaneThunder, jades.assasinsLungeIceWielding,
+      jades.quickAttack
+    ],
     wieldingType: WieldingType.Ice,
     heroes: [
       heroes.matari
@@ -130,7 +168,10 @@ export default function () {
 
   const staticShock: SoulJadeSetup = {
     name: 'Static Shock',
-    jades: [],
+    difficulty: 2.5,
+    jades: [
+      jades.thunderSword, jades.thunderpull, jades.thunderMastery, jades.thunderCounter, jades.stormstride, jades.thunderproof
+    ],
     wieldingType: WieldingType.Thunder,
     heroes: [
       heroes.viperNing
@@ -140,7 +181,11 @@ export default function () {
 
   const thunderBreak: SoulJadeSetup = {
     name: 'Thunder Break',
-    jades: [],
+    difficulty: 2.5,
+    jades: [
+      jades.stormstrideSword, jades.thunderpull, jades.thunderMastery, jades.thunderCounter, jades.stormstride,
+      jades.crescentSlamThunderWielding
+    ],
     wieldingType: WieldingType.Thunder,
     heroes: [
       heroes.valdaCui, heroes.feriaShen
@@ -150,7 +195,11 @@ export default function () {
 
   const icyShadow: SoulJadeSetup = {
     name: 'Icy Shadow',
-    jades: [],
+    difficulty: 3.5,
+    jades: [
+      jades.successiveIceBlast, jades.depthsBlast, jades.yushanShadows, jades.frozenBlast, jades.subZeroSeal,
+      jades.tundraMight
+    ],
     wieldingType: WieldingType.Ice,
     heroes: [
       heroes.viperNing, heroes.feriaShen, heroes.tianhai, heroes.telmuch, heroes.kurumi, heroes.valdaCui, heroes.matari,
@@ -161,7 +210,11 @@ export default function () {
 
   const springsAdvent: SoulJadeSetup = {
     name: 'Spring\'s Advent',
-    jades: [],
+    difficulty: 3,
+    jades: [
+      jades.successiveIceBlast, jades.frozenBlast, jades.springsCall, jades.velocityUntoldThunderWielding, jades.defuseThaw,
+      jades.subZeroSeal
+    ],
     wieldingType: WieldingType.Ice,
     heroes: [
       heroes.viperNing, heroes.feriaShen, heroes.tianhai, heroes.telmuch, heroes.kurumi, heroes.valdaCui, heroes.matari,
@@ -172,7 +225,10 @@ export default function () {
 
   const yueshanEnigma: SoulJadeSetup = {
     name: 'Yueshan Enigma',
-    jades: [],
+    difficulty: 2,
+    jades: [
+      jades.successiveIceBlast, jades.frozenBlast, jades.incineration, jades.arcaneThunder, jades.subZeroSeal, jades.tundraMight
+    ],
     wieldingType: WieldingType.Ice,
     heroes: [
       heroes.viperNing
@@ -182,7 +238,10 @@ export default function () {
 
   const steamCannon: SoulJadeSetup = {
     name: 'Steam Cannon',
-    jades: [],
+    difficulty: 1.5,
+    jades: [
+      jades.successiveIceBlast, jades.repairRoll, jades.flamebreath, jades.cinderfrost, jades.subZeroSeal, jades.tundraMight
+    ],
     wieldingType: WieldingType.Ice,
     heroes: [
       heroes.tarkaJi, heroes.yueshan
@@ -209,12 +268,20 @@ export default function () {
     steamCannon
   ];
 
+  const categories: SoulJadeSetupCategory[] = [
+    burn,
+    thunder,
+    thunderbolt,
+    ice
+  ];
+
   const forHero = (hero: Hero): SoulJadeSetup[] => all.filter(setup => setup.heroes.find(h => h.name === hero.name));
 
   const byCategory = (category: string): SoulJadeSetup[] => all.filter(setup => setup.category.name === category);
 
   return {
     all,
+    categories,
 
     incinerate,
     skyfireStorm,

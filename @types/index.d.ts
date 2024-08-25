@@ -64,13 +64,14 @@ export interface SoulJade {
 
 export interface SoulJadeSetup {
   name: string;
-  jades: SoulJade[6];
+  jades: SoulJade[];
   wieldingType: WieldingType;
   heroes: Hero[];
   attributes: string[];
   strengths: string[];
   weaknesses: string[];
   category: SoulJadeSetupCategory;
+  difficulty: number;
 }
 
 export interface SoulJadeSetupCategory {
