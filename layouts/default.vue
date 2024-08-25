@@ -28,10 +28,10 @@ onMounted(() => theme.global.name.value = (colorMode.value === 'auto' ? colorMod
 
     <v-navigation-drawer v-model="nav" :disable-resize-watcher="true" :temporary="true">
 
-      <v-list :nav="true">
+      <v-list :nav="true" aria-label="Navigation links">
         <v-list-item
           v-for="route in routes" :key="route.to" append-icon="$next"
-          rounded="xl s-lg" :title="route.title" :to="route.to"
+          rounded="xl s-lg" :title="route.title" :to="route.to" role="option"
         >
           <template #prepend>
             <v-icon :icon="route.icon" class="me-n4"/>
@@ -40,9 +40,9 @@ onMounted(() => theme.global.name.value = (colorMode.value === 'auto' ? colorMod
       </v-list>
 
       <template #append>
-        <v-list :nav="true">
+        <v-list :nav="true" aria-label="Website options">
           <v-list-item
-            title="Theme" rounded="xl s-lg" @click.prevent="toggleTheme"
+            title="Theme" rounded="xl s-lg" role="option" @click.prevent="toggleTheme"
           >
             <template #prepend>
               <v-icon :icon="hiPaintBoard" class="me-n4"/>
@@ -79,18 +79,22 @@ onMounted(() => theme.global.name.value = (colorMode.value === 'auto' ? colorMod
             </template>
 
             <template #append>
-              <v-app-bar-nav-icon rounded="xl" class="mr-1 d-md-none" @click="nav = !nav"/>
+              <v-app-bar-nav-icon
+                rounded="xl" class="mr-1 d-md-none"
+                :aria-label="nav ? 'Close navigation drawer' : 'Open navigation drawer'" @click="nav = !nav"
+              />
 
               <v-tabs class="d-none d-md-flex" :mandatory="true">
                 <v-tab
-                    text="Heroes" :rounded="0" :prepend-icon="hiUserGroup" to="/heroes"
-                    class="font-weight-bold"
+                  text="Heroes" :rounded="0" :prepend-icon="hiUserGroup" to="/heroes"
+                  class="font-weight-bold"
                 />
               </v-tabs>
 
               <v-app-bar-nav-icon
-                  :icon="theme.current.value.dark ? hiSun03 : hiMoon02" class="mx-2 d-none d-md-inline-flex"
-                  @click.prevent="toggleTheme"
+                  :icon="theme.current.value.dark ? hiSun03 : hiMoon02"
+                  :aria-label="theme.current.value.dark ? 'Change to light theme' : 'Change to dark theme'"
+                  class="mx-2 d-none d-md-inline-flex" @click.prevent="toggleTheme"
               />
             </template>
           </v-toolbar>

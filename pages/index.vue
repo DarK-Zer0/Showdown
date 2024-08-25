@@ -29,7 +29,9 @@ useHead({
       </div>
 
       <div class="text-center">
-        <v-btn variant="tonal" size="x-large" text="Get Started" append-icon="$next" />
+        <v-btn
+          variant="tonal" size="x-large" text="Get Started" append-icon="$next"
+        />
       </div>
     </v-container>
 

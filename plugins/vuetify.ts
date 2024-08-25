@@ -33,8 +33,14 @@ export default defineNuxtPlugin((app) => {
     },
     blueprint: md3,
     defaults: {
+      VCard: {
+        rounded: 'xl'
+      },
       VCardTitle: {
-        class: 'text-wrap'
+        class: 'text-wrap text-h5'
+      },
+      VCardSubtitle: {
+        class: 'text-wrap text-body-1'
       },
       VPage: {
         class: 'd-flex flex-column flex-grow-1'

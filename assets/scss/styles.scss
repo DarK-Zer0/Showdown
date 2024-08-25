@@ -6,6 +6,10 @@
   fill: none !important;
 }
 
+.page-offset {
+  padding-top: 128px !important;
+}
+
 .frosted {
    backdrop-filter: blur(8px);
    background-color: rgba(var(--v-theme-primary), 0.45) !important;
