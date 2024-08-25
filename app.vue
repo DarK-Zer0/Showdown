@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const description = 'A guide designed to help players progress in Naraka\'s Campaign mode.';
+const description = 'A guide designed to help players progress in Naraka\'s Campaign mode';
 
 useHead({
   htmlAttrs: {
@@ -24,9 +24,3 @@ useSeoMeta({
     <nuxt-page />
   </nuxt-layout>
 </template>
-
-<style>
-html {
-  scroll-behavior: smooth;
-}
-</style>

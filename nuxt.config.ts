@@ -1,5 +1,7 @@
 import vuetify from 'vite-plugin-vuetify';
 
+const baseUrl = 'https://dark-zer0.web.app';
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 // noinspection JSUnusedGlobalSymbols
 export default defineNuxtConfig({
@@ -12,20 +14,23 @@ export default defineNuxtConfig({
         },
         /* Twitter */
         {
-          name: 'twitter:card', content: 'summary'
+          name: 'twitter:card', content: 'summary_large_image'
         },
         {
-          name: 'twitter:image', content: '/images/banner.jpg'
+          name: 'twitter:image', content: '/banner.webp'
         },
         /* Open Graph */
+        {
+          property: 'og:site_name', content: 'Showdown Guide'
+        },
         {
           property: 'og:type', content: 'article'
         },
         {
-          property: 'og:url', content: 'https://dark-zer0.github.io/Showdown/'
+          property: 'og:url', content: baseUrl
         },
         {
-          property: 'og:image', content: '/images/banner.jpg'
+          property: 'og:image', content: '/banner.webp'
         },
         /* Capabilities  */
         {
@@ -116,7 +121,7 @@ export default defineNuxtConfig({
     }
   },
   site: {
-    url: 'https://dark-zer0.github.io/'
+    url: baseUrl
   },
   sourcemap: false,
   ssr: true

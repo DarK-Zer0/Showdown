@@ -25,29 +25,29 @@ export default function () {
   const categories: { [category in Category]: CategoryDetails } = {
     stronghold: {
       title: 'Stronghold Assault',
-      objective: 'Kill Stronghold\'s chest guards and the final boss.',
-      description: 'Serve as great Sense level boosters because they\'re generally a much lower difficulty, don\'t require you to kill everything, and are guaranteed to drop 6 or more souljades.'
+      objective: 'Kill Stronghold\'s chest guards and the final boss',
+      description: 'Serve as great Sense level boosters because they\'re generally a much lower difficulty, don\'t require you to kill everything, and are guaranteed to drop 6 or more souljades'
     },
     wave: {
       title: 'Wave Defense',
-      objective: 'Kill all mobs and boss(es).',
-      description: 'Generally the longest mission of each chapter, but have more sought-after drops in their loot pool. Heavier focuses on teamwork and a smaller pool of guaranteed Souljades, however, due to the number of enemies, can have the largest amount of drops.'
+      objective: 'Kill all mobs and boss(es)',
+      description: 'Generally the longest mission of each chapter, but have more sought-after drops in their loot pool. Heavier focuses on teamwork and a smaller pool of guaranteed Souljades, however, due to the number of enemies, can have the largest amount of drops'
     },
     boss: {
       title: 'Boss Fight',
-      objective: 'Defeat the boss.',
-      description: 'Can be the longest or shortest mission depending on how strong your team composition is. Usually, contains the most sought-after Souljades, but has a lower drop rate due tot he small number of sources and a limited amount of Omens. Consumables are the most limited here, so effective use of heals is warranted.'
+      objective: 'Defeat the boss',
+      description: 'Can be the longest or shortest mission depending on how strong your team composition is. Usually, contains the most sought-after Souljades, but has a lower drop rate due tot he small number of sources and a limited amount of Omens. Consumables are the most limited here, so effective use of heals is warranted'
     },
     enigma: {
       title: 'Enigma Domain',
-      objective: 'Reach Enhance Level 8 or 9 and defeat all bosses.',
-      description: 'Having a max clear time of ~16 minutes, a pre-established strategy is encouraged, with Archers being ignored and Hammer Ents & Warlocks being prioritized.'
+      objective: 'Reach Enhance Level 8 or 9 and defeat all bosses',
+      description: 'Having a max clear time of ~16 minutes, a pre-established strategy is encouraged, with Archers being ignored and Hammer Ents & Warlocks being prioritized'
     },
     abyss: {
       title: 'Yama\'s Abyss',
-      objective: 'Clear all 15 rooms (24 rooms in Void-Space).',
+      objective: 'Clear all 15 rooms (24 rooms in Void-Space)',
       /* TODO: Shouldn't it be stage 50 something? */
-      description: 'The new longest mission type we have as of now. Gets progressively difficult as you make it down the stages, with only the best of the best being able to achieve the rank of Showdown Paragon and clearing up to stage 48.'
+      description: 'The new longest mission type we have as of now. Gets progressively difficult as you make it down the stages, with only the best of the best being able to achieve the rank of Showdown Paragon and clearing up to stage 48'
     }
   };
 

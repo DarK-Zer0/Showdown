@@ -11,6 +11,7 @@ definePageMeta({
 const { id } = useRoute().params;
 const img = useImage();
 const heroes = useHeroes();
+const setups = useSoulJadeSetups();
 const hero = computed<Hero | undefined>(() => heroes.all.find(hero => hero.name.toLowerCase().replace(' ','-') == id));
 const lazySource = computed(() => hero.value === undefined ? undefined : img(`/banners/heroes/${hero.value.name}.webp`, { quality: 20 }));
 
@@ -65,9 +66,11 @@ if (hero.value && lazySource.value) {
         Hero Overview
       </h2>
 
-      <v-container class="d-flex flex-column align-center flex-md-row-reverse">
+      <v-container class="d-flex flex-column align-center align-md-start flex-md-row-reverse">
 
-        <v-card rounded="xl" :flat="true" color="transparent" class="h-stats">
+        <v-card
+          rounded="xl" :flat="true" color="transparent" class="h-stats"
+        >
           <v-img
             :src="`/stats/heroes/${hero.name}.webp`" :lazy-src="img(`/stats/heroes/${hero.name}.webp`, { quality: 20 })"
             :alt="`${hero.name}'s stats, from the Naraka Bladepoint game`"
@@ -82,27 +85,17 @@ if (hero.value && lazySource.value) {
           </h3>
 
           <v-row class="py-4">
-            <v-col cols="12" sm="6">
+            <v-col
+              v-for="weapon in [hero.melee, hero.ranged]" :key="`weapon-${weapon.name}`" cols="12" sm="6"
+            >
               <v-card title="Melee Weapon" class="d-flex flex-column align-center" @click.prevent>
                 <v-img
-                  :src="`/avatars/weapons/${hero.melee.name}.svg`"
-                  :alt="hero.melee.name" class="weapon-size my-4"
+                  :src="`/avatars/weapons/${weapon.name}.svg`"
+                  :alt="weapon.name" class="weapon-size my-4"
                 />
 
                 <v-card-text class="text-center text-body-1">
-                  {{ hero.melee.name }}
-                </v-card-text>
-              </v-card>
-            </v-col>
-            <v-col cols="12" sm="6">
-              <v-card title="Melee Weapon" class="d-flex flex-column align-center" @click.prevent>
-                <v-img
-                  :src="`/avatars/weapons/${hero.ranged.name}.svg`"
-                  :alt="hero.ranged.name" class="weapon-size my-4"
-                />
-
-                <v-card-text class="text-center text-body-1">
-                  {{ hero.ranged.name }}
+                  {{ weapon.name }}
                 </v-card-text>
               </v-card>
             </v-col>
@@ -113,8 +106,19 @@ if (hero.value && lazySource.value) {
           </h4>
 
           <v-card rounded="lg">
-            <v-list>
-              <v-list-item title="Pending to add" />
+            <v-card-text class="text-body-1">
+              The following builds are listed with no particular order in mind aside from their main damage source:
+            </v-card-text>
+            <v-list lines="two">
+              <v-list-item
+                v-for="build in setups.forHero(hero)" :key="`builds-${build.name}`"
+                :title="build.name" :subtitle="`${build.wieldingType} - ${build.category.name} Set`"
+                append-icon="$next" @click.prevent
+              >
+                <template #prepend>
+                  <v-icon :icon="build.category.icon" class="mr-n4" />
+                </template>
+              </v-list-item>
             </v-list>
           </v-card>
         </v-container>
