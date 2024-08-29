@@ -6,6 +6,8 @@ export default function () {
 
   const weapons = useWeapons();
 
+  /* Regular Soul Jades */
+
   const health1: SoulJade = {
     name: 'Health I',
     description: 'Increases maximum Health',
@@ -772,9 +774,213 @@ export default function () {
     baseStat: 12
   };
 
+  /* Defuse Soul Jades */
+
+  const defuseCounterattack: SoulJade = {
+    name: 'Defuse (Counterattack)',
+    description: 'Melee attacks and triggering Defuse can fill the Defuse slot. When it is filled, a Defuse (Counterattack) will consume all Defuse slots, unleashing a Counterstrike Combo that deals 60% increased damage',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.Defuse,
+    baseStat: 6
+  };
+
+  const defuseSoulsnatch: SoulJade = {
+    name: 'Defuse · Soul-snatch',
+    description: 'Restore 400 Health when Defuse is triggered',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.Defuse,
+    baseStat: 6
+  };
+
+  const defuseIceFlow: SoulJade = {
+    name: 'Defuse · Ice Flow',
+    description: 'Melee attacks and triggering Defuse can fill the Defuse slot. WHen it is filled, a Defuse will consume all Defuse slots and unleash an ice strike',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.Defuse,
+    baseStat: 6
+  };
+
+  const defuseRagingFlame: SoulJade = {
+    name: 'Defuse · Raging Flame',
+    description: 'Melee attacks and triggering Defuse can fill the Defuse slot. When it is filled, a Defuse will consume all Defuse slots and unleash a fiery strike',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.Defuse,
+    baseStat: 6
+  };
+
+  const defuseSolidification: SoulJade = {
+    name: 'Defuse · Solidification',
+    description: 'Upon triggering Defuse, Attack increases by 20% and the Elemental Damage dealt by your hits increases by 40% for 15 sec',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.Defuse,
+    baseStat: 6
+  };
+
+  const defuseFlamingBlade = {
+    name: 'Defuse · Flaming Blade',
+    description: 'Triggering of Defuse empowers your next melee weapon attack to burn the enemies hit',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.Defuse,
+    baseStat: 6
+  };
+
+  const defuseAegisBreak: SoulJade = {
+    name: 'Defuse · Aegis-break',
+    description: 'Counterstrike reduces weapon durability but deals more damage to enemies\' Astral Aegis; Weapon durability will be repaired when Defuse is triggered, and Attack will be increased by 25% within 10 sec',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.Defuse,
+    baseStat: 6
+  };
+
+  const defuseThaw: SoulJade = {
+    name: 'Defuse · Thaw',
+    description: 'A successful Defuse will greatly reduce your Frostbite',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.Defuse,
+    baseStat: 6
+  };
+
+  const defuseConcentrate: SoulJade = {
+    name: 'Defuse (Concentrate)',
+    description: 'Defuse (Counterattack) is easier to trigger',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.Defuse,
+    baseStat: 6
+  };
+
+  /* Attack */
+
+  const renewedVigor: SoulJade = {
+    name: 'Renewed Vigor',
+    description: 'When getting the Recovery effect, Attack +20% for 4 sec',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.Health,
+    category: SoulJadeCategory.SpecialMovement,
+    baseStat: 12
+  };
+
+  const desperationShield: SoulJade = {
+    name: 'Desperation Shield',
+    description: 'Deal 10% more damage when Armor is above 50%',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Health,
+    category: SoulJadeCategory.SpecialBuff,
+    baseStat: 12
+  };
+
+  const condensedQi: SoulJade = {
+    name: 'Condensed Qi',
+    description: 'After charging the 1st stage, the next melee attack damage is increased by 18%',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4
+  };
+
+  const backfire: SoulJade = {
+    name: 'Backfire',
+    description: 'Attack +20%, but suffer a nonlethal backfire damage when dealing damage',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4
+  };
+
+  const quickAttack: SoulJade = {
+    name: 'Quick Attack',
+    description: 'Attack +15%. You\'ll lose this effect for 5 sec after launching a Charged Attack',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4
+  };
+
+  const soulDrawing: SoulJade = {
+    name: 'Soul-drawing',
+    description: 'Restore 12% Health when dealing damage. If your Health is above 45%, you\'ll lose the effect',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4
+  };
+
+  const outrage: SoulJade = {
+    name: 'Outrage',
+    description: 'Damage is increased by 15% when attacking enemies without Astral Aegis',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4
+  };
+
+  const enrage: SoulJade = {
+    name: 'Enrage',
+    description: 'Rage is no longer restored over time, but the speed of Rage accumulation through attacks is increased by 45%',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Health,
+    category: SoulJadeCategory.SpecialBuff,
+    baseStat: 4
+  };
+
+  const aggressor: SoulJade = {
+    name: 'Aggressor',
+    description: 'For the next 8 sec after using Weapon Repair Kit, Attack +15%',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4
+  };
+
+  const astralBreak: SoulJade = {
+    name: 'Astral Break',
+    description: 'After charging the 1st stage, your next melee attacks deals 50% extra Astral Aegis damage',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4
+  };
+
+  const shatteredEdge: SoulJade = {
+    name: 'Shattered Edge',
+    description: 'Gain an 18% Attack boost for 10 sec whenever your weapon\'s durability is consumed',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4
+  };
+
+  /* HydroFlare Attack */
+
+  const dracoStride: SoulJade = {
+    name: 'Draco Stride',
+    description: '0.5 sec after dodging, summon a mighty wave that leaves all enemies hit Soaked at your previous location. This only takes effect within 15 sec after attacking, or being attacked',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.Health,
+    category: SoulJadeCategory.SpecialMovement,
+    baseStat: 12
+  };
+
+  const skyfire: SoulJade = {
+    name: 'Skyfire',
+    description: 'When the [Burn] damage dealt on enemies amounts to 5,000% of your Attack, your next strike can generate up to 3 fire pillars, based on the number of enemies nearby. The fewer the fire pillars, the higher the damage inflicted',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4
+  };
+
   const incineration: SoulJade = {
     name: 'Incineration',
-    description: 'Pending description',
+    description: 'When triggering [HydroFlare], Attack increases by 25% for 10 sec while also Burning yourself',
     rarity: SoulJadeRarity.Legendary,
     type: SoulJadeType.Attack,
     category: SoulJadeCategory.Melee,
@@ -783,24 +989,35 @@ export default function () {
 
   const ember: SoulJade = {
     name: 'Ember',
-    description: 'Pending description',
+    description: 'After receiving burn damage amounts to 10% of your Max Armor + Max Health, your next attack with a melee weapon will unleash a Blaze Impact upon hitting the target, inflicting massive burn damage on the enemies in front',
     rarity: SoulJadeRarity.Legendary,
     type: SoulJadeType.Attack,
     category: SoulJadeCategory.SpecialBuff,
     baseStat: 4
   };
 
-  const defuseRagingFlame: SoulJade = {
-    name: 'Defuse · Raging Flame',
-    description: 'Pending description',
-    rarity: SoulJadeRarity.Legendary,
-    type: SoulJadeType.DamageReduction,
-    category: SoulJadeCategory.Defuse,
-    baseStat: 6
+  const cloudscorch: SoulJade = {
+    name: 'Cloudscorch',
+    description: 'Charged melee strikes set enemies hit aflame',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4
   };
 
-  const dracoStride: SoulJade = {
-    name: 'Draco Stride',
+  /* Thunderbolt Attack */
+
+  const thunderMastery: SoulJade = {
+    name: 'Thunder Mastery',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4
+  };
+
+  const arcaneThunder: SoulJade = {
+    name: 'Arcane Thunder',
     description: 'Pending description',
     rarity: SoulJadeRarity.Legendary,
     type: SoulJadeType.Health,
@@ -808,22 +1025,13 @@ export default function () {
     baseStat: 12
   };
 
-  const defuseFlamingBlade = {
-    name: 'Defuse · Flaming Blade',
+  const thunderSword: SoulJade = {
+    name: 'Thunder Sword',
     description: 'Pending description',
-    rarity: SoulJadeRarity.Epic,
-    type: SoulJadeType.DamageReduction,
-    category: SoulJadeCategory.Defuse,
-    baseStat: 6
-  };
-
-  const copperWard: SoulJade = {
-    name: 'Copper Ward',
-    description: 'Pending description',
-    rarity: SoulJadeRarity.Epic,
-    type: SoulJadeType.DamageReduction,
-    category: SoulJadeCategory.SpecialBuff,
-    baseStat: 6
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4
   };
 
   const stormstrideSword: SoulJade = {
@@ -835,30 +1043,14 @@ export default function () {
     baseStat: 4
   };
 
-  const skyfire: SoulJade = {
-    name: 'Skyfire',
-    description: 'Pending description',
-    rarity: SoulJadeRarity.Legendary,
-    type: SoulJadeType.Attack,
-    category: SoulJadeCategory.Melee,
-    baseStat: 4
-  };
+  /* Defense */
 
-  const defuseAegisBreak: SoulJade = {
-    name: 'Defuse · Aegis-break',
-    description: 'Pending description',
+  const copperWard: SoulJade = {
+    name: 'Copper Ward',
+    description: 'Lose Armor, but the maximum Health +60% (Incompatible with Souljade: [Basalt Armor])',
     rarity: SoulJadeRarity.Epic,
     type: SoulJadeType.DamageReduction,
-    category: SoulJadeCategory.Defuse,
-    baseStat: 6
-  };
-
-  const defuseSolidification: SoulJade = {
-    name: 'Defuse · Solidification',
-    description: 'Pending description',
-    rarity: SoulJadeRarity.Epic,
-    type: SoulJadeType.DamageReduction,
-    category: SoulJadeCategory.Defuse,
+    category: SoulJadeCategory.SpecialBuff,
     baseStat: 6
   };
 
@@ -871,15 +1063,6 @@ export default function () {
     baseStat: 4,
     exclusive: weapons.polesword,
     wieldingType: WieldingType.Thunder
-  };
-
-  const defuseSoulsnatch: SoulJade = {
-    name: 'Defuse · Soul-snatch',
-    description: 'Pending description',
-    rarity: SoulJadeRarity.Legendary,
-    type: SoulJadeType.DamageReduction,
-    category: SoulJadeCategory.Defuse,
-    baseStat: 6
   };
 
   const thunderpull: SoulJade = {
@@ -947,33 +1130,6 @@ export default function () {
     baseStat: 6
   };
 
-  const backfire: SoulJade = {
-    name: 'Backfire',
-    description: 'Pending description',
-    rarity: SoulJadeRarity.Epic,
-    type: SoulJadeType.Attack,
-    category: SoulJadeCategory.Melee,
-    baseStat: 4
-  };
-
-  const thunderSword: SoulJade = {
-    name: 'Thunder Sword',
-    description: 'Pending description',
-    rarity: SoulJadeRarity.Legendary,
-    type: SoulJadeType.Attack,
-    category: SoulJadeCategory.Melee,
-    baseStat: 4
-  };
-
-  const thunderMastery: SoulJade = {
-    name: 'Thunder Mastery',
-    description: 'Pending description',
-    rarity: SoulJadeRarity.Legendary,
-    type: SoulJadeType.Attack,
-    category: SoulJadeCategory.Melee,
-    baseStat: 4
-  };
-
   const verticalBlinkStrikeThunderWielding: SoulJade = {
     name: 'Vertical Blink Strike · Thunder-Wielding',
     description: 'Pending description',
@@ -985,7 +1141,7 @@ export default function () {
     wieldingType: WieldingType.Thunder
   };
 
-  const assasinsLungeIceWielding: SoulJade = {
+  const assassinsLungeIceWielding: SoulJade = {
     name: 'Assassin\'s Lunge · Ice-Wielding',
     description: 'Pending description',
     rarity: SoulJadeRarity.Epic,
@@ -993,15 +1149,6 @@ export default function () {
     category: SoulJadeCategory.Melee,
     baseStat: 4,
     wieldingType: WieldingType.Ice
-  };
-
-  const quickAttack: SoulJade = {
-    name: 'Quick Attack',
-    description: 'Pending description',
-    rarity: SoulJadeRarity.Epic,
-    type: SoulJadeType.Attack,
-    category: SoulJadeCategory.Melee,
-    baseStat: 4
   };
 
   const crescentSlamThunderWielding: SoulJade = {
@@ -1055,24 +1202,6 @@ export default function () {
     name: 'Tundra Might',
     description: 'Pending description',
     rarity: SoulJadeRarity.Epic,
-    type: SoulJadeType.Health,
-    category: SoulJadeCategory.SpecialMovement,
-    baseStat: 12
-  };
-
-  const defuseThaw: SoulJade = {
-    name: 'Defuse · Thaw',
-    description: 'Pending description',
-    rarity: SoulJadeRarity.Epic,
-    type: SoulJadeType.DamageReduction,
-    category: SoulJadeCategory.Defuse,
-    baseStat: 6
-  };
-
-  const arcaneThunder: SoulJade = {
-    name: 'Arcane Thunder',
-    description: 'Pending description',
-    rarity: SoulJadeRarity.Legendary,
     type: SoulJadeType.Health,
     category: SoulJadeCategory.SpecialMovement,
     baseStat: 12
@@ -1199,7 +1328,7 @@ export default function () {
     thunderSword,
     thunderMastery,
     verticalBlinkStrikeThunderWielding,
-    assasinsLungeIceWielding,
+    assassinsLungeIceWielding,
     quickAttack,
     crescentSlamThunderWielding,
     successiveIceBlast,
@@ -1210,26 +1339,40 @@ export default function () {
     defuseThaw,
     arcaneThunder,
     flamebreath,
-    cinderfrost
+    cinderfrost,
+
+    defuseCounterattack,
+    defuseIceFlow,
+    defuseConcentrate,
+    renewedVigor,
+    desperationShield,
+    condensedQi,
+    soulDrawing,
+    outrage,
+    enrage,
+    aggressor,
+    astralBreak,
+    shatteredEdge,
+    cloudscorch
   ];
 
-  const thumbnail = (souljade: SoulJade) =>
-    `/avatars/souljades/${souljade.rarity}/${
-      souljade.consumable
+  const thumbnail = (jade: SoulJade) =>
+    `/avatars/souljades/${jade.rarity}/${
+      jade.consumable
         ? 'Consumable/'
-        : souljade.upgradable
+        : jade.upgradable
           ? 'Upgradable/'
           : ''}${
-      (souljade.rarity === SoulJadeRarity.Epic || souljade.rarity === SoulJadeRarity.Legendary) && souljade.type === SoulJadeType.Health && souljade.upgradable !== true
-        ? `Health/${souljade.category}`
-        : (souljade.rarity === SoulJadeRarity.Common || souljade.rarity === SoulJadeRarity.Rare) && souljade.type !== SoulJadeType.Attack
+      (jade.rarity === SoulJadeRarity.Epic || jade.rarity === SoulJadeRarity.Legendary) && jade.type === SoulJadeType.Health && jade.upgradable !== true
+        ? `Health/${jade.category}`
+        : (jade.rarity === SoulJadeRarity.Common || jade.rarity === SoulJadeRarity.Rare) && jade.type !== SoulJadeType.Attack
           ? 'Stat'
-          : souljade.upgradable === true || souljade.category === SoulJadeCategory.Defuse
-            ? souljade.category
-            : souljade.type
+          : jade.upgradable === true || jade.category === SoulJadeCategory.Defuse
+            ? jade.category
+            : jade.type
     }.webp`;
 
-  const toUrl = (souljade: SoulJade) => souljade.name.replace(/\s|'/g, '-');
+  const toUrl = (jade: SoulJade) => jade.name.replace(/\s|'/g, '-');
 
   return {
     all,
@@ -1335,7 +1478,7 @@ export default function () {
     thunderSword,
     thunderMastery,
     verticalBlinkStrikeThunderWielding,
-    assasinsLungeIceWielding,
+    assasinsLungeIceWielding: assassinsLungeIceWielding,
     quickAttack,
     crescentSlamThunderWielding,
     successiveIceBlast,
@@ -1348,6 +1491,19 @@ export default function () {
     flamebreath,
     cinderfrost,
 
+    defuseCounterattack,
+    defuseIceFlow,
+    defuseConcentrate,
+    renewedVigor,
+    desperationShield,
+    condensedQi,
+    soulDrawing,
+    outrage,
+    enrage,
+    aggressor,
+    astralBreak,
+    shatteredEdge,
+    cloudscorch,
 
     thumbnail,
     toUrl
