@@ -1229,7 +1229,7 @@ export default function () {
             : souljade.type
     }.webp`;
 
-  const toUrl = (souljade: SoulJade) => souljade.name.replace(/\s/g, '-');
+  const toUrl = (souljade: SoulJade) => souljade.name.replace(/\s|'/g, '-');
 
   return {
     all,

@@ -77,7 +77,7 @@ export default function () {
 
   const yotoHime: Hero = {
     name: 'Yoto Hime',
-    description: 'TO BE ADDED',
+    description: 'Featuring the slow but powerful Greatsword, Yoto Hime brings a great source of damage for the team. Her kit offers lots of flexibility between self-sustain and damage output, allowing her to be very aggressive or very defensive if need be. Her ability has two parts: the first part deals more Aegis Damage, and the second part deals more Health Damage. Her Ultimate also has two parts, with the entire ability restoring Health when she hits enemies.',
     melee: weapons.greatsword,
     ranged: weapons.repeatingCrossbow
   };

@@ -279,7 +279,7 @@ export default function () {
 
   const byCategory = (category: string): SoulJadeSetup[] => all.filter(setup => setup.category.name === category);
 
-  const toUrl = (setup: SoulJadeSetup): string => setup.name.toLowerCase().replace(/\s/g, '-');
+  const toUrl = (setup: SoulJadeSetup): string => setup.name.toLowerCase().replace(/\s|'/g, '-');
 
   return {
     all,
