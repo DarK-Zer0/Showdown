@@ -75,6 +75,13 @@ export default function () {
     ranged: weapons.musket
   };
 
+  const yotoHime: Hero = {
+    name: 'Yoto Hime',
+    description: 'TO BE ADDED',
+    melee: weapons.greatsword,
+    ranged: weapons.repeatingCrossbow
+  };
+
   const all: Hero[] = [
     viperNing,
     telmuch,
@@ -85,11 +92,12 @@ export default function () {
     valdaCui,
     yueshan,
     wuchen,
-    feriaShen
+    feriaShen,
+    yotoHime
   ];
 
   const toUrl = (hero: Hero) =>
-    hero.name.toLowerCase().replace(' ', '-');
+    hero.name.toLowerCase().replace(/\s/g, '-');
 
   return {
     all,
@@ -103,6 +111,7 @@ export default function () {
     yueshan,
     wuchen,
     feriaShen,
+    yotoHime,
 
     toUrl
   };

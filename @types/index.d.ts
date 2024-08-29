@@ -41,7 +41,8 @@ export enum SoulJadeCategory {
   Ranged = 'Ranged',
   SpecialBuff = 'Special Buff',
   SpecialMovement = 'Special Movement',
-  Stat = 'Stat'
+  Stat = 'Stat',
+  Defuse = 'Defuse'
 }
 
 export enum WieldingType {

@@ -51,6 +51,7 @@ useSeoMeta({
                 <template #append>
                   <v-btn
                     variant="text" size="large" text="Details" append-icon="$next"
+                    :to="`/builds/${setups.toUrl(build)}`"
                   />
                 </template>
 
@@ -69,7 +70,7 @@ useSeoMeta({
                           <v-list lines="two">
                             <v-list-item
                               v-for="jade in build.jades" :key="`build-${build.name}-jade-${jade.name}`" rounded="xl"
-                              :title="jade.name" :subtitle="jade.description" append-icon="$next" @click.prevent
+                              :title="jade.name" :subtitle="jade.description" append-icon="$next" :to="`/souljades/${jades.toUrl(jade)}`"
                             >
                               <template #prepend>
                                 <v-img

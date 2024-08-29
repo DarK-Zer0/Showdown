@@ -795,7 +795,7 @@ export default function () {
     description: 'Pending description',
     rarity: SoulJadeRarity.Legendary,
     type: SoulJadeType.DamageReduction,
-    category: SoulJadeCategory.Melee,
+    category: SoulJadeCategory.Defuse,
     baseStat: 6
   };
 
@@ -813,7 +813,7 @@ export default function () {
     description: 'Pending description',
     rarity: SoulJadeRarity.Epic,
     type: SoulJadeType.DamageReduction,
-    category: SoulJadeCategory.Melee,
+    category: SoulJadeCategory.Defuse,
     baseStat: 6
   };
 
@@ -849,7 +849,7 @@ export default function () {
     description: 'Pending description',
     rarity: SoulJadeRarity.Epic,
     type: SoulJadeType.DamageReduction,
-    category: SoulJadeCategory.Melee,
+    category: SoulJadeCategory.Defuse,
     baseStat: 6
   };
 
@@ -858,7 +858,7 @@ export default function () {
     description: 'Pending description',
     rarity: SoulJadeRarity.Epic,
     type: SoulJadeType.DamageReduction,
-    category: SoulJadeCategory.Melee,
+    category: SoulJadeCategory.Defuse,
     baseStat: 6
   };
 
@@ -878,7 +878,7 @@ export default function () {
     description: 'Pending description',
     rarity: SoulJadeRarity.Legendary,
     type: SoulJadeType.DamageReduction,
-    category: SoulJadeCategory.Melee,
+    category: SoulJadeCategory.Defuse,
     baseStat: 6
   };
 
@@ -1065,7 +1065,7 @@ export default function () {
     description: 'Pending description',
     rarity: SoulJadeRarity.Epic,
     type: SoulJadeType.DamageReduction,
-    category: SoulJadeCategory.Melee,
+    category: SoulJadeCategory.Defuse,
     baseStat: 6
   };
 
@@ -1224,10 +1224,12 @@ export default function () {
         ? `Health/${souljade.category}`
         : (souljade.rarity === SoulJadeRarity.Common || souljade.rarity === SoulJadeRarity.Rare) && souljade.type !== SoulJadeType.Attack
           ? 'Stat'
-          : souljade.upgradable === true
+          : souljade.upgradable === true || souljade.category === SoulJadeCategory.Defuse
             ? souljade.category
             : souljade.type
     }.webp`;
+
+  const toUrl = (souljade: SoulJade) => souljade.name.replace(/\s/g, '-');
 
   return {
     all,
@@ -1347,7 +1349,8 @@ export default function () {
     cinderfrost,
 
 
-    thumbnail
+    thumbnail,
+    toUrl
   };
 
 }

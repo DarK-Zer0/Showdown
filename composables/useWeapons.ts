@@ -142,6 +142,8 @@ export default function () {
     ...ranged
   ];
 
+  const toUrl = (weapon: Weapon): string => weapon.name.toLowerCase().replace(/\s/g, '-');
+
   return {
     all,
 
@@ -169,7 +171,9 @@ export default function () {
     repeatingCrossbow,
     cannon,
     bow,
-    bloodripper
+    bloodripper,
+
+    toUrl
   };
 
 }

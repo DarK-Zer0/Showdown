@@ -4,16 +4,18 @@ import type { Hero } from '~/@types';
 definePageMeta({
   validate: ({ params }) => {
     const heroes = useHeroes();
-    return heroes.all.find(hero => hero.name.toLowerCase().replace(' ','-') == params.id) !== undefined;
+    return heroes.all.find(hero => heroes.toUrl(hero) == params.id) !== undefined;
   }
 });
 
 const { id } = useRoute().params;
 const img = useImage();
+const weapons = useWeapons();
 const heroes = useHeroes();
 const setups = useSoulJadeSetups();
 const hero = computed<Hero | undefined>(() => heroes.all.find(hero => hero.name.toLowerCase().replace(' ','-') == id));
 const lazySource = computed(() => hero.value === undefined ? undefined : img(`/banners/heroes/${hero.value.name}.webp`, { quality: 20 }));
+const builds = computed(() => setups.forHero(hero.value));
 
 if (hero.value && lazySource.value) {
   useHead({
@@ -88,7 +90,7 @@ if (hero.value && lazySource.value) {
             <v-col
               v-for="weapon in [hero.melee, hero.ranged]" :key="`weapon-${weapon.name}`" cols="12" sm="6"
             >
-              <v-card title="Melee Weapon" class="d-flex flex-column align-center" @click.prevent>
+              <v-card title="Melee Weapon" class="d-flex flex-column align-center" :to="`/weapons/${weapons.toUrl(weapon)}`">
                 <v-img
                   :src="`/avatars/weapons/${weapon.name}.svg`"
                   :alt="weapon.name" class="weapon-size my-4"
@@ -105,22 +107,24 @@ if (hero.value && lazySource.value) {
             Recommended Builds
           </h4>
 
-          <v-card rounded="lg">
-            <v-card-text class="text-body-1">
-              The following builds are listed with no particular order in mind aside from their main damage source:
-            </v-card-text>
-            <v-list lines="two">
-              <v-list-item
-                v-for="build in setups.forHero(hero)" :key="`builds-${build.name}`"
-                :title="build.name" :subtitle="`${build.wieldingType} - ${build.category.name} Set`"
-                append-icon="$next" @click.prevent
-              >
-                <template #prepend>
-                  <v-icon :icon="build.category.icon" class="mr-n4" />
-                </template>
-              </v-list-item>
-            </v-list>
-          </v-card>
+          <v-expand-transition>
+            <v-card v-if="builds.length > 0" rounded="lg">
+              <v-card-text class="text-body-1">
+                The following builds are listed with no particular order in mind aside from their main damage source:
+              </v-card-text>
+              <v-list lines="two">
+                <v-list-item
+                  v-for="build in builds" :key="`builds-${build.name}`"
+                  :title="build.name" :subtitle="`${build.wieldingType} - ${build.category.name} Set`"
+                  append-icon="$next" :to="`/builds/${setups.toUrl(build)}`"
+                >
+                  <template #prepend>
+                    <v-icon :icon="build.category.icon" class="mr-n4" />
+                  </template>
+                </v-list-item>
+              </v-list>
+            </v-card>
+          </v-expand-transition>
         </v-container>
 
       </v-container>
