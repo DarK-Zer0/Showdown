@@ -34,12 +34,12 @@ export default function() {
     heroes: [heroes.viperNing, heroes.feriaShen, heroes.tianhai, heroes.telmuch, heroes.kurumi, heroes.valdaCui]
   };
 
-  const paths: PotentialPath = {
+  const paths: PotentialPath = [
     blazingFlame,
     elementalBlast,
     divineStorm,
     hydroFlare
-  };
+  ];
 
   const flameTranscendence: PotentialPlan = {
     path: blazingFlame,
@@ -132,7 +132,10 @@ export default function() {
     cannon
   ];
 
+  const toUrl = (potential: PotentialPath | PotentialPlan) => potential.name.toLowerCase().replace(/\s|'/g, '-');
+
   return {
+    all: [...paths, ...plans],
     paths,
 
     blazingFlame,
@@ -152,7 +155,9 @@ export default function() {
     fullRed,
     honedRage,
     incineration,
-    cannon
+    cannon,
+
+    toUrl
   };
 
 }

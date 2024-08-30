@@ -51,6 +51,10 @@ export default defineNuxtPlugin((app) => {
       VCardSubtitle: {
         class: 'text-wrap text-body-1'
       },
+      VChip: {
+        color: 'primary',
+        rounded: 'xl'
+      },
       VExpansionPanels: {
         collapseIcon: aliases.collapse,
         rounded: 'xl'
