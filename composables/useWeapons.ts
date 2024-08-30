@@ -142,7 +142,7 @@ export default function () {
     ...ranged
   ];
 
-  const toUrl = (weapon: Weapon): string => weapon.name.toLowerCase().replace(/\s/g, '-');
+  const toUrl = (weapon: Weapon): string => weapon.name.toLowerCase().replace(/\s|'/g, '-');
 
   return {
     all,

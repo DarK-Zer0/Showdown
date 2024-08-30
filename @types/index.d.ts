@@ -48,6 +48,7 @@ export enum SoulJadeCategory {
 export enum WieldingType {
   Ice = 'Ice Wielding',
   Thunder = 'Thunder Wielding',
+  Poison = 'Poison'
 }
 
 export interface SoulJade {

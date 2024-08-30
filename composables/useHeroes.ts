@@ -97,7 +97,7 @@ export default function () {
   ];
 
   const toUrl = (hero: Hero) =>
-    hero.name.toLowerCase().replace(/\s/g, '-');
+    hero.name.toLowerCase().replace(/\s|'/g, '-');
 
   return {
     all,

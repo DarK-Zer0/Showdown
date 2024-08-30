@@ -1045,25 +1045,394 @@ export default function () {
 
   /* Defense */
 
+  const armoredArtist: SoulJade = {
+    name: 'Armored Artist',
+    description: 'Every 5 sec, the next melee attack triggers an additional wide-range blast strike, dealing 70% of own max Armor as damage',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.Melee,
+    baseStat: 6
+  };
+
+  const silkwormCocoon: SoulJade = {
+    name: 'Silkworm Cocoon',
+    description: 'Restore Armor equivalent to 9% of max Armor within 3 sec after being attacked',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.Melee,
+    baseStat: 6
+  };
+
+  const againstTheOdds: SoulJade = {
+    name: 'Against the Odds',
+    description: 'When affected by [Toxified] or [Burn], gain a 15% damage reduction effect for 15 sec',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.Melee,
+    baseStat: 6
+  };
+
+  const nirvana: SoulJade = {
+    name: 'Nirvana',
+    description: 'When being inflicted with a burn effect, restore 6% of your Max Health over 3 sec. Excess healing will turn into Armor',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 6
+  };
+
+  const warrior: SoulJade = {
+    name: 'Warrior',
+    description: 'For the next 5 sec after taking damage, Melee Resist +20%, Ranged Resist +20%, Attack -10%',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.Melee,
+    baseStat: 6
+  };
+
+  const guardian: SoulJade = {
+    name: 'Guardian',
+    description: 'Armor +250',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.Melee,
+    baseStat: 6
+  };
+
   const copperWard: SoulJade = {
     name: 'Copper Ward',
     description: 'Lose Armor, but the maximum Health +60% (Incompatible with Souljade: [Basalt Armor])',
     rarity: SoulJadeRarity.Epic,
     type: SoulJadeType.DamageReduction,
-    category: SoulJadeCategory.SpecialBuff,
+    category: SoulJadeCategory.Melee,
     baseStat: 6
   };
 
-  const torrentFlowThunderWielding: SoulJade = {
-    name: 'Torrent Flow · Thunder-Wielding',
+  const basaltArmor: SoulJade = {
+    name: 'Basalt Armor',
+    description: 'Reduce max Health and turn 75% of lost Health into Armor capacity (Incompatible with Souljade: [Copper Ward])',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.Melee,
+    baseStat: 6
+  };
+
+  const divineForm: SoulJade = {
+    name: 'Divine Form',
+    description: 'Damage Reduction +12% when the Health is full',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.Melee,
+    baseStat: 6
+  };
+
+  const netherstep: SoulJade = {
+    name: 'Netherstep',
+    description: 'Quick Dash can be performed repeatedly, with an 8.5% reduction of Stamina cost',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.Melee,
+    baseStat: 6
+  };
+
+  /* Element - Ice-wielding */
+
+  const yushanShadows: SoulJade = {
+    name: 'Yushan Shadows',
     description: 'Pending description',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4
+  };
+
+  const successiveIceBlast: SoulJade = {
+    name: 'Successive Ice Blast',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4
+  };
+
+  const icefall: SoulJade = {
+    name: 'Icefall',
+    description: 'An icicle dealing Frostbite damage falls at your location each time you dodge, while increasing your own frostbite. The higher the Ice-wielding, the lower the increase in Frostbite',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.Health,
+    category: SoulJadeCategory.SpecialMovement,
+    baseStat: 12
+  };
+
+  const iceArmor: SoulJade = {
+    name: 'Ice Armor',
+    description: 'Damage Reduction +15% when you have accumulated Frostbite',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.Melee,
+    baseStat: 6
+  };
+
+  const soulShiver: SoulJade = {
+    name: 'Soul Shiver',
+    description: 'While accumulating Frostbite, restore 2.4% of the damage dealt as Health or Armor within the next 3 sec',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4
+  };
+
+  const frozenBlast: SoulJade = {
+    name: 'Frozen Blast',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4
+  };
+
+  const depthsBlast: SoulJade = {
+    name: 'Depths Blast',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4
+  };
+
+  const springsCall: SoulJade = {
+    name: 'Spring\'s Call',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Legendary,
+    type: SoulJadeType.Health,
+    category: SoulJadeCategory.SpecialMovement,
+    baseStat: 12
+  };
+
+  const iceBlastBackfire: SoulJade = {
+    name: 'Ice Blast Backfire',
+    description: 'When accumulating Frostbite, release an explosion with Frostbite DMG around yourself. This can only be triggered 5 sec after attacking/being attacked',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4
+  };
+
+  const tundraMight: SoulJade = {
+    name: 'Tundra Might',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Health,
+    category: SoulJadeCategory.SpecialMovement,
+    baseStat: 12
+  };
+
+  const subZeroSeal: SoulJade = {
+    name: 'Sub-Zero Seal',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Health,
+    category: SoulJadeCategory.SpecialMovement,
+    baseStat: 12
+  };
+
+  const cinderfrost: SoulJade = {
+    name: 'Cinderfrost',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.Melee,
+    baseStat: 6
+  };
+
+  const iceBreak: SoulJade = {
+    name: 'Ice Break',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.DamageReduction,
+    category: SoulJadeCategory.Melee,
+    baseStat: 6
+  };
+
+  const reawakening: SoulJade = {
+    name: 'Reawakening',
+    description: 'Attack +35% for 8 sec when there\'s no Frostbite accumulated',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Health,
+    category: SoulJadeCategory.SpecialMovement,
+    baseStat: 12
+  };
+
+  /* Ice-wielding Melee */
+
+  const horizontalBlinkStrikeIceWielding: SoulJade = {
+    name: 'Horizontal Blink Strike · Ice-wielding',
+    description: 'Horizontal Blink Strike deals extra Frostbite damage',
     rarity: SoulJadeRarity.Epic,
     type: SoulJadeType.Attack,
     category: SoulJadeCategory.Melee,
     baseStat: 4,
-    exclusive: weapons.polesword,
-    wieldingType: WieldingType.Thunder
+    wieldingType: WieldingType.Ice,
+    exclusive: weapons.katana
   };
+
+  const uppercutRushIceWielding: SoulJade = {
+    name: 'Uppercut Rush · Ice-wielding',
+    description: 'Uppercut Rush deals extra Frostbite damage',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4,
+    wieldingType: WieldingType.Ice,
+    exclusive: weapons.dagger
+  };
+
+  const assassinsLungeIceWielding: SoulJade = {
+    name: 'Assassin\'s Lunge · Ice-wielding',
+    description: 'Alters Quick Dash horizontal strikes and deal extra Frostbite damage',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4,
+    wieldingType: WieldingType.Ice,
+    exclusive: weapons.dagger
+  };
+
+  const cavalryBloomIceWielding: SoulJade = {
+    name: 'Cavalry Bloom · Ice-wielding',
+    description: 'Alters Dual Blades\' charged horizontal strikes and deals extra Frostbite damage',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4,
+    wieldingType: WieldingType.Ice,
+    exclusive: weapons.dualBlades
+  };
+
+  const eruditionIceWielding: SoulJade = {
+    name: 'Erudition · Ice-wielding',
+    description: 'Alters Spear\'s charged vertical strikes and deal extra Frostbite damage',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4,
+    wieldingType: WieldingType.Ice,
+    exclusive: weapons.spear
+  };
+
+  const horizontalEnergyIceWielding: SoulJade = {
+    name: 'Horizontal Energy · Ice-wielding',
+    description: 'Horizontal Energy deals extra Frostbite damage',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4,
+    wieldingType: WieldingType.Ice,
+    exclusive: weapons.longsword
+  };
+
+  const crescentSlamIceWielding: SoulJade = {
+    name: 'Crescent Slam · Ice-wielding',
+    description: 'Crescent Slam deals extra Frostbite damage (Incompatible with Souljade: [Crescent Slam · Thunder-wielding])',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4,
+    wieldingType: WieldingType.Ice,
+    exclusive: weapons.spear
+  };
+
+  const stormSlashIceWielding: SoulJade = {
+    name: 'Storm Slash · Ice-wielding',
+    description: 'Storm Slash deals extra Frostbite damage',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4,
+    wieldingType: WieldingType.Ice,
+    exclusive: weapons.greatsword
+  };
+
+  const velocityUntoldIceWielding: SoulJade = {
+    name: 'Velocity Untold · Ice-wielding',
+    description: 'Alters Nunchucks\' charged horizontal strikes, and deal extra Frostbite damage (Incompatible with Souljade: [Velocity Untold · Thunder-wielding])',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4,
+    wieldingType: WieldingType.Ice,
+    exclusive: weapons.nunchuks
+  };
+
+  const waveBreakerIceWielding: SoulJade = {
+    name: 'Wave Breaker · Ice-wielding',
+    description: 'Wave Breaker deals extra Frostbite damage',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4,
+    wieldingType: WieldingType.Ice,
+    exclusive: weapons.polesword
+  };
+
+  const windyTrinityIceWielding: SoulJade = {
+    name: 'Windy Trinity · Ice-wielding',
+    description: 'Alters Fan\'s charged horizontal strikes and deal extra Frostbite damage',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4,
+    wieldingType: WieldingType.Ice,
+    exclusive: weapons.fan
+  };
+
+  const jabbingIceWielding: SoulJade = {
+    name: 'Jabbing · Ice-wielding',
+    description: 'Alters Staff\'s charged horizontal strikes and deal extra Frostbite damage',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4,
+    wieldingType: WieldingType.Ice,
+    exclusive: weapons.staff
+  };
+
+  const aerialRendIceWielding: SoulJade = {
+    name: 'Aerial Rend · Ice-wielding',
+    description: 'Greatsword\'s charged strikes unleash shockwaves and deal extra Frostbite damage (Incompatible with Souljade: [Rockfall Slash · Thunder-wielding])',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4,
+    wieldingType: WieldingType.Ice,
+    exclusive: weapons.greatsword
+  };
+
+  const cyanFangIceWielding: SoulJade = {
+    name: 'Cyan Fang · Ice-wielding',
+    description: 'Alters the third strike in a melee weapon\'s horizontal combo and grants extra Elemental damage. On strike, restores 10% of damage dealt as Health or Armor (Incompatible with Souljade: [Cyan Fang · Thunder-wielding], [Cyan Fang · Poison-wielding])',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4,
+    wieldingType: WieldingType.Ice,
+    exclusive: weapons.melee
+  };
+
+  /* Poison-wielding */
+
+  const cyanFangPoisonWielding: SoulJade = {
+    name: 'Cyan Fang · Poison-wielding',
+    description: 'Alters the third strike in a melee weapon\'s horizontal combo and grants extra Elemental damage. On strike, restores 10% of damage dealt as Health or Armor (Incompatible with Souljade: [Cyan Fang · Thunder-wielding], [Cyan Fang · Ice-wielding])',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4,
+    wieldingType: WieldingType.Poison,
+    exclusive: weapons.melee
+  };
+
+  /* Thunder-wielding */
 
   const thunderpull: SoulJade = {
     name: 'Thunderpull',
@@ -1083,42 +1452,13 @@ export default function () {
     baseStat: 6
   };
 
-  const springsCall: SoulJade = {
-    name: 'Spring\'s Call',
-    description: 'Pending description',
-    rarity: SoulJadeRarity.Legendary,
-    type: SoulJadeType.Health,
-    category: SoulJadeCategory.SpecialMovement,
-    baseStat: 12
-  };
-
-  const velocityUntoldThunderWielding: SoulJade = {
-    name: 'Velocity Untold · Thunder-Wielding',
-    description: 'Pending description',
-    rarity: SoulJadeRarity.Epic,
-    type: SoulJadeType.Attack,
-    category: SoulJadeCategory.Melee,
-    baseStat: 4,
-    exclusive: weapons.nunchuks,
-    wieldingType: WieldingType.Thunder
-  };
-
-  const iceBreak: SoulJade = {
-    name: 'Ice Break',
-    description: 'Pending description',
+  const thunderheal: SoulJade = {
+    name: 'Thunderheal',
+    description: 'As your Thundershock accumulates, you restore Health equal to 12% max Health within 3 sec. This effect has a 10-sec cooldown',
     rarity: SoulJadeRarity.Epic,
     type: SoulJadeType.DamageReduction,
     category: SoulJadeCategory.Melee,
     baseStat: 6
-  };
-
-  const subZeroSeal: SoulJade = {
-    name: 'Sub-Zero Seal',
-    description: 'Pending description',
-    rarity: SoulJadeRarity.Epic,
-    type: SoulJadeType.Health,
-    category: SoulJadeCategory.SpecialMovement,
-    baseStat: 12
   };
 
   const thunderproof: SoulJade = {
@@ -1130,8 +1470,43 @@ export default function () {
     baseStat: 6
   };
 
+  /* Thunder-wielding Melee */
+
+  const abyssalAuraThunderWielding: SoulJade = {
+    name: 'Abyssal Aura · Thunder-wielding',
+    description: 'Alters Dagger\'s charged vertical strikes and deal extra Thundershock damage',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4,
+    exclusive: weapons.dagger,
+    wieldingType: WieldingType.Thunder
+  };
+
+  const wildWindspoutThunderWielding: SoulJade = {
+    name: 'Wild Windspout · Thunder-wielding',
+    description: 'Fan\'s enhanced Charged Vertical Strike deals extra Thundershock damage',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4,
+    exclusive: weapons.fan,
+    wieldingType: WieldingType.Thunder
+  };
+
+  const torrentFlowThunderWielding: SoulJade = {
+    name: 'Torrent Flow · Thunder-wielding',
+    description: 'Pending description',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4,
+    exclusive: weapons.polesword,
+    wieldingType: WieldingType.Thunder
+  };
+
   const verticalBlinkStrikeThunderWielding: SoulJade = {
-    name: 'Vertical Blink Strike · Thunder-Wielding',
+    name: 'Vertical Blink Strike · Thunder-wielding',
     description: 'Pending description',
     rarity: SoulJadeRarity.Legendary,
     type: SoulJadeType.Attack,
@@ -1141,19 +1516,42 @@ export default function () {
     wieldingType: WieldingType.Thunder
   };
 
-  const assassinsLungeIceWielding: SoulJade = {
-    name: 'Assassin\'s Lunge · Ice-Wielding',
-    description: 'Pending description',
+  const petalFallFurryThunderWielding: SoulJade = {
+    name: 'Petal Fall Fury · Thunder-wielding',
+    description: 'Petal Fall Flurry deals extra THundershock damage',
     rarity: SoulJadeRarity.Epic,
     type: SoulJadeType.Attack,
     category: SoulJadeCategory.Melee,
     baseStat: 4,
-    wieldingType: WieldingType.Ice
+    exclusive: weapons.dualBlades,
+    wieldingType: WieldingType.Thunder
+  };
+
+  const verticalEnergyThunderWielding: SoulJade = {
+    name: 'Vertical Energy · Thunder-wielding',
+    description: 'Vertical Energy deals extra Thundershock damage',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4,
+    exclusive: weapons.longsword,
+    wieldingType: WieldingType.Thunder
+  };
+
+  const rockfallSlashThunderWielding: SoulJade = {
+    name: 'Rockfall Slash · Thunder-wielding',
+    description: 'Rockfall Slash deals extra Thundershock damage (Incompatible with Souljade: [Aerial Rend · Ice-wielding])',
+    rarity: SoulJadeRarity.Epic,
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4,
+    exclusive: weapons.greatsword,
+    wieldingType: WieldingType.Thunder
   };
 
   const crescentSlamThunderWielding: SoulJade = {
-    name: 'Crescent Slam · Thunder-Wielding',
-    description: 'Pending description',
+    name: 'Crescent Slam · Thunder-wielding',
+    description: 'Crescent Slam deals extra Thundershock damage (Incompatible with Souljade: [Crescent Slam · Ice-wielding])',
     rarity: SoulJadeRarity.Epic,
     type: SoulJadeType.Attack,
     category: SoulJadeCategory.Melee,
@@ -1162,50 +1560,39 @@ export default function () {
     wieldingType: WieldingType.Thunder
   };
 
-  const successiveIceBlast: SoulJade = {
-    name: 'Successive Ice Blast',
-    description: 'Pending description',
-    rarity: SoulJadeRarity.Legendary,
+  const onslaughtThunderWielding: SoulJade = {
+    name: 'Onslaught · Thunder-wielding',
+    description: 'Onslaught deals extra Thundershock damage',
+    rarity: SoulJadeRarity.Epic,
     type: SoulJadeType.Attack,
     category: SoulJadeCategory.Melee,
-    baseStat: 4
+    baseStat: 4,
+    exclusive: weapons.staff,
+    wieldingType: WieldingType.Thunder
   };
 
-  const depthsBlast: SoulJade = {
-    name: 'Depths Blast',
-    description: 'Pending description',
-    rarity: SoulJadeRarity.Legendary,
+  const cyanFangThunderWielding: SoulJade = {
+    name: 'Cyan Fang · Thunder-wielding',
+    description: 'Alters the third strike in a melee weapon\'s horizontal combo and grants extra Elemental damage. On strike, restores 10% of damage dealt as Health or Armor (Incompatible with Souljade: [Cyan Fang · Ice-wielding], [Cyan Fang · Poison-wielding])',
+    rarity: SoulJadeRarity.Epic,
     type: SoulJadeType.Attack,
     category: SoulJadeCategory.Melee,
-    baseStat: 4
+    baseStat: 4,
+    exclusive: weapons.melee,
+    wieldingType: WieldingType.Thunder
   };
 
-  const yushanShadows: SoulJade = {
-    name: 'Yushan Shadows',
-    description: 'Pending description',
-    rarity: SoulJadeRarity.Legendary,
-    type: SoulJadeType.Attack,
-    category: SoulJadeCategory.Melee,
-    baseStat: 4
-  };
-
-  const frozenBlast: SoulJade = {
-    name: 'Frozen Blast',
-    description: 'Pending description',
-    rarity: SoulJadeRarity.Legendary,
-    type: SoulJadeType.Attack,
-    category: SoulJadeCategory.Melee,
-    baseStat: 4
-  };
-
-  const tundraMight: SoulJade = {
-    name: 'Tundra Might',
+  const velocityUntoldThunderWielding: SoulJade = {
+    name: 'Velocity Untold · Thunder-wielding',
     description: 'Pending description',
     rarity: SoulJadeRarity.Epic,
-    type: SoulJadeType.Health,
-    category: SoulJadeCategory.SpecialMovement,
-    baseStat: 12
+    type: SoulJadeType.Attack,
+    category: SoulJadeCategory.Melee,
+    baseStat: 4,
+    exclusive: weapons.nunchuks,
+    wieldingType: WieldingType.Thunder
   };
+
 
   const flamebreath: SoulJade = {
     name: 'Flamebreath',
@@ -1215,15 +1602,6 @@ export default function () {
     category: SoulJadeCategory.Ranged,
     baseStat: 4,
     exclusive: weapons.cannon
-  };
-
-  const cinderfrost: SoulJade = {
-    name: 'Cinderfrost',
-    description: 'Pending description',
-    rarity: SoulJadeRarity.Epic,
-    type: SoulJadeType.DamageReduction,
-    category: SoulJadeCategory.Melee,
-    baseStat: 6
   };
 
   const all: SoulJade[] = [
@@ -1353,7 +1731,50 @@ export default function () {
     aggressor,
     astralBreak,
     shatteredEdge,
-    cloudscorch
+    cloudscorch,
+
+    abyssalAuraThunderWielding,
+    wildWindspoutThunderWielding,
+    torrentFlowThunderWielding,
+    verticalBlinkStrikeThunderWielding,
+    petalFallFurryThunderWielding,
+    verticalEnergyThunderWielding,
+    rockfallSlashThunderWielding,
+    onslaughtThunderWielding,
+    cyanFangThunderWielding,
+    velocityUntoldThunderWielding,
+    thunderheal,
+    
+    cyanFangPoisonWielding,
+
+    cyanFangIceWielding,
+    aerialRendIceWielding,
+    jabbingIceWielding,
+    windyTrinityIceWielding,
+    waveBreakerIceWielding,
+    velocityUntoldIceWielding,
+    stormSlashIceWielding,
+    crescentSlamIceWielding,
+    horizontalEnergyIceWielding,
+    eruditionIceWielding,
+    cavalryBloomIceWielding,
+    uppercutRushIceWielding,
+    horizontalBlinkStrikeIceWielding,
+
+    reawakening,
+    iceBlastBackfire,
+    soulShiver,
+    iceArmor,
+    icefall,
+    netherstep,
+    divineForm,
+    basaltArmor,
+    guardian,
+    warrior,
+    nirvana,
+    againstTheOdds,
+    silkwormCocoon,
+    armoredArtist
   ];
 
   const thumbnail = (jade: SoulJade) =>
