@@ -37,14 +37,20 @@ useSeoMeta({
 
     </v-container>
 
-    <v-row>
-      <v-col v-for="category in setups.categories" :key="`category-${category.name}`" cols="12">
-        <v-card
-          :prepend-icon="category.icon" :title="`${category.name} Set`" :flat="true" color="background"
-        >
+    <v-expansion-panels
+      v-for="(category, index) in setups.categories" :key="`category-${category.name}`"
+      bg-color="transparent" :flat="true" :model-value="index === 0 ? category.name : undefined"
+    >
+      <v-expansion-panel :value="category.name">
+        <v-expansion-panel-title>
+          <v-card
+            :prepend-icon="category.icon" :title="`${category.name} Set`" :flat="true" color="transparent"
+          />
+        </v-expansion-panel-title>
 
-          <v-container v-for="build in setups.byCategory(category.name)" :key="`build-${build.name}`" class="px-0 px-sm-8">
-            <v-lazy>
+        <v-expansion-panel-text>
+          <v-container v-for="build in setups.byCategory(category.name)" :key="`build-${build.name}`" class="px-0">
+            <v-lazy :min-height="750">
               <v-card
                 :title="build.name" :subtitle="build.wieldingType"
               >
@@ -69,7 +75,7 @@ useSeoMeta({
                         <v-card-item>
                           <v-list lines="two">
                             <v-list-item
-                              v-for="jade in build.jades" :key="`build-${build.name}-jade-${jade.name}`" rounded="xl"
+                              v-for="jade in build.jades" :key="`build-${build.name}-jade-${jade.name}`" rounded="xl" role="option"
                               :title="jade.name" :subtitle="jade.description" append-icon="$next" :to="`/souljades/${jades.toUrl(jade)}`"
                             >
                               <template #prepend>
@@ -111,23 +117,18 @@ useSeoMeta({
 
                             <v-card-item>
 
-                              <v-row justify="center">
-                                <v-col
-                                  v-for="hero in build.heroes" :key="`build-${build.name}-hero-${hero.name}`" cols="6" lg="4"
+                              <v-list>
+                                <v-list-item
+                                  v-for="hero in build.heroes" :key="`build-${build.name}-hero-${hero.name}`" role="option"
+                                  :to="`/heroes/${heroes.toUrl(hero)}`" :title="hero.name" append-icon="$next" rounded="lg"
                                 >
-                                  <v-card variant="outlined" :to="`/heroes/${heroes.toUrl(hero)}`">
-                                    <v-card-item class="d-flex justify-center">
-                                      <v-avatar
-                                        :image="`/avatars/heroes/${hero.name}.webp`" :size="48" :alt="`Avatar for ${hero.name}`"
-                                      />
-                                    </v-card-item>
-
-                                    <v-card-text class="text-body-1 text-center">
-                                      {{ hero.name }}
-                                    </v-card-text>
-                                  </v-card>
-                                </v-col>
-                              </v-row>
+                                  <template #prepend>
+                                    <v-avatar
+                                      :image="`/avatars/heroes/${hero.name}.webp`" :alt="`Avatar for ${hero.name}`"
+                                    />
+                                  </template>
+                                </v-list-item>
+                              </v-list>
 
                             </v-card-item>
 
@@ -140,10 +141,9 @@ useSeoMeta({
               </v-card>
             </v-lazy>
           </v-container>
-
-        </v-card>
-      </v-col>
-    </v-row>
+        </v-expansion-panel-text>
+      </v-expansion-panel>
+    </v-expansion-panels>
 
   </v-page>
 </template>

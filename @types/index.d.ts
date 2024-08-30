@@ -46,9 +46,9 @@ export enum SoulJadeCategory {
 }
 
 export enum WieldingType {
-  Ice = 'Ice Wielding',
-  Thunder = 'Thunder Wielding',
-  Poison = 'Poison'
+  Ice = 'Ice-wielding',
+  Thunder = 'Thunder-wielding',
+  Poison = 'Poison-wielding'
 }
 
 export interface SoulJade {
@@ -68,6 +68,7 @@ export interface SoulJadeSetup {
   name: string;
   jades: SoulJade[];
   wieldingType: WieldingType;
+  potential: PotentialPlan | PotentialPath;
   heroes: Hero[];
   attributes: string[];
   strengths: string[];
@@ -79,4 +80,17 @@ export interface SoulJadeSetup {
 export interface SoulJadeSetupCategory {
   name: string;
   icon: IconValue;
+}
+
+export interface PotentialPath {
+  name: string;
+  icon: IconValue;
+  description: string;
+  heroes: Hero[];
+}
+
+export interface PotentialPlan {
+  name: string;
+  path: PotentialPath;
+  heroes: Hero[];
 }

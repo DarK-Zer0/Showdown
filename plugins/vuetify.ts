@@ -51,6 +51,13 @@ export default defineNuxtPlugin((app) => {
       VCardSubtitle: {
         class: 'text-wrap text-body-1'
       },
+      VExpansionPanels: {
+        collapseIcon: aliases.collapse,
+        rounded: 'xl'
+      },
+      VLazy: {
+        transition: 'fade-transition'
+      },
       VPage: {
         class: 'd-flex flex-column flex-grow-1'
       }

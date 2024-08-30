@@ -62,7 +62,7 @@ onMounted(() => theme.global.name.value = (colorMode.value === 'auto' ? colorMod
       </template>
     </v-navigation-drawer>
 
-    <v-main>
+    <v-main class="min-h-page">
 
       <div class="position-fixed w-100 z-100">
         <v-container class="px-2 px-lg-4">
@@ -110,11 +110,47 @@ onMounted(() => theme.global.name.value = (colorMode.value === 'auto' ? colorMod
 
       <slot/>
     </v-main>
+
+    <v-footer color="background" class="pb-0">
+      <v-container class="py-0">
+        <v-card
+          variant="tonal" :flat="true" color="primary" rounded="pill b-0"
+        >
+          <v-card-item class="mx-8">
+            <v-card-title class="text-center py-4 px-2">
+              Showdown Guide
+              <v-card-subtitle>
+                &copy; {{ new Date().getFullYear() }} All rights reserved.
+              </v-card-subtitle>
+            </v-card-title>
+          </v-card-item>
+
+          <v-card-text class="text-center">
+            We are not affiliated with
+            <a
+              class="text-primary" rel="nofollow" target="_blank" href="https://www.24-ent.com/"
+            >
+              24 Entertainment
+            </a>
+            or
+            <a
+              class="text-primary" rel="nofollow" target="_blank" href="https://www.neteasegames.com/"
+            >
+              NetEase
+            </a>
+          </v-card-text>
+        </v-card>
+      </v-container>
+    </v-footer>
   </v-app>
 </template>
 
 <style lang="scss" scoped>
 .z-100 {
   z-index: 100 !important;
+}
+
+.min-h-page {
+  min-height: calc(100vh - 64px);
 }
 </style>

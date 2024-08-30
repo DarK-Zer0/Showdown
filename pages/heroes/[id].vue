@@ -16,6 +16,7 @@ const setups = useSoulJadeSetups();
 const hero = computed<Hero | undefined>(() => heroes.all.find(hero => hero.name.toLowerCase().replace(' ','-') == id));
 const lazySource = computed(() => hero.value === undefined ? undefined : img(`/banners/heroes/${hero.value.name}.webp`, { quality: 20 }));
 const builds = computed(() => setups.forHero(hero.value));
+const heroWeapons = computed(() => hero.value === undefined ? [] : [{ weapon: hero.value.melee, title: 'Melee' }, { weapon: hero.value.ranged, title: 'Ranged' }]);
 
 if (hero.value && lazySource.value) {
   useHead({
@@ -88,12 +89,11 @@ if (hero.value && lazySource.value) {
 
           <v-row class="py-4">
             <v-col
-              v-for="weapon in [hero.melee, hero.ranged]" :key="`weapon-${weapon.name}`" cols="12" sm="6"
+              v-for="({ weapon, title }) in heroWeapons" :key="`weapon-${weapon.name}`" cols="12" sm="6"
             >
-              <v-card title="Melee Weapon" class="d-flex flex-column align-center" :to="`/weapons/${weapons.toUrl(weapon)}`">
+              <v-card :title="`${title} Weapon`" class="d-flex flex-column align-center" :to="`/weapons/${weapons.toUrl(weapon)}`">
                 <v-img
-                  :src="`/avatars/weapons/${weapon.name}.svg`"
-                  :alt="weapon.name" class="weapon-size my-4"
+                  :src="`/avatars/weapons/${weapon.name}.svg`" :alt="weapon.name" class="weapon-size my-4"
                 />
 
                 <v-card-text class="text-center text-body-1">
@@ -124,6 +124,13 @@ if (hero.value && lazySource.value) {
                 </v-list-item>
               </v-list>
             </v-card>
+          </v-expand-transition>
+
+          <v-expand-transition>
+            <v-empty-state
+              v-if="builds.length <= 0" title="No builds for this hero yet"
+              text="We are still working on this hero's builds, please check back later."
+            />
           </v-expand-transition>
         </v-container>
 

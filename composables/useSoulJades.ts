@@ -1009,7 +1009,7 @@ export default function () {
 
   const thunderMastery: SoulJade = {
     name: 'Thunder Mastery',
-    description: 'Pending description',
+    description: 'Attacks summon a Thunderbolt to strike the enemy after 3 sec, boosting your Attack by 15% for 5 sec upon hitting the target',
     rarity: SoulJadeRarity.Legendary,
     type: SoulJadeType.Attack,
     category: SoulJadeCategory.Melee,
@@ -1018,7 +1018,7 @@ export default function () {
 
   const arcaneThunder: SoulJade = {
     name: 'Arcane Thunder',
-    description: 'Pending description',
+    description: 'Using skill or ultimate will trigger a Thunderbolt at the closest enemy',
     rarity: SoulJadeRarity.Legendary,
     type: SoulJadeType.Health,
     category: SoulJadeCategory.SpecialMovement,
@@ -1027,7 +1027,7 @@ export default function () {
 
   const thunderSword: SoulJade = {
     name: 'Thunder Sword',
-    description: 'Pending description',
+    description: 'Charged melee attacks trigger Thunderbolt when hitting enemies',
     rarity: SoulJadeRarity.Legendary,
     type: SoulJadeType.Attack,
     category: SoulJadeCategory.Melee,
@@ -1035,8 +1035,8 @@ export default function () {
   };
 
   const stormstrideSword: SoulJade = {
-    name: 'Stormstride · Sword',
-    description: 'Pending description',
+    name: 'Stormstride Sword',
+    description: 'Uncharged melee strikes will trigger Thunderbolt when hitting enemies',
     rarity: SoulJadeRarity.Legendary,
     type: SoulJadeType.Attack,
     category: SoulJadeCategory.Melee,
@@ -1139,7 +1139,7 @@ export default function () {
 
   const yushanShadows: SoulJade = {
     name: 'Yushan Shadows',
-    description: 'Pending description',
+    description: 'Gain a stack once Frostbite is full, stacking up to 2 times. Using Aegis-break Martial Skill or Defuse (Counterattack) will summon a "Matron of Yushan Shadow" to assist you, consuming a stack. Freezing yourself caused by full Frostbite can be blocked by Defuse',
     rarity: SoulJadeRarity.Legendary,
     type: SoulJadeType.Attack,
     category: SoulJadeCategory.Melee,
@@ -1148,7 +1148,7 @@ export default function () {
 
   const successiveIceBlast: SoulJade = {
     name: 'Successive Ice Blast',
-    description: 'Pending description',
+    description: 'When triggered by Frostbite damage, the Ice Blast explodes 3 times with damaged decreased by 45%',
     rarity: SoulJadeRarity.Legendary,
     type: SoulJadeType.Attack,
     category: SoulJadeCategory.Melee,
@@ -1184,7 +1184,7 @@ export default function () {
 
   const frozenBlast: SoulJade = {
     name: 'Frozen Blast',
-    description: 'Pending description',
+    description: 'Ice Blast\'s damage is increased by 35% and its cooldown is reduced by 33%, but Max Frostbite is reduced by 450',
     rarity: SoulJadeRarity.Legendary,
     type: SoulJadeType.Attack,
     category: SoulJadeCategory.Melee,
@@ -1193,7 +1193,7 @@ export default function () {
 
   const depthsBlast: SoulJade = {
     name: 'Depths Blast',
-    description: 'Pending description',
+    description: 'Increases Ice Blast DMG by 60%, but triggering Ice Blast will increase your own Frostbite',
     rarity: SoulJadeRarity.Legendary,
     type: SoulJadeType.Attack,
     category: SoulJadeCategory.Melee,
@@ -1202,7 +1202,7 @@ export default function () {
 
   const springsCall: SoulJade = {
     name: 'Spring\'s Call',
-    description: 'Pending description',
+    description: 'When external effects cause Frostbite to decrease, Attack +55% for 10 sec',
     rarity: SoulJadeRarity.Legendary,
     type: SoulJadeType.Health,
     category: SoulJadeCategory.SpecialMovement,
@@ -1220,7 +1220,7 @@ export default function () {
 
   const tundraMight: SoulJade = {
     name: 'Tundra Might',
-    description: 'Pending description',
+    description: 'Attack is increased by 15% and Frostbite damage is increased by 45% for 5 sec whenever your Frostbite increases',
     rarity: SoulJadeRarity.Epic,
     type: SoulJadeType.Health,
     category: SoulJadeCategory.SpecialMovement,
@@ -1229,7 +1229,7 @@ export default function () {
 
   const subZeroSeal: SoulJade = {
     name: 'Sub-Zero Seal',
-    description: 'Pending description',
+    description: 'While above 50% Health, hit damage increased by 20% but you will accumulate Frostbite over time',
     rarity: SoulJadeRarity.Epic,
     type: SoulJadeType.Health,
     category: SoulJadeCategory.SpecialMovement,
@@ -1238,7 +1238,7 @@ export default function () {
 
   const cinderfrost: SoulJade = {
     name: 'Cinderfrost',
-    description: 'Pending description',
+    description: 'Upon reaching a full Frostbite meter, you no longer get frozen, but your Melee Resist and damage dealt to enemies\' Health are reduced by 10% for 5 sec',
     rarity: SoulJadeRarity.Epic,
     type: SoulJadeType.DamageReduction,
     category: SoulJadeCategory.Melee,
@@ -1247,7 +1247,7 @@ export default function () {
 
   const iceBreak: SoulJade = {
     name: 'Ice Break',
-    description: 'Pending description',
+    description: 'A successful Counter will greatly reduce your Frostbite',
     rarity: SoulJadeRarity.Epic,
     type: SoulJadeType.DamageReduction,
     category: SoulJadeCategory.Melee,
@@ -1436,7 +1436,7 @@ export default function () {
 
   const thunderpull: SoulJade = {
     name: 'Thunderpull',
-    description: 'Pending description',
+    description: 'Attack +20%, but dealing damage accumulates your Thundershock',
     rarity: SoulJadeRarity.Legendary,
     type: SoulJadeType.Attack,
     category: SoulJadeCategory.Melee,
@@ -1445,7 +1445,7 @@ export default function () {
 
   const thunderCounter: SoulJade = {
     name: 'Thunder Counter',
-    description: 'Pending description',
+    description: 'Divine Counter can be Countered',
     rarity: SoulJadeRarity.Legendary,
     type: SoulJadeType.DamageReduction,
     category: SoulJadeCategory.Melee,
@@ -1463,7 +1463,7 @@ export default function () {
 
   const thunderproof: SoulJade = {
     name: 'Thunderproof',
-    description: 'Pending description',
+    description: 'When you have full ThunderShock, you no longer get staggered by Divine Thunder and the maximum ThunderShock you can accumulate is reduced',
     rarity: SoulJadeRarity.Epic,
     type: SoulJadeType.DamageReduction,
     category: SoulJadeCategory.Melee,
@@ -1496,7 +1496,7 @@ export default function () {
 
   const torrentFlowThunderWielding: SoulJade = {
     name: 'Torrent Flow · Thunder-wielding',
-    description: 'Pending description',
+    description: 'Torrent Flow deals extra Thundershock damage',
     rarity: SoulJadeRarity.Epic,
     type: SoulJadeType.Attack,
     category: SoulJadeCategory.Melee,
@@ -1507,7 +1507,7 @@ export default function () {
 
   const verticalBlinkStrikeThunderWielding: SoulJade = {
     name: 'Vertical Blink Strike · Thunder-wielding',
-    description: 'Pending description',
+    description: 'Vertical Blink Strike deals extra Thundershock damage',
     rarity: SoulJadeRarity.Legendary,
     type: SoulJadeType.Attack,
     category: SoulJadeCategory.Melee,
@@ -1584,7 +1584,7 @@ export default function () {
 
   const velocityUntoldThunderWielding: SoulJade = {
     name: 'Velocity Untold · Thunder-wielding',
-    description: 'Pending description',
+    description: 'Alters Nunchucks\' charged horizontal strikes, and deal extra Thundershock damage (Incompatible with Souljade: [Velocity Untold · Ice-wielding])',
     rarity: SoulJadeRarity.Epic,
     type: SoulJadeType.Attack,
     category: SoulJadeCategory.Melee,
@@ -1693,19 +1693,16 @@ export default function () {
     skyfire,
     defuseAegisBreak,
     defuseSolidification,
-    torrentFlowThunderWielding,
     defuseSoulsnatch,
     thunderpull,
     thunderCounter,
     springsCall,
-    velocityUntoldThunderWielding,
     iceBreak,
     subZeroSeal,
     thunderproof,
     backfire,
     thunderSword,
     thunderMastery,
-    verticalBlinkStrikeThunderWielding,
     assassinsLungeIceWielding,
     quickAttack,
     crescentSlamThunderWielding,
@@ -1793,7 +1790,7 @@ export default function () {
             : jade.type
     }.webp`;
 
-  const toUrl = (jade: SoulJade) => jade.name.replace(/\s|'/g, '-');
+  const toUrl = (jade: SoulJade) => jade.name.toLowerCase().replace(/\s|'/g, '-');
 
   return {
     all,
@@ -1886,20 +1883,17 @@ export default function () {
     skyfire,
     defuseAegisBreak,
     defuseSolidification,
-    torrentFlowThunderWielding,
     defuseSoulsnatch,
     thunderpull,
     thunderCounter,
     springsCall,
-    velocityUntoldThunderWielding,
     iceBreak,
     subZeroSeal,
     thunderproof,
     backfire,
     thunderSword,
     thunderMastery,
-    verticalBlinkStrikeThunderWielding,
-    assasinsLungeIceWielding: assassinsLungeIceWielding,
+    assassinsLungeIceWielding,
     quickAttack,
     crescentSlamThunderWielding,
     successiveIceBlast,
@@ -1925,6 +1919,49 @@ export default function () {
     astralBreak,
     shatteredEdge,
     cloudscorch,
+
+    abyssalAuraThunderWielding,
+    wildWindspoutThunderWielding,
+    torrentFlowThunderWielding,
+    verticalBlinkStrikeThunderWielding,
+    petalFallFurryThunderWielding,
+    verticalEnergyThunderWielding,
+    rockfallSlashThunderWielding,
+    onslaughtThunderWielding,
+    cyanFangThunderWielding,
+    velocityUntoldThunderWielding,
+    thunderheal,
+
+    cyanFangPoisonWielding,
+
+    cyanFangIceWielding,
+    aerialRendIceWielding,
+    jabbingIceWielding,
+    windyTrinityIceWielding,
+    waveBreakerIceWielding,
+    velocityUntoldIceWielding,
+    stormSlashIceWielding,
+    crescentSlamIceWielding,
+    horizontalEnergyIceWielding,
+    eruditionIceWielding,
+    cavalryBloomIceWielding,
+    uppercutRushIceWielding,
+    horizontalBlinkStrikeIceWielding,
+
+    reawakening,
+    iceBlastBackfire,
+    soulShiver,
+    iceArmor,
+    icefall,
+    netherstep,
+    divineForm,
+    basaltArmor,
+    guardian,
+    warrior,
+    nirvana,
+    againstTheOdds,
+    silkwormCocoon,
+    armoredArtist,
 
     thumbnail,
     toUrl
