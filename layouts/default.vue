@@ -114,7 +114,7 @@ onMounted(() => theme.global.name.value = (colorMode.value === 'auto' ? colorMod
     <v-footer color="background" class="pb-0">
       <v-container class="py-0">
         <v-card
-          variant="tonal" :flat="true" color="primary" rounded="pill b-0"
+          variant="tonal" :flat="true" color="primary" rounded="xl t-pill-sm b-0"
         >
           <v-card-item class="mx-8">
             <v-card-title class="text-center py-4 px-2">
@@ -146,6 +146,13 @@ onMounted(() => theme.global.name.value = (colorMode.value === 'auto' ? colorMod
 </template>
 
 <style lang="scss" scoped>
+.rounded-t-pill-sm {
+  @media (min-width: 600px) {
+    border-top-left-radius: 9999px !important;
+    border-top-right-radius: 9999px !important;
+  }
+}
+
 .z-100 {
   z-index: 100 !important;
 }

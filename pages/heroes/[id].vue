@@ -59,7 +59,7 @@ if (hero.value && lazySource.value) {
         </h1>
       </div>
 
-      <v-container>
+      <v-container class="px-0">
         <p class="text-body-1 text-center">
           {{ hero.description }}
         </p>
@@ -69,7 +69,7 @@ if (hero.value && lazySource.value) {
         Hero Overview
       </h2>
 
-      <v-container class="d-flex flex-column align-center align-md-start flex-md-row-reverse">
+      <v-container class="px-0 d-flex flex-column align-center align-md-start flex-md-row-reverse">
 
         <v-card
           rounded="xl" :flat="true" color="transparent" class="h-stats"
@@ -81,7 +81,7 @@ if (hero.value && lazySource.value) {
         </v-card>
 
 
-        <v-container>
+        <v-container class="px-0 px-sm-4">
 
           <h3 class="text-h5 text-center">
             Hero Weapons

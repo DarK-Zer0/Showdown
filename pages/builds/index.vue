@@ -19,7 +19,7 @@ useSeoMeta({
       </h1>
     </v-container>
 
-    <v-container>
+    <v-container class="px-0">
 
       <div class="text-body-1 text-justify">
         <p>
@@ -48,7 +48,7 @@ useSeoMeta({
           />
         </v-expansion-panel-title>
 
-        <v-expansion-panel-text>
+        <v-expansion-panel-text class="px-n2">
           <v-container v-for="build in setups.byCategory(category.name)" :key="`build-${build.name}`" class="px-0">
             <v-lazy :min-height="750">
               <v-card
@@ -95,7 +95,7 @@ useSeoMeta({
                         <v-col cols="12">
                           <v-card variant="outlined">
 
-                            <v-card-text class="text-body-1 d-flex align-center justify-space-between">
+                            <v-card-text class="text-body-1 d-flex flex-column flex-md-row align-center justify-space-between">
                               Difficulty
 
                               <div>

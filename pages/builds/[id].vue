@@ -24,7 +24,7 @@ if (build.value) useSeoMeta({
 <template>
   <v-page class="page-offset">
 
-    <v-container v-if="build" class="d-flex flex-column align-center">
+    <v-container v-if="build" class="px-0 d-flex flex-column align-center">
       <v-chip text="Builds" to="/builds" size="large" />
 
       <h1 class="text-center text-h3 mt-4">
@@ -39,7 +39,7 @@ if (build.value) useSeoMeta({
 
     </v-container>
 
-    <v-container v-if="build">
+    <v-container v-if="build" class="px-0">
 
       <h3 class="text-h5 mb-4">
         Build Details
@@ -136,7 +136,7 @@ if (build.value) useSeoMeta({
       </v-row>
     </v-container>
 
-    <v-container v-if="build">
+    <v-container v-if="build" class="px-0">
 
       <h3 class="text-h5 mb-4">
         Souljades
