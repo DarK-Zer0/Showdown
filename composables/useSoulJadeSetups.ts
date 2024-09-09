@@ -50,7 +50,7 @@ export default function () {
       'Heroes with Defuse · Solve (unreliable Defuses)',
       'Without sufficient healing, can leave you critically low on Health'
     ],
-    potential: potentials.fireTrascendence
+    potential: potentials.fireTranscendence
   };
 
   const skyfireStorm: SoulJadeSetup = {
