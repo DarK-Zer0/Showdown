@@ -20,6 +20,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@dark-zer0/showdown": "file:",
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/robots": "4.1.6",
     "@vueuse/nuxt": "^11.0.3",

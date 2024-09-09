@@ -27,7 +27,7 @@ useSeoMeta({
         </p>
 
         <p class="py-4">
-          Ensure you replace the (Ice/Thunder)-Wielding Souljade with the one corresponding to your hero's favored element.
+          Ensure you replace the (Ice/Thunder/Poison)-Wielding Souljade with the one corresponding to your hero's favored element.
         </p>
 
         <p>
