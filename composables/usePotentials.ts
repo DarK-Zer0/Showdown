@@ -34,7 +34,7 @@ export default function() {
     heroes: [heroes.viperNing, heroes.feriaShen, heroes.tianhai, heroes.telmuch, heroes.kurumi, heroes.valdaCui]
   };
 
-  const paths: PotentialPath = [
+  const paths: PotentialPath[] = [
     blazingFlame,
     elementalBlast,
     divineStorm,
@@ -48,7 +48,7 @@ export default function() {
     heroes: [heroes.viperNing, heroes.feriaShen, heroes.kurumi, heroes.valdaCui, heroes.matari, heroes.wuchen]
   };
 
-  const fireTrascendence: PotentialPlan = {
+  const fireTranscendence: PotentialPlan = {
     path: blazingFlame,
     name: 'Fire Transcendence',
     description: 'Synergizes with the Incineration & Ember Souljades in that it makes all Burns non-lethal while also granting Honed Status from them alongside successful Defuses. Burn immunity doesn\'t become active until you\'ve reached glyph #7. Extremely effective against Burn-based Omens',
@@ -120,7 +120,7 @@ export default function() {
 
   const plans: PotentialPlan[] = [
     flameTranscendence,
-    fireTrascendence,
+    fireTranscendence,
     thunderousPower,
     thunderCounter,
     divineAegisBreak,
@@ -146,7 +146,7 @@ export default function() {
     plans,
 
     flameTranscendence,
-    fireTrascendence,
+    fireTranscendence,
     thunderousPower,
     thunderCounter,
     divineAegisBreak,

@@ -12,7 +12,7 @@ export interface Weapon {
 }
 
 export interface RangedWeapon extends Weapon {
-  ranged: true
+  ranged: true;
 }
 
 export interface MeleeWeapon extends Weapon {
@@ -61,6 +61,7 @@ export interface SoulJade {
   upgradable?: boolean;
   baseStat: number;
   exclusive?: Hero | Weapon | Weapon[];
+  // SoulJade-specific wield type
   wieldingType?: WieldingType;
 }
 
@@ -92,5 +93,6 @@ export interface PotentialPath {
 export interface PotentialPlan {
   name: string;
   path: PotentialPath;
+  description: string;
   heroes: Hero[];
 }

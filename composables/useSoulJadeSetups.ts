@@ -38,6 +38,7 @@ export default function () {
     heroes: [
       heroes.feriaShen, heroes.tarkaJi, heroes.tianhai, heroes.matari
     ],
+    attributes: [],
     category: burn,
     strengths: [
       'Has the highest amount of Burn Damage possible',
@@ -63,6 +64,7 @@ export default function () {
     heroes: [
       heroes.feriaShen, heroes.wuchen
     ],
+    attributes: [],
     category: burn,
     strengths: [
       'Charges Defuse · Raging Flames quickly',
@@ -88,6 +90,7 @@ export default function () {
     heroes: [
       heroes.yueshan
     ],
+    attributes: [],
     category: burn,
     strengths: [
       'Deals high damage over time alongside bursts of damage from Skyfire',
@@ -112,6 +115,7 @@ export default function () {
     heroes: [
       heroes.tianhai, heroes.tarkaJi, heroes.matari
     ],
+    attributes: [],
     category: burn,
     strengths: [
       'Decent bursts of damage from HydroFlares',
@@ -137,6 +141,7 @@ export default function () {
     heroes: [
       heroes.feriaShen, heroes.tianhai, heroes.telmuch, heroes.tarkaJi, heroes.kurumi, heroes.yueshan, heroes.wuchen
     ],
+    attributes: [],
     category: thunder,
     strengths: [
       'Thunder Counters are always at full power',
@@ -161,6 +166,7 @@ export default function () {
     heroes: [
       heroes.viperNing, heroes.tianhai, heroes.wuchen
     ],
+    attributes: [],
     category: thunder,
     strengths: [
       'Fast build-up from Thunderpull for Thunder Counters',
@@ -187,6 +193,7 @@ export default function () {
       heroes.viperNing, heroes.feriaShen, heroes.tianhai, heroes.telmuch, heroes.tarkaJi, heroes.kurumi, heroes.valdaCui,
       heroes.yueshan
     ],
+    attributes: [],
     category: thunder,
     strengths: [
       'Consistent high damage output',
@@ -213,6 +220,7 @@ export default function () {
       heroes.viperNing, heroes.feriaShen, heroes.tianhai, heroes.telmuch, heroes.tarkaJi, heroes.kurumi, heroes.valdaCui,
       heroes.yueshan
     ],
+    attributes: [],
     category: thunder,
     strengths: [
       'Consistent high damage output',
@@ -238,6 +246,7 @@ export default function () {
     heroes: [
       heroes.kurumi
     ],
+    attributes: [],
     category: thunderbolt,
     strengths: [
       'Empowers Kurumi\'s Vertical Blink Strike significantly',
@@ -263,6 +272,7 @@ export default function () {
     heroes: [
       heroes.matari
     ],
+    attributes: [],
     category: thunderbolt,
     strengths: [
       'Every action you can do will summon a Thunderbolt',
@@ -287,6 +297,7 @@ export default function () {
     heroes: [
       heroes.viperNing
     ],
+    attributes: [],
     category: thunderbolt,
     strengths: [
       'Quickest Thundershock generation possible for Viper from Thunderpull',
@@ -312,11 +323,17 @@ export default function () {
     heroes: [
       heroes.valdaCui, heroes.feriaShen
     ],
+    attributes: [],
     category: thunderbolt,
     strengths: [
       'Boosts Uncharged Attacks with multiple hits significantly',
       'Builds Thundershock from Thunderpull quickly for Thunder Counter',
       'Stormstride rewards you for Dodge Canceling'
+    ],
+    weaknesses: [
+      'Honed status may be difficult to build up',
+      'Low base attack bonus',
+      'Focuses on attacks that are less safe, due to the time required to carry them out'
     ],
     potential: potentials.honedRage
   };
@@ -333,6 +350,7 @@ export default function () {
       heroes.viperNing, heroes.feriaShen, heroes.tianhai, heroes.telmuch, heroes.kurumi, heroes.valdaCui, heroes.matari,
       heroes.wuchen
     ],
+    attributes: [],
     category: ice,
     strengths: [
       'Has the fastest activation rate for Ice Blasts',
@@ -360,6 +378,7 @@ export default function () {
       heroes.viperNing, heroes.feriaShen, heroes.tianhai, heroes.telmuch, heroes.kurumi, heroes.valdaCui, heroes.matari,
       heroes.wuchen
     ],
+    attributes: [],
     category: ice,
     strengths: [
       'Potentially high hit damage bonus',
@@ -384,6 +403,7 @@ export default function () {
     heroes: [
       heroes.viperNing
     ],
+    attributes: [],
     category: ice,
     strengths: [
       'Strongest Ice Build',
@@ -408,6 +428,7 @@ export default function () {
     heroes: [
       heroes.tarkaJi, heroes.yueshan
     ],
+    attributes: [],
     category: ice,
     strengths: [
       'Amazing for clearing mobs, takes 2 shots to kill groups of small mobs',
