@@ -1508,7 +1508,7 @@ export default function () {
   const verticalBlinkStrikeThunderWielding: SoulJade = {
     name: 'Vertical Blink Strike · Thunder-wielding',
     description: 'Vertical Blink Strike deals extra Thundershock damage',
-    rarity: SoulJadeRarity.Legendary,
+    rarity: SoulJadeRarity.Epic,
     type: SoulJadeType.Attack,
     category: SoulJadeCategory.Melee,
     baseStat: 4,
