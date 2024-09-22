@@ -59,7 +59,7 @@ export default function () {
       name: 'Dharma-Ending Ruin', category: categories.wave, chapter: 1, map: maps.morusIsle
     },
     {
-      name: 'Ominous Descent', category: categories.boss, chapter: 1, map: maps.morusIsle
+      name: 'Omnius Descent', category: categories.boss, chapter: 1, map: maps.morusIsle
     },
     {
       name: 'Desert Tribulations', category: categories.stronghold, chapter: 2, map: maps.morusIsle

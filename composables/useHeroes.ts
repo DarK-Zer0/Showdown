@@ -12,8 +12,8 @@ export default function () {
     ranged: weapons.pistol
   };
 
-  const telmuch: Hero = {
-    name: 'Telmuch',
+  const temulch: Hero = {
+    name: 'Temulch',
     description: 'This hero is a formidable fighter who can strike hard with his great sword. His ability can be used to dodge attacks, deal decent Aegis damage over time or to immobilize enemies without Aegis temporarily. His ultimate skill makes his team immune to debuffs and creates a barrier that blocks ranged attacks and slows down enemies who approach him',
     melee: weapons.greatsword,
     ranged: weapons.bow
@@ -84,7 +84,7 @@ export default function () {
 
   const all: Hero[] = [
     viperNing,
-    telmuch,
+    temulch,
     matari,
     tarkaJi,
     kurumi,
@@ -101,7 +101,7 @@ export default function () {
   return {
     all,
     viperNing,
-    telmuch,
+    temulch,
     matari,
     tarkaJi,
     kurumi,

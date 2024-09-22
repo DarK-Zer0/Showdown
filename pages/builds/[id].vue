@@ -52,7 +52,7 @@ if (build.value) useSeoMeta({
               <v-card variant="tonal" color="primary" :flat="true">
                 <template #title>
                   <p class="text-h6 text-center font-weight-medium me-n14">
-                    Element Wielding
+                    Element Wielding Type
                   </p>
                 </template>
 
