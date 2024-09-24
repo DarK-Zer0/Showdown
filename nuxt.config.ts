@@ -124,5 +124,14 @@ export default defineNuxtConfig({
     url: baseUrl
   },
   sourcemap: false,
-  ssr: true
+  ssr: true,
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api: 'modern'
+        }
+      }
+    }
+  }
 });
