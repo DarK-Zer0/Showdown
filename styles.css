@@ -14,7 +14,7 @@
 
     --color-burn: hsl(16, 100%, 79%);
     --color-thunder: hsl(25, 31%, 40%);
-    --color-thunderbolt: hsl(282, 44%, 69%);
+    --color-poison: hsl(282, 44%, 69%);
     --color-ice: hsl(180, 94%, 79%);
 
     /* Text Stylings */
@@ -50,11 +50,22 @@ body {
 hr {
     width: 92%;
     margin: 0 auto;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
 
 /* Text Stylings */
-h1 {
+h1, h2 {
     text-align: center;
+	font-size: clamp(18pt, 2vw, 24pt);
+}
+h2 {
+    margin: 1vh;
+}
+
+h3 {
+    margin-top: 2vh;
+    font-size: clamp(17pt, 1.85vw, 22pt);
 }
 
 a {
@@ -66,19 +77,7 @@ a {
 }
 
 #title {
-    /* background-color: var(--bg-secondary); */
-    text-shadow:
-		-1px 1px 0 #ddd,
-		-2px 2px 0 #c8c8c8,
-		-3px 3px 0 #ccc,
-		-4px 4px 0 #b8b8b8,
-		-4px 4px 0 #bbb,
-		0px 1px 1px rgba(0,0,0,.4),
-		0px 2px 2px rgba(0,0,0,.3),
-		-1px 3px 3px rgba(0,0,0,.2),
-		-1px 5px 5px rgba(0,0,0,.1),
-		-2px 8px 8px rgba(0,0,0,.1),
-		-2px 13px 13px rgba(0,0,0,.1);
+    font-weight: bold;
     display: inline-block;
     position: relative;
     left: 50%;
@@ -129,8 +128,8 @@ ul.left {
 .thunder-txt {
     color: var(--color-thunder);
 }
-.thunderbolt-txt {
-    color: var(--color-thunderbolt);
+.poison-txt {
+    color: var(--color-poison);
 }
 .ice-txt {
     color: var(--color-ice);
@@ -561,7 +560,7 @@ table.changelog {
 table.ice,
 table.lightning,
 table.fire,
-table.thunderbolt {
+table.poison {
     border-collapse: collapse;
     color: black;
     width: 95%;
@@ -584,7 +583,7 @@ table.lightning {
     border-left: 3px solid hsl(25, 31%, 90%);
 
     a {
-        color: #614686;
+        color: lightcyan;
     }
     a:hover {
         color: var(--hover);
@@ -597,8 +596,8 @@ table.fire {
     border-right: 3px solid hsl(16, 100%, 30%);
     border-left: 3px solid hsl(16, 100%, 60%);
 }
-table.thunderbolt {
-    background-color: var(--color-thunderbolt);
+table.poison {
+    background-color: var(--color-poison);
     border-top: 3px solid hsl(282, 44%, 90%);
     border-bottom: 3px solid hsl(282, 44%, 30%);
     border-right: 3px solid hsl(282, 44%, 30%);
