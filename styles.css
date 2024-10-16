@@ -87,6 +87,10 @@ a {
     padding-left: 25px;
     transform: translateX(-50%);
     border-radius: 20px;
+
+    &.changelog {
+        background-color: rgba(18, 105, 139, 0.603);;
+    }
 }
 
 p {
