@@ -2,5 +2,6 @@
     "files.associations": {
         "*.embeddedhtml": "html",
         "plyconfig.json": "jsonc"
-    }
+    },
+    "liveServer.settings.port": 5501
 }
