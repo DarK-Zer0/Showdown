@@ -3,8 +3,8 @@
     /* Color Scheme */
     --bg-primary: hsl(0, 0%, 33%);
     --bg-secondary: hsla(0, 0%, 7%, 0.9);
-    --nav-primary: hsl(269, 54%, 28%);
-    --nav-primary-tr: hsla(269, 54%, 28%, 0.945);
+    --nav-primary: hsl(0, 0%, 10%);
+    --nav-primary-tr: hsla(0, 0%, 0%, 0.945);
     --nav-secondary: hsl(262, 54%, 38%); 
     --nav-top: hsl(263, 43%, 12%);
     --nav-bottom: hsl(262, 27%, 45%);
@@ -329,8 +329,8 @@ img.icon {
 /* Website Navigation Bar - Mobile Stylings */
 .nav-toggle {
     display: none;
-    height: 8vw;
-    width: 8vw;
+    height: 6vw;
+    width: 6vw;
     border-radius: 12px;
     z-index: 3;
     background: transparent;
@@ -501,6 +501,7 @@ img.icon {
     font-size: clamp(14px, 1.4vw, 18px);
     overflow: hidden;
     word-break: normal;
+    border-radius: 20px;    
     border-top: 2px solid white;
     border-left: 2px solid white;
     border-bottom: 2px solid rgb(75, 75, 75);
@@ -636,10 +637,11 @@ table.poison {
     }
     .nav-toggle {
         display: block;
+        background-color: var(--nav-secondary);
         border-top-color: var(--nav-secondary);
         border-left-color: var(--nav-secondary);
-        border-bottom-color: black;
-        border-right-color: black;
+        border-bottom-color: rgb(25, 25, 25);
+        border-right-color: rgb(25, 25, 25);
     }
     .nav-items {
         display: none;
