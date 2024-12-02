@@ -11,6 +11,7 @@
     --nav-text: hsl(0, 0%, 100%);
     --hover: hsl(28, 100%, 78%); 
     --selected: hsl(149, 54%, 28%);
+    --highlight: hsl(240, 82%, 68%);
 
     --color-burn: hsl(16, 100%, 79%);
     --color-thunder: hsl(25, 31%, 40%);
@@ -69,7 +70,7 @@ h3 {
 }
 
 a {
-    color: #6a6af0;
+    color: var(--highlight);
 
     &:hover {
         color:#F0F06A;
@@ -96,6 +97,10 @@ a {
 p {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+}
+
+.highlight {
+    color: var(--highlight);
 }
 
 .center, .caption{
@@ -246,6 +251,7 @@ img.icon {
         color: var(--hover);
         /* background-color: var(--nav-secondary); */
         padding-bottom: 9px;
+        padding-top: 9px;
         border-bottom: 1px solid var(--nav-bottom);
         border-top: 1px solid var(--nav-bottom);
 
@@ -270,7 +276,7 @@ img.icon {
 /* Website Navigation Bar - Dropdown Menu Stylings */
 .dropdown-content {
     display: none;
-    top: 101%;
+    top: 103%;
     transform: translateX(-50%);
     left: 50%;
     animation: slide-down .3s ease-out;
