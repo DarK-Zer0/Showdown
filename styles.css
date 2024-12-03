@@ -133,15 +133,19 @@ ul.left {
 
 .burn-txt {
     color: var(--color-burn);
+    font-size: 33pt;
 }
 .thunder-txt {
     color: var(--color-thunder);
+    font-size: 33pt;
 }
 .poison-txt {
     color: var(--color-poison);
+    font-size: 33pt;
 }
 .ice-txt {
     color: var(--color-ice);
+    font-size: 33pt;
 }
 
 /* Media Stylings */
@@ -545,29 +549,6 @@ p.archetype, p.weapons {
     margin-right: 0;
 }
 
-/* Changelog Table Stylings */
-table.changelog {
-    border: 1px solid black;
-    color: black;
-    background-color: whitesmoke;
-    border-collapse: collapse;
-    width: 80%;
-    margin: 0 auto;
-
-    th, td {
-        border: 1px solid black;
-        padding: 8px;
-        box-sizing: border-box;
-        text-align: center;
-    }
-    th:first-child, td:first-child, th:nth-child(2), td:nth-child(2) {
-        width: 10vw; 
-    }
-    th:nth-child(3), td:nth-child(3) {
-        width: 60vw; 
-    }
-}
-
 /* Souljade Set Ups Table Styling */
 table.ice,
 table.lightning,
@@ -617,7 +598,7 @@ table.poison {
 }
 
 .jade-set-up {
-    margin-bottom: 5rem;
+    margin-bottom: 3.5rem;
 
     th, td {
         padding: 8px;
@@ -629,12 +610,37 @@ table.poison {
     }
     tr.header {
         height: 32px;
+        font-size: 30pt;
     }
     td:first-child {
         width: 35%;
     }
 }
 
+/* Changelog Table Stylings */
+table.changelog {
+    border: 1px solid black;
+    color: black;
+    background-color: whitesmoke;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    th:first-child, td:first-child, th:nth-child(2), td:nth-child(2) {
+        width: 10vw; 
+    }
+    th:nth-child(3), td:nth-child(3) {
+        width: 60vw; 
+    }
+}
+
+/* Smaller Screen Stylings */
 @media (max-width: 1240px) {
     .nav-bar {
         padding-left: 3%;
