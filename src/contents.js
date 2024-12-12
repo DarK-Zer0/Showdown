@@ -39,7 +39,4 @@ window.onload = function() {
     while (estDate.getUTCDay() !== 3) { // 0 is Sunday, 1 is Monday, ..., 6 is Saturday
         estDate.setUTCDate(estDate.getUTCDate() + 1);
     }
-
-    // Display the date and time in the user's local timezone
-    document.getElementById("reset").innerHTML += estDate.toLocaleString();
 }
