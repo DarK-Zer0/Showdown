@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-    /* Color Scheme */
+    /* Site Color Scheme */
     --bg-primary: hsl(0, 0%, 33%);
     --bg-secondary: hsla(0, 0%, 7%, 0.9);
     --nav-primary: hsl(0, 0%, 10%);
@@ -13,10 +13,15 @@
     --selected: hsl(149, 54%, 28%);
     --highlight: hsl(240, 82%, 68%);
 
-    --color-burn: hsl(16, 100%, 79%);
-    --color-thunder: hsl(25, 31%, 40%);
-    --color-poison: hsl(282, 44%, 69%);
-    --color-ice: hsl(180, 94%, 79%);
+    /* Elemental Colors */
+    --color-burn-light: hsl(16, 100%, 60%);
+    --color-burn-dark: hsl(16, 100%, 30%);
+    --color-thunder-light: hsl(25, 31%, 90%);
+    --color-thunder-dark: hsl(25, 31%, 30%);
+    --color-poison-light: hsl(282, 44%, 90%);
+    --color-poison-dark: hsl(282, 44%, 30%);
+    --color-ice-light: hsl(180, 94%, 90%);
+    --color-ice-dark: hsl(180, 94%, 30%);
 
     /* Text Stylings */
     font-family: "Arial", serif;
@@ -132,19 +137,19 @@ ul.left {
 }
 
 .burn-txt {
-    color: var(--color-burn);
+    color: var(--color-burn-dark);
     font-size: 33pt;
 }
 .thunder-txt {
-    color: var(--color-thunder);
+    color: var(--color-thunder-dark);
     font-size: 33pt;
 }
 .poison-txt {
-    color: var(--color-poison);
+    color: var(--color-poison-dark);
     font-size: 33pt;
 }
 .ice-txt {
-    color: var(--color-ice);
+    color: var(--color-ice-dark);
     font-size: 33pt;
 }
 
@@ -548,6 +553,80 @@ p.archetype, p.weapons {
     margin-left: 0;
     margin-right: 0;
 }
+
+/* Souljade Set Ups Div Styling */
+.build {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+    margin: 1vw;
+    border-radius: 20px;
+
+    .section {
+        margin: 1vw;
+        padding: 1vw;
+        max-width: 72vw;
+        border-radius: 20px;
+    }
+}
+.build-name {
+    width: 100%;
+    text-decoration: underline;
+}
+.section-name {
+    width: 100%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+.section .label {
+    margin-top: 0.5vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+.burn, .burn .section {
+    border-top: 3px solid var(--color-burn-light);
+    border-bottom: 3px solid var(--color-burn-dark);
+    border-right: 3px solid var(--color-burn-dark);
+    border-left: 3px solid var(--color-burn-light);
+}
+.ice, .ice .section {
+    border-top: 3px solid var(--color-ice-light);
+    border-bottom: 3px solid var(--color-ice-dark);
+    border-right: 3px solid var(--color-ice-dark);
+    border-left: 3px solid var(--color-ice-light);
+}
+.poison, .poison .section {
+    border-top: 3px solid var(--color-poison-light);
+    border-bottom: 3px solid var(--color-poison-dark);
+    border-right: 3px solid var(--color-poison-dark);
+    border-left: 3px solid var(--color-poison-light);
+}
+.thunder, .thunder .section {
+    border-top: 3px solid var(--color-thunder-light);
+    border-bottom: 3px solid var(--color-thunder-dark);
+    border-right: 3px solid var(--color-thunder-dark);
+    border-left: 3px solid var(--color-thunder-light);
+}
+
+.souljades {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &h4 {
+        width: 100%;
+    }
+}
+.souljades .souljade {
+    max-width: 10vw;
+}
+
 
 /* Souljade Set Ups Table Styling */
 table.ice,
