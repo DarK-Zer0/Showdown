@@ -624,7 +624,7 @@ p.archetype, p.weapons {
     }
 }
 .souljades .souljade {
-    max-width: 10vw;
+    max-width: 6em;
 }
 
 /* Changelog Table Stylings */
