@@ -626,6 +626,15 @@ p.archetype, p.weapons {
 .souljades .souljade {
     max-width: 6em;
 }
+.souljades p.normal {
+    color: lightskyblue;
+}
+.souljades p.hard {
+    color: rgb(180, 1, 180);
+}
+.souljades p.nightscream {
+    color: red;
+}
 
 /* Changelog Table Stylings */
 table.changelog {
