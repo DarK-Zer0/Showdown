@@ -624,7 +624,7 @@ p.archetype, p.weapons {
     }
 }
 .souljades .souljade {
-    max-width: 6em;
+    flex: 1;
 }
 .souljades p.normal {
     color: lightskyblue;
@@ -634,6 +634,9 @@ p.archetype, p.weapons {
 }
 .souljades p.nightscream {
     color: red;
+}
+.souljade img {
+    max-width: 6em;
 }
 
 /* Changelog Table Stylings */
