@@ -139,7 +139,7 @@ export default function () {
     ],
     wieldingType: WieldingType.Thunder,
     heroes: [
-      heroes.feriaShen, heroes.tianhai, heroes.telmuch, heroes.tarkaJi, heroes.kurumi, heroes.yueshan, heroes.wuchen
+      heroes.feriaShen, heroes.tianhai, heroes.temulch, heroes.tarkaJi, heroes.kurumi, heroes.yueshan, heroes.wuchen
     ],
     attributes: [],
     category: thunder,
@@ -190,7 +190,7 @@ export default function () {
     ],
     wieldingType: WieldingType.Thunder,
     heroes: [
-      heroes.viperNing, heroes.feriaShen, heroes.tianhai, heroes.telmuch, heroes.tarkaJi, heroes.kurumi, heroes.valdaCui,
+      heroes.viperNing, heroes.feriaShen, heroes.tianhai, heroes.temulch, heroes.tarkaJi, heroes.kurumi, heroes.valdaCui,
       heroes.yueshan
     ],
     attributes: [],
@@ -217,7 +217,7 @@ export default function () {
     ],
     wieldingType: WieldingType.Thunder,
     heroes: [
-      heroes.viperNing, heroes.feriaShen, heroes.tianhai, heroes.telmuch, heroes.tarkaJi, heroes.kurumi, heroes.valdaCui,
+      heroes.viperNing, heroes.feriaShen, heroes.tianhai, heroes.temulch, heroes.tarkaJi, heroes.kurumi, heroes.valdaCui,
       heroes.yueshan
     ],
     attributes: [],
@@ -347,7 +347,7 @@ export default function () {
     ],
     wieldingType: WieldingType.Ice,
     heroes: [
-      heroes.viperNing, heroes.feriaShen, heroes.tianhai, heroes.telmuch, heroes.kurumi, heroes.valdaCui, heroes.matari,
+      heroes.viperNing, heroes.feriaShen, heroes.tianhai, heroes.temulch, heroes.kurumi, heroes.valdaCui, heroes.matari,
       heroes.wuchen
     ],
     attributes: [],
@@ -375,7 +375,7 @@ export default function () {
     ],
     wieldingType: WieldingType.Ice,
     heroes: [
-      heroes.viperNing, heroes.feriaShen, heroes.tianhai, heroes.telmuch, heroes.kurumi, heroes.valdaCui, heroes.matari,
+      heroes.viperNing, heroes.feriaShen, heroes.tianhai, heroes.temulch, heroes.kurumi, heroes.valdaCui, heroes.matari,
       heroes.wuchen
     ],
     attributes: [],

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Hero } from '~/@types';
+import type { Hero, SoulJadeSetup } from '~/@types';
 
 definePageMeta({
   validate: ({ params }) => {
@@ -13,9 +13,10 @@ const img = useImage();
 const weapons = useWeapons();
 const heroes = useHeroes();
 const setups = useSoulJadeSetups();
+
 const hero = computed<Hero | undefined>(() => heroes.all.find(hero => hero.name.toLowerCase().replace(' ','-') == id));
 const lazySource = computed(() => hero.value === undefined ? undefined : img(`/banners/heroes/${hero.value.name}.webp`, { quality: 20 }));
-const builds = computed(() => setups.forHero(hero.value));
+const builds = computed<SoulJadeSetup[]>(() => hero.value === undefined ? [] : setups.forHero(hero.value));
 const heroWeapons = computed(() => hero.value === undefined ? [] : [{ weapon: hero.value.melee, title: 'Melee' }, { weapon: hero.value.ranged, title: 'Ranged' }]);
 
 if (hero.value && lazySource.value) {
