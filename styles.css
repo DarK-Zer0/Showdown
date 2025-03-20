@@ -211,6 +211,7 @@ img.icon {
     background-repeat: round;
 }
 .nav-bar {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -356,6 +357,7 @@ img.icon {
     }
 }
 
+/* Position the mobile menu button on the far left */
 .mobile .dropdown-content {
     top: 7vh;
     left: -100%;
@@ -667,7 +669,6 @@ table.changelog {
     .nav-bar {
         padding-left: 3%;
         padding-right: 3%;
-        justify-content: left;
     }
     .nav-toggle {
         display: block;
@@ -703,11 +704,14 @@ table.changelog {
     }
 
     .home-button {
-        /* padding: 0; */
+        /* position: absolute; */
+        left: 50%;          
+        transform: translateX(-50%);
         margin-top: 1vw;
         margin-bottom: 1vw;
         margin-right: 0;
-        margin-left: calc(50% - 8vw - 11%);
+        margin-left: calc(50% - 8vw - 18%);
+        cursor: pointer;
 
         img {
             padding-top: 1vw;
