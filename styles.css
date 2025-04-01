@@ -196,6 +196,10 @@ img.example {
 img.icon {
     width: 20pt;
 }
+.nav-icon {
+    height: 1.5rem;
+    margin-right: 1vw;
+}
 
 .with-caption {
     margin-bottom: 1px;
@@ -325,7 +329,9 @@ img.icon {
 }
 
 .dropdown-option {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1.5px solid var(--bg-primary);
@@ -345,8 +351,8 @@ img.icon {
 /* Website Navigation Bar - Mobile Stylings */
 .nav-toggle {
     display: none;
-    height: 6vw;
-    width: 6vw;
+    height: 6vh;
+    width: 6vh;
     border-radius: 12px;
     z-index: 3;
     background: transparent;
@@ -667,8 +673,9 @@ table.changelog {
 /* Smaller Screen Stylings */
 @media (max-width: 1240px) {
     .nav-bar {
-        padding-left: 3%;
-        padding-right: 3%;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        justify-content: normal;
     }
     .nav-toggle {
         display: block;
@@ -677,6 +684,7 @@ table.changelog {
         border-left-color: var(--nav-secondary);
         border-bottom-color: rgb(25, 25, 25);
         border-right-color: rgb(25, 25, 25);
+        margin-right: 17.5vw;
     }
     .nav-items {
         display: none;
