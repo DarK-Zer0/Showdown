@@ -55,11 +55,11 @@
 		<h1 id="title">BUILDS</h1>
 
 		<!-- Page Navigation -->
-		<nav class="page-nav">
+		<!-- <nav class="page-nav">
 			<button onclick="showDiv(1, this)" class="page-nav-item">Jade Set Ups</button>
 			<button onclick="showDiv(2, this)" class="page-nav-item">Element Jades</button>
 			<button onclick="showDiv(3, this)" class="page-nav-item">Potential Plans</button>
-		</nav>
+		</nav> -->
 
 		<!-- Return to Top Button -->
 		<button type="button" id="back-to-top" title="Go to top of page">
@@ -72,192 +72,45 @@
 
 			<!-- Jade Set Ups -->
 			<div id="div1" class="content" style="display: none;">
-				<h1>Jade Set Ups</h1>
+				<!-- <h1>Jade Set Ups</h1> -->
 				<p class="center">
-					This section will showcase the standard Souljade setups for each damage type, 
-					including their respective strengths and weaknesses. 
-					Ensure you replace the (Ice/Thunder)-Wielding Souljade with the one corresponding to your hero's favored element.
-					See <a href="#" onclick="showDiv(2, this); return false;">Element Jades</a> for more info.
-					In terms of damage output, right now Burn builds are at the top, followed by Thunder builds, and lastly Ice builds.
-					<br><br>The following builds are listed with no particular order in mind aside from their main damage source. 
-					Difficulty denotes how hard it is to use it effectively, while Power denotes the DPS ceiling in respect to other builds.
-					<br><span style="color:lightskyblue">Light Blue Souljade names means they can be acquired on Normal and above difficulty.</span>
-					<br><span style="color:rgb(180, 1, 180);">Purple Souljade names means they can be acquired on Hard and above difficulty.</span>
-					<br><span style="color:red">Red Souljade names means they can be acquired on Nightscream difficulty.</span>
+					The following builds are listed with no particular order in mind aside from their main damage source.
+					In terms of damage output, right now Ice builds are at the top, followed by Bow builds. 
+					<br>Difficulty denotes how hard a build to use it effectively, while Power denotes the DPS ceiling in respect to other builds.
+					<br><span style="color:lightskyblue">A Light Blue Souljade names means they can be acquired on Normal and above difficulty.</span>
+					<br><span style="color:rgb(180, 1, 180);">A Purple Souljade names means they can be acquired on Hard and above difficulty.</span>
+					<br><span style="color:red">A Red Souljade names means they can be acquired on Nightscream difficulty.</span>
 				</p>
 
 				<!-- Build Sections -->
 				<hr><h2>Build Sections</h2>
 				<ul class="nodot">
-					<li><a href="#Burn-Builds" class="burn-txt">Burn Builds</a></li>
 					<li><a href="#Ice-Builds" class="ice-txt">Ice Builds</a></li>
+					<li><a href="#Bow-Builds" class="bow-txt">Bow Builds</a></li>
 					<li><a href="#Poison-Builds" class="poison-txt">Poison Builds</a></li>
+					<li><a href="#Musket-Builds" class="musket-txt">Musket Builds</a></li>
 					<li><a href="#Thunder-Builds" class="thunder-txt">Thunder Builds</a></li>
 				</ul>
-				
-				<!-- BURN BUILDS -->
-				<hr id="Burn-Builds"><h2 class="burn-txt">Burn Builds</h2>
-				<!-- Thunder Scorch -->
-				<div class="burn build">
-					<h3 class="build-name">Thunder Scorch</h3>
-					<div class="section">
-						<h4 class="section-name">Core Souljades</h4>
-						<div class="souljades">
-							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/triangular_gold.png" alt="Thunderpull"><br>Thunderpull</p></div>
-							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/rectangular_gold.png" alt="Thunder Counter"><br>Thunder Counter</p></div>
-							<div class="souljade"><p class="hard"><img src="img/builds/souljades/rectangular_purp.png" alt="Thunderproof"><br>Thunderproof</p></div>
-							<div class="souljade"><p class="normal"><img src="img/builds/souljades/dualedge_gold.png" alt="Draco Stride"><br>Draco Stride</p></div>
-						</div>
-					</div>
-					<div class="section">
-						<h4 class="section-name">Optional Souljades</h4>
-						<div class="souljades">
-							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/triangular_gold.png" alt="Incineration"><br>Incineration</p></div>
-							<div class="souljade"><p class="hard"><img src="img/builds/souljades/rectangular_purp.png" alt="Copper Ward"><br>Copper Ward</p></div>
-							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/star_purp.png" alt="Defuse • Flaming Blade"><br>Defuse • Flaming Blade</p></div>
-							<div class="souljade"><p class="hard"><img src="img/builds/souljades/rectangular_purp.png" alt="Copper Ward"><br>Sap</p></div>
-							<div class="souljade"><p class="hard"><img src="img/builds/souljades/triangular_purp.png" alt="Hero • Element Jade"><br>Hero • Element Jade</p></div>
-						</div>
-					</div>
-					<div class="potential section">
-						<p class="label">Potential Plan</p>
-						<p class="caption"><a href="build.html?option=3#Hydroflare">Hydroflare</a></p>
-					</div>
-					<div class="wielding section">
-						<p class="label">Wielding Type</p>
-						<p class="caption"><img src="img/builds/souljades/Ice-Wielding.png" alt="Ice-Wielding" class="wielding">
-							Ice-Wielding
-							<img src="img/builds/souljades/Ice-Wielding.png" alt="Ice-Wielding" class="wielding"></p>
-					</div>
-					<div class="attributes section">
-						<p class="label">Target Attributes</p>
-						<p class="caption">x4 [Scorching], x7 [Windfall], x6 Health, x6 Attack, x1 Counter triggers Recovery</p>
-						<p class="label">Optional Attributes</p>
-						<p class="caption">Increase DMG to Boss & Defuse triggers Recovery.</p>
-					</div>
-					<div class="description section">
-						<p class="label">Description</p>
-						<p class="caption">This build relies heavily on the [Scorching] Rare Attribute for its damage output. 
-							It makes use of Thunderpull, Thunder Counter, Thunderproof, and 0 Thunder-Wielding to counter Divine Thunder frequently, 
-							allowing for repeated activation of [Scorching]. Combined with Draco Stride, this converts into Hydroflare damage for massive bursts of damage. 
-							Currently, this build has the highest potential damage output in the game, with it mainly excelling in Yama's Abyss.
-							<br><br>[Scorching] +9 or higher is recommended for optimal performance.
-							<br>Counter triggers Recovery recommended to prevent having to stop for heals over extended fights.
-						</p>
-					</div>
-					<div class="difficulty section">
-						<p class="label">Difficulty</p> 
-							<!-- 5-Stars -->
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-					</div>
-					<div class="power section">
-						<p class="label">Power</p> 
-							<!-- 5-Stars -->
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-					</div>
-				</div>
-				
-				<!-- Thunder Lotus Scorch -->
-				<div class="burn build">
-					<h3 class="build-name">Thunder Lotus Scorch</h3>
+
+				<!-- ICE BUILDS -->
+				<hr id="Ice-Builds"><h2 class="ice-txt">Ice Builds</h2>
+				<!-- Ice Lotus -->
+				<div class="ice build">
+					<h3 class="build-name">Ice Lotus Chain</h3>
 					<div class="section">
 						<h4 class="section-name">Souljades</h4>
 						<div class="souljades">
-							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/triangular_gold.png" alt="Thunderpull"><br>Thunderpull</p></div>
-							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/rectangular_gold.png" alt="Thunder Counter"><br>Thunder Counter</p></div>
-							<div class="souljade"><p class="hard"><img src="img/builds/souljades/rectangular_purp.png" alt="Thunderproof"><br>Thunderproof</p></div>
-							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/flower_gold.png" alt="Mighty Lotus Counter"><br>Mighty Lotus Counter</p></div>
-							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/triangular_gold.png" alt="Thunderous Lotus"><br>Thunderous Lotus</p></div>
-							<div class="souljade"><p class="normal"><img src="img/builds/souljades/dualedge_gold.png" alt="Draco Stride"><br>Draco Stride</p></div>
-						</div>
-					</div>
-					<div class="potential section">
-						<p class="label">Potential Plan</p>
-						<p class="caption"><a href="build.html?option=3#Hydroflare">Hydroflare</a></p>
-					</div>
-					<div class="wielding section">
-						<p class="label">Wielding Type</p>
-						<p class="caption"><img src="img/builds/souljades/Ice-Wielding.png" alt="Ice-Wielding" class="wielding">
-							Ice-Wielding
-							<img src="img/builds/souljades/Ice-Wielding.png" alt="Ice-Wielding" class="wielding"></p>
-					</div>
-					<div class="attributes section">
-						<p class="label">Target Attributes</p>
-						<p class="caption">x4 [Scorching], x7 [Windfall], x6 Health, x6 Attack, x1 Counter triggers Recovery</p>
-						<p class="label">Optional Attributes</p>
-						<p class="caption">Increase DMG to Boss & Defuse triggers Recovery.</p>
-					</div>
-					<div class="description section">
-						<p class="label">Description</p>
-						<p class="caption">This build relies heavily on the [Scorching] Rare Attribute for its damage output. 
-							It makes use of Thunderpull, Thunder Counter, Thunderproof, and 0 Thunder-Wielding to counter Divine Thunder frequently, 
-							allowing for repeated activation of [Scorching]. Combined with Draco Stride, this converts into Hydroflare damage for massive bursts of damage. 
-							Standing close to the enemy to hit them with Lotus Impacts will charge your Thunderpull significantly faster.
-							<br><br>[Scorching] +9 or higher is recommended for optimal performance.
-							<br>Counter triggers Recovery recommended to prevent having to stop for heals over extended fights.
-						</p>
-					</div>
-					<div class="difficulty section">
-						<p class="label">Difficulty</p> 
-							<!-- 4.5-Stars -->
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/halffilledstar-w.png" alt="Half-Filled Difficulty Star" class="icon">
-					</div>
-					<div class="power section">
-						<p class="label">Power</p> 
-							<!-- 4.5-Stars -->
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/halffilledstar-w.png" alt="Half-Filled Difficulty Star" class="icon">
-					</div>
-				</div>
-
-				<!-- ICE BUILDS -->
-				<hr id="Ice-Builds"><h2 class="ice-txt">Ice Build</h2>
-				<!-- Ice Lotus -->
-				<div class="ice build">
-					<h3 class="build-name">Ice Lotus</h3>
-					<div class="section">
-						<h4 class="section-name">Core Souljades</h4>
-						<div class="souljades">
 							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/triangular_gold.png" alt="Successive Ice Blast"><br>Successive Ice Blast</p></div>
-							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/triangular_gold.png" alt="Ghastbloom"><br>Ghastbloom</p></div>
-							<div class="souljade"><p class="hard"><img src="img/builds/souljades/flower_gold.png" alt="Elemental Lotus"><br>Elemental Lotus</p></div>
-							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/dualedge_purp.png" alt="Tundra Might"><br>Tundra Might</p></div>
-						</div>
-					</div>
-					<div class="section">
-						<h4 class="section-name">Interchangeable Core Souljades</h4>
-						<p class="caption">Choose only one as a core Souljade.</p>
-						<div class="souljades">
-							<div class="souljade"><p class="hard"><img src="img/builds/souljades/dualedge_purp.png" alt="Sub-Zero Seal"><br>Sub-Zero Seal</p></div>
-							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/triangular_gold.png" alt="Frostbound Lotus"><br>Frostbound Lotus</p></div>
-						</div>
-					</div>
-					<div class="section">
-						<h4 class="section-name">Optional Souljades</h4>
-						<div class="souljades">
 							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/triangular_gold.png" alt="Frozen Blast"><br>Frozen Blast</p></div>
-							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/dualedge_gold.png" alt="Arcane Thunder"><br>Arcane Thunder</p></div>
-							<div class="souljade"><p class="hard"><img src="img/builds/souljades/triangular_purp.png" alt="Hero • Element Jade"><br>Hero • Element Jade</p></div>
+							<div class="souljade"><p class="hard"><img src="img/builds/souljades/flower_gold.png" alt="Elemental Surge • Ice-Wielding"><br>Element Surge • Ice-Wielding</p></div>
+							<div class="souljade"><p class="hard"><img src="img/builds/souljades/flower_gold.png" alt="Elemental Lotus"><br>Elemental Lotus</p></div>
+							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/triangular_gold.png" alt="Ghastbloom"><br>Ghastbloom</p></div>
+							<div class="souljade"><p class="hard"><img src="img/builds/souljades/flower_gold.png" alt="Frostbite Chain"><br>Frostbite Chain</p></div>
 						</div>
 					</div>
 					<div class="potential section">
 						<p class="label">Potential Plan</p>
-						<p class="caption"><a href="build.html?option=3#Ice">Frost Lotus</a></p>
+						<img src="img/builds/trees/3.0/ILC.png" alt="Ice Lotus Chain Potential Plan" class="potential-plan">
 					</div>
 					<div class="wielding section">
 						<p class="label">Wielding Type</p>
@@ -269,30 +122,92 @@
 						<p class="label">Target Attributes</p>
 						<p class="caption">x4 [Moderation], x8 [Windfall], x6 Ice Blast DMG, x6 Attack<br>or<br>
 							x12 [Windfall], x6 Attack, x6 Ice Blast DMG</p>
-						<p class="label">Optional Attributes</p>
-						<p class="caption">Increase DMG to Boss & Melee Weapon DMG.</p>
+						<p class="label">Placeholder Attributes</p>
+						<p class="caption">DMG to Bosses & Melee Weapon DMG.</p>
 					</div>
 					<div class="description section">
 						<p class="label">Description</p>
-						<p class="caption">Attack enemies to build Frostbite on them and trigger Ice Blasts for massive damage. 
-							The Successive Ice Blast Souljade increases the number of Ice Blast hits, multiplying damage by 1.65x and raising the number of Lotus spawned by Elemental Lotus from 1 to 3. 
-							If Frozen Blast is chosen, it reduces Ice Blast's cooldown from 6s to 4s. 
-							Sub-Zero Seal builds Frostbite on your constantly, for a constantly active attack buff.
-							Frostbound Lotus builds Frostbite on you from your Lotus Impacts and provides a slightly larger, albeit less consistent attack buff. 
-							Using Arcane Thunder lets you trigger Ice Blasts on distant enemies and adds extra damage to your ability casts. 
-							Outside of Yama's Abyss, this build has the highest consistent damage output.
-							Being frozen from Frostbite can be avoided by Defusing it at the right time.
-							<br><br>[Moderation] +100% turns this into a powerful Mod build.</p>
-						</p>
+							<p class="caption">This extremely easy-to-use build features no penalties and is recommended for most players to start with.
+								Your attacks will build up Frostbite on enemies, which will explode into an Ice Blast once certain thresholds are met. 
+								Each Ice Blast will summon 3 Lotus (up to 4 per second) that will surround you and explode for high damage when they expire or when you exceed 4 total.
+								<br><br>Over time, as you activate more Ice Blasts, you will charge up an extremely strong attack known as Chain Crush.
+								You will see a symbol appear in the top left that indicates it is ready to be used. 
+								To activate it, use any uncharged melee attack.
+								<br><br>[Moderation] +100% turns this into a powerful Mod build.
+							</p>
 					</div>
 					<div class="difficulty section">
 						<p class="label">Difficulty</p> 
-							<!-- 2-Stars -->
+							<!-- 1-Star -->
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/unfilledstar-w.png" alt="Empty Difficulty Star" class="icon">
+							<img src="img/site/unfilledstar-w.png" alt="Empty Difficulty Star" class="icon">
+							<img src="img/site/unfilledstar-w.png" alt="Empty Difficulty Star" class="icon">
+							<img src="img/site/unfilledstar-w.png" alt="Empty Difficulty Star" class="icon">
+					</div>
+					<div class="power section">
+						<p class="label">Power</p> 
+							<!-- 5-Stars -->
 							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
 							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/unfilledstar-w.png" alt="Empty Difficulty Star" class="icon">
-							<img src="img/site/unfilledstar-w.png" alt="Empty Difficulty Star" class="icon">
-							<img src="img/site/unfilledstar-w.png" alt="Empty Difficulty Star" class="icon">
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+					</div>
+				</div>
+				<!-- Frostbite Surge -->
+				<div class="ice build">
+					<h3 class="build-name">Frostbite Surge</h3>
+					<div class="section">
+						<h4 class="section-name">Souljades</h4>
+						<div class="souljades">
+							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/triangular_gold.png" alt="Successive Ice Blast"><br>Successive Ice Blast</p></div>
+							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/triangular_gold.png" alt="Frozen Blast"><br>Frozen Blast</p></div>
+							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/triangular_gold.png" alt="Depths Blast"><br>Depths Blast</p></div>
+							<div class="souljade"><p class="hard"><img src="img/builds/souljades/flower_gold.png" alt="Element Surge • Ice-Wielding"><br>Element Surge • Ice-Wielding</p></div>
+							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/dualedge_gold.png" alt="Chill Spike"><br>Chill Spike</p></div>
+							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/triangular_gold.png" alt="Frostbite Chain"><br>Frostbite Chain</p></div>
+						</div>
+					</div>
+					<div class="potential section">
+						<p class="label">Potential Plan</p>
+						<img src="img/builds/trees/3.0/FSu.png" alt="Frost Surge Potential Plan" class="potential-plan">
+					</div>
+					<div class="wielding section">
+						<p class="label">Wielding Type</p>
+						<p class="caption"><img src="img/builds/souljades/Ice-Wielding.png" alt="Ice-Wielding" class="wielding">
+							Ice-Wielding
+							<img src="img/builds/souljades/Ice-Wielding.png" alt="Ice-Wielding" class="wielding"></p>
+					</div>
+					<div class="attributes section">
+						<p class="label">Target Attributes</p>
+						<p class="caption">x4 [Moderation], x8 [Windfall], x6 Ice Blast DMG, x6 Attack</p>
+						<p class="label">Placeholder Attributes</p>
+						<p class="caption">DMG to Bosses & Melee Weapon DMG.</p>
+					</div>
+					<div class="description section">
+						<p class="label">Description</p>
+							<p class="caption">Your attacks will build up Frostbite on enemies, which will explode into an Ice Blast once certain thresholds are met. 
+								Each Ice Blast will generate a certain amount of Frostbite on yourself, which will attempt to freeze you after 2 Ice Blasts.
+								<br><br>You can defuse this freeze attempt or use any ability that applies golden focus to yourself, such as Justina's Skill, Shadowswipe. 
+								After reaching maximum Frostbite, Frostbite Surge will activate, preventing you from being frozen for 25 seconds and allowing you to summon Ice Thorns whenever you use your hero's Skill (this has a 4-second cooldown).
+								<br><br>After dealing enough Ice damage, you will charge up an extremely strong attack known as Chain Crush. 
+								You will see a symbol appear in the top left that indicates it is ready to be used. To activate it, use any uncharged melee attack.
+								<br><br>[Moderation] +100% is necessary to use this build effectively.
+							</p>
+					</div>
+					<div class="section">
+						<p class="label">Recommended Hero<br></p>
+						<p class="caption">Justina Gu</p>
+					</div>
+					<div class="difficulty section">
+						<p class="label">Difficulty</p> 
+							<!-- 3.5-Stars -->
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/halffilledstar-w.png" alt="Half-Filled Difficulty Star" class="icon">
+							<img src="img/site/unfilledstar-w.png" alt="Unfilled Difficulty Star" class="icon">
 					</div>
 					<div class="power section">
 						<p class="label">Power</p> 
@@ -304,121 +219,153 @@
 							<img src="img/site/halffilledstar-w.png" alt="Half-Filled Difficulty Star" class="icon">
 					</div>
 				</div>
-				<!-- Ice-Thunder Lotus -->
-				<div class="ice build">
-					<h3 class="build-name">Ice-Thunder Lotus</h3>
+
+				<!-- BOW BUILDS -->
+				<hr id="Bow-Builds"><h2 class="bow-txt">Bow Builds</h2>
+				<!-- JustNae's Bow Build -->
+				<div class="bow build">
+					<h3 class="build-name">JustNae's Bow Build</h3>
+					<p class="caption">Build created by JustNaes (Discord: justnaes)</p>
 					<div class="section">
 						<h4 class="section-name">Souljades</h4>
 						<div class="souljades">
-							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/triangular_gold.png" alt="Successive Ice Blast"><br>Successive Ice Blast</p></div>
-							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/triangular_gold.png" alt="Ghastbloom"><br>Ghastbloom</p></div>
-							<div class="souljade"><p class="hard"><img src="img/builds/souljades/flower_gold.png" alt="Elemental Lotus"><br>Elemental Lotus</p></div>
-							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/triangular_gold.png" alt="Thunderpull"><br>Thunderpull</p></div>
-							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/rectangular_gold.png" alt="Thunder Counter"><br>Thunder Counter</p></div>
-							<div class="souljade"><p class="hard"><img src="img/builds/souljades/flower_gold.png" alt="Mighty Lotus Counter"><br>Mighty Lotus Counter</p></div>
+							<div class="souljade"><p class="hard"><img src="img/builds/souljades/circular_purp.png" alt="Scattershot Enhance"><br>Scattershot Enhance</p></div>
+							<div class="souljade"><p class="hard"><img src="img/builds/souljades/flower_gold.png" alt="Element Surge • Poison-Wielding"><br>Element Surge • Poison-Wielding</p></div>
+							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/dualedge_gold.png" alt="Renewed Vigor"><br>Renewed Vigor</p></div>
+							<div class="souljade"><p class="normal"><img src="img/builds/souljades/triangular_purp.png" alt="Backfire"><br>Backfire</p></div>
+							<div class="souljade"><p class="hard"><img src="img/builds/souljades/flower_gold.png" alt="Desperation"><br>Desperation</p></div>
+						</div>
+					</div>
+					<div class="section">
+						<h4 class="section-name">Interchangable Souljades</h4>
+						<p class="caption">Choose 1 of 3. Damage dealt is equal between the 3.</p>
+						<div class="souljades">
+							<div class="souljade"><p class="hard"><img src="img/builds/souljades/arrowhead_gold.png" alt="Frost Arrows"><br>Frost Arrows</p></div>
+							<div class="souljade"><p class="hard"><img src="img/builds/souljades/arrowhead_gold.png" alt="Thunder Arrows"><br>Thunder Arrows</p></div>
+							<div class="souljade"><p class="hard"><img src="img/builds/souljades/arrowhead_gold.png" alt="Toxic Arrows"><br>Toxic Arrows</p></div>
 						</div>
 					</div>
 					<div class="potential section">
 						<p class="label">Potential Plan</p>
-						<p class="caption"><a href="build.html?option=3#Ice">Frost Lotus</a></p>
+						<img src="img/builds/trees/3.0/JNBB.png" alt="JustNae's Bow Build Potential Plan" class="potential-plan">
 					</div>
 					<div class="wielding section">
 						<p class="label">Wielding Type</p>
-						<p class="caption"><img src="img/builds/souljades/Ice-Wielding.png" alt="Ice-Wielding" class="wielding">
+						<p class="caption">
+							+1-6 <img src="img/builds/souljades/Poison-Wielding.png" alt="Poison-Wielding" class="wielding">
+							Poison-Wielding
+							<img src="img/builds/souljades/Poison-Wielding.png" alt="Poison-Wielding" class="wielding">
+							<br>+0-5 <img src="img/builds/souljades/Ice-Wielding.png" alt="Ice-Wielding" class="wielding">
 							Ice-Wielding
-							<img src="img/builds/souljades/Ice-Wielding.png" alt="Ice-Wielding" class="wielding"></p>
+							<img src="img/builds/souljades/Ice-Wielding.png" alt="Ice-Wielding" class="wielding">
+							<br>+0-5 <img src="img/builds/souljades/Thunder-Wielding.png" alt="Thunder-Wielding" class="wielding">
+							Thunder-Wielding
+							<img src="img/builds/souljades/Thunder-Wielding.png" alt="Thunder-Wielding" class="wielding">
+						</p>
 					</div>
 					<div class="attributes section">
 						<p class="label">Target Attributes</p>
-						<p class="caption">x4 [Moderation], x8 [Windfall], x6 Ice Blast DMG, x6 Attack;
-							<br>x4 [Moderation], x4 [Scorching], x4 [Windfall], x6 Ice Blast DMG, x6 Attack<br>or<br>
-							x12 [Windfall], x6 Attack, x6 Ice Blast DMG</p>
-						<p class="label">Optional Attributes</p>
-						<p class="caption">Increase DMG to Boss & Melee Weapon DMG.</p>
+						<p class="caption">x5 [Windfall], x6 Attack, x6 DMG to Bosses, x6 Ranged Weapon Damage, & x1 Deadeye build rate</p>
+						<p class="label">Placeholder Attributes</p>
+						<p class="caption">Charged Attack DMG & Deadeye build rate</p>
 					</div>
 					<div class="description section">
 						<p class="label">Description</p>
-						<p class="caption">A hybrid build that utilizes Thunderpull and Thunder Counter to maximize Lotus summons through Mighty Lotus Counter. 
-							This build is effective for both mobbing and bossing, while also avoiding the drawback of freezing yourself from Frostbite.
-							<br><br>[Moderation] +100% turns this into a powerful Mod build, while [Scorching] adds some extra damage to your Thunder Counters.<br>
-							If you use [Scorching], make sure to grab <strong>Water and Fire Raged</strong> on the Potential Tree in place of <strong>Aegis-Break Rage</strong>.
-						</p>
-						</p>
+							<p class="caption">Deal massive damage by using the Stage 2 Charged Attack of your Bow. 
+								Perfectly timing the release of the charge, while Deadeye is active, will cast Void Destroyer, a massive 3-part attack that only consumes 1 ammo.
+								Beware, this build will leave you at 1 Health, so you'll mainly rely on your Armor to survive any hits.
+								<br><br>Reaching ~8.5% Deadeye build rate will allow you to activate Deadeye with just 3 Stage 2 Charged Attacks instead of 4.
+							</p>
 					</div>
 					<div class="section">
 						<p class="label">Recommended Heroes<br></p>
-						<p class="caption">Yueshan or Tarka Ji</p>
+						<p class="caption">Temulch, Tessa, & Justina Gu</p>
 					</div>
 					<div class="difficulty section">
 						<p class="label">Difficulty</p> 
-							<!-- 3.5-Stars -->
+							<!-- 2-Stars -->
 							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
 							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/halffilledstar-w.png" alt="Half-Filled Difficulty Star" class="icon">
+							<img src="img/site/unfilledstar-w.png" alt="Unfilled Difficulty Star" class="icon">
+							<img src="img/site/unfilledstar-w.png" alt="Unfilled Difficulty Star" class="icon">
 							<img src="img/site/unfilledstar-w.png" alt="Unfilled Difficulty Star" class="icon">
 					</div>
 					<div class="power section">
 						<p class="label">Power</p> 
-							<!-- 3.5-Stars -->
+							<!-- 4.5-Stars -->
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
 							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
 							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
 							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
 							<img src="img/site/halffilledstar-w.png" alt="Half-Filled Difficulty Star" class="icon">
-							<img src="img/site/unfilledstar-w.png" alt="Unfilled Difficulty Star" class="icon">
 					</div>
 				</div>
-
-				<!-- POISON BUILDS -->
-				<hr id="Poison-Builds"><h2 class="poison-txt">Poison Build</h2>
-				<!-- Poison Lotus -->
-				<div class="poison build">
-					<h3 class="build-name">Poison Lotus</h3>
+				<!-- Tabbie's Bow Build -->
+				<div class="bow build">
+					<h3 class="build-name">Ice Bow</h3>
+					<p class="caption">Build created by Tabbie (Discord: lingling6606)</p>
 					<div class="section">
 						<h4 class="section-name">Souljades</h4>
 						<div class="souljades">
-							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/triangular_gold.png" alt="Noxious Blast"><br>Noxious Blast</p></div>
-							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/triangular_gold.png" alt="Ghastbloom"><br>Ghastbloom</p></div>
-							<div class="souljade"><p class="hard"><img src="img/builds/souljades/flower_gold.png" alt="Toxified Lotus"><br>Toxified Lotus</p></div>
-							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/triangular_gold.png" alt="Pestilent Pool"><br>Pestilent Pool</p></div>
-							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/rectangular_gold.png" alt="Infectious Touch"><br>Infectious Touch</p></div>
-							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/triangular_gold.png" alt="Venomous Lotus"><br>Venomous Lotus</p></div> 
+							<div class="souljade"><p class="hard"><img src="img/builds/souljades/circular_purp.png" alt="Scattershot Enhance"><br>Scattershot Enhance</p></div>
+							<div class="souljade"><p class="hard"><img src="img/builds/souljades/flower_gold.png" alt="Elemental Surge • Ice-Wielding"><br>Element Surge • Ice-Wielding</p></div>
+							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/triangular_gold.png" alt="Depths Blast"><br>Depths Blast</p></div>
+							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/triangular_gold.png" alt="Successive Ice Blast"><br>Successive Ice Blast</p></div>
+							<div class="souljade"><p class="hard"><img src="img/builds/souljades/dualedge_purp.png" alt="Sub-Zero Seal"><br>Sub-Zero Seal</p></div>
+						</div>
+					</div>
+					<div class="section">
+						<h4 class="section-name">Interchangable Souljades</h4>
+						<p class="caption">Choose 1 of 3. Damage dealt is equal between the 3.</p>
+						<div class="souljades">
+							<div class="souljade"><p class="hard"><img src="img/builds/souljades/arrowhead_gold.png" alt="Frost Arrows"><br>Frost Arrows</p></div>
+							<div class="souljade"><p class="hard"><img src="img/builds/souljades/arrowhead_gold.png" alt="Thunder Arrows"><br>Thunder Arrows</p></div>
+							<div class="souljade"><p class="hard"><img src="img/builds/souljades/arrowhead_gold.png" alt="Toxic Arrows"><br>Toxic Arrows</p></div>
 						</div>
 					</div>
 					<div class="potential section">
 						<p class="label">Potential Plan</p>
-						<p class="caption"><a href="build.html?option=3#Poison">Toxic Lotus</a></p>
+						<img src="img/builds/trees/3.0/IceBow.png" alt="Ice Bow Potential Plan" class="potential-plan">
 					</div>
 					<div class="wielding section">
 						<p class="label">Wielding Type</p>
-						<p class="caption"><img src="img/builds/souljades/Poison-Wielding.png" alt="Poison-Wielding" class="wielding">
+						<p class="caption">
+							+1-5 <img src="img/builds/souljades/Ice-Wielding.png" alt="Ice-Wielding" class="wielding">
+							Ice-Wielding
+							<img src="img/builds/souljades/Ice-Wielding.png" alt="Ice-Wielding" class="wielding">
+							<br>+0-5 <img src="img/builds/souljades/Thunder-Wielding.png" alt="Thunder-Wielding" class="wielding">
+							Thunder-Wielding
+							<img src="img/builds/souljades/Thunder-Wielding.png" alt="Thunder-Wielding" class="wielding">
+							<br>+0-5 <img src="img/builds/souljades/Poison-Wielding.png" alt="Poison-Wielding" class="wielding">
 							Poison-Wielding
-							<img src="img/builds/souljades/Poison-Wielding.png" alt="Poison-Wielding" class="wielding"></p>
+							<img src="img/builds/souljades/Poison-Wielding.png" alt="Poison-Wielding" class="wielding">
+						</p>
 					</div>
 					<div class="attributes section">
 						<p class="label">Target Attributes</p>
-						<p class="caption">x4 [Moderation], x6-8 [Windfall], x6 Poison Blast DMG, x6 Attack, x0-2 Increase DMG to Boss<br>or<br>
-							x12 [Windfall], x6 Poison Blast DMG, x6 Attack</p>
-						<p class="label">Optional Attributes</p>
-						<p class="caption">Increase DMG to Boss & Melee Weapon DMG.</p>
+						<p class="caption">x5 [Windfall], x6 Attack, x6 DMG to Bosses, x6 Ranged Weapon Damage, & x1 Deadeye build rate</p>
+						<p class="label">Placeholder Attributes</p>
+						<p class="caption">Charged Attack DMG & Deadeye build rate</p>
 					</div>
 					<div class="description section">
 						<p class="label">Description</p>
-						<p class="caption">Poison Blasts activate Noxious Blast, applying 1 stack of [Toxified] to the enemy, and Pestilent Pool, 
-							which generates a poison pool that applies up to 2 [Toxified] stacks to enemies standing within it. 
-							Standing in the pool for 2 seconds inflicts [Toxified] on yourself, allowing you to transfer 2 [Toxified] stacks to the enemy by using a 
-							Martial Skill, Defuse Counterattack, or the 3rd attack in any uncharged attack combo (excluding Greatsword and Polesword) via Infectious Touch. 
-							When an enemy reaches 6 stacks of [Toxified], Toxin Blast activates, dealing major damage to the surrounding area. 
-							Each stack of [Toxified] applied to enemies summons a Lotus, which explodes when exceeding 4 or upon expiration, damaging the nearest enemy.
-							<br><br>[Moderation] +75% or higher recommended if pursuing a Mod version of this build.</p>
-						</p>
+							<p class="caption">
+								Deal massive damage by using the Stage 2 Charged Attack of your Bow. 
+								Perfectly timing the release of the charge, while Deadeye is active, will cast Void Destroyer, a massive 3-part attack that only consumes 1 ammo.
+								Beware, this build will freeze you at most once every 25s as you activate Frostbite Surge, granting extra Attack buffs from your Potential.
+								<br><br>Reaching ~8.5% Deadeye build rate will allow you to activate Deadeye with just 3 Stage 2 Charged Attacks instead of 4.
+							</p>
+					</div>
+					<div class="section">
+						<p class="label">Recommended Heroes<br></p>
+						<p class="caption">Temulch, Tessa, & Justina Gu</p>
 					</div>
 					<div class="difficulty section">
 						<p class="label">Difficulty</p> 
-							<!-- 3-Stars -->
+							<!-- 2.5-Stars -->
 							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
 							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/halffilledstar-w.png" alt="Half-Filled Difficulty Star" class="icon">
 							<img src="img/site/unfilledstar-w.png" alt="Empty Difficulty Star" class="icon">
 							<img src="img/site/unfilledstar-w.png" alt="Empty Difficulty Star" class="icon">
 					</div>
@@ -433,25 +380,185 @@
 					</div>
 				</div>
 
+				<!-- POISON BUILDS -->
+				<hr id="Poison-Builds"><h2 class="poison-txt">Poison Build</h2>
+				<!-- Toxin Surge -->
+				<div class="poison build">
+					<h3 class="build-name">Toxin Surge</h3>
+					<div class="section">
+						<h4 class="section-name">Souljades</h4>
+						<div class="souljades">
+							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/triangular_gold.png" alt="Noxious Blast"><br>Noxious Blast</p></div>
+							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/triangular_gold.png" alt="Pestilent Pool"><br>Pestilent Pool</p></div>
+							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/rectangular_gold.png" alt="Infectious Touch"><br>Infectious Touch</p></div>
+							<div class="souljade"><p class="hard"><img src="img/builds/souljades/flower_gold.png" alt="Element Surge • Poison-Wielding"><br>Element Surge • Poison-Wielding</p></div>
+							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/dualedge_gold.png" alt="Toxin Seep"><br>Toxin Seep</p></div>
+							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/triangular_gold.png" alt="Toxified Chain"><br>Toxified Chain</p></div>
+						</div>
+					</div>
+					<div class="potential section">
+						<p class="label">Potential Plan</p>
+						<img src="img/builds/trees/3.0/ToSu.png" alt="Toxin Surge Potential Plan" class="potential-plan">
+					</div>
+					<div class="wielding section">
+						<p class="label">Wielding Type</p>
+						<p class="caption"><img src="img/builds/souljades/Poison-Wielding.png" alt="Poison-Wielding" class="wielding">
+							Poison-Wielding
+							<img src="img/builds/souljades/Poison-Wielding.png" alt="Poison-Wielding" class="wielding"></p>
+					</div>
+					<div class="attributes section">
+						<p class="label">Target Attributes</p>
+						<p class="caption">x4 [Moderation], x6 [Windfall], x6 Attack, x6 DMG to Bosses, x2 Poison Blast DMG<br>or<br>
+							x12 [Windfall], x6 Attack, x6 DMG to Bosses</p>
+						<p class="label">Placeholder Attributes</p>
+						<p class="caption">Poison Blast DMG & Melee Weapon DMG.</p>
+					</div>
+					<div class="description section">
+						<p class="label">Description</p>
+							<p class="caption">Poison Blasts activate Noxious Blast, which applies 1 stack of [Toxified] to the enemy, 
+								and Pestilent Pool, which generates a poison pool that applies up to 2 [Toxified] stacks to enemies standing within it.
+								<br><br>Standing in the pool for 2 seconds inflicts [Toxified] on yourself, 
+								allowing you to transfer 2 [Toxified] stacks to the enemy by using a Martial Skill or 
+								the 3rd attack in any uncharged attack combo (excluding Greatsword and Polesword) via Infectious Touch.
+								<br><br>Furthermore, this will activate Toxin Surge, 
+								which prevents you from being poisoned for 15 seconds and allows you to apply an additional stack of [Toxified] whenever you use a Martial Skill.
+								<br><br>When an enemy reaches 6 stacks of [Toxified], Toxin Blast activates, dealing major damage to the surrounding area. 
+								When you have applied [Toxified] to enemies 11 times, Chain Crush will be ready, adding a massive damaging attack to your next uncharged melee attack.
+								<br><br>[Moderation] +75% or higher recommended if pursuing a Mod version of this build.
+							</p>
+					</div>
+					<div class="section">
+						<p class="label">Recommended Heroes<br></p>
+						<p class="caption">Wuchen & Kurumi</p>
+					</div>
+					<div class="difficulty section">
+						<p class="label">Difficulty</p> 
+							<!-- 2.5-Stars -->
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/halffilledstar-w.png" alt="Half-Filled Difficulty Star" class="icon">
+							<img src="img/site/unfilledstar-w.png" alt="Empty Difficulty Star" class="icon">
+							<img src="img/site/unfilledstar-w.png" alt="Empty Difficulty Star" class="icon">
+					</div>
+					<div class="power section">
+						<p class="label">Power</p> 
+							<!-- 3-Stars -->
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/unfilledstar-w.png" alt="Empty Difficulty Star" class="icon">
+							<img src="img/site/unfilledstar-w.png" alt="Empty Difficulty Star" class="icon">
+					</div>
+				</div>
+
+				<!-- MUSKET BUILDS -->
+				<hr id="Musket-Builds"><h2 class="musket-txt">Musket Build</h2>
+				<!-- Thunder Musket -->
+				<div class="musket build">
+					<h3 class="build-name">Thunder Musket</h3>
+					<div class="section">
+						<h4 class="section-name">Core Souljades</h4>
+						<div class="souljades">
+							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/triangular_gold.png" alt="Thunderpull"><br>Thunderpull</p></div>
+							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/rectangular_gold.png" alt="Thunder Counter"><br>Thunder Counter</p></div>
+							<div class="souljade"><p class="hard"><img src="img/builds/souljades/flower_gold.png" alt="Element Surge • Thunder-Wielding"><br>Element Surge • Thunder-Wielding</p></div>
+							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/dualedge_gold.png" alt="Thunder Charge"><br>Thunder Charge</p></div>
+						</div>
+					</div>
+					<div class="section">
+						<h4 class="section-name">Optional Souljades</h4>
+						<div class="souljades">
+							<div class="souljade">
+								<p class="hard"><img src="img/builds/souljades/rectangular_purp.png" alt="Thunderproof"><br>Thunderproof</p>
+								<p class="caption">+25% Thunderpull charge rate.<br>No stagger from Divine Thunder.</p>
+							</div>
+							<div class="souljade">
+								<p class="hard"><img src="img/builds/souljades/triangular_purp.png" alt="Backfire"><br>Backfire</p>
+								<p class="caption">+20% Attack.<br>4% of damage dealt to self.</p>
+							</div>
+							<div class="souljade">
+								<p class="hard"><img src="img/builds/souljades/dualedge_gold.png" alt="Renewed Vigor"><br>Renewed Vigor</p>
+								<p class="caption">+20% Attack for 4s after healing.</p>
+							</div>
+							<div class="souljade">
+								<p class="hard"><img src="img/builds/souljades/flower_gold.png" alt="Desperation"><br>Desperation</p>
+								<p class="caption">+20% DMG Bonus when below 50% HP.<br>Pair with Backfire.</p>
+							</div>
+							<div class="souljade">
+								<p class="hard"><img src="img/builds/souljades/triangular_gold.png" alt="Thunder Chain"><br>Thunder Chain</p>
+								<p class="caption">High damage attack after uncharged melee.<br>Needs 6 Divine Thunder charges.</p>
+							</div>
+						</div>
+					</div>
+					<div class="potential section">
+						<p class="label">Potential Plan</p>
+						<img src="img/builds/trees/3.0/ThMu.png" alt="Thunder Musket Potential Plan" class="potential-plan">
+					</div>
+					<div class="wielding section">
+						<p class="label">Wielding Type</p>
+						<p class="caption">
+							<img src="img/builds/souljades/Thunder-Wielding.png" alt="Thunder-Wielding" class="wielding">
+							Thunder-Wielding
+							<img src="img/builds/souljades/Thunder-Wielding.png" alt="Thunder-Wielding" class="wielding">
+						</p>
+					</div>
+					<div class="attributes section">
+						<p class="label">Target Attributes</p>
+						<p class="caption">x5 [Windfall], x6 Attack, x6 DMG to Bosses, x6 Ranged Weapon Damage, & x1 Deadeye build rate</p>
+						<p class="label">Placeholder Attributes</p>
+						<p class="caption">Charged Attack DMG & Deadeye build rate</p>
+					</div>
+					<div class="description section">
+						<p class="label">Description</p>
+							<p class="caption">
+								A slow starting build that requires you to charge up Divine Thunder by hitting enemies with your shots alongside Deadeye charge.
+								Counterstrikes give significantly more Deadeye charge (almost 3x the amount) and headshots give slightly more (20% more), so good aim is heavily rewarded.
+								Not recommended for console players due to the difficulty of aiming.
+							</p>
+					</div>
+					<div class="section">
+						<p class="label">Recommended Heroes<br></p>
+						<p class="caption">Feria Shen & Valda Cui</p>
+					</div>
+					<div class="difficulty section">
+						<p class="label">Difficulty</p> 
+							<!-- 3.5-Stars -->
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/halffilledstar-w.png" alt="Half-Filled Difficulty Star" class="icon">
+							<img src="img/site/unfilledstar-w.png" alt="Unfilled Difficulty Star" class="icon">
+					</div>
+					<div class="power section">
+						<p class="label">Power</p> 
+							<!-- 3-Stars -->
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/unfilledstar-w.png" alt="Unfilled Difficulty Star" class="icon">
+							<img src="img/site/unfilledstar-w.png" alt="Unfilled Difficulty Star" class="icon">
+					</div>
+				</div>
+
 				<!-- THUNDER BUILDS -->
-				<hr id="Thunder-Builds"><h2 class="thunder-txt">Thunder Builds</h2>
-				<!-- Thunder Lotus -->
+				<hr id="Thunder-Builds"><h2 class="thunder-txt">Thunder Build</h2>
+				<!-- Thundershock Surge -->
 				<div class="thunder build">
-					<h3 class="build-name">Thunder Lotus</h3>
+					<h3 class="build-name">Thundershock Surge</h3>
 					<div class="section">
 						<h4 class="section-name">Souljades</h4>
 						<div class="souljades">
 							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/triangular_gold.png" alt="Thunderpull"><br>Thunderpull</p></div>
 							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/rectangular_gold.png" alt="Thunder Counter"><br>Thunder Counter</p></div>
-							<div class="souljade"><p class="hard"><img src="img/builds/souljades/flower_gold.png" alt="Mighty Lotus Counter"><br>Mighty Lotus Counter</p></div>
-							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/triangular_gold.png" alt="Ghastbloom"><br>Ghastbloom</p></div>
-							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/triangular_gold.png" alt="Thunderous Lotus"><br>Thunderous Lotus</p></div>
+							<div class="souljade"><p class="hard"><img src="img/builds/souljades/flower_gold.png" alt="Element Surge • Thunder-Wielding"><br>Element Surge • Thunder-Wielding</p></div>
+							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/dualedge_gold.png" alt="Thunder Charge"><br>Thunder Charge</p></div>
+							<div class="souljade"><p class="nightscream"><img src="img/builds/souljades/triangular_gold.png" alt="Thunder Chain"><br>Thunder Chain</p></div>
 							<div class="souljade"><p class="hard"><img src="img/builds/souljades/rectangular_purp.png" alt="Thunderproof"><br>Thunderproof</p></div>
 						</div>
 					</div>
 					<div class="potential section">
 						<p class="label">Potential Plan</p>
-						<p class="caption"><a href="build.html?option=3#Thunder">Thunder Lotus</a></p>
+						<img src="img/builds/trees/3.0/ThSu.png" alt="Thunder Surge Potential Plan" class="potential-plan">
 					</div>
 					<div class="wielding section">
 						<p class="label">Wielding Type</p>
@@ -461,19 +568,33 @@
 					</div>
 					<div class="attributes section">
 						<p class="label">Target Attributes</p>
-						<p class="caption">x12 [Windfall], x6 Divine Thunder DMG, x6 Attack</p>
-						<p class="label">Optional Attributes</p>
-						<p class="caption">Increase DMG to Boss, Melee Weapon DMG, & Counter triggers Recovery.</p>
+						<p class="caption">x6 [Windfall], x6 DMG to Bosses, x6 Attack, x6 Divine Thunder DMG</p>
+						<p class="label">Placeholder Attributes</p>
+						<p class="caption">Melee Weapon DMG, & Counter Recovery.</p>
 					</div>
 					<div class="description section">
 						<p class="label">Description</p>
-						<p class="caption">Thunderpull builds up Thundershock as you hit enemies with your powerful Element attack,
-							eventually summoning Divine Thunder that you can parry with Thunder Counter to deal massive damage to enemies in front of you.
-							For every successful parry, you will summon a Lotus Flower that'll deal damage to enemies it hits around you.
-						</p>
+							<p class="caption">Thunderpull builds up Thundershock as you hit enemies with your attacks, summoning Divine Thunder once you pass the threshold. 
+								You can parry this with Thunder Counter to deal decent damage to enemies in front of you.
+								<br><br>Additionally, this will activate Thunder Surge, which summons a Divine Thunder for you to parry when you deal enough damage with your weapon.
+								<br><br>After dealing Divine Thunder damage 6 times, Chain Crush will be ready, adding a massive damaging attack to your next uncharged melee attack.
+							</p>
+					</div>
+					<div class="section">
+						<p class="label">Recommended Hero<br></p>
+						<p class="caption">Tianhai</p>
 					</div>
 					<div class="difficulty section">
 						<p class="label">Difficulty</p> 
+							<!-- 4.5-Stars -->
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/halffilledstar-w.png" alt="Half-Filled Difficulty Star" class="icon">
+					</div>
+					<div class="power section">
+						<p class="label">Power</p> 
 							<!-- 3-Stars -->
 							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
 							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
@@ -481,249 +602,7 @@
 							<img src="img/site/unfilledstar-w.png" alt="Empty Difficulty Star" class="icon">
 							<img src="img/site/unfilledstar-w.png" alt="Empty Difficulty Star" class="icon">
 					</div>
-					<div class="power section">
-						<p class="label">Power</p> 
-							<!-- 3.5-Stars -->
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/halffilledstar-w.png" alt="Half-Filled Difficulty Star" class="icon">
-							<img src="img/site/unfilledstar-w.png" alt="Empty Difficulty Star" class="icon">
-					</div>
 				</div>
-			</div>
-
-			<!-- Element Jades -->
-			<div id="div2" class="content" style="display: none;">
-				<h1>Element Jades</h1>
-				<p class="center">With so many choices in Souljades and Potential Plans, it can be hard to know what build to go with.
-					This section will help for choosing the most optimal Element Souljades as well as what Potential Plans they best combo with.
-					Souljades with "• Element" in their name gain bonus elemental damage for that corresponding type of Wielding they have, 
-					making it so you're able to activate Ice Blasts, Divine Thunder or Poison Blasts faster on enemies using the special attacks they give. 
-					They also generally have better DPS than their base counterpart.
-				</p>
-				<hr><h2>Table of Contents</h2>
-				<ul class="nodot">
-					<li><a href="#Viper Ning">I. Viper Ning</a></li>
-					<li><a href="#Feria Shen">II. Feria Shen</a></li>
-					<li><a href="#Tianhai">III. Tianhai</a></li>
-					<li><a href="#Temulch">IV. Temulch & Yoto Hime</a></li>
-					<li><a href="#Tarka Ji">V. Tarka Ji</a></li>
-					<li><a href="#Kurumi">VI. Kurumi</a></li>
-					<li><a href="#Valda Cui">VII. Valda Cui</a></li>
-					<li><a href="#Yueshan">VIII. Yueshan</a></li>
-					<li><a href="#Matari">IX. Matari</a></li>
-					<li><a href="#Wuchen">X. Wuchen</a></li>
-					<li><a href="#Tessa">X. Tessa</a></li>
-				</ul>
-
-				<!-- Viper Ning -->
-				<hr><h3 id="Viper Ning" class="label">Viper Ning</h3>
-					<table class="hero-info wielding">
-						<tbody>
-						<tr>
-							<td class="details">
-								<img src="img/builds/wielding/horizontalenergy.png" alt="Horizontal Energy • Element" class="with-caption">
-								<p class="description">Best used with <a href="build.html?option=3#Potential-Ice">Ice</a> or 
-									<a href="build.html?option=3#Potential-Poison">Poison</a> Potential Plans.</p>
-								<img src="img/builds/wielding/cyanfang.png" alt="Cyan Fang • Element" class="with-caption">
-								<p class="description">Best used with <a href="build.html?option=3#Potential-Ice">Ice</a> or 
-									<a href="build.html?option=3#Potential-Poison">Poison</a> Potential Plans.</p>
-							</td>
-						</tr>
-						</tbody>
-					</table>
-				<!-- Feria Shen -->
-				<h3 id="Feria Shen" class="label">Feria Shen</h3>
-					<table class="hero-info wielding">
-						<tbody>
-						<tr>
-							<td class="details">
-								<img src="img/builds/wielding/velocityuntold.png" alt="Velocity Untold • Element" class="with-caption">
-								<p class="description">Best used with <a href="build.html?option=3#Potential-Ice">Ice</a>, 
-									<a href="build.html?option=3#Potential-Thunder">Thunder</a>, or 
-									<a href="build.html?option=3#Potential-Poison">Poison</a> Potential Plans.</p>
-							</td>
-						</tr>
-						</tbody>
-					</table>
-				<!-- Tianhai -->
-				<h3 id="Tianhai" class="label">Tianhai</h3>
-					<table class="hero-info wielding">
-						<tbody>
-							<tr>
-								<td class="details">
-									<img src="img/builds/wielding/onslaught.png" alt="Onslaught • Element" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=3#Potential-Ice">Ice</a> or
-										<a href="build.html?option=3#Potential-Poison">Poison</a> Potential Plans.</p>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				<!-- Temulch & Yoto Hime-->
-				<h3 id="Temulch" class="label">Temulch & Yoto Hime</h3>
-					<table class="hero-info wielding">
-						<tbody>
-							<tr>
-								<td class="details">
-									<img src="img/builds/wielding/aerialrend.png" alt="Aerial Rend • Element" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=3#Potential-Ice">Ice</a>,
-										<a href="build.html?option=3#Potential-Poison">Poison</a> or 
-										<a href="build.html?option=3#Potential-Thunder">Thunder</a> Potential Plans.</p>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				<!-- Tarka Ji -->
-				<h3 id="Tarka Ji" class="label">Tarka Ji</h3>
-					<table class="hero-info wielding">
-						<tbody>
-							<tr>
-								<td class="details">
-									<img src="img/builds/wielding/petalfallflurry.png" alt="Petal Fall Flurry • Element" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=3#Potential-Ice">Ice</a>,
-										<a href="build.html?option=3#Potential-Poison">Poison</a> or 
-										<a href="build.html?option=3#Potential-Thunder">Thunder</a> Potential Plans.</p>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				<!-- Kurumi -->
-				<h3 id="Kurumi" class="label">Kurumi</h3>
-					<table class="hero-info wielding">
-						<tbody>
-							<tr>
-								<td class="details">
-									<img src="img/builds/wielding/horizontalblinkstrike.png" alt="Horizontal Blink Strike • Element" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=3#Potential-Ice">Ice</a>,
-										<a href="build.html?option=3#Potential-Poison">Poison</a> or 
-										<a href="build.html?option=3#Potential-Thunder">Thunder</a> Potential Plans.</p>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				<!-- Valda Cui -->
-				<h3 id="Valda Cui" class="label">Valda Cui</h3>
-					<table class="hero-info wielding">
-						<tbody>
-							<tr>
-								<td class="details">
-									<img src="img/builds/wielding/chainedsweeping.png" alt="Chained Sweeping • Element" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=3#Potential-Ice">Ice</a>,
-										<a href="build.html?option=3#Potential-Poison">Poison</a> or 
-										<a href="build.html?option=3#Potential-Thunder">Thunder</a> Potential Plans.</p>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				<!-- Yueshan -->
-				<h3 id="Yueshan" class="label">Yueshan</h3>
-					<table class="hero-info wielding">
-						<tbody>
-							<tr>
-								<td class="details">
-									<img src="img/builds/wielding/torrentflow.png" alt="Torrent Flow • Element" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=3#Potential-Ice">Ice</a>,
-										<a href="build.html?option=3#Potential-Poison">Poison</a> or 
-										<a href="build.html?option=3#Potential-Thunder">Thunder</a> Potential Plans.</p>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				<!-- Matari -->
-				<h3 id="Matari" class="label">Matari</h3>
-					<table class="hero-info wielding">
-						<tbody>
-							<tr>
-								<td class="details">
-									<img src="img/builds/wielding/cyanfang.png" alt="Cyan Fang • Element" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=3#Potential-Ice">Ice</a>,
-										<a href="build.html?option=3#Potential-Poison">Poison</a> or 
-										<a href="build.html?option=3#Potential-Thunder">Thunder</a> Potential Plans.</p>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				<!-- Wuchen -->
-				<h3 id="Wuchen" class="label">Wuchen</h3>
-					<table class="hero-info wielding">
-						<tbody>
-							<tr>
-								<td class="details">
-									<img src="img/builds/wielding/windytrinity.png" alt="Windy Trinity • Element" class="with-caption">
-									<p class="description">Best used with <a href="build.html?option=3#Potential-Ice">Ice</a> Potential Plans.</p>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<!-- Tessa -->
-					<h3 id="Tessa" class="label">Tessa</h3>
-						<table class="hero-info wielding">
-							<tbody>
-								<tr>
-									<td class="details">
-										<img src="img/builds/wielding/cyanfang.png" alt="Cyan Fang • Element" class="with-caption">
-										<p class="description">Best used with <a href="build.html?option=3#Potential-Ice">Ice</a> or
-											<a href="build.html?option=3#Potential-Poison">Poison</a> Potential Plans</p>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-			</div>
-			
-			<!-- Potential Plans -->
-			<div id="div3" class="content" style="display: none;">
-				<h1>Potential Plans</h1>
-				<p class="center">The way you design your Potential Plans will be the backbone of your playstyle.
-					This page will show you a variety of viable Potential Plans you can work with and where they are most effective.</p>
-				<!-- Video Introduction -->
-				<h2>Video Introduction</h2>
-				<iframe width="80%" height="450" src="https://www.youtube.com/embed/zMjZnZDwHJ0" title="Season 1.0 Potential System Introduction Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<!-- Table of Contents -->
-				<h2>Table of Contents</h2>
-				<ul class="nodot">
-					<li><a href="#Potential-Burn">I. Burn</a></li>
-					<li><a href="#Potential-Poison">II. Poison</a></li>
-					<li><a href="#Potential-Thunder">III. Thunder</a></li>
-					<li><a href="#Potential-Ice">IV. Ice</a></li>
-				</ul>
-				<!-- Burn -->
-				<hr id="Potential-Burn"><h2>Burn</h2>
-					<p class="center">The following Potential Plan is focused on maximizing the damage you deal from Burns, 
-						particularly under the Hydroflare effect.</p>
-					<h3 id="Hydroflare">Hydroflare</h3>
-						<img src="img/builds/trees/2.5/Hydroflare.png" alt="Blazing Flame Path with Water and Fire Raged" class="large-example with-caption potential">
-						<p class="caption">Focuses on procing Hydroflare and using your Martial Skill 
-							<a href="intro.html?option=3#aegis-break">Aegis-Break</a> on enemies for damage output.
-						</p>
-				<!-- Poison -->
-				<hr id="Potential-Poison"><h2>Poison</h2>
-					<p class="center">The following Potential Plan are focused on maximizing the damage you deal with Poison effects.</p>
-					<h3 id="Poison">Toxic Lotus</h3>
-						<img src="img/builds/trees/2.5/ToxicLotus.png" alt="Hydro's Bound, Poison Root and Epiphany" class="large-example with-caption potential">
-						<p class="caption">
-							The staple Potential Plan for Poison Souljade Set Ups. 
-							Has access to Aegis-Break Rage for powerful Martial Skill <a href="intro.html?option=3#aegis-break">Aegis-Breaks</a>, 
-							and greatly benefits from Lotus Flowers.
-						</p>
-				<!-- Thunder -->
-				<hr id="Potential-Thunder"><h2>Thunder</h2>
-					<p class="center">The following Potential Plan are focused on maximizing the damage you deal with Divine Thunder effects.</p>
-					<h3 id="Thunder">Thunder Lotus</h3>
-						<img src="img/builds/trees/2.5/Thunder.png" alt="Mostly Green Side with small branches into Red" class="large-example with-caption potential">
-						<p class="caption">
-							The staple Potential Plan for Thunder Souljade Set Ups. 
-							Features Aegis-Break Rage and plenty of healing from Counters and Defuses.
-						</p>
-				<!-- Ice -->
-				<hr id="Potential-Ice"><h2>Ice</h2>
-					<p class="center">The following Potential Plan are focused on maximizing the damage you deal with Ice effects.</p>
-					<h3 id="Ice">Frost Lotus</h3>
-						<img src="img/builds/trees/2.5/FrostLotus.png" alt="Ice Path with Epiphany" class="large-example with-caption potential">
-						<p class="caption">
-							Alongside boosting Ice Blast accumulation, also gives the option to use your Martial Skill 
-							<a href="intro.html?option=3#aegis-break">Aegis-Break</a> for consistent high DPS.
-						</p>
 			</div>
 		</div>
     </body>

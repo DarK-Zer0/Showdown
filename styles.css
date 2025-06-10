@@ -23,6 +23,13 @@
     --color-ice-light: hsl(180, 94%, 90%);
     --color-ice-dark: hsl(180, 94%, 30%);
 
+    /* Ranged Colors */
+    --color-bow-light: hsl(120, 100%, 90%);
+    --color-bow-dark: hsl(120, 100%, 30%);
+    --color-musket-light: hsl(25, 75%, 90%);
+    --color-musket-dark: hsl(25, 75%, 30%);
+
+
     /* Text Stylings */
     font-family: "Arial", serif;
 	font-size: clamp(14pt, 1.4vw, 18pt);
@@ -140,6 +147,10 @@ ul.left {
     color: var(--color-burn-dark);
     font-size: 33pt;
 }
+.ice-txt {
+    color: var(--color-ice-dark);
+    font-size: 33pt;
+}
 .thunder-txt {
     color: var(--color-thunder-dark);
     font-size: 33pt;
@@ -148,8 +159,12 @@ ul.left {
     color: var(--color-poison-dark);
     font-size: 33pt;
 }
-.ice-txt {
-    color: var(--color-ice-dark);
+.bow-txt {
+    color: var(--color-bow-dark);
+    font-size: 33pt;
+}
+.musket-txt {
+    color: var(--color-musket-dark);
     font-size: 33pt;
 }
 
@@ -195,6 +210,9 @@ img.example {
 }
 img.icon {
     width: 20pt;
+}
+img.potential-plan {
+    max-height: 30vh;
 }
 .nav-icon {
     height: 1.5rem;
@@ -263,6 +281,7 @@ img.icon {
 
     &:hover {
         color: var(--hover);
+        transition: color 0.3s ease;
         /* background-color: var(--nav-secondary); */
         padding-bottom: 9px;
         padding-top: 9px;
@@ -272,6 +291,15 @@ img.icon {
         .dropdown-content {
             display: block;
         }
+    }
+}
+.nav-item a {
+    color: var(--nav-text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: var(--hover);
     }
 }
 
@@ -615,6 +643,18 @@ p.archetype, p.weapons {
     border-bottom: 3px solid var(--color-thunder-dark);
     border-right: 3px solid var(--color-thunder-dark);
     border-left: 3px solid var(--color-thunder-light);
+}
+.bow, .bow .section {
+    border-top: 3px solid var(--color-bow-light);
+    border-bottom: 3px solid var(--color-bow-dark);
+    border-right: 3px solid var(--color-bow-dark);
+    border-left: 3px solid var(--color-bow-light);
+}
+.musket, .musket .section {
+    border-top: 3px solid var(--color-musket-light);
+    border-bottom: 3px solid var(--color-musket-dark);
+    border-right: 3px solid var(--color-musket-dark);
+    border-left: 3px solid var(--color-musket-light);
 }
 
 .souljades {

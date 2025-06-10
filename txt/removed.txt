@@ -1,0 +1,248 @@
+<!-- Element Jades -->
+			<div id="div2" class="content" style="display: none;">
+				<h1>Element Jades</h1>
+				<p class="center">With so many choices in Souljades and Potential Plans, it can be hard to know what build to go with.
+					This section will help for choosing the most optimal Element Souljades as well as what Potential Plans they best combo with.
+					Souljades with "• Element" in their name gain bonus elemental damage for that corresponding type of Wielding they have, 
+					making it so you're able to activate Ice Blasts, Divine Thunder or Poison Blasts faster on enemies using the special attacks they give. 
+					They also generally have better DPS than their base counterpart.
+				</p>
+				<hr><h2>Table of Contents</h2>
+				<ul class="nodot">
+					<li><a href="#Viper Ning">I. Viper Ning & Justina Gu</a></li>
+					<li><a href="#Feria Shen">II. Feria Shen</a></li>
+					<li><a href="#Tianhai">III. Tianhai</a></li>
+					<li><a href="#Temulch">IV. Temulch & Yoto Hime</a></li>
+					<li><a href="#Tarka Ji">V. Tarka Ji</a></li>
+					<li><a href="#Kurumi">VI. Kurumi</a></li>
+					<li><a href="#Valda Cui">VII. Valda Cui</a></li>
+					<li><a href="#Yueshan">VIII. Yueshan</a></li>
+					<li><a href="#Matari">IX. Matari</a></li>
+					<li><a href="#Wuchen">X. Wuchen</a></li>
+					<li><a href="#Tessa">XI. Tessa</a></li>
+				</ul>
+
+				<!-- Viper Ning & Justina Gu -->
+				<hr><h3 id="Viper Ning" class="label">Viper Ning</h3>
+					<table class="hero-info wielding">
+						<tbody>
+						<tr>
+							<td class="details">
+								<img src="img/builds/wielding/horizontalenergy.png" alt="Horizontal Energy • Element" class="with-caption">
+								<p class="description">Best used with <a href="build.html?option=3#Potential-Ice">Ice</a> or 
+									<a href="build.html?option=3#Potential-Poison">Poison</a> Potential Plans.</p>
+								<img src="img/builds/wielding/cyanfang.png" alt="Cyan Fang • Element" class="with-caption">
+								<p class="description">Best used with <a href="build.html?option=3#Potential-Ice">Ice</a> or 
+									<a href="build.html?option=3#Potential-Poison">Poison</a> Potential Plans.</p>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+				<!-- Feria Shen -->
+				<h3 id="Feria Shen" class="label">Feria Shen</h3>
+					<table class="hero-info wielding">
+						<tbody>
+						<tr>
+							<td class="details">
+								<img src="img/builds/wielding/velocityuntold.png" alt="Velocity Untold • Element" class="with-caption">
+								<p class="description">Best used with <a href="build.html?option=3#Potential-Ice">Ice</a>, 
+									<a href="build.html?option=3#Potential-Thunder">Thunder</a>, or 
+									<a href="build.html?option=3#Potential-Poison">Poison</a> Potential Plans.</p>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+				<!-- Tianhai -->
+				<h3 id="Tianhai" class="label">Tianhai</h3>
+					<table class="hero-info wielding">
+						<tbody>
+							<tr>
+								<td class="details">
+									<img src="img/builds/wielding/onslaught.png" alt="Onslaught • Element" class="with-caption">
+									<p class="description">Best used with <a href="build.html?option=3#Potential-Ice">Ice</a> or
+										<a href="build.html?option=3#Potential-Poison">Poison</a> Potential Plans.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				<!-- Temulch & Yoto Hime-->
+				<h3 id="Temulch" class="label">Temulch & Yoto Hime</h3>
+					<table class="hero-info wielding">
+						<tbody>
+							<tr>
+								<td class="details">
+									<img src="img/builds/wielding/aerialrend.png" alt="Aerial Rend • Element" class="with-caption">
+									<p class="description">Best used with <a href="build.html?option=3#Potential-Ice">Ice</a>,
+										<a href="build.html?option=3#Potential-Poison">Poison</a> or 
+										<a href="build.html?option=3#Potential-Thunder">Thunder</a> Potential Plans.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				<!-- Tarka Ji -->
+				<h3 id="Tarka Ji" class="label">Tarka Ji</h3>
+					<table class="hero-info wielding">
+						<tbody>
+							<tr>
+								<td class="details">
+									<img src="img/builds/wielding/petalfallflurry.png" alt="Petal Fall Flurry • Element" class="with-caption">
+									<p class="description">Best used with <a href="build.html?option=3#Potential-Ice">Ice</a>,
+										<a href="build.html?option=3#Potential-Poison">Poison</a> or 
+										<a href="build.html?option=3#Potential-Thunder">Thunder</a> Potential Plans.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				<!-- Kurumi -->
+				<h3 id="Kurumi" class="label">Kurumi</h3>
+					<table class="hero-info wielding">
+						<tbody>
+							<tr>
+								<td class="details">
+									<img src="img/builds/wielding/horizontalblinkstrike.png" alt="Horizontal Blink Strike • Element" class="with-caption">
+									<p class="description">Best used with <a href="build.html?option=3#Potential-Ice">Ice</a>,
+										<a href="build.html?option=3#Potential-Poison">Poison</a> or 
+										<a href="build.html?option=3#Potential-Thunder">Thunder</a> Potential Plans.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				<!-- Valda Cui -->
+				<h3 id="Valda Cui" class="label">Valda Cui</h3>
+					<table class="hero-info wielding">
+						<tbody>
+							<tr>
+								<td class="details">
+									<img src="img/builds/wielding/chainedsweeping.png" alt="Chained Sweeping • Element" class="with-caption">
+									<p class="description">Best used with <a href="build.html?option=3#Potential-Ice">Ice</a>,
+										<a href="build.html?option=3#Potential-Poison">Poison</a> or 
+										<a href="build.html?option=3#Potential-Thunder">Thunder</a> Potential Plans.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				<!-- Yueshan -->
+				<h3 id="Yueshan" class="label">Yueshan</h3>
+					<table class="hero-info wielding">
+						<tbody>
+							<tr>
+								<td class="details">
+									<img src="img/builds/wielding/torrentflow.png" alt="Torrent Flow • Element" class="with-caption">
+									<p class="description">Best used with <a href="build.html?option=3#Potential-Ice">Ice</a>,
+										<a href="build.html?option=3#Potential-Poison">Poison</a> or 
+										<a href="build.html?option=3#Potential-Thunder">Thunder</a> Potential Plans.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				<!-- Matari -->
+				<h3 id="Matari" class="label">Matari</h3>
+					<table class="hero-info wielding">
+						<tbody>
+							<tr>
+								<td class="details">
+									<img src="img/builds/wielding/cyanfang.png" alt="Cyan Fang • Element" class="with-caption">
+									<p class="description">Best used with <a href="build.html?option=3#Potential-Ice">Ice</a>,
+										<a href="build.html?option=3#Potential-Poison">Poison</a> or 
+										<a href="build.html?option=3#Potential-Thunder">Thunder</a> Potential Plans.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				<!-- Wuchen -->
+				<h3 id="Wuchen" class="label">Wuchen</h3>
+					<table class="hero-info wielding">
+						<tbody>
+							<tr>
+								<td class="details">
+									<img src="img/builds/wielding/windytrinity.png" alt="Windy Trinity • Element" class="with-caption">
+									<p class="description">Best used with <a href="build.html?option=3#Potential-Ice">Ice</a> Potential Plans.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- Tessa -->
+					<h3 id="Tessa" class="label">Tessa</h3>
+						<table class="hero-info wielding">
+							<tbody>
+								<tr>
+									<td class="details">
+										<img src="img/builds/wielding/cyanfang.png" alt="Cyan Fang • Element" class="with-caption">
+										<p class="description">Best used with <a href="build.html?option=3#Potential-Ice">Ice</a> or
+											<a href="build.html?option=3#Potential-Poison">Poison</a> Potential Plans</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					<!-- Justina Gu -->
+					<hr><h3 id="Justina Gu" class="label">Justina Gu</h3>
+						<table class="hero-info wielding">
+							<tbody>
+							<tr>
+								<td class="details">
+									<img src="img/builds/wielding/horizontalenergy.png" alt="Horizontal Energy • Element" class="with-caption">
+									<p class="description">Best used with <a href="build.html?option=3#Potential-Ice">Ice</a> or 
+										<a href="build.html?option=3#Potential-Poison">Poison</a> Potential Plans.</p>
+									<img src="img/builds/wielding/cyanfang.png" alt="Cyan Fang • Element" class="with-caption">
+									<p class="description">Best used with <a href="build.html?option=3#Potential-Ice">Ice</a> or 
+										<a href="build.html?option=3#Potential-Poison">Poison</a> Potential Plans.</p>
+								</td>
+							</tr>
+							</tbody>
+						</table>
+			</div>
+
+<!-- Potential Plans -->
+			<div id="div3" class="content" style="display: none;">
+				<h1>Potential Plans</h1>
+				<p class="center">The way you design your Potential Plans will be the backbone of your playstyle.
+					This page will show you a variety of viable Potential Plans you can work with and where they are most effective.</p>
+				<!-- Video Introduction -->
+				<h2>Video Introduction</h2>
+				<iframe width="80%" height="450" src="https://www.youtube.com/embed/zMjZnZDwHJ0" title="Season 1.0 Potential System Introduction Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<!-- Table of Contents -->
+				<h2>Table of Contents</h2>
+				<ul class="nodot">
+					<li><a href="#Potential-Burn">I. Burn</a></li>
+					<li><a href="#Potential-Poison">II. Poison</a></li>
+					<li><a href="#Potential-Thunder">III. Thunder</a></li>
+					<li><a href="#Potential-Ice">IV. Ice</a></li>
+				</ul>
+				<!-- Burn -->
+				<hr id="Potential-Burn"><h2>Burn</h2>
+					<p class="center">The following Potential Plan is focused on maximizing the damage you deal from Burns, 
+						particularly under the Hydroflare effect.</p>
+					<h3 id="Hydroflare">Hydroflare</h3>
+						<img src="img/builds/trees/2.5/Hydroflare.png" alt="Blazing Flame Path with Water and Fire Raged" class="large-example with-caption potential">
+						<p class="caption">Focuses on procing Hydroflare and using your Martial Skill 
+							<a href="intro.html?option=3#aegis-break">Aegis-Break</a> on enemies for damage output.
+						</p>
+				<!-- Poison -->
+				<hr id="Potential-Poison"><h2>Poison</h2>
+					<p class="center">The following Potential Plan are focused on maximizing the damage you deal with Poison effects.</p>
+					<h3 id="Poison">Toxic Lotus</h3>
+						<img src="img/builds/trees/2.5/ToxicLotus.png" alt="Hydro's Bound, Poison Root and Epiphany" class="large-example with-caption potential">
+						<p class="caption">
+							The staple Potential Plan for Poison Souljade Set Ups. 
+							Has access to Aegis-Break Rage for powerful Martial Skill <a href="intro.html?option=3#aegis-break">Aegis-Breaks</a>, 
+							and greatly benefits from Lotus Flowers.
+						</p>
+				<!-- Thunder -->
+				<hr id="Potential-Thunder"><h2>Thunder</h2>
+					<p class="center">The following Potential Plan are focused on maximizing the damage you deal with Divine Thunder effects.</p>
+					<h3 id="Thunder">Thunder Lotus</h3>
+						<img src="img/builds/trees/2.5/Thunder.png" alt="Mostly Green Side with small branches into Red" class="large-example with-caption potential">
+						<p class="caption">
+							The staple Potential Plan for Thunder Souljade Set Ups. 
+							Features Aegis-Break Rage and plenty of healing from Counters and Defuses.
+						</p>
+				<!-- Ice -->
+				<hr id="Potential-Ice"><h2>Ice</h2>
+					<p class="center">The following Potential Plan are focused on maximizing the damage you deal with Ice effects.</p>
+					<h3 id="Ice">Frost Lotus</h3>
+						<img src="img/builds/trees/2.5/FrostLotus.png" alt="Ice Path with Epiphany" class="large-example with-caption potential">
+						<p class="caption">
+							Alongside boosting Ice Blast accumulation, also gives the option to use your Martial Skill 
+							<a href="intro.html?option=3#aegis-break">Aegis-Break</a> for consistent high DPS.
+						</p>
+			</div>
