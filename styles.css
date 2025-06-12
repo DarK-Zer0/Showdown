@@ -128,6 +128,8 @@ p {
     text-align: left;
     list-style-position: inside;
     padding: 1vh;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 ul.left {
     padding-right: calc(20% - 4rem);
