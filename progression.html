@@ -56,7 +56,7 @@
 
 		<!-- Page Navigation -->
 		<nav class="page-nav">
-			<button onclick="showDiv(1, this)" class="page-nav-item">Sense Level</button>
+			<button onclick="showDiv(1, this)" class="page-nav-item">Showdown Level</button>
 			<button onclick="showDiv(2, this)" class="page-nav-item">Hero Level</button>
 			<button onclick="showDiv(3, this)" class="page-nav-item">Souljades</button>
 			<button onclick="showDiv(4, this)" class="page-nav-item">Recasting</button>
@@ -71,33 +71,24 @@
 		<!-- Page Content -->
 		<div id="content" class="nav4">
 
-			<!-- Sense Level -->
+			<!-- Showdown Level -->
 			<div id="div1" class="content" style="display: none;">
-				<h2>Sense Level</h2>
-				<p class="left">Sense level affects your base attack, health, and armor.
-					You gain +1 Base Attack, +10 Health and +10 Armor for every 10 Sense Levels you have.
-					<br><br>For large-example, if you are at Sense Level 655, you'll have +65 (205 Total) Base Attack, +650 Health and +650 Armor.
-					It also determines if you deal/take more or less damage in a mission based on its Recommended Sense, which is known as Sense Suppression.
+				<h2>Showdown Level</h2>
+				<p class="left">Showdown level affects your base attack, health, and armor.
+					You gain +1 Base Attack, +5 Health and +5 Armor for every Showdown level you have.
+					After level 80, you gain an additional +1 Base Attack, +5 Health and +5 Armor per Showdown level.
+					<br><br>For large-example, if you are at Showdown level 85, you'll have +90 (342 Total) Base Attack, + Health and + Armor.
+					It also determines if you deal/take more or less damage in a mission based on its Recommended Level, which is known as Level Suppression.
 				</p> 
 				<p class="center">Currently, the ultimate goal is to reach the Max Enhancement Level. You can view this on the mission select screen on the bottom-left.
 					<img src="img/progression/globaldrops.png" alt="Showdown Season 1.5: Turmoil; Max Global Drop Level = 730; Max Enhancement Level = 750" class="example">
 				</p>
-					<!-- Increasing Your Sense Level -->
-					<hr><h3>Increasing Your Sense Level</h3>
-					<p class="left">You can increase your Sense Level by consuming other Souljades in the Showdown Souljade Enhance section. 
-						Consuming Souljades less than 15 levels below your selected Souljade's Sense will yield diminished XP. 
-						The ideal range for maximum XP gain is within 5 Sense Levels. 
-						It's best to level all 6 equipped Souljades evenly to minimize wasted XP.
-						<br><br>However, using Souljades over 20 Sense Levels higher than your selected Souljade will yield massively boosted XP. 
-						This allows you to quickly catch up any Souljades you may have left unleveled, bringing them on par with your main Souljades, as the image below demonstrates.</p>
-						<img src="img/progression/boosting.png" alt="Souljade Being Boosted from Sense 20 to 301" class="large-example">
-					<!-- Optimize Sense Leveling -->
-					<hr><h3>Optimize Sense Leveling</h3>
-					<p class="left">Choose a core set of 6 Souljades (e.g. Blue Attack II's) to share between your 3 main heroes as you level up Sense. 
-						You can replace these as you get better Souljades, but only if they are close in level so you don't lose progress.
+					<!-- Increasing Your Showdown Level -->
+					<hr><h3>Increasing Your Showdown Level</h3>
+					<p class="left">You can increase your Showdown Level by consuming fatigue in any missions.
 						<br><br>Try to quickly unlock Nirriti's Ruins by completing its unlock quest. 
-						Ruins stages drop Souljades at the max drop global drop level. However, each full Ruins run consumes 45 fatigue instead of 15, so manage accordingly.
-						Once you're sufficiently strong enough, you can challenge Enigma Domain • Topaz and if you're able to fully complete it, then you have access to the most efficient Sense Leveling mission.
+						Ruins stages consume the most fatigue (45), aren't affected by your Showdown Level and can be completed quickly with a good Trio.
+						I'd recommend waiting until level 100 to run Enigma Domain, so you're not suppressed by any of the later enemies.
 			</div>
 
 			<!-- Hero Level -->
@@ -107,10 +98,10 @@
 					by <strong>completing Showdown missions</strong> and by <strong>using Alchemical Crystallized Souls</strong>. 
 					Note that each hero has a maximum level cap of 20.</p>
 					<hr><h3>Mission Experience</h3>
-					<p class="left">The experience gained from missions scales with your Sense level relative to the mission's recommended Sense level. 
-						Having a much higher Sense than recommended will reduce the experience earned. 
-						Therefore, it's advisable to farm missions within 25-50 Sense levels of your current Sense if your goal is to efficiently gain hero levels.
-						In terms of the best mission to farm, it is believed to be early Stages of Yama's Abyss.</p>
+					<p class="left">The experience gained from missions scales with your Showdown level relative to the mission's recommended level. 
+						Having a much higher level than recommended will reduce the experience earned. 
+						Therefore, it's advisable to farm missions within 25 levels of your current level if your goal is to efficiently gain hero levels.
+						In terms of the best mission to farm, it is believed to be early Stages of Nirriti's Ruins.</p>
 					<hr><h3>Alchemical Crystallized Souls</h3>
 					<p class="left">Alchemical Crystallized Souls (ACS) are acquired by beating Showdown missions for the first time with certain heroes. 
 						They are useful for boosting hero levels on characters outside your main three that you don't plan to grind heavily. 
@@ -118,24 +109,30 @@
 						<br><br>To max a hero from level 1 to 20, it requires a total of 117 ACS.</p>
 					<img src="img/progression/acs.png" alt="Proof of 117 ACS Fully Leveling Hero" class="large-example">
 					<hr><h3>Level Unlocks</h3>
-					<p class="left">Every 2 hero levels, starting at level 4, you will acquire a major upgrade, with every other level being a minor upgrade.
+					<p class="left">You will acquire an upgrade to your at every level.
 						These upgrades are permanent, but only affect the corresponding hero.</p>
-						<h4>Level 4: AoE Attack</h4>
+						<h4>Level 1: AoE Attack</h4>
 						<p class="center">Hero unlocks their AOE attack that generally helps a lot with clearing out smaller enemies.</p>
-						<h4>Level 6: Armor Upgrade</h4>
-						<p class="center">Hero's armor is upgraded from blue to purple permanently, giving an additional 250 armor.</p>
-						<h4>Level 8: Ranged Weapon Enhancement</h4>
-						<p class="center">Hero receives their first ranged weapon skill, usually making their ranged weapon more efficient at what it does.</p>
-						<h4>Level 10: Weapon Upgrade</h4>
-						<p class="center">Hero's melee weapon is upgraded from blue to purple permanently, giving a 16.7% damage increase.</p>
-						<h4>Level 12: Aegis-Break Martial Skill</h4>
-						<p class="center">Hero will be able to use a melee attack that greatly damages enemies' astral aegis.</p>
-						<h4>Level 14: Ranged Weapon Upgrade</h4>
-						<p class="center">Hero's ranged weapon is upgraded from blue to purple permanently, giving a 16.7% damage increase.</p>
-						<h4>Level 16: Ranged Weapon Enhancement</h4>
-						<p class="center">Hero's ranged weapon will no longer suffer from a range penalty from any range.</p>
-						<h4>Level 18: Defuse Attack</h4>
+						<h4>Level 1: Defuse Counterattack</h4>
 						<p class="center">Hero will be able to use a special dodge that when successful at nullifying an attack, enables a melee attack that greatly damages astral aegis.</p>
+						<h4>Level 1: Ranged Weapon Parry</h4>
+						<p class="center">Hero's ranged weapon will be able to parry focus attacks and use a counterstrike.</p>
+						<h4>Level 2: Deadeye</h4>
+						<p class="center">Hero's ranged weapon will accumulate Deadeye with successful shots. Deadeye mode at full charge will enable special buffs.</p>
+						<h4>Level 3: Aegis-Break Martial Skill</h4>
+						<p class="center">Hero will be able to use a melee attack that greatly damages enemies' astral aegis.</p>
+						<h4>Level 4: Ranged Weapon Martial Skill</h4>
+						<p class="center">Hero's ranged weapon will unlock a special attack while in Deadeye mode.</p>
+						<h4>Level 5: Weapon Upgrade</h4>
+						<p class="center">Hero's melee weapon is upgraded from blue to purple permanently, giving a 16.7% damage increase.</p>
+						<h4>Level 7: Armor Upgrade</h4>
+						<p class="center">Hero's armor is upgraded from blue to purple permanently, giving an additional 250 armor.</p>
+						<h4>Level 9: Ranged Weapon Enhancement</h4>
+						<p class="center">Hero receives a new ranged weapon skill, usually making their ranged weapon more efficient at what it does.</p>
+						<h4>Level 13: Ranged Weapon Upgrade</h4>
+						<p class="center">Hero's ranged weapon is upgraded from blue to purple permanently, giving a 16.7% damage increase.</p>
+						<h4>Level 17: Ranged Weapon Infinite Range</h4>
+						<p class="center">Hero's ranged weapon will no longer suffer from a range penalty from any range.</p>
 			</div>
 
 			<!-- Souljades -->
