@@ -676,29 +676,50 @@ p.archetype, p.weapons {
     &h4 {
         width: 100%;
     }
-}
-.souljades {
+
     .souljade {
         flex: 1;
+        position: relative;
         & img {
             max-width: 5em;
         }
+        & .description {
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150%;
+            background: rgba(0, 0, 0, 0.9);
+            color: #fff;
+            padding: 6px 10px;
+            border-radius: 5px;
+            white-space: normal;
+            word-wrap: break-word;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s ease-in-out;
+            font-size: 0.9rem;
+            font-family: 'Hanken Grotesk', sans-serif;
+        }
+        &:hover .description{
+            opacity: 1;
+        }
     }
 
-    p {
+    div {
         margin: 0;
     }
 
-    p.normal {
+    div.normal {
         color: lightskyblue;
     }
-    p.hard {
+    div.hard {
         color: rgb(180, 1, 180);
     }
-    p.nightscream {
+    div.nightscream {
         color: red;
     }
-    p.enigma {
+    div.enigma {
         color: chocolate
     }
 }
