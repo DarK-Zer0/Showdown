@@ -680,10 +680,10 @@ p.archetype, p.weapons {
     .souljade {
         flex: 1;
         position: relative;
-        & img {
+        img {
             max-width: 5em;
         }
-        & .description {
+        .description {
             position: absolute;
             bottom: 100%;
             left: 50%;
@@ -703,6 +703,10 @@ p.archetype, p.weapons {
         }
         &:hover .description{
             opacity: 1;
+        }
+        &.show .description {
+            opacity: 1;
+            pointer-events: auto;
         }
     }
 
