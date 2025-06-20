@@ -122,6 +122,10 @@ p {
 }
 .caption {
     margin-top: 1px;
+
+    &.full-width {
+        width: 100%;
+    }
 }
 
 .left {
@@ -660,11 +664,11 @@ p.archetype, p.weapons {
 }
 
 .souljades {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+    gap: 18px;
+    max-width: 600px;
+    margin: auto;
 
     &h4 {
         width: 100%;
@@ -672,6 +676,9 @@ p.archetype, p.weapons {
 }
 .souljades .souljade {
     flex: 1;
+}
+.souljades p {
+    margin: 0;
 }
 .souljades p.normal {
     color: lightskyblue;
@@ -683,7 +690,7 @@ p.archetype, p.weapons {
     color: red;
 }
 .souljade img {
-    max-width: 6em;
+    max-width: 5em;
 }
 
 /* Changelog Table Stylings */
@@ -777,5 +784,9 @@ table.changelog {
 
     .portrait {
         max-width: 40vw;
+    }
+
+    .souljades {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
     }
 }
