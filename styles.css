@@ -675,27 +675,27 @@ p.archetype, p.weapons {
     }
 }
 .souljades {
-    & .souljade {
+    .souljade {
         flex: 1;
         & img {
             max-width: 5em;
         }
     }
 
-    & p {
+    p {
         margin: 0;
     }
 
-    & p.normal {
+    p.normal {
         color: lightskyblue;
     }
-    & p.hard {
+    p.hard {
         color: rgb(180, 1, 180);
     }
-    & p.nightscream {
+    p.nightscream {
         color: red;
     }
-    & p.enigma {
+    p.enigma {
         color: chocolate
     }
 }
