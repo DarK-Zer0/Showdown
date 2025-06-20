@@ -311,8 +311,8 @@ img.potential-plan {
 
 .home-button {
     float: left;
-    padding: 1vh;
-    margin-right: 0.4vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     cursor: pointer;
 
     img {
@@ -721,7 +721,7 @@ table.changelog {
     .nav-bar {
         padding-left: 4vw;
         padding-right: 4vw;
-        justify-content: normal;
+        justify-content: flex-start;
     }
     .nav-toggle {
         display: block;
@@ -757,15 +757,14 @@ table.changelog {
     }
 
     .home-button {
-        margin-top: 1vw;
-        margin-bottom: 1vw;
-        margin-right: 0;
-        margin-left: 27.5%;
+        /* position: static; */
+        margin-right: calc(50% - 90px);
+        margin-left: auto;
         cursor: pointer;
 
         img {
             padding-top: 1vw;
-            width: 25vw;
+            width: 180px;
         }
     }
 
