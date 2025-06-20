@@ -674,23 +674,30 @@ p.archetype, p.weapons {
         width: 100%;
     }
 }
-.souljades .souljade {
-    flex: 1;
-}
-.souljades p {
-    margin: 0;
-}
-.souljades p.normal {
-    color: lightskyblue;
-}
-.souljades p.hard {
-    color: rgb(180, 1, 180);
-}
-.souljades p.nightscream {
-    color: red;
-}
-.souljade img {
-    max-width: 5em;
+.souljades {
+    & .souljade {
+        flex: 1;
+        & img {
+            max-width: 5em;
+        }
+    }
+
+    & p {
+        margin: 0;
+    }
+
+    & p.normal {
+        color: lightskyblue;
+    }
+    & p.hard {
+        color: rgb(180, 1, 180);
+    }
+    & p.nightscream {
+        color: red;
+    }
+    & p.enigma {
+        color: chocolate
+    }
 }
 
 /* Changelog Table Stylings */
