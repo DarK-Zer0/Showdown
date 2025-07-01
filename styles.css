@@ -13,7 +13,7 @@
     --selected: hsl(149, 54%, 28%);
     --highlight: hsl(240, 82%, 68%);
 
-    /* Elemental Colors */
+    /* Element & Status Effect Colors */
     --color-burn-light: hsl(16, 100%, 60%);
     --color-burn-dark: hsl(16, 100%, 30%);
     --color-thunder-light: hsl(25, 31%, 90%);
@@ -23,7 +23,7 @@
     --color-ice-light: hsl(180, 94%, 90%);
     --color-ice-dark: hsl(180, 94%, 30%);
 
-    /* Ranged Colors */
+    /* Ranged Weapon Colors */
     --color-bow-light: hsl(120, 100%, 90%);
     --color-bow-dark: hsl(120, 100%, 30%);
     --color-musket-light: hsl(25, 75%, 90%);
@@ -174,6 +174,36 @@ ul.left {
     font-size: 33pt;
 }
 
+.toggled-description {
+    position: relative;
+    
+    .description {
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150%;
+        background: rgba(0, 0, 0, 0.9);
+        color: #fff;
+        padding: 6px 10px;
+        border-radius: 5px;
+        white-space: normal;
+        word-wrap: break-word;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.2s ease-in-out;
+        font-size: 0.9rem;
+        font-family: 'Hanken Grotesk', sans-serif;
+    }
+    &:hover .description{
+        opacity: 1;
+    }
+    &.show .description {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
 /* Media Stylings */
 .alt-bg {
     background-image: url(./img/site/background1.png);
@@ -229,7 +259,7 @@ img.potential-plan {
     margin-bottom: 1px;
 }
 
-/* Webiste Navigation Bar Stylings */
+/* Webiste Navigation Bar - Tabs Stylings */
 #navbar {
     position: sticky;
     z-index: 3;
@@ -288,7 +318,6 @@ img.potential-plan {
     &:hover {
         color: var(--hover);
         transition: color 0.3s ease;
-        /* background-color: var(--nav-secondary); */
         padding-bottom: 9px;
         padding-top: 9px;
         border-bottom: 1px solid var(--nav-bottom);
@@ -400,7 +429,6 @@ img.potential-plan {
     }
 }
 
-/* Position the mobile menu button on the far left */
 .mobile {
     a {
         text-decoration: none;
@@ -421,7 +449,7 @@ img.potential-plan {
     object-fit: fill;
 }
 
-/* Page Navigation Bar Stylings */
+/* In Page Navigation Tabs Stylings */
 .page-nav {
     position: relative;
     margin-top: 4vh;
@@ -682,31 +710,6 @@ p.archetype, p.weapons {
         position: relative;
         img {
             max-width: 5em;
-        }
-        .description {
-            position: absolute;
-            bottom: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 150%;
-            background: rgba(0, 0, 0, 0.9);
-            color: #fff;
-            padding: 6px 10px;
-            border-radius: 5px;
-            white-space: normal;
-            word-wrap: break-word;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.2s ease-in-out;
-            font-size: 0.9rem;
-            font-family: 'Hanken Grotesk', sans-serif;
-        }
-        &:hover .description{
-            opacity: 1;
-        }
-        &.show .description {
-            opacity: 1;
-            pointer-events: auto;
         }
     }
 
