@@ -16,18 +16,18 @@
     /* Element & Status Effect Colors */
     --color-burn-light: hsl(16, 100%, 60%);
     --color-burn-dark: hsl(16, 100%, 30%);
-    --color-thunder-light: hsl(25, 31%, 90%);
-    --color-thunder-dark: hsl(25, 31%, 30%);
+    --color-thunder-light: hsl(44, 29%, 90%);
+    --color-thunder-dark: hsl(43, 53%, 52%);
     --color-poison-light: hsl(282, 44%, 90%);
     --color-poison-dark: hsl(282, 44%, 30%);
     --color-ice-light: hsl(180, 94%, 90%);
     --color-ice-dark: hsl(180, 94%, 30%);
 
     /* Ranged Weapon Colors */
-    --color-bow-light: hsl(120, 100%, 90%);
-    --color-bow-dark: hsl(120, 100%, 30%);
-    --color-musket-light: hsl(25, 75%, 90%);
-    --color-musket-dark: hsl(25, 75%, 30%);
+    --color-universal-light: hsl(120, 100%, 90%);
+    --color-universal-dark: hsl(120, 100%, 30%);
+    --color-exclusive-light: hsl(25, 75%, 90%);
+    --color-exclusive-dark: hsl(25, 75%, 30%);
 
 
     /* Text Stylings */
@@ -165,12 +165,12 @@ ul.left {
     color: var(--color-poison-dark);
     font-size: 33pt;
 }
-.bow-txt {
-    color: var(--color-bow-dark);
+.universal-txt {
+    color: var(--color-universal-dark);
     font-size: 33pt;
 }
-.musket-txt {
-    color: var(--color-musket-dark);
+.exclusive-txt {
+    color: var(--color-exclusive-dark);
     font-size: 33pt;
 }
 
@@ -183,6 +183,7 @@ ul.left {
         left: 50%;
         transform: translateX(-50%);
         width: 150%;
+        max-width: 70vw;
         background: rgba(0, 0, 0, 0.9);
         color: #fff;
         padding: 6px 10px;
@@ -243,6 +244,11 @@ img.example {
     display: block;
     margin: 0 auto;
     width: 50%;
+}
+img.small-example {
+    display: block;
+    margin: 0 auto;
+    width: 6rem;
 }
 img.icon {
     width: 20pt;
@@ -681,17 +687,17 @@ p.archetype, p.weapons {
     border-right: 3px solid var(--color-thunder-dark);
     border-left: 3px solid var(--color-thunder-light);
 }
-.bow, .bow .section {
-    border-top: 3px solid var(--color-bow-light);
-    border-bottom: 3px solid var(--color-bow-dark);
-    border-right: 3px solid var(--color-bow-dark);
-    border-left: 3px solid var(--color-bow-light);
+.universal, .universal .section {
+    border-top: 3px solid var(--color-universal-light);
+    border-bottom: 3px solid var(--color-universal-dark);
+    border-right: 3px solid var(--color-universal-dark);
+    border-left: 3px solid var(--color-universal-light);
 }
-.musket, .musket .section {
-    border-top: 3px solid var(--color-musket-light);
-    border-bottom: 3px solid var(--color-musket-dark);
-    border-right: 3px solid var(--color-musket-dark);
-    border-left: 3px solid var(--color-musket-light);
+.exclusive, .exclusive .section {
+    border-top: 3px solid var(--color-exclusive-light);
+    border-bottom: 3px solid var(--color-exclusive-dark);
+    border-right: 3px solid var(--color-exclusive-dark);
+    border-left: 3px solid var(--color-exclusive-light);
 }
 
 .souljades {
