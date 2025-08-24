@@ -700,6 +700,10 @@ p.archetype, p.weapons {
     border-left: 3px solid var(--color-exclusive-light);
 }
 
+.section.curios {
+    max-width: 36vw;
+}
+
 .souljades {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
