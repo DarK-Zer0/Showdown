@@ -819,6 +819,10 @@ table.changelog {
     .hero-bg {
         min-width: 98%;
     }
+
+    .section.curios {
+        max-width: 75vw;
+    }
 }
 
 @media (max-width: 530px) {
@@ -835,5 +839,9 @@ table.changelog {
 
     .souljades {
         grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    }
+
+    .section.curios {
+        max-width: 90vw;
     }
 }
