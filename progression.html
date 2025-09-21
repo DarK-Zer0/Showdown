@@ -38,6 +38,36 @@
 		<link href="styles.css" rel="stylesheet">
 		<script src="src/navbar.js"></script>
 		<script src="src/contents.js"></script>
+
+		<style>
+			.souljade-card {
+				/* background-color: #e9ecef; */
+				border: 1px solid #ced4da;
+				border-radius: 0.25rem;
+				padding: 1rem;
+				margin-bottom: 1.5rem;
+			}
+			.card-header { 
+				display: flex; 
+				justify-content: space-between; 
+				align-items: center; 
+				font-weight: bold; 
+			}
+			.rarity-badge { font-size: 0.9rem; }
+			.shape-img { 
+				max-width: 150px; 
+				height: auto; 
+				margin-right: 1rem; 
+			}
+			.drop-table { 
+				width: 100%; 
+				margin-top: 0.5rem; 
+				font-size: 0.85rem; 
+			}
+			.drop-table th { background-color: #3d3e3f; }
+			.effects { font-size: 0.9rem; margin-top: 1rem; }
+			#searchInput { margin-bottom: 1rem; }
+		</style>
     </head>
     <body>
 		<!-- Navigation Bar -->
@@ -138,6 +168,80 @@
 
 			<!-- Souljades -->
 			<div id="div3" class="content" style="display: none;">
+				<div class="container mt-5">
+					<h1 class="mb-4">Souljade Encyclopedia</h1>
+					<input type="text" id="searchInput" class="form-control" placeholder="Search by Name or Type...">
+					<div id="souljadesContainer" class="row"></div> <!-- Cards will be appended here -->
+				</div>
+
+				<!-- Papa Parse for TSV parsing -->
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+				<script>
+					const tsvUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQ1pJNzFcZGVidnY3bAvSiO77YxZTMwgksO-BO7cnNAWoXuOlTYTXqMHbWkpARNn6H4Gr4tuRfSoe4T/pub?gid=2037803523&single=true&output=tsv';
+
+					// Function to get image path based on Shape and Rarity
+					function getShapeImage(shape, rarity) {
+						const rarityColor = rarity === 'Legendary' ? 'Gold' : 'Purple'; // Map rarity to color
+						return `img/builds/souljades/${shape}_${rarityColor}.png`;
+					}
+
+					// Fetch and parse TSV
+					Papa.parse(tsvUrl, {
+						download: true,
+						delimiter: '\t',
+						header: true,
+						skipEmptyLines: true,
+						complete: function(results) {
+							const data = results.data;
+							const container = document.getElementById('souljadesContainer');
+							
+							data.forEach(item => {
+								const locations = item.Location ? item.Location.split(', ') : [];
+								const difficulties = item.Difficulty ? item.Difficulty.split(', ') : [];
+								const locationSites = locations.length;
+
+								let tableRows = '';
+								for (let i = 0; i < locations.length; i++) {
+									const diff = difficulties[i] || 'N/A';
+									tableRows += `<tr><td>${locations[i]}</td><td class="text-end">${diff}</td></tr>`;
+								}
+
+								const card = `
+									<div class="col-md-6 souljade-card" data-name="${item.Name.toLowerCase()}" data-type="${item.Type.toLowerCase()}">
+										<div class="card-header">
+											<span>${item.Name}</span>
+											<span class="badge bg-info ms-1">Type: ${item.Type}</span>
+										</div>
+										<div class="d-flex">
+											<img src="${getShapeImage(item.Shape, item.Rarity)}" alt="${item.Shape} ${item.Rarity}" class="shape-img">
+											<div class="flex-grow-1">
+												<div>Location Sites: ${locationSites}</div>
+												<table class="table table-sm drop-table">
+													<thead><tr><th>Mission</th><th class="text-end">Min. Difficulty</th></tr></thead>
+													<tbody>${tableRows}</tbody>
+												</table>
+											</div>
+										</div>
+										<div class="effects">
+											<strong>Effects:</strong> ${item.Effects}
+										</div>
+									</div>
+								`;
+								container.innerHTML += card;
+							});
+
+							const searchInput = document.getElementById('searchInput');
+							searchInput.addEventListener('input', function() {
+								const query = this.value.toLowerCase();
+								document.querySelectorAll('.souljade-card').forEach(card => {
+									const name = card.dataset.name;
+									const type = card.dataset.type;
+									card.style.display = (name.includes(query) || type.includes(query)) ? 'block' : 'none';
+								});
+							});
+						}
+					});
+				</script>
 				<h2>Souljades</h2>
 				<p class="center">Epic and Legendary Souljades can only drop from one of two loot pools.
 					These loot pools are the <a href="#common-pool"><strong>Common Pool</strong></a> and the <a href="#special-pool"><strong>Special Pool</strong></a>.</p>
