@@ -198,7 +198,6 @@
 							data.forEach(item => {
 								const locations = item.Location ? item.Location.split(', ') : [];
 								const difficulties = item.Difficulty ? item.Difficulty.split(', ') : [];
-								const locationSites = locations.length;
 
 								let tableRows = '';
 								for (let i = 0; i < locations.length; i++) {
@@ -215,7 +214,6 @@
 										<div class="d-flex">
 											<img src="${getShapeImage(item.Shape, item.Rarity)}" alt="${item.Shape} ${item.Rarity}" class="shape-img">
 											<div class="flex-grow-1">
-												<div>Location Sites: ${locationSites}</div>
 												<table class="table table-sm drop-table">
 													<thead><tr><th>Mission</th><th class="text-end">Min. Difficulty</th></tr></thead>
 													<tbody>${tableRows}</tbody>
