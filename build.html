@@ -88,7 +88,7 @@
 				</p>
 
 				<!-- Build Sections -->
-				<hr><h2>Build Sections</h2>
+				<!-- <hr><h2>Build Sections</h2>
 				<ul class="nodot">
 					<li><a href="#Universal" class="universal-txt">Universal Builds</a></li>
 					<li>
@@ -103,10 +103,231 @@
 							<li><a href="#Wuchen" class="sub-txt poison-txt">Wuchen's Dedicated</a></li>
 						</ul>
 					</li>
-				</ul>
+				</ul> -->
+				<div id="builds"></div>
+				<div id="error"></div>
 
-				<!-- UNIVERSAL BUILDS -->
-				<hr id="Universal"><h2 class="universal-txt">Universal Builds</h2>
+				<script>
+					// Function to generate star ratings
+					function generateStars(rating, maxStars = 5) {
+					let stars = '';
+					for (let i = 1; i <= maxStars; i++) {
+						if (i <= Math.floor(rating)) {
+						stars += `<img src="img/site/filledstar.png" alt="Filled Star" class="icon">`;
+						} else if (i === Math.ceil(rating) && rating % 1 !== 0) {
+						stars += `<img src="img/site/halffilledstar.png" alt="Half-Filled Star" class="icon">`;
+						} else {
+						stars += `<img src="img/site/unfilledstar.png" alt="Empty Star" class="icon">`;
+						}
+					}
+					return stars;
+					}
+
+					// Function to render a single build
+					function renderBuild(build) {
+					return `
+						<div class="exclusive build">
+						<h3 class="build-name">${build.name}</h3>
+						<div class="section">
+							<h4 class="section-name">Souljades</h4>
+							<div class="souljades">
+							${build.souljades.map(souljade => `
+								<div class="souljade toggled-description">
+								<div class="${souljade.type}"><img src="${souljade.image}" alt="${souljade.name}"><br>${souljade.name}</div>
+								<div class="description">${souljade.description}</div>
+								</div>
+							`).join('')}
+							</div>
+						</div>
+						<div class="attributes section">
+							<p class="label">Souljade Attributes</p>
+							<p class="caption">
+							<strong>Target Attributes</strong><br>${build.souljadeAttributes.target.join('<br>')}
+							<br><br><strong>Placeholder Attribute</strong><br>${build.souljadeAttributes.placeholder.join('<br>')}
+							</p>
+						</div>
+						<div class="potential section">
+							<p class="label">Potential Plan</p>
+							<img src="${build.potentialPlan.image}" alt="${build.potentialPlan.alt}" class="potential-plan">
+						</div>
+						<div class="wielding section">
+							<p class="label">Wielding Type</p>
+							<p class="caption">
+							${build.wieldingTypes.map(wt => `
+								+${wt.count} <img src="${wt.image}" alt="${wt.name}" class="wielding"> ${wt.name}
+								${wt.count} <img src="${wt.image}" alt="${wt.name}" class="wielding">
+              				`).join('<br>')}
+							</p>
+						</div>
+						<div class="description section">
+							<p class="label">Description</p>
+							<p class="caption">${build.description}</p>
+						</div>
+						<div class="section">
+							<p class="label">Recommended Heroes</p>
+							<p class="caption">${build.recommendedHeroes.join(' & ')}</p>
+						</div>
+						<div class="difficulty section">
+							<p class="label">Difficulty</p>
+							<p>Skill Floor</p>
+							${generateStars(build.difficulty.skillFloor)}
+							<p>Skill Ceiling</p>
+							${generateStars(build.difficulty.skillCeiling)}
+						</div>
+						<div class="power section">
+							<p class="label">Power</p>
+							<p>Single-Target</p>
+							${generateStars(build.power.singleTarget)}
+							<p>Multi-Target</p>
+							${generateStars(build.power.multiTarget)}
+						</div>
+						</div>
+					`;
+					}
+
+					// Function to fetch and render builds from JSON file
+					async function loadBuilds() {
+						const buildsContainer = document.getElementById('builds');
+						const errorContainer = document.getElementById('error');
+						try {
+							const response = await fetch('builds.json');
+							if (!response.ok) {
+							throw new Error(`Failed to load builds.json: ${response.statusText}`);
+							}
+							const builds = await response.json();
+							buildsContainer.innerHTML = builds.map(renderBuild).join('');
+						} catch (error) {
+							errorContainer.innerHTML = `<p class="error">Error loading builds: ${error.message}</p>`;
+						}
+					}
+
+					// Load builds when the page loads
+					document.addEventListener('DOMContentLoaded', loadBuilds);
+				</script>
+
+				<!-- Thunder Scorch Surge -->
+				<div class="ice build">
+					<h3 class="build-name">Thunder Scorch Surge</h3>
+					<div class="section">
+						<h4 class="section-name">Souljades</h4>
+						<div class="souljades">
+							<div class="souljade toggled-description">
+								<div class="nightscream"><img src="img/builds/souljades/Triangle_Gold.png" alt="Thunderpull"><br>Thunderpull</div>
+								<div class="description">All attacks you deal will accumulate Thundershock on yourself. When full, will activate Divine Thunder on yourself.</div>
+							</div>
+							<div class="souljade toggled-description">
+								<div class="nightscream"><img src="img/builds/souljades/Rectangle_Gold.png" alt="Thunder Counter"><br>Thunder Counter</div>
+								<div class="description">Allows you to parry Divine Thunder.</div>
+							</div>
+							<div class="souljade toggled-description">
+								<div class="hard"><img src="img/builds/souljades/Flower_Gold.png" alt="Element Surge • Thunder-Wielding"><br>Element Surge • Thunder-Wielding</div>
+								<div class="description">Grants +12% Attack bonus and +55% Divine Thunder DMG. Activates Thunder Surge when your Thundershock fills for 20s.</div>
+							</div>
+							<div class="souljade toggled-description">
+								<div class="nightscream"><img src="img/builds/souljades/Diagonal_Gold.png" alt="Thunder Charge"><br>Thunder Charge</div>
+								<div class="description">During Thunder Surge, dealing 10x your Attack with Weapons will summon a strike of Divine Thunder on yourself.</div>
+							</div>
+							<div class="souljade toggled-description">
+								<div class="normal"><img src="img/builds/souljades/Diagonal_Gold.png" alt="Draco Stride"><br>Draco Stride</div>
+								<div class="description">Dodges will summon a pulse of water, applying Soak to enemies nearby.</div>
+							</div>
+							<div class="souljade toggled-description">
+								<div class="nightscream"><img src="img/builds/souljades/Triangle_Gold.png" alt="Incineration"><br>Incineration</div>
+								<div class="description">Grants +25% Attack for 10s after activating Hydroflare and applies a Burn to yourself.</div>
+							</div>
+						</div>
+					</div>
+					<div class="attributes section">
+						<p class="label">Souljade Attributes</p>
+						<p class="caption"><strong>Target Attributes</strong>
+							<br>x4 [Scorching]<br>x8 [Windfall]<br>x6 Health<br>x6 Attack
+							<br><br><strong>Placeholder Attribute</strong>
+							<br>DMG to Bosses & Melee Weapon Damage
+						</p>
+					</div>
+					<div class="potential section">
+						<p class="label">Potential Plan</p>
+						<img src="img/builds/trees/3.5/ThSuSc.png" alt="Thunder Surge Scorch Potential Plan" class="potential-plan">
+					</div>
+					<div class="wielding section">
+						<p class="label">Wielding Type</p>
+						<p class="caption">+1 <img src="img/builds/souljades/Ice-Wielding.png" alt="Ice-Wielding" class="wielding">
+							Thunder-Wielding
+							<img src="img/builds/souljades/Ice-Wielding.png" alt="Ice-Wielding" class="wielding">
+							<br> Remaining elements do not matter. 
+							<br>More Thunder-Wielding = More damage from Thunder Counter.
+							<br>Less Thunder-Wielding = Faster charge rate. 
+						</p>
+					</div>
+					<!-- <div class="curios section">
+						<p class="label">Curios</p>
+						<div class="toggled-description">
+							<p><strong>Fiery Lotus Bell</strong></p>
+							<img src="img/builds/curios/2.5/FieryLotusBell.png" alt="Fiery Lotus Bell" class="small-example">
+							<div class="description">Summoning a number of Blossom Blasts will activate a Shockwave on your next attack, <br>accumulating significant elements on enemies around you.</div>
+							<p class="caption"><strong>Awakening</strong>: Number of Blossom Blasts required reduced to 5.</p>
+						</div>
+						<div class="toggled-description">
+							<p><strong>Verve Banner</strong></p>
+							<img src="img/builds/curios/3.0/VerveBanner.png" alt="Verve Banner" class="small-example">
+							<div class="description">Weapon Attacks gain +60% Rage/DMG and <br>heal 10% of DMG dealt while Surging.</div>
+							<p class="caption"><strong>Awakening</strong>: All attacks gain an additional +60% Rage/DMG and heal 10% of DMG dealt while out of Surge state.</p>
+						</div>
+					</div>
+					<div class="attributes section">
+						<p class="label">Curio Attributes</p>
+						<p class="caption"><strong>Yang Attributes</strong>
+							<br>DMG to Bosses<br>Attack<br>Skill DMG Bonus<br>Elemental Accumulation Rate
+							<br><br><strong>Yin Attributes</strong>
+							<br>Rage/DMG Taken<br>Passive Rage Recovery<br>DMG Reduction<br>Luck
+						</p>
+					</div> -->
+					<div class="description section">
+						<p class="label">Description</p>
+							<p class="caption">
+								Your attacks will accumulate Thundershock on yourself, which will activate Thunder Surge when full.
+								While in Thunder Surge, while you attack, Divine Thunder will be summoned that you can parry.
+								All parries will activate Scorching, which will apply a massive Burn to your next Weapon Attack.
+								Dodging afterwards near the enemy or causing any Elemental Burst will Soak that Burn, causing it to do all of its damage instantly.
+
+								<br><br> Requires [Scorching] attributes to be effective.
+							</p>
+					</div>
+					<div class="difficulty section">
+						<p class="label">Difficulty</p> 
+						<p>Skill Floor</p>
+							<!-- 3-Stars -->
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/unfilledstar.png" alt="Empty Difficulty Star" class="icon">
+							<img src="img/site/unfilledstar.png" alt="Empty Difficulty Star" class="icon">
+						<p>Skill Ceiling</p>
+							<!-- 4-Stars -->
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/unfilledstar.png" alt="Empty Difficulty Star" class="icon">
+					</div>
+					<div class="power section">
+						<p class="label">Power</p> 
+						<p>Single-Target</p>
+							<!-- 5-Stars -->
+							<img src="img/site/filledstar.png" alt="Filled Power Star" class="icon">
+							<img src="img/site/filledstar.png" alt="Filled Power Star" class="icon">
+							<img src="img/site/filledstar.png" alt="Filled Power Star" class="icon">
+							<img src="img/site/filledstar.png" alt="Filled Power Star" class="icon">
+							<img src="img/site/filledstar.png" alt="Filled Power Star" class="icon">
+						<p>Multi-Target</p>
+							<!-- 4-Stars -->
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
+							<img src="img/site/unfilledstar.png" alt="Empty Difficulty Star" class="icon">
+					</div>
+				</div>
 				<!-- Ice Surge -->
 				<div class="ice build">
 					<h3 class="build-name">Ice Surge</h3>
@@ -161,7 +382,7 @@
 							<img src="img/builds/souljades/Ice-Wielding.png" alt="Ice-Wielding" class="wielding">
 						</p>
 					</div>
-					<div class="curios section">
+					<!-- <div class="curios section">
 						<p class="label">Curios</p>
 						<div class="toggled-description">
 							<p><strong>Wordless Sutra</strong></p>
@@ -175,7 +396,7 @@
 							<div class="description">Weapon Attacks gain +60% Rage/DMG and <br>heal 10% of DMG dealt while Surging.</div>
 							<p class="caption"><strong>Awakening</strong>: All attacks gain an additional +60% Rage/DMG and heal 10% of DMG dealt while Surging.</p>
 						</div>
-					</div>
+					</div> -->
 					<div class="attributes section">
 						<p class="label">Curio Attributes</p>
 						<p class="caption"><strong>Yang Attributes</strong>
@@ -200,7 +421,7 @@
 						<p class="label">Recommended Heroes<br></p>
 						<p class="caption">Viper Ning, Feria Shen, Tianhai, Tarka Ji, 
 							<br>Valda Cui, Yueshan, Matari, Tessa, 
-							<br>Yoto Hime, Justina Gu, & Kylin Zhang</p>
+							<br>Yoto Hime, Justina Gu, & Akos Hu</p>
 					</div>
 					<div class="difficulty section">
 						<p class="label">Difficulty</p> 
@@ -237,506 +458,9 @@
 							<img src="img/site/unfilledstar.png" alt="Empty Difficulty Star" class="icon">
 					</div>
 				</div>
-				<!-- Ice Lotus Chain -->
-				<div class="ice build">
-					<h3 class="build-name">Ice Lotus Chain</h3>
-					<div class="section">
-						<h4 class="section-name">Souljades</h4>
-						<div class="souljades">
-							<div class="souljade toggled-description">
-								<div class="nightscream"><img src="img/builds/souljades/Triangle_Gold.png" alt="Successive Ice Blast"><br>Successive Ice Blast</div>
-								<div class="description">Increases the base damage of Ice Blasts from 4.06 to 6.85 Ice Blast DMG, dividing it between 3 instances.</div>
-							</div>
-							<div class="souljade toggled-description">
-								<div class="nightscream"><img src="img/builds/souljades/Triangle_Gold.png" alt="Frozen Blast"><br>Frozen Blast</div>
-								<div class="description">Reduces the cooldown of Ice Blast by 1/3rd and grants +35% Ice Blast DMG Bonus.</div>
-							</div>
-							<div class="souljade toggled-description">
-								<div class="hard"><img src="img/builds/souljades/Flower_Gold.png" alt="Element Surge • Ice-Wielding"><br>Element Surge • Ice-Wielding</div>
-								<div class="description">Grants +15% Attack bonus and multiplies Ice Blast Accumulation Rate by 1.5. Frost Surge isn't activated normally from this build.</div>
-							</div>
-							<div class="souljade toggled-description">
-								<div class="hard"><img src="img/builds/souljades/Flower_Gold.png" alt="Elemental Lotus"><br>Elemental Lotus</div>
-								<div class="description">Summons a Lotus for 16 seconds per Ice Blast instance (limited to 4 per second).</div>
-							</div>
-							<div class="souljade toggled-description">
-								<div class="nightscream"><img src="img/builds/souljades/Triangle_Gold.png" alt="Ghastbloom"><br>Ghastbloom</div>
-								<div class="description">Does a Blossom Blast dealing 1.96 Ice Blast DMG for each Lotus exceeeding 4 or expiring.</div>
-							</div>
-							<div class="souljade toggled-description">
-								<div class="nightscream"><img src="img/builds/souljades/Flower_Gold.png" alt="Frostbite Chain"><br>Frostbite Chain</div>
-								<div class="description">After 15 Ice Blast instances, your next uncharged melee attack will activate Chain Crush dealing 3290% of your Attack as Ice Blast DMG.</div>
-							</div>
-						</div>
-					</div>
-					<div class="attributes section">
-						<p class="label">Souljade Attributes</p>
-						<p class="caption"><strong>Target Attributes</strong>
-							<br>x4 [Moderation]<br>x8 [Windfall]<br>x6 Ice Blast DMG<br>x6 Attack
-							<br><br><strong>Placeholder Attribute</strong>
-							<br>DMG to Bosses & Melee Weapon Damage
-						</p>
-					</div>
-					<div class="potential section">
-						<p class="label">Potential Plan</p>
-						<img src="img/builds/trees/3.0/ILC.png" alt="Ice Lotus Chain Potential Plan" class="potential-plan">
-					</div>
-					<div class="wielding section">
-						<p class="label">Wielding Type</p>
-						<p class="caption"><img src="img/builds/souljades/Ice-Wielding.png" alt="Ice-Wielding" class="wielding">
-							Ice-Wielding
-							<img src="img/builds/souljades/Ice-Wielding.png" alt="Ice-Wielding" class="wielding"></p>
-					</div>
-					<div class="curios section">
-						<p class="label">Curios</p>
-						<div class="toggled-description">
-							<p><strong>Fiery Lotus Bell</strong></p>
-							<img src="img/builds/curios/2.5/FieryLotusBell.png" alt="Fiery Lotus Bell" class="small-example">
-							<div class="description">Summoning a number of Blossom Blasts will activate a Shockwave on your next attack, <br>accumulating significant elements on enemies around you.</div>
-							<p class="caption"><strong>Awakening</strong>: Number of Blossom Blasts required reduced to 5.</p>
-						</div>
-						<div class="toggled-description">
-							<p><strong>Verve Banner</strong></p>
-							<img src="img/builds/curios/3.0/VerveBanner.png" alt="Verve Banner" class="small-example">
-							<div class="description">Weapon Attacks gain +60% Rage/DMG and <br>heal 10% of DMG dealt while Surging.</div>
-							<p class="caption"><strong>Awakening</strong>: All attacks gain an additional +60% Rage/DMG and heal 10% of DMG dealt while out of Surge state.</p>
-						</div>
-					</div>
-					<div class="attributes section">
-						<p class="label">Curio Attributes</p>
-						<p class="caption"><strong>Yang Attributes</strong>
-							<br>DMG to Bosses<br>Attack<br>Skill DMG Bonus<br>Elemental Accumulation Rate
-							<br><br><strong>Yin Attributes</strong>
-							<br>Rage/DMG Taken<br>Passive Rage Recovery<br>DMG Reduction<br>Luck
-						</p>
-					</div>
-					<div class="description section">
-						<p class="label">Description</p>
-							<p class="caption">This build is extremely easy to use as it features none of the penalties common in other builds and outputs competitive damage. 
-								Therefore, it is recommended for most players to start with.
-								<br><br>Your attacks will build up Frostbite on enemies, which will explode into an Ice Blast once certain thresholds are met. 
-								Each Ice Blast will summon 3 Lotus (up to 4 per second) that will surround you and explode for high damage when they expire or when you exceed 4 total.
-								<br><br>Over time, as you activate more Ice Blasts, you will charge up an extremely strong attack known as Chain Crush.
-								You will see a symbol appear in the top left that indicates it is ready to be used. 
-								To activate it, use any uncharged melee attack.
-								<br><br>[Moderation] +100% allows you to use your Hero Skill again after every Ice Blast.
-							</p>
-					</div>
-					<div class="section">
-						<p class="label">Recommended Heroes<br></p>
-						<p class="caption">Viper Ning, Feria Shen, Tianhai, Tarka Ji, 
-							<br>Valda Cui, Yueshan, Matari, Tessa, 
-							<br>Yoto Hime, & Kylin Zhang</p>
-					</div>
-					<div class="difficulty section">
-						<p class="label">Difficulty</p> 
-						<p>Skill Floor</p>
-							<!-- 0.5-Stars -->
-							<img src="img/site/halffilledstar.png" alt="Half-Filled Difficulty Star" class="icon">
-							<img src="img/site/unfilledstar.png" alt="Empty Difficulty Star" class="icon">
-							<img src="img/site/unfilledstar.png" alt="Empty Difficulty Star" class="icon">
-							<img src="img/site/unfilledstar.png" alt="Empty Difficulty Star" class="icon">
-							<img src="img/site/unfilledstar.png" alt="Empty Difficulty Star" class="icon">
-						<p>Skill Ceiling</p>
-							<!-- 1-Stars -->
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/unfilledstar.png" alt="Empty Difficulty Star" class="icon">
-							<img src="img/site/unfilledstar.png" alt="Empty Difficulty Star" class="icon">
-							<img src="img/site/unfilledstar.png" alt="Empty Difficulty Star" class="icon">
-							<img src="img/site/unfilledstar.png" alt="Empty Difficulty Star" class="icon">
-					</div>
-					<div class="power section">
-						<p class="label">Power</p> 
-						<p>Single-Target</p>
-							<!-- 2.5-Stars -->
-							<img src="img/site/filledstar.png" alt="Filled Power Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Power Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Power Star" class="icon">
-							<img src="img/site/halffilledstar.png" alt="Half-Filled Power Star" class="icon">
-							<img src="img/site/unfilledstar.png" alt="Empty Difficulty Star" class="icon">
-						<p>Multi-Target</p>
-							<!-- 4-Stars -->
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/unfilledstar.png" alt="Empty Difficulty Star" class="icon">
-					</div>
-				</div>
 
 				<!-- EXCLUSIVE BUILDS -->
 				<hr id="Exclusive"><h2 class="exclusive-txt">Exclusive Builds</h2>
-				<!-- Valda·Burn -->
-				<div id="Valda" class="burn build">
-					<h3 class="build-name">Valda·Burn</h3>
-					<div class="section">
-						<h4 class="section-name">Souljades</h4>
-						<div class="souljades">
-							<div class="souljade toggled-description">
-								<div class="nightscream"><img src="img/builds/souljades/Triangle_Gold.png" alt="Incineration"><br>Incineration</div>
-								<div class="description">Activating Hydroflare grants +25% Attack for 10s.</div>
-							</div>
-							<div class="souljade toggled-description">
-								<div class="hard"><img src="img/builds/souljades/Flower_Gold.png" alt="Element Surge • Poison-Wielding"><br>Element Surge • Poison-Wielding</div>
-								<div class="description">Grants +20% Attack bonus and +25% Poison Blast DMG bonus. Being afflicted with Toxified activates Toxin Surge for 15s.</div>
-							</div>
-							<div class="souljade toggled-description">
-								<div class="nightscream"><img src="img/builds/souljades/Triangle_Gold.png" alt="Pestilent Pool"><br>Pestilent Pool</div>
-								<div class="description">Poison Blasts spawn poison pools, applying Toxified to the player and enemies within every second for 2 seconds.</div>
-							</div>
-							<div class="souljade toggled-description">
-								<div class="nightscream"><img src="img/builds/souljades/Triangle_Gold.png" alt="Miasma Drive"><br>Miasma Drive</div>
-								<div class="description">Grants +25% Attack bonus for 18s after applying Toxified to an enemy.</div>
-							</div>
-							<div class="souljade toggled-description">
-								<div class="nightscream"><img src="img/builds/souljades/Diagonal_Gold.png" alt="Renewed Vigor"><br>Renewed Vigor</div>
-								<div class="description">Grants +20% Attack for 4s after any receiving any heal.</div>
-							</div>
-							<div class="souljade toggled-description">
-								<div class="hard"><img src="img/builds/souljades/Rectangle_Purple.png" alt="Copper Ward"><br>Copper Ward</div>
-								<div class="description">Grants +60% Health, but all Armor is removed.</div>
-							</div>
-						</div>
-					</div>
-					<div class="attributes section">
-						<p class="label">Souljade Attributes</p>
-						<p class="caption"><strong>Target Attributes</strong>
-							<br>x4 [Moderation]<br>x8 [Windfall]<br>x6 Health<br>x6 Attack
-							<br><br><strong>Placeholder Attribute</strong>
-							<br>DMG to Bosses & Melee Weapon Damage
-						</p>
-					</div>
-					<div class="potential section">
-						<p class="label">Potential Plan</p>
-						<img src="img/builds/trees/3.0/ToxicBurn.PNG" alt="Valda's Scorch Potential Plan" class="potential-plan">
-					</div>
-					<div class="wielding section">
-						<p class="label">Wielding Type</p>
-						<p class="caption">
-							+5 <img src="img/builds/souljades/Poison-Wielding.png" alt="Poison-Wielding" class="wielding">
-							Poison-Wielding
-							<img src="img/builds/souljades/Poison-Wielding.png" alt="Poison-Wielding" class="wielding">
-							<br>+1 <img src="img/builds/souljades/Ice-Wielding.png" alt="Ice-Wielding" class="wielding">
-							Ice-Wielding
-							<img src="img/builds/souljades/Ice-Wielding.png" alt="Ice-Wielding" class="wielding">
-						</p>
-					</div>
-					<div class="curios section">
-						<p class="label">Curios</p>
-						<div class="toggled-description">
-							<p><strong>Sea Leveler</strong></p>
-							<img src="img/builds/curios/3.0/ValdaCui.png" alt="Sea Leveler" class="small-example">
-							<div class="description">Ne Zha's Might applies a Burn <br>dealing up to 4500% of your Attack over 15s</div>
-							<p class="caption"><strong>Awakening</strong>: Ne Zha's Might summons fireballs in front of you applying additional Burn.</p>
-						</div>
-						<div class="toggled-description">
-							<p><strong>Verve Banner</strong></p>
-							<img src="img/builds/curios/3.0/VerveBanner.png" alt="Verve Banner" class="small-example">
-							<div class="description">Weapon Attacks gain +60% Rage/DMG and <br>heal 10% of DMG dealt while Surging.</div>
-							<p class="caption"><strong>Awakening</strong>: All attacks gain an additional +60% Rage/DMG and heal 10% of DMG dealt while Surging.</p>
-						</div>
-					</div>
-					<div class="attributes section">
-						<p class="label">Curio Attributes</p>
-						<p class="caption"><strong>Yang Attributes</strong>
-							<br>Attack<br>Skill DMG Bonus<br>DMG to Bosses<br>Elemental Accumulation Rate
-							<br><br><strong>Yin Attributes</strong>
-							<br>Health<br>DMG Reduction<br>Boss DMG Reduction<br>Luck
-						</p>
-					</div>
-					<div class="description section">
-						<p class="label">Description</p>
-							<p class="caption">
-								This build focuses on Hydroflare damage 
-								by taking advantage of Valda's special ability to apply Soak that doesn't remove from Hydroflare 
-								and her Curio's ability to rapidly apply a powerful Burn from Ne Zha's Might.
-								Moderation is required to make good use of this build, otherwise, 
-								you'll just be constantly overwritting your Burns as they do have a lengthy duration.
-							</p>
-					</div>
-					<div class="difficulty section">
-						<p class="label">Difficulty</p> 
-						<p>Skill Floor</p>
-							<!-- 3-Stars -->
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/unfilledstar.png" alt="Empty Difficulty Star" class="icon">
-							<img src="img/site/unfilledstar.png" alt="Empty Difficulty Star" class="icon">
-						<p>Skill Ceiling</p>
-							<!-- 4-Stars -->
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/unfilledstar.png" alt="Empty Difficulty Star" class="icon">
-					</div>
-					<div class="power section">
-						<p class="label">Power</p> 
-						<p>Single-Target</p>
-							<!-- 5-Stars -->
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-						<p>Multi-Target</p>
-							<!-- 4-Star -->
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/unfilledstar.png" alt="Empty Difficulty Star" class="icon">
-					</div>
-				</div>
-				<!-- Yoto Hime·Flying Edge -->
-				<div id="YotoHime" class="poison build">
-					<h3 class="build-name">Yoto Hime·Flying Edge</h3>
-					<div class="section">
-						<h4 class="section-name">Souljades</h4>
-						<div class="souljades">
-							<div class="souljade toggled-description">
-								<div class="hard"><img src="img/builds/souljades/Flower_Gold.png" alt="Element Surge • Poison-Wielding"><br>Element Surge • Poison-Wielding</div>
-								<div class="description">Grants +20% Attack bonus and +25% Poison Blast DMG bonus. Being afflicted with Toxified activates Toxin Surge for 15s.</div>
-							</div>
-							<div class="souljade toggled-description">
-								<div class="nightscream"><img src="img/builds/souljades/Triangle_Gold.png" alt="Pestilent Pool"><br>Pestilent Pool</div>
-								<div class="description">Poison Blasts spawn poison pools, applying Toxified to the player and enemies within every second for 2 seconds.</div>
-							</div>
-							<div class="souljade toggled-description">
-								<div class="nightscream"><img src="img/builds/souljades/Triangle_Gold.png" alt="Miasma Drive"><br>Miasma Drive</div>
-								<div class="description">Grants +25% Attack bonus for 18s after applying Toxified to an enemy.</div>
-							</div>
-							<div class="souljade toggled-description">
-								<div class="nightscream"><img src="img/builds/souljades/Diagonal_Gold.png" alt="Renewed Vigor"><br>Renewed Vigor</div>
-								<div class="description">Grants +20% Attack for 4s after any receiving any heal.</div>
-							</div>
-							<div class="souljade toggled-description">
-								<div class="normal"><img src="img/builds/souljades/Triangle_Purple.png" alt="Backfire"><br>Backfire</div>
-								<div class="description">Grants +20% Attack, but 4% of damage dealt is dealt to self.</div>
-							</div>
-							<div class="souljade toggled-description">
-								<div class="hard"><img src="img/builds/souljades/Diagonal_Purple.png" alt="Sub-Zero Seal"><br>Sub-Zero Seal</div>
-								<div class="description">Grants +20% Hit DMG (doesn't boost Burn), but build Frostbite overtime.</div>
-							</div>
-						</div>
-					</div>
-					<div class="attributes section">
-						<p class="label">Souljade Attributes</p>
-						<p class="caption"><strong>Target Attributes</strong>
-							<br>x4 [Moderation]<br>x8 [Windfall]<br>x6 DMG to Bosses<br>x6 Attack
-							<br><br><strong>Placeholder Attribute</strong>
-							<br>DMG to Astral Aegis & Rage/DMG
-						</p>
-					</div>
-					<div class="potential section">
-						<p class="label">Potential Plan</p>
-						<img src="img/builds/trees/3.0/ToxicBuff.PNG" alt="Yoto Hime·Flying Edge's Potential Plan" class="potential-plan">
-					</div>
-					<div class="wielding section">
-						<p class="label">Wielding Type</p>
-						<p class="caption">
-							+5 <img src="img/builds/souljades/Poison-Wielding.png" alt="Poison-Wielding" class="wielding">
-							Poison-Wielding
-							<img src="img/builds/souljades/Poison-Wielding.png" alt="Poison-Wielding" class="wielding">
-							<br>+1 <img src="img/builds/souljades/Ice-Wielding.png" alt="Ice-Wielding" class="wielding">
-							Ice-Wielding
-							<img src="img/builds/souljades/Ice-Wielding.png" alt="Ice-Wielding" class="wielding">
-						</p>
-					</div>
-					<div class="curios section">
-						<p class="label">Curios</p>
-						<div class="toggled-description">
-							<p><strong>Imperial Wind Chime</strong></p>
-							<img src="img/builds/curios/3.0/YotoHime.png" alt="Imperial Wind Chime" class="small-example">
-							<div class="description">Skill gains additional rotation speed when hit by charged attacks,<br>up to 3 times.</div>
-							<p class="caption"><strong>Awakening</strong>: Skill also increases in size when hit by charged attacks, up to 3 times.</p>
-						</div>
-						<div class="toggled-description">
-							<p><strong>Verve Banner</strong></p>
-							<img src="img/builds/curios/3.0/VerveBanner.png" alt="Verve Banner" class="small-example">
-							<div class="description">Weapon Attacks gain +60% Rage/DMG and <br>heal 10% of DMG dealt while Surging.</div>
-							<p class="caption"><strong>Awakening</strong>: All attacks gain an additional +60% Rage/DMG and heal 10% of DMG dealt while Surging.</p>
-						</div>
-					</div>
-					<div class="attributes section">
-						<p class="label">Curio Attributes</p>
-						<p class="caption"><strong>Yang Attributes</strong>
-							<br>Skill DMG Bonus<br>DMG to Bosses<br>Attack<br>Elemental Accumulation Rate
-							<br><br><strong>Yin Attributes</strong>
-							<br>Rage/DMG Taken<br>Passive Rage Recovery<br>DMG Reduction<br>Luck
-						</p>
-					</div>
-					<div class="description section">
-						<p class="label">Description</p>
-							<p class="caption">
-								This build focuses on Yoto Hime's Skill and it's interaction with her Curio.
-								Hitting it with any charged attack will increase it's rotation speed and size, vastly increasing its DPS.
-								Make sure to save enough Rage to use your Ultimate right after the Skill expires for an easy activation of [Moderation],
-								so you can get your Skill back as soon as possible.
-							</p>
-					</div>
-					<div class="difficulty section">
-						<p class="label">Difficulty</p> 
-						<p>Skill Floor</p>
-							<!-- 3.5-Stars -->
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/halffilledstar.png" alt="Half-Filled Difficulty Star" class="icon">
-							<img src="img/site/unfilledstar.png" alt="Empty Difficulty Star" class="icon">
-						<p>Skill Ceiling</p>
-							<!-- 4-Stars -->
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/unfilledstar.png" alt="Empty Difficulty Star" class="icon">
-					</div>
-					<div class="power section">
-						<p class="label">Power</p> 
-						<p>Single-Target</p>
-							<!-- 4.5-Stars -->
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/halffilledstar.png" alt="Half-Filled Difficulty Star" class="icon">
-						<p>Multi-Target</p>
-							<!-- 4.5-Star -->
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/halffilledstar.png" alt="Half-Filled Difficulty Star" class="icon">
-					</div>
-				</div>
-				<!-- Tarka·Flame Force -->
-				<div id="Tarka" class="burn build">
-					<h3 class="build-name">Tarka·Flame Force</h3>
-					<div class="section">
-						<h4 class="section-name">Souljades</h4>
-						<div class="souljades">
-							<div class="souljade toggled-description">
-								<div class="nightscream"><img src="img/builds/souljades/Triangle_Gold.png" alt="Incineration"><br>Incineration</div>
-								<div class="description">Activating Hydroflare grants +25% Attack for 10s.</div>
-							</div>
-							<div class="souljade toggled-description">
-								<div class="hard"><img src="img/builds/souljades/Flower_Gold.png" alt="Element Surge • Poison-Wielding"><br>Element Surge • Poison-Wielding</div>
-								<div class="description">Grants +20% Attack bonus and +25% Poison Blast DMG bonus. Being afflicted with Toxified activates Toxin Surge for 15s.</div>
-							</div>
-							<div class="souljade toggled-description">
-								<div class="nightscream"><img src="img/builds/souljades/Triangle_Gold.png" alt="Pestilent Pool"><br>Pestilent Pool</div>
-								<div class="description">Poison Blasts spawn poison pools, applying Toxified to the player and enemies within every second for 2 seconds.</div>
-							</div>
-							<div class="souljade toggled-description">
-								<div class="nightscream"><img src="img/builds/souljades/Triangle_Gold.png" alt="Miasma Drive"><br>Miasma Drive</div>
-								<div class="description">Grants +25% Attack bonus for 18s after applying Toxified to an enemy.</div>
-							</div>
-							<div class="souljade toggled-description">
-								<div class="nightscream"><img src="img/builds/souljades/Diagonal_Gold.png" alt="Arcane Stratos"><br>Arcane Stratos</div>
-								<div class="description">Using a Skill or Ultimate will summon a Bolt on the nearest enemy dealing 450% of your Attack.</div>
-							</div>
-							<div class="souljade toggled-description">
-								<div class="normal"><img src="img/builds/souljades/Triangle_Purple.png" alt="Backfire"><br>Backfire</div>
-								<div class="description">Grants +20% Attack, but 4% of damage dealt is dealt to self.</div>
-							</div>
-						</div>
-					</div>
-					<div class="attributes section">
-						<p class="label">Souljade Attributes</p>
-						<p class="caption"><strong>Target Attributes</strong>
-							<br>x4 [Moderation]<br>x8 [Windfall]<br>x6 DMG to Bosses<br>x6 Attack
-							<br><br><strong>Placeholder Attribute</strong>
-							<br>Rage/DMG & Melee Weapon Damage
-						</p>
-					</div>
-					<div class="potential section">
-						<p class="label">Potential Plan</p>
-						<img src="img/builds/trees/3.0/ToxicBuff.PNG" alt="Tarka·Flame Force's Potential Plan" class="potential-plan">
-					</div>
-					<div class="wielding section">
-						<p class="label">Wielding Type</p>
-						<p class="caption">
-							+2 <img src="img/builds/souljades/Poison-Wielding.png" alt="Poison-Wielding" class="wielding">
-							Poison-Wielding
-							<img src="img/builds/souljades/Poison-Wielding.png" alt="Poison-Wielding" class="wielding">
-							<br>+3 <img src="img/builds/souljades/Ice-Wielding.png" alt="Ice-Wielding" class="wielding">
-							Ice-Wielding
-							<img src="img/builds/souljades/Ice-Wielding.png" alt="Ice-Wielding" class="wielding">
-							<br>+1 <img src="img/builds/souljades/Thunder-Wielding.png" alt="Thunder-Wielding" class="wielding">
-							Thunder-Wielding
-							<img src="img/builds/souljades/Thunder-Wielding.png" alt="Thunder-Wielding" class="wielding">
-						</p>
-					</div>
-					<div class="curios section">
-						<p class="label">Curios</p>
-						<div class="toggled-description">
-							<p><strong>Flaming Soul Bead</strong></p>
-							<img src="img/builds/curios/2.5/Tarka.png" alt="Flame Soul Bead" class="small-example">
-							<div class="description">Tarka's Skill applies Explosive to enemies hit.<br>Can be detonated with Universe Slash, Finisher Strikes, or Elbow Strike for up to 2100% of your Attack.</div>
-							<p class="caption"><strong>Awakening</strong>: Explosive can stack up to 5 times, doubling the damage at max stacks.</p>
-						</div>
-						<div class="toggled-description">
-							<p><strong>Verve Banner</strong></p>
-							<img src="img/builds/curios/3.0/VerveBanner.png" alt="Verve Banner" class="small-example">
-							<div class="description">Weapon Attacks gain +60% Rage/DMG and <br>heal 10% of DMG dealt while Surging.</div>
-							<p class="caption"><strong>Awakening</strong>: All attacks gain an additional +60% Rage/DMG and heal 10% of DMG dealt while Surging.</p>
-						</div>
-					</div>
-					<div class="attributes section">
-						<p class="label">Curio Attributes</p>
-						<p class="caption"><strong>Yang Attributes</strong>
-							<br>Skill DMG Bonus<br>DMG to Bosses<br>Attack<br>Elemental Accumulation Rate
-							<br><br><strong>Yin Attributes</strong>
-							<br>Rage/DMG Taken<br>Passive Rage Recovery<br>DMG Reduction<br>Luck
-						</p>
-					</div>
-					<div class="description section">
-						<p class="label">Description</p>
-							<p class="caption">
-								This build focuses on Tarka's Skill, Flame Force, and it's interaction with his Curio.
-								Enemies hit by his Skill will be afflicted with Explosive, which can be detonated by certain attacks.
-								However, if you let Explosive stack up to 5 times, it will deal 10 times the damage instead of 5.
-								This in combination with Tarka's Ultimate can essentially allow you to continue using his Skill into 5 stack explosions,
-								as long as you don't miss too many Skills.
-							</p>
-					</div>
-					<div class="difficulty section">
-						<p class="label">Difficulty</p> 
-						<p>Skill Floor</p>
-							<!-- 3-Stars -->
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/unfilledstar.png" alt="Empty Difficulty Star" class="icon">
-							<img src="img/site/unfilledstar.png" alt="Empty Difficulty Star" class="icon">
-						<p>Skill Ceiling</p>
-							<!-- 5-Stars -->
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-					</div>
-					<div class="power section">
-						<p class="label">Power</p> 
-						<p>Single-Target</p>
-							<!-- 4-Stars -->
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/unfilledstar.png" alt="Empty Difficulty Star" class="icon">
-						<p>Multi-Target</p>
-							<!-- 4-Star -->
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/filledstar.png" alt="Filled Difficulty Star" class="icon">
-							<img src="img/site/unfilledstar.png" alt="Empty Difficulty Star" class="icon">
-					</div>
-				</div>
 				<!-- Kylin·Thunder -->
 				<div id="Kylin" class="thunder build">
 					<h3 class="build-name">Kylin·Thunder</h3>
@@ -763,9 +487,13 @@
 								<div class="normal"><img src="img/builds/souljades/Triangle_Purple.png" alt="Backfire"><br>Backfire</div>
 								<div class="description">+20% Attack, but 4% of damage dealt is dealt to self.</div>
 							</div>
+							<div class="souljade toggled-description">
+								<div class="normal"><img src="img/builds/souljades/Triangle_Purple.png" alt="Soul-drawing"><br>Soul-drawing</div>
+								<div class="description">When below 45% Health, your attacks will heal you for 12% of the damage you deal.</div>
+							</div>
 						</div>
 					</div>
-					<div class="section">
+					<!-- <div class="section">
 						<h4 class="section-name">Optional Souljades</h4>
 						<div class="souljades">
 							<div class="souljade toggled-description">
@@ -781,7 +509,7 @@
 								<div class="description">Grants +20% Attack for 4s after any receiving any heal.</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 					<div class="attributes section">
 						<p class="label">Souljade Attributes</p>
 						<p class="caption"><strong>Target Attributes</strong>
@@ -814,7 +542,7 @@
 							<img src="img/builds/souljades/Poison-Wielding.png" alt="Poison-Wielding" class="wielding">
 						</p>
 					</div>
-					<div class="curios section">
+					<!-- <div class="curios section">
 						<p class="label">Curios</p>
 						<div class="toggled-description">
 							<p><strong>Tideforce Bead</strong></p>
@@ -836,10 +564,10 @@
 							<br><br><strong>Yin Attributes</strong>
 							<br>Rage/DMG Taken<br>Health<br>Luck<br>Armor
 						</p>
-					</div>
+					</div> -->
 					<div class="description section">
 						<p class="label">Description</p>
-							<p class="caption">A variant of Kylin's dedicated build that focuses more on personal damage than Divine Thunder damage.
+							<p class="caption">Kylin's dedicated build that focuses more on personal damage than Divine Thunder damage.
 								This build is easier to switch to and from due to not needing Divine Thunder DMG attributes, but is slightly weaker.
 								Attacking will charge Thundershock on yourself, when full will summon a bolt of Divine Thunder that you can parry.
 								Filling Thundershock also activates Thunder Surge, which increases your Attack and allows you to summon more bolts of Divine Thunder from Weapon Attacks.
