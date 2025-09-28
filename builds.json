@@ -27,7 +27,7 @@
         "yang": ["Attack", "DMG to Bosses", "Elemental Accumulation Rate", "Weapon DMG Bonus"],
         "yin": ["Health", "Rage/DMG Taken", "Armor", "Luck"]
         },
-        "description": "Your attacks will build Thundershock on you overtime. When your Thundershock meter fills, Thunder Surge will activate, sending a single bolt of Divine Thunder onto you. You can parry this bolt to activate Scorching, which will apply a massive Burn to your next weapon attack. Dodge near an enemy will hit them with Draco Stride, which will apply Soak. When an enemy is Burning and Soaked, Hydroflare will activate, dealing the remaining Burn damage instantly.",
+        "description": "Your attacks will build Thundershock on you overtime. When your Thundershock meter fills, Thunder Surge will activate, sending a single bolt of Divine Thunder onto you. You can parry this bolt to activate Scorching, which will apply a massive Burn dealing 5400% of your Attack as Burn DMG over 18 seconds to your next weapon attack. Dodge near an enemy will hit them with Draco Stride, which will apply Soak. When an enemy is Burning and Soaked, Hydroflare will activate, dealing the remaining Burn damage instantly.",
         "recommendedHeroes": ["All Heroes"],
         "difficulty": { "skillFloor": 3.5, "skillCeiling": 4.5 },
         "power": { "singleTarget": 5, "multiTarget": 3.5 }   
@@ -58,7 +58,7 @@
         "yang": ["Elemental Accumulation Rate", "Attack", "DMG to Bosses", "Weapon DMG Bonus"],
         "yin": ["Rage/DMG Taken", "Health", "Armor", "Luck"]
         },
-        "description": "Attacks will accumulate Frostbite on enemies, causing Ice Blasts. After 2 Ice Blasts, your Frostbite will fill, activating Frost Surge. During Frost Surge, using a Skill will summon an Ice Thorn that deals significant damage. After 15 Ice Blasts, your next uncharged melee attack will trigger Chain Crush, dealing massive damage.",
+        "description": "Attacks will accumulate Frostbite on enemies, causing Ice Blasts. After 2 Ice Blasts, your Frostbite will fill, activating Frost Surge. During Frost Surge, using a Skill will summon an Ice Thorn that deals 910% of your Attack as Ice Blast DMG on a 4 second cooldown. After 15 Ice Blasts, your next uncharged melee attack will trigger Chain Crush, dealing 3290% of your Attack as Ice Blast DMG.",
         "recommendedHeroes": ["Viper Ning", "Feria Shen", "Tianhai", "Tarka Ji", "Valda Cui", "Matari", "Yueshan", "Tessa", "Ziping Ying", "Justina Gu", "Akos Hu"],
         "difficulty": { "skillFloor": 3, "skillCeiling": 4 },
         "power": { "singleTarget": 3.5, "multiTarget": 4.5 }
@@ -124,7 +124,7 @@
         "yang": ["Weapon DMG Bonus", "Attack", "DMG to Bosses", "Elemental Accumulation Rate"],
         "yin": ["DMG Reduction", "Boss DMG Reduction", "Armor", "Luck"]
         },
-        "description": "Hitting missiles from your Swarm weapon will build Deadeye. Once full, unlocks a special Deadeye attack called Celestial Patrol Order that shoots a salvo of missiles into the sky landing on an enemy nearby for massive damage. You use this attack by fully charging the Swarm before releasing. While in Deadeye, your current charge is conserved while dodging. Swarm's counterstrikes deal great damage and build a large amount of Deadeye, so aim for them when possible.",
+        "description": "Hitting missiles from your Swarm weapon will build Deadeye. Once full, unlocks a special Deadeye attack called Celestial Patrol Order that shoots a salvo of missiles into the sky landing on an enemy nearby for 6000% of your Attack as Charged Ranged Weapon DMG. You use this attack by fully charging the Swarm before releasing. While in Deadeye, your current charge is conserved while dodging. Swarm's counterstrikes deal great damage and build a large amount of Deadeye, so aim for them when possible.",
         "recommendedHeroes": ["Tianhai", "Wuchen"],
         "difficulty": { "skillFloor": 2.5, "skillCeiling": 3.5 },
         "power": { "singleTarget": 4.5, "multiTarget": 2 }
@@ -157,7 +157,7 @@
         "yang": ["Attack", "DMG to Bosses", "Rage/DMG", "Weapon DMG Bonus"],
         "yin": ["Rage/DMG Taken", "Health", "Armor", "Luck"]
         },
-        "description": "Your attacks will build Thundershock on you overtime. When your Thundershock meter fills, Thunder Surge will activate, sending a single bolt of Divine Thunder onto you. You can parry this bolt to deal a strong counterstrike. During Kylin's Ultimate, his counterstrikes are significantly enhanced.",
+        "description": "Your attacks will build Thundershock on you overtime. When your Thundershock meter fills, Thunder Surge will activate, sending a single bolt of Divine Thunder onto you. You can parry this bolt to deal a strong counterstrike. During Kylin's Ultimate, his counterstrikes are significantly enhanced, dealing 5200% of your Attack as Melee & Skill DMG. As you lose more Health in your Ultimate, you'll get an additional DMG Bonus, up to 180%.",
         "recommendedHeroes": ["Kylin Zhang"],
         "difficulty": { "skillFloor": 3.5, "skillCeiling": 4.5 },
         "power": { "singleTarget": 4, "multiTarget": 5 }   
