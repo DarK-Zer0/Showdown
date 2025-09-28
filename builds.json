@@ -97,6 +97,39 @@
         "power": { "singleTarget": 4.5, "multiTarget": 1 }
     },
     {
+        "name": "Swarm • Poison Surge",
+        "souljades": [
+        { "name": "Element Surge • Poison-Wielding", "type": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "+20% Attack bonus and +25% Poison Blast DMG bonus. Toxin Surge doesn't activate normally with this build." },
+        { "name": "Pestilent Pool", "type": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "Poison Blasts summon Toxic Pools applying up to 2 Toxified Stacks to enemies within." },
+        { "name": "Miasma Drive", "type": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+25% Attack for 18s after applying Toxified to an enemy." },
+        { "name": "Renewed Vigor", "type": "nightscream", "image": "img/builds/souljades/Diagonal_Gold.png", "description": "+20% Attack for 4 seconds after you receieve any heal." },
+        { "name": "Backfire", "type": "normal", "image": "img/builds/souljades/Triangle_Purple.png", "description": "+20% Attack at the cost of 4% of damage dealt to self." },
+        { "name": "Shattered Edge", "type": "hard", "image": "img/builds/souljades/Triangle_Purple.png", "description": "+18% Attack for 10 seconds after you shoot an arrow." }
+        ],
+        "souljadeAttributes": {
+        "target": ["x6 [Windfall]", "x6 DMG to Bosses", "x6 Ranged Weapon Damage", "x6 Attack"],
+        "placeholder": ["Deadeye build rate"]
+        },
+        "potentialPlan": { "image": "img/builds/trees/4.0/SwarmPoisonSurge.png", "alt": "Poison Surge Swarm Potential Plan" },
+        "wieldingTypes": [
+        { "name": "Ice-Wielding", "count": 1, "image": "img/builds/souljades/Ice-Wielding.png" },
+        { "name": "Thunder-Wielding", "count": 1, "image": "img/builds/souljades/Thunder-Wielding.png" },
+        { "name": "Poison-Wielding", "count": 4, "image": "img/builds/souljades/Poison-Wielding.png" }
+        ],
+        "curios": [
+        { "name": "Tideforce Bead", "image": "img/builds/curios/3.0/TideforceBead.png", "description": "Activating a number of Elemental Bursts will summon Water Spears dealing 5400% of your Attack.", "awakening": "Number of Elemental Bursts required reduced to 3." },
+        { "name": "Prevailing Robe", "image": "img/builds/curios/3.0/PrevailingRobe.png", "description": "When Armor goes below 30%, repair 60% of max Armor over 3s with a 10s cooldown.", "awakening": "Gain +15% DMG Bonus while Armor is full." }
+        ],
+        "curioAttributes": {
+        "yang": ["Weapon DMG Bonus", "Attack", "DMG to Bosses", "Elemental Accumulation Rate"],
+        "yin": ["DMG Reduction", "Boss DMG Reduction", "Armor", "Luck"]
+        },
+        "description": "Hitting missiles from your Swarm weapon will build Deadeye. Once full, unlocks a special Deadeye attack called Celestial Patrol Order that shoots a salvo of missiles into the sky landing on an enemy nearby for massive damage. You use this attack by fully charging the Swarm before releasing. While in Deadeye, your current charge is conserved while dodging. Swarm's counterstrikes deal great damage and build a large amount of Deadeye, so aim for them when possible.",
+        "recommendedHeroes": ["Tianhai", "Wuchen"],
+        "difficulty": { "skillFloor": 2.5, "skillCeiling": 3.5 },
+        "power": { "singleTarget": 4.5, "multiTarget": 2 }
+    },
+    {
         "name": "Kylin • Thunder Surge",
         "souljades": [
         { "name": "Thunderpull", "type": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+20% Attack and successful attacks will build Thundershock on yourself." },
