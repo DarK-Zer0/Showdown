@@ -63,7 +63,7 @@
         "description": "Your attacks will build Thundershock on you overtime. When your Thundershock meter fills, 4 bolts of Divine Thunder will land on you, which you can parry. By implementing dodge cancels, you can apply Scorching up to twice, which does a massive Burn dealing 5400% of your Attack as Burn DMG over 18 seconds to your weapon attacks. Dodge near an enemy will hit them with Draco Stride, which will apply Soak. When an enemy is Burning and Soaked, Hydroflare will activate, dealing the remaining Burn damage instantly.",
         "recommendedHeroes": ["All Heroes"],
         "difficulty": { "skillFloor": 4, "skillCeiling": 5 },
-        "power": { "singleTarget": 5, "multiTarget": 4 }   
+        "power": { "singleTarget": 5, "multiTarget": 3.5 }   
     },
     {
         "name": "Ice Surge",
@@ -160,7 +160,7 @@
         "description": "Hitting missiles from your Swarm weapon will build Deadeye. Once full, unlocks a special Deadeye attack called Celestial Patrol Order that shoots a salvo of missiles into the sky landing on an enemy nearby for 6000% of your Attack as Charged Ranged Weapon DMG. You use this attack by fully charging the Swarm before releasing. While in Deadeye, your current charge is conserved while dodging. Swarm's counterstrikes deal great damage and build a large amount of Deadeye, so aim for them when possible.",
         "recommendedHeroes": ["Tianhai", "Wuchen"],
         "difficulty": { "skillFloor": 2.5, "skillCeiling": 3.5 },
-        "power": { "singleTarget": 4.5, "multiTarget": 2 }
+        "power": { "singleTarget": 4.5, "multiTarget": 2.5 }
     },
     {
         "name": "Kylin • Thunder Surge",
