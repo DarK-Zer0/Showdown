@@ -33,6 +33,39 @@
         "power": { "singleTarget": 5, "multiTarget": 3.5 }   
     },
     {
+        "name": "Thunder Scorch",
+        "souljades": [
+        { "name": "Thunderpull", "type": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+20% Attack and successful attacks will build Thundershock on yourself." },
+        { "name": "Thunder Counter", "type": "nightscream", "image": "img/builds/souljades/Rectangle_Gold.png", "description": "Enables the ability to parry Divine Thunder strikes." },
+        { "name": "Thunderproof", "type": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "+12% Attack bonus and +55% Divine Thunder DMG bonus. When Thundershock is full, will activate Thunder Surge." },
+        { "name": "Draco Stride", "type": "normal", "image": "img/builds/souljades/Diagonal_Gold.png", "description": "Dodges will summon a wave 0.5s after, applying Soak to enemies hit." },
+        { "name": "Incineration", "type": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+25% Attack for 10s after activating Hydroflare." },
+        { "name": "Copper Ward", "type": "hard", "image": "img/builds/souljades/Rectangle_Purple.png", "description": "+40% Health, but removes all Armor." }
+        ],
+        "souljadeAttributes": {
+        "target": ["x4 [Scorching]", "x8 [Windfall]", "x6 Health", "x6 Attack"],
+        "placeholder": ["DMG to Bosses, Counter Recovery, or Rage/DMG"]
+        },
+        "potentialPlan": { "image": "img/builds/trees/4.0/ThunderScorch.png", "alt": "Thunder Scorch Potential Plan" },
+        "wieldingTypes": [
+        { "name": "Ice-Wielding", "count": 3, "image": "img/builds/souljades/Ice-Wielding.png" },
+        { "name": "Thunder-Wielding", "count": 1, "image": "img/builds/souljades/Thunder-Wielding.png" },
+        { "name": "Poison-Wielding", "count": 2, "image": "img/builds/souljades/Poison-Wielding.png" }
+        ],
+        "curios": [
+        { "name": "Tideforce Bead", "image": "img/builds/curios/3.0/TideforceBead.png", "description": "Activating a number of Elemental Bursts will summon Water Spears dealing 5400% of your Attack.", "awakening": "Number of Elemental Bursts required reduced to 3." },
+        { "name": "Verve Banner", "image": "img/builds/curios/3.0/VerveBanner.png", "description": "While in Element Surge state, weapon attacks are granted +60% Rage/DMG & +10% Life steal.", "awakening": "While in Element Surge state, all attacks are granted +60% Rage/DMG & 10% Life steal." }
+        ],
+        "curioAttributes": {
+        "yang": ["Attack", "DMG to Bosses", "Elemental Accumulation Rate", "Weapon DMG Bonus"],
+        "yin": ["Health", "Rage/DMG Taken", "Armor", "Luck"]
+        },
+        "description": "Your attacks will build Thundershock on you overtime. When your Thundershock meter fills, 4 bolts of Divine Thunder will land on you, which you can parry. By implementing dodge cancels, you can apply Scorching up to twice, which does a massive Burn dealing 5400% of your Attack as Burn DMG over 18 seconds to your weapon attacks. Dodge near an enemy will hit them with Draco Stride, which will apply Soak. When an enemy is Burning and Soaked, Hydroflare will activate, dealing the remaining Burn damage instantly.",
+        "recommendedHeroes": ["All Heroes"],
+        "difficulty": { "skillFloor": 4, "skillCeiling": 5 },
+        "power": { "singleTarget": 5, "multiTarget": 4 }   
+    },
+    {
         "name": "Ice Surge",
         "souljades": [
         { "name": "Successive Ice Blast", "type": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "Ice Blasts will occur 3 times in succession for a total of 685% of your Attack." },
