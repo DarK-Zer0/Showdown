@@ -618,7 +618,8 @@ img.potential-plan {
         max-width: 66%;
     }
     .portrait {
-        width: 20rem;
+        width: 20em;
+        height: 12em;
     }
 }
 
