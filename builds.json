@@ -1,6 +1,7 @@
 [
     {
         "name": "Thunder Scorch Surge",
+        "type": "burn",
         "souljades": [
         { "name": "Thunderpull", "type": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+20% Attack and successful attacks will build Thundershock on yourself." },
         { "name": "Thunder Counter", "type": "nightscream", "image": "img/builds/souljades/Rectangle_Gold.png", "description": "Enables the ability to parry Divine Thunder strikes." },
@@ -34,6 +35,7 @@
     },
     {
         "name": "Thunder Scorch",
+        "type": "burn",
         "souljades": [
         { "name": "Thunderpull", "type": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+20% Attack and successful attacks will build Thundershock on yourself." },
         { "name": "Thunder Counter", "type": "nightscream", "image": "img/builds/souljades/Rectangle_Gold.png", "description": "Enables the ability to parry Divine Thunder strikes." },
@@ -67,6 +69,7 @@
     },
     {
         "name": "Ice Surge",
+        "type": "ice",
         "souljades": [
         { "name": "Successive Ice Blast", "type": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "Ice Blasts will occur 3 times in succession for a total of 685% of your Attack." },
         { "name": "Frozen Blast", "type": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+35% Ice Blast DMG and reduces Ice Blast cooldown to 4 seconds." },
@@ -92,12 +95,13 @@
         "yin": ["Rage/DMG Taken", "Health", "Armor", "Luck"]
         },
         "description": "Attacks will accumulate Frostbite on enemies, causing Ice Blasts. After 2 Ice Blasts, your Frostbite will fill, activating Frost Surge. During Frost Surge, using a Skill will summon an Ice Thorn that deals 910% of your Attack as Ice Blast DMG on a 4 second cooldown. After 15 Ice Blasts, your next uncharged melee attack will trigger Chain Crush, dealing 3290% of your Attack as Ice Blast DMG.",
-        "recommendedHeroes": ["Viper Ning", "Feria Shen", "Tianhai", "Tarka Ji", "Valda Cui", "Matari", "Yueshan", "Tessa", "Ziping Ying", "Justina Gu", "Akos Hu"],
+        "recommendedHeroes": ["Viper Ning, Feria Shen, Tianhai, Tarka Ji, Valda Cui, Matari, Yueshan, Tessa, Ziping Ying, Justina Gu", "Akos Hu"],
         "difficulty": { "skillFloor": 3, "skillCeiling": 4 },
-        "power": { "singleTarget": 3.5, "multiTarget": 4.5 }
+        "power": { "singleTarget": 4, "multiTarget": 4.5 }
     },
     {
         "name": "Bow • Poison Surge",
+        "type": "poison",
         "souljades": [
         { "name": "Scattershot Enhance", "type": "topaz", "image": "img/builds/souljades/Circle_Purple.png", "description": "Bow will fire 5 arrows instead of 3, increasing its spread, damage and Deadeye charge." },
         { "name": "Toxic Arrows", "type": "topaz", "image": "img/builds/souljades/Arrowhead_Gold.png", "description": "Bow's Stage 2 Charged Attacks will explode for more damage and Deadeye charge." },
@@ -125,12 +129,13 @@
         "yin": ["DMG Reduction", "Boss DMG Reduction", "Armor", "Luck"]
         },
         "description": "Deal massive damage by using the Stage 2 Charged Attack of your Bow. Perfectly timing the release of the charge, while Deadeye is active, will cast Void Destroyer, a massive 3-part attack that only consumes 1 ammo. Beware, this build will leave you at 1 Health, so you'll mainly rely on your Armor to survive any hits.<br><br>Reaching ~8.5% Deadeye build rate will allow you to activate Deadeye with just 3 Stage 2 Charged Attacks instead of 4. 30.5%+ Deadeye build rate will allow you to activate Deadeye in 2 Stage 2 Charged Attacks if they're headshots. 43.9%+ Deadeye build rate will allow you to activate Deadeye in 2 Stage 2 Charged Attacks as long as one is a headshot.",
-        "recommendedHeroes": ["Temulch", "Tessa", "Justina Gu"],
+        "recommendedHeroes": ["Temulch, Tessa", "Justina Gu"],
         "difficulty": { "skillFloor": 2, "skillCeiling": 3.5 },
-        "power": { "singleTarget": 4.5, "multiTarget": 1 }
+        "power": { "singleTarget": 4.5, "multiTarget": 2.5 }
     },
     {
         "name": "Swarm • Poison Surge",
+        "type": "poison",
         "souljades": [
         { "name": "Element Surge • Poison-Wielding", "type": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "+20% Attack bonus and +25% Poison Blast DMG bonus. Toxin Surge doesn't activate normally with this build." },
         { "name": "Pestilent Pool", "type": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "Poison Blasts summon Toxic Pools applying up to 2 Toxified Stacks to enemies within." },
@@ -160,10 +165,11 @@
         "description": "Hitting missiles from your Swarm weapon will build Deadeye. Once full, unlocks a special Deadeye attack called Celestial Patrol Order that shoots a salvo of missiles into the sky landing on an enemy nearby for 6000% of your Attack as Charged Ranged Weapon DMG. You use this attack by fully charging the Swarm before releasing. While in Deadeye, your current charge is conserved while dodging. Swarm's counterstrikes deal great damage and build a large amount of Deadeye, so aim for them when possible.",
         "recommendedHeroes": ["Tianhai", "Wuchen"],
         "difficulty": { "skillFloor": 2.5, "skillCeiling": 3.5 },
-        "power": { "singleTarget": 4.5, "multiTarget": 2.5 }
+        "power": { "singleTarget": 4, "multiTarget": 2.5 }
     },
     {
         "name": "Kylin • Thunder Surge",
+        "type": "thunder",
         "souljades": [
         { "name": "Thunderpull", "type": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+20% Attack and successful attacks will build Thundershock on yourself." },
         { "name": "Thunder Counter", "type": "nightscream", "image": "img/builds/souljades/Rectangle_Gold.png", "description": "Enables the ability to parry Divine Thunder strikes." },

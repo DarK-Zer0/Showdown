@@ -1,2 +1,22 @@
 [
+    {
+        "label": [
+            { "name": "Viper Ning" },
+            { "image": "img/portraits/viper.png" }
+        ],
+        "difficulty": 1.5,
+        "description": "With her long-range attacks and Aegis-shattering skills, this hero can dish out consistent damage to her enemies. Her ultimate skill unleashes a devastating blast that drains the Aegis of multiple foes and restores her own health. She is a balanced hero who can survive and thrive in any combat situation.",
+        "archetype": [ "Aegis DPS", "Health DPS" ],
+        "weapons": [ "Longsword", "Pistol" ]
+    },
+    {
+        "label": [
+            { "name": "Feria Shen" },
+            { "image": "img/portraits/feria.png" }
+        ],
+        "difficulty": 2,
+        "description": "This hero has one of the safest kits while also being able to deal massive Aegis damage. Her Ultimate ability gives her a rapid firing mech that allows her to deal with pesky Green Ghosts and Lightning Towers with ease. It also comes with a cannon mode that hits for a small AoE and can apply a buff to her teammates damage in a radius around her for a short period.",
+        "archetype": [ "Health DPS", "Aegis DPS" ],
+        "weapons": [ "Nunchucks", "Musket" ]
+    }
 ]
