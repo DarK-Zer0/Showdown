@@ -8,7 +8,7 @@
         { "name": "Element Surge • Thunder-Wielding", "type": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "+12% Attack bonus and +55% Divine Thunder DMG bonus. When Thundershock is full, will activate Thunder Surge." },
         { "name": "Thunder Charge", "type": "nightscream", "image": "img/builds/souljades/Diagonal_Gold.png", "description": "During Thunder Surge, everytime you deal 10x your Attack with a Weapon, will summon a strike of Divine Thunder on yourself." },
         { "name": "Draco Stride", "type": "normal", "image": "img/builds/souljades/Diagonal_Gold.png", "description": "Dodges will summon a wave 0.5s after, applying Soak to enemies hit." },
-        { "name": "Incineration", "type": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+25% Attack for 10s after activating Hydroflare." }
+        { "name": "Incineration", "type": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+25% Attack for 10s after activating Hydroflare, but apply a Burn to yourself" }
         ],
         "souljadeAttributes": {
         "target": ["x4 [Scorching]", "x8 [Windfall]", "x6 Health", "x6 Attack"],
@@ -41,7 +41,7 @@
         { "name": "Thunder Counter", "type": "nightscream", "image": "img/builds/souljades/Rectangle_Gold.png", "description": "Enables the ability to parry Divine Thunder strikes." },
         { "name": "Thunderproof", "type": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "+12% Attack bonus and +55% Divine Thunder DMG bonus. When Thundershock is full, will activate Thunder Surge." },
         { "name": "Draco Stride", "type": "normal", "image": "img/builds/souljades/Diagonal_Gold.png", "description": "Dodges will summon a wave 0.5s after, applying Soak to enemies hit." },
-        { "name": "Incineration", "type": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+25% Attack for 10s after activating Hydroflare." },
+        { "name": "Incineration", "type": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+25% Attack for 10s after activating Hydroflare, but apply a Burn to yourself" },
         { "name": "Copper Ward", "type": "hard", "image": "img/builds/souljades/Rectangle_Purple.png", "description": "+40% Health, but removes all Armor." }
         ],
         "souljadeAttributes": {
@@ -50,9 +50,8 @@
         },
         "potentialPlan": { "image": "img/builds/trees/4.0/ThunderScorch.png", "alt": "Thunder Scorch Potential Plan" },
         "wieldingTypes": [
-        { "name": "Ice-Wielding", "count": 3, "image": "img/builds/souljades/Ice-Wielding.png" },
-        { "name": "Thunder-Wielding", "count": 1, "image": "img/builds/souljades/Thunder-Wielding.png" },
-        { "name": "Poison-Wielding", "count": 2, "image": "img/builds/souljades/Poison-Wielding.png" }
+        { "name": "Ice-Wielding", "count": 2, "image": "img/builds/souljades/Ice-Wielding.png" },
+        { "name": "Poison-Wielding", "count": 4, "image": "img/builds/souljades/Poison-Wielding.png" }
         ],
         "curios": [
         { "name": "Tideforce Bead", "image": "img/builds/curios/3.0/TideforceBead.png", "description": "Activating a number of Elemental Bursts will summon Water Spears dealing 5400% of your Attack.", "awakening": "Number of Elemental Bursts required reduced to 3." },
@@ -166,6 +165,39 @@
         "recommendedHeroes": ["Tianhai", "Wuchen"],
         "difficulty": { "skillFloor": 2.5, "skillCeiling": 3.5 },
         "power": { "singleTarget": 4, "multiTarget": 2.5 }
+    },
+    {
+        "name": "Valda • Thunder Scorch",
+        "type": "burn",
+        "souljades": [
+        { "name": "Thunderpull", "type": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+20% Attack and successful attacks will build Thundershock on yourself." },
+        { "name": "Thunder Counter", "type": "nightscream", "image": "img/builds/souljades/Rectangle_Gold.png", "description": "Enables the ability to parry Divine Thunder strikes." },
+        { "name": "Thunderproof", "type": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "+12% Attack bonus and +55% Divine Thunder DMG bonus. When Thundershock is full, will activate Thunder Surge." },
+        { "name": "Ice Bomb", "type": "topaz", "image": "img/builds/souljades/Arrowhead_Gold.png", "description": "Musket shots will deal Frostbite DMG over time, greatly increasing Ice accumulation rate and Deadeye build rate." },
+        { "name": "Incineration", "type": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+25% Attack for 10s after activating Hydroflare, but apply a Burn to yourself." },
+        { "name": "Backfire", "type": "normal", "image": "img/builds/souljades/Triangle_Purple.png", "description": "+20% Attack, but 4% of your damage dealt will be dealt to yourself. Backlash effect disabled when below 25% Health." }
+        ],
+        "souljadeAttributes": {
+        "target": ["x4 [Scorching]", "x4 [Moderation]", "x4 [Windfall]", "x6 Health", "x6 Attack"],
+        "placeholder": ["DMG to Bosses, Counter Recovery, or Rage/DMG"]
+        },
+        "potentialPlan": { "image": "img/builds/trees/4.0/ThunderScorch.png", "alt": "Thunder Scorch Potential Plan" },
+        "wieldingTypes": [
+        { "name": "Ice-Wielding", "count": 2, "image": "img/builds/souljades/Ice-Wielding.png" },
+        { "name": "Poison-Wielding", "count": 4, "image": "img/builds/souljades/Poison-Wielding.png" }
+        ],
+        "curios": [
+        { "name": "Sea Leveler", "image": "img/builds/curios/3.0/ValdaCui.png", "description": "Nezha's Might will apply a major Burn per hit.", "awakening": "Nezha's Might summons fireballs in front of you dealing Hit damage and Burn damage." },
+        { "name": "Verve Banner", "image": "img/builds/curios/3.0/VerveBanner.png", "description": "While in Element Surge state, weapon attacks are granted +60% Rage/DMG & +10% Life steal.", "awakening": "While in Element Surge state, all attacks are granted +60% Rage/DMG & 10% Life steal." }
+        ],
+        "curioAttributes": {
+        "yang": ["Attack", "DMG to Bosses", "Elemental Accumulation Rate", "Weapon DMG Bonus"],
+        "yin": ["Health", "Rage/DMG Taken", "Armor", "Luck"]
+        },
+        "description": "Your attacks will build Thundershock on you overtime. When your Thundershock meter fills, 4 strikes Divine Thunder will land on you, in which you can parry. Valda's ability applies a unique version of Soak that doesn't expire early from Hydroflare. By combining this with a Musket shot before Divine Thunder activates, you can activate up to 4 full Scorchings in quick succession, dealing massive damage.",
+        "recommendedHeroes": ["Valda Cui"],
+        "difficulty": { "skillFloor": 3, "skillCeiling": 4 },
+        "power": { "singleTarget": 5, "multiTarget": 4 }   
     },
     {
         "name": "Kylin • Thunder Surge",
