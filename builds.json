@@ -130,7 +130,7 @@
         "description": "Deal massive damage by using the Stage 2 Charged Attack of your Bow. Perfectly timing the release of the charge, while Deadeye is active, will cast Void Destroyer, a massive 3-part attack that only consumes 1 ammo. Beware, this build will leave you at 1 Health, so you'll mainly rely on your Armor to survive any hits.<br><br>Reaching ~8.5% Deadeye build rate will allow you to activate Deadeye with just 3 Stage 2 Charged Attacks instead of 4. 30.5%+ Deadeye build rate will allow you to activate Deadeye in 2 Stage 2 Charged Attacks if they're headshots. 43.9%+ Deadeye build rate will allow you to activate Deadeye in 2 Stage 2 Charged Attacks as long as one is a headshot.",
         "recommendedHeroes": ["Temulch, Tessa", "Justina Gu"],
         "difficulty": { "skillFloor": 2, "skillCeiling": 3.5 },
-        "power": { "singleTarget": 4.5, "multiTarget": 2.5 }
+        "power": { "singleTarget": 5, "multiTarget": 2.5 }
     },
     {
         "name": "Swarm • Poison Surge",
@@ -164,7 +164,7 @@
         "description": "Hitting missiles from your Swarm weapon will build Deadeye. Once full, unlocks a special Deadeye attack called Celestial Patrol Order that shoots a salvo of missiles into the sky landing on an enemy nearby for 6000% of your Attack as Charged Ranged Weapon DMG. You use this attack by fully charging the Swarm before releasing. While in Deadeye, your current charge is conserved while dodging. Swarm's counterstrikes deal great damage and build a large amount of Deadeye, so aim for them when possible.",
         "recommendedHeroes": ["Tianhai", "Wuchen"],
         "difficulty": { "skillFloor": 2.5, "skillCeiling": 3.5 },
-        "power": { "singleTarget": 4, "multiTarget": 2.5 }
+        "power": { "singleTarget": 4, "multiTarget": 2 }
     },
     {
         "name": "Valda • Thunder Scorch",
