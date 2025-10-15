@@ -28,7 +28,7 @@
         "yang": ["Attack", "DMG to Bosses", "Elemental Accumulation Rate", "Weapon DMG Bonus"],
         "yin": ["Health", "Rage/DMG Taken", "Armor", "Luck"]
         },
-        "description": "Your attacks will build Thundershock on you overtime. When your Thundershock meter fills, Thunder Surge will activate, sending a single bolt of Divine Thunder onto you. You can parry this bolt to activate Scorching, which will apply a massive Burn dealing 5400% of your Attack as Burn DMG over 18 seconds to your next weapon attack. Dodge near an enemy will hit them with Draco Stride, which will apply Soak. When an enemy is Burning and Soaked, Hydroflare will activate, dealing the remaining Burn damage instantly.",
+        "description": "Your attacks will build Thundershock on you overtime. When your Thundershock meter fills, Thunder Surge will activate, sending a single bolt of Divine Thunder onto you. You can parry this bolt to activate Scorching, which will apply a massive Burn dealing 5400% of your Attack as Burn DMG over 18 seconds to your next weapon attack. When an enemy is Burning and Soaked, Hydroflare will activate, dealing the remaining Burn damage instantly. You can apply Soak by either dodging near an enemy to hit them with Draco Stride or by activating an Elemental Burst.",
         "recommendedHeroes": ["All Heroes"],
         "difficulty": { "skillFloor": 3.5, "skillCeiling": 4.5 },
         "power": { "singleTarget": 5, "multiTarget": 3.5 }   
@@ -61,7 +61,7 @@
         "yang": ["Attack", "DMG to Bosses", "Elemental Accumulation Rate", "Weapon DMG Bonus"],
         "yin": ["Health", "Rage/DMG Taken", "Armor", "Luck"]
         },
-        "description": "Your attacks will build Thundershock on you overtime. When your Thundershock meter fills, 4 bolts of Divine Thunder will land on you, which you can parry. By implementing dodge cancels, you can apply Scorching up to twice, which does a massive Burn dealing 5400% of your Attack as Burn DMG over 18 seconds to your weapon attacks. Dodge near an enemy will hit them with Draco Stride, which will apply Soak. When an enemy is Burning and Soaked, Hydroflare will activate, dealing the remaining Burn damage instantly.",
+        "description": "Your attacks will build Thundershock on you overtime. When your Thundershock meter fills, 4 bolts of Divine Thunder will land on you, which you can parry. By implementing dodge cancels, you can apply Scorching up to twice, which does a massive Burn dealing 5400% of your Attack as Burn DMG over 18 seconds to your weapon attacks. When an enemy is Burning and Soaked, Hydroflare will activate, dealing the remaining Burn damage instantly. You can apply Soak by either dodging near an enemy to hit them with Draco Stride or by activating an Elemental Burst.",
         "recommendedHeroes": ["All Heroes"],
         "difficulty": { "skillFloor": 4, "skillCeiling": 5 },
         "power": { "singleTarget": 5, "multiTarget": 3.5 }   
