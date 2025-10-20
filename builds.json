@@ -214,7 +214,7 @@
         "target": ["x6 [Windfall]", "x6 DMG to Bosses", "x6 Ranged Weapon Damage", "x6 Attack"],
         "placeholder": ["Deadeye build rate"]
         },
-        "potentialPlan": { "image": "img/builds/trees/4.0/SwarmPoisonSurge.png", "alt": "Poison Surge Swarm Potential Plan" },
+        "potentialPlan": { "image": "img/builds/trees/4.0/BowPoisonSurge.png", "alt": "Poison Surge Swarm Potential Plan" },
         "wieldingTypes": [
         { "name": "Ice-Wielding", "count": 1, "image": "img/builds/souljades/Ice-Wielding.png" },
         { "name": "Thunder-Wielding", "count": 1, "image": "img/builds/souljades/Thunder-Wielding.png" },
