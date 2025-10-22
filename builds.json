@@ -99,6 +99,39 @@
         "power": { "singleTarget": 5, "multiTarget": 4 }   
     },
     {
+        "name": "Scorch Skill Surge",
+        "type": "burn",
+        "souljades": [
+        { "name": "Thunderpull", "type": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+20% Attack and successful attacks will build Thundershock on yourself." },
+        { "name": "Thunder Counter", "type": "nightscream", "image": "img/builds/souljades/Rectangle_Gold.png", "description": "Enables the ability to parry Divine Thunder strikes." },
+        { "name": "Element Surge • Ice-Wielding", "type": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "+15% Attack bonus and +50% Frostbite Accumulation on enemies." },
+        { "name": "Draco Stride", "type": "normal", "image": "img/builds/souljades/Diagonal_Gold.png", "description": "Dodges will summon a wave 0.5s after, applying Soak to enemies hit." },
+        { "name": "Incineration", "type": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+25% Attack for 10s after activating Hydroflare, but apply a Burn to yourself" },
+        { "name": "Thunderproof", "type": "hard", "image": "img/builds/souljades/Rectangle_Purple.png", "description": "Reduces your max Thundershock by 25% and Divine Thunder will no longer stagger you." }
+        ],
+        "souljadeAttributes": {
+        "target": ["x4 [Scorching]", "x4 [Moderation]", "x4 [Windfall]", "x6 Health", "x6 Attack"],
+        "placeholder": ["DMG to Bosses, Counter Recovery, & Rage/DMG"]
+        },
+        "potentialPlan": { "image": "img/builds/trees/4.0/ThunderScorch.png", "alt": "Scorch Skill Surge Potential Plan" },
+        "wieldingTypes": [
+        { "name": "Ice-Wielding", "count": 3, "image": "img/builds/souljades/Ice-Wielding.png" },
+        { "name": "Poison-Wielding", "count": 3, "image": "img/builds/souljades/Poison-Wielding.png" }
+        ],
+        "curios": [
+        { "name": "Tideforce Bead", "image": "img/builds/curios/3.0/TideforceBead.png", "description": "Activating a number of Elemental Bursts will summon Water Spears dealing 5400% of your Attack.", "awakening": "Number of Elemental Bursts required reduced to 3." },
+        { "name": "Verve Banner", "image": "img/builds/curios/3.0/VerveBanner.png", "description": "While in Element Surge state, weapon attacks are granted +60% Rage/DMG & +10% Life steal.", "awakening": "While in Element Surge state, all attacks are granted +60% Rage/DMG & 10% Life steal." }
+        ],
+        "curioAttributes": {
+        "yang": ["Attack", "DMG to Bosses", "Elemental Accumulation Rate", "Weapon DMG Bonus"],
+        "yin": ["Health", "Rage/DMG Taken", "Armor", "Luck"]
+        },
+        "description": "Your attacks will build Thundershock on you overtime. Damaging Skills and Ultimates will build large amounts of Thundershock. When your Thundershock meter fills, Divine Thunder will activate, sending four thunderbolts down on you. You can parry these bolts to activate Scorching, which will apply a massive Burn dealing 5400% of your Attack as Burn DMG over 18 seconds to your next weapon attack. When an enemy is Burning and Soaked, Hydroflare will activate, dealing the remaining Burn damage instantly. You can apply Soak by either dodging near an enemy to hit them with Draco Stride or by activating an Elemental Burst.",
+        "recommendedHeroes": ["Viper Ning, Feria Shen, Tianhai, Tarka Ji, Valda Cui, Matari, Yueshan, Tessa, Ziping Ying, Justina Gu", "Akos Hu"],
+        "difficulty": { "skillFloor": 3, "skillCeiling": 4.5 },
+        "power": { "singleTarget": 4.5, "multiTarget": 4 }   
+    },
+    {
         "name": "Thunder Scorch Surge",
         "type": "burn",
         "souljades": [
