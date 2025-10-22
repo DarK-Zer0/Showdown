@@ -263,7 +263,7 @@
         },
         "description": "Hitting missiles from your Swarm weapon will build Deadeye. Once full, unlocks a special Deadeye attack called Celestial Patrol Order that shoots a salvo of missiles into the sky landing on an enemy nearby for 6000% of your Attack as Charged Ranged Weapon DMG. You use this attack by fully charging the Swarm before releasing. While in Deadeye, your current charge is conserved while dodging. Swarm's counterstrikes deal great damage and build a large amount of Deadeye, so aim for them when possible.",
         "recommendedHeroes": ["Tianhai", "Wuchen"],
-        "difficulty": { "skillFloor": 2.5, "skillCeiling": 3.5 },
-        "power": { "singleTarget": 4, "multiTarget": 2 }
+        "difficulty": { "skillFloor": 2.5, "skillCeiling": 4 },
+        "power": { "singleTarget": 3, "multiTarget": 1.5 }
     }
 ]
