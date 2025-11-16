@@ -850,3 +850,46 @@ table.changelog {
         max-width: 90vw;
     }
 }
+
+/* Table of Contents Styling */
+.toc-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border: 1px solid #444;
+}
+
+.toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 0.5rem;
+}
+
+.toc-item {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.toc-link {
+    text-decoration: none;
+    color: inherit;
+    padding: 1rem 0.5rem;
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    transition: background 0.2s, transform 0.1s;
+    font-weight: 500;
+}
+
+.toc-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
