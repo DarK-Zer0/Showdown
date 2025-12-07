@@ -212,7 +212,7 @@
         ],
         "souljadeAttributes": {
         "target": ["x4 [Scorching]", "x9 [Windfall]", "x7 Health", "x7 Attack"],
-        "placeholder": ["DMG to Bosses, Counter Recovery, or Rage/DMG"]
+        "placeholder": ["DMG to Bosses", "Counter Recovery", "Rage/DMG"]
         },
         "potentialPlan": { "image": "img/builds/trees/4.0/ThunderScorch.png", "alt": "Thunder Scorch Potential Plan" },
         "wieldingTypes": [
