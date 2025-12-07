@@ -11,8 +11,8 @@
         { "name": "Frostbite Chain", "type": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "After 15 instances of Ice Blasts, your next uncharged melee attack will activate Chain Crush, dealing 3290% of your Attack." }
         ],
         "souljadeAttributes": {
-        "target": ["x4 [Moderation]", "x8 [Windfall]", "x6 Attack", "x6 Ice Blast DMG"],
-        "placeholder": ["DMG to Bosses & Melee Weapon Damage"]
+        "target": ["x4 [Moderation]", "x9 [Windfall]", "x7 Attack", "x7 Ice Blast DMG", "x1 DMG to Bosses"],
+        "placeholder": ["DMG to Bosses", "Melee Weapon Damage"]
         },
         "potentialPlan": { "image": "img/builds/trees/4.0/IceSurge.png", "alt": "Ice Surge Potential Plan" },
         "wieldingTypes": [
@@ -27,7 +27,7 @@
         "yin": ["Rage/DMG Taken", "Health", "Armor", "Luck"]
         },
         "description": "Attacks will accumulate Frostbite on enemies, causing Ice Blasts. After 2 Ice Blasts, your Frostbite will fill, activating Frost Surge. During Frost Surge, using a Skill will summon an Ice Thorn that deals 910% of your Attack as Ice Blast DMG on a 4 second cooldown. After 15 Ice Blasts, your next uncharged melee attack will trigger Chain Crush, dealing 3290% of your Attack as Ice Blast DMG.",
-        "recommendedHeroes": ["Viper Ning, Feria Shen, Tianhai, Tarka Ji, Valda Cui, Matari, Yueshan, Tessa, Ziping Ying, Justina Gu", "Akos Hu"],
+        "recommendedHeroes": ["Viper Ning", "Feria Shen", "Tianhai", "Tarka Ji", "Valda Cui", "Matari", "Yueshan", "Tessa", "Ziping Ying", "Justina Gu", "Akos Hu"],
         "difficulty": { "skillFloor": 3, "skillCeiling": 4 },
         "power": { "singleTarget": 4, "multiTarget": 4.5 }
     },
@@ -36,15 +36,15 @@
         "type": "poison",
         "souljades": [
         { "name": "Scattershot Enhance", "type": "topaz", "image": "img/builds/souljades/Circle_Purple.png", "description": "Bow will fire 5 arrows instead of 3, increasing its spread, damage and Deadeye charge." },
-        { "name": "Toxic Arrows", "type": "topaz", "image": "img/builds/souljades/Arrowhead_Gold.png", "description": "Bow's Stage 2 Charged Attacks will explode for more damage and Deadeye charge." },
+        { "name": "Desperation", "type": "nightscream", "image": "img/builds/souljades/Flower_Gold.png", "description": "Bow's Stage 2 Charged Attacks will explode for more damage and Deadeye charge." },
         { "name": "Element Surge • Poison-Wielding", "type": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "+20% Attack bonus and +25% Poison Blast DMG bonus. Toxin Surge doesn't activate normally with this build." },
         { "name": "Pestilent Pool", "type": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "Poison Blasts summon Toxic Pools applying up to 2 Toxified Stacks to enemies within." },
         { "name": "Miasma Drive", "type": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+25% Attack for 18s after applying Toxified to an enemy." },
         { "name": "Backfire", "type": "normal", "image": "img/builds/souljades/Triangle_Purple.png", "description": "+20% Attack at the cost of 4% of damage dealt to self." }
         ],
         "souljadeAttributes": {
-        "target": ["x6 [Windfall]", "x6 DMG to Bosses", "x6 Ranged Weapon Damage", "x5 Attack", "x1 Deadeye build rate"],
-        "placeholder": ["Attack & Charged Attack DMG"]
+        "target": ["x7 [Windfall]", "x7 DMG to Bosses", "x7 Ranged Weapon Damage", "x6 Attack", "x1 Deadeye build rate"],
+        "placeholder": ["Attack", "Charged Attack DMG"]
         },
         "potentialPlan": { "image": "img/builds/trees/4.0/BowPoisonSurge.png", "alt": "Poison Surge Bow Potential Plan" },
         "wieldingTypes": [
@@ -61,7 +61,7 @@
         "yin": ["DMG Reduction", "Boss DMG Reduction", "Armor", "Luck"]
         },
         "description": "Deal massive damage by using the Stage 2 Charged Attack of your Bow. Perfectly timing the release of the charge, while Deadeye is active, will cast Void Destroyer, a massive 3-part attack that only consumes 1 ammo. Beware, this build will leave you at 1 Health, so you'll mainly rely on your Armor to survive any hits.<br><br>Reaching ~8.5% Deadeye build rate will allow you to activate Deadeye with just 3 Stage 2 Charged Attacks instead of 4. 30.5%+ Deadeye build rate will allow you to activate Deadeye in 2 Stage 2 Charged Attacks if they're headshots. 43.9%+ Deadeye build rate will allow you to activate Deadeye in 2 Stage 2 Charged Attacks as long as one is a headshot.",
-        "recommendedHeroes": ["Temulch, Tessa", "Justina Gu"],
+        "recommendedHeroes": ["Temulch", "Tessa", "Justina Gu"],
         "difficulty": { "skillFloor": 2, "skillCeiling": 3.5 },
         "power": { "singleTarget": 5, "multiTarget": 2.5 }
     },
@@ -72,13 +72,13 @@
         { "name": "Thunderpull", "type": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+20% Attack and successful attacks will build Thundershock on yourself." },
         { "name": "Thunder Counter", "type": "nightscream", "image": "img/builds/souljades/Rectangle_Gold.png", "description": "Enables the ability to parry Divine Thunder strikes." },
         { "name": "Thunderproof", "type": "hard", "image": "img/builds/souljades/Rectangle_Purple.png", "description": "Reduces your max Thundershock by 25% and Divine Thunder will no longer stagger you." },
-        { "name": "Ice Bomb", "type": "topaz", "image": "img/builds/souljades/Arrowhead_Gold.png", "description": "Musket shots will deal Frostbite DMG over time, greatly increasing Ice accumulation rate and Deadeye build rate." },
+        { "name": "Element Surge • Poison-Wielding", "type": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "Musket shots will deal Frostbite DMG over time, greatly increasing Ice accumulation rate and Deadeye build rate." },
         { "name": "Incineration", "type": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+25% Attack for 10s after activating Hydroflare, but apply a Burn to yourself." },
         { "name": "Backfire", "type": "normal", "image": "img/builds/souljades/Triangle_Purple.png", "description": "+20% Attack, but 4% of your damage dealt will be dealt to yourself. Backlash effect disabled when below 25% Health." }
         ],
         "souljadeAttributes": {
-        "target": ["x4 [Scorching]", "x4 [Moderation]", "x4 [Windfall]", "x6 Health", "x6 Attack"],
-        "placeholder": ["DMG to Bosses, Counter Recovery, or Rage/DMG"]
+        "target": ["x4 [Scorching]", "x4 [Moderation]", "x5 [Windfall]", "x7 Health", "x7 Attack"],
+        "placeholder": ["DMG to Bosses", "Counter Recovery", "Rage/DMG"]
         },
         "potentialPlan": { "image": "img/builds/trees/4.0/ThunderScorch.png", "alt": "Thunder Scorch Potential Plan" },
         "wieldingTypes": [
@@ -110,8 +110,8 @@
         { "name": "Thunderproof", "type": "hard", "image": "img/builds/souljades/Rectangle_Purple.png", "description": "Reduces your max Thundershock by 25% and Divine Thunder will no longer stagger you." }
         ],
         "souljadeAttributes": {
-        "target": ["x4 [Scorching]", "x4 [Moderation]", "x4 [Windfall]", "x6 Health", "x6 Attack"],
-        "placeholder": ["DMG to Bosses, Counter Recovery, & Rage/DMG"]
+        "target": ["x4 [Scorching]", "x4 [Moderation]", "x5 [Windfall]", "x7 Health", "x7 Attack"],
+        "placeholder": ["DMG to Bosses", "Counter Recovery",  "Rage/DMG"]
         },
         "potentialPlan": { "image": "img/builds/trees/4.0/ThunderScorch.png", "alt": "Scorch Skill Surge Potential Plan" },
         "wieldingTypes": [
@@ -127,7 +127,7 @@
         "yin": ["Health", "Rage/DMG Taken", "Armor", "Luck"]
         },
         "description": "Your attacks will build Thundershock on you overtime. Damaging Skills and Ultimates will build large amounts of Thundershock. When your Thundershock meter fills, Divine Thunder will activate, sending four thunderbolts down on you. You can parry these bolts to activate Scorching, which will apply a massive Burn dealing 5400% of your Attack as Burn DMG over 18 seconds to your next weapon attack. When an enemy is Burning and Soaked, Hydroflare will activate, dealing the remaining Burn damage instantly. You can apply Soak by either dodging near an enemy to hit them with Draco Stride or by activating an Elemental Burst.",
-        "recommendedHeroes": ["Viper Ning, Feria Shen, Tianhai, Tarka Ji, Valda Cui, Matari, Yueshan, Tessa, Ziping Ying, Justina Gu", "Akos Hu"],
+        "recommendedHeroes": ["Viper Ning", "Feria Shen", "Tianhai", "Tarka Ji", "Valda Cui", "Matari", "Yueshan", "Tessa", "Ziping Ying", "Justina Gu", "Akos Hu"],
         "difficulty": { "skillFloor": 3, "skillCeiling": 4.5 },
         "power": { "singleTarget": 4.5, "multiTarget": 4 }   
     },
@@ -143,8 +143,8 @@
         { "name": "Incineration", "type": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+25% Attack for 10s after activating Hydroflare, but apply a Burn to yourself" }
         ],
         "souljadeAttributes": {
-        "target": ["x4 [Scorching]", "x8 [Windfall]", "x6 Health", "x6 Attack"],
-        "placeholder": ["DMG to Bosses, Counter Recovery, & Rage/DMG"]
+        "target": ["x4 [Scorching]", "x9 [Windfall]", "x7 Health", "x7 Attack"],
+        "placeholder": ["DMG to Bosses", "Counter Recovery", "Rage/DMG"]
         },
         "potentialPlan": { "image": "img/builds/trees/4.0/ThunderScorchSurge.png", "alt": "Thunder Scorch Surge Potential Plan" },
         "wieldingTypes": [
@@ -177,7 +177,7 @@
         { "name": "Soul-drawing", "type": "nightscream", "image": "img/builds/souljades/Triangle_Purple.png", "description": "When below 45% of your max Health, heal for 12% of your damage dealt." }
         ],
         "souljadeAttributes": {
-        "target": ["x6 [Windfall]", "x6 Rage/DMG", "x6 Attack", "x6 DMG to Bosses"],
+        "target": ["x7 [Windfall]", "x7 Rage/DMG", "x7 Attack", "x7 DMG to Bosses"],
         "placeholder": ["Melee Weapon Damage"]
         },
         "potentialPlan": { "image": "img/builds/trees/4.0/KylinThunder.png", "alt": "Kylin's Thunder Surge Potential Plan" },
@@ -211,7 +211,7 @@
         { "name": "Copper Ward", "type": "hard", "image": "img/builds/souljades/Rectangle_Purple.png", "description": "+40% Health, but removes all Armor." }
         ],
         "souljadeAttributes": {
-        "target": ["x4 [Scorching]", "x8 [Windfall]", "x6 Health", "x6 Attack"],
+        "target": ["x4 [Scorching]", "x9 [Windfall]", "x7 Health", "x7 Attack"],
         "placeholder": ["DMG to Bosses, Counter Recovery, or Rage/DMG"]
         },
         "potentialPlan": { "image": "img/builds/trees/4.0/ThunderScorch.png", "alt": "Thunder Scorch Potential Plan" },
@@ -244,7 +244,7 @@
         { "name": "Shattered Edge", "type": "hard", "image": "img/builds/souljades/Triangle_Purple.png", "description": "+18% Attack for 10 seconds after you shoot an arrow." }
         ],
         "souljadeAttributes": {
-        "target": ["x6 [Windfall]", "x6 DMG to Bosses", "x6 Ranged Weapon Damage", "x6 Attack"],
+        "target": ["x7 [Windfall]", "x7 DMG to Bosses", "x7 Ranged Weapon Damage", "x7 Attack"],
         "placeholder": ["Deadeye build rate"]
         },
         "potentialPlan": { "image": "img/builds/trees/4.0/BowPoisonSurge.png", "alt": "Poison Surge Swarm Potential Plan" },

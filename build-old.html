@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Showdown Guide</title>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="keywords" content="naraka bladepoint, showdown, campaign, pve, omnious, guide, guides, naraka, souljades, 
+			defuse, aegis, sense, progression, leveling, recasting, converting, conversion, dps, build, builds">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- Primary Meta Tags -->
+		<meta name="title" content="Naraka Bladepoint Showdown Guide">
+		<meta name="description" content="A Guide to Setting Up Builds in Showdown.">
+		<meta name="author" content="xZer0x">
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://dark-zer0.github.io/Showdown/">
+		<meta property="og:title" content="Naraka Bladepoint Showdown Guide">
+		<meta property="og:description" content="A guide designed to help players progress in Naraka's Campaign mode.">
+		<meta property="og:image" content="https://dark-zer0.github.io/Showdown/img/site/banner3.jpg">
+
+		<!-- Twitter / Discord -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://dark-zer0.github.io/Showdown/">
+		<meta property="twitter:title" content="Naraka Bladepoint Showdown Guide">
+		<meta property="twitter:description" content="A guide designed to help player progression in Naraka's Campaign mode.">
+		<meta property="twitter:image" content="https://dark-zer0.github.io/Showdown/img/site/banner3.jpg">
+
+        <!-- Website -->
+		<link rel="shortcut icon" type="image/x-icon" href="img/site/icon.png">
+		<link rel="icon" href="img/site/icon.png" type="images" sizes="32x32"> 
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"> 
+		<script src="https://kit.fontawesome.com/6d78549c29.js" crossorigin="anonymous"></script>
+		<link href="styles.css" rel="stylesheet">
+		<script src="src/navbar.js"></script>
+		<script src="src/contents.js"></script>
+    </head>
+	<body>
+		<!-- Navigation Bar -->
+		<div id="navbar"></div>
+		<!-- Load Navigation Bar Script -->
+		<script>
+			fetch('navbar.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('navbar').innerHTML = data;
+				});
+		</script>
+
+		<!-- Title -->
+		<h1 id="title">BUILDS</h1>
+
+		<!-- Table of Contents -->
+		<nav id="toc-container" class="toc-container">
+			<h2>Build Directory</h2>
+			<ul id="toc-list" class="toc-list"></ul>
+		</nav>
+
+		<!-- Return to Top Button -->
+		<button type="button" id="back-to-top" title="Go to top of page">
+			<img src="img/site/uparrow.png" alt="Up arrow">
+		</button>
+		<script src="src/return.js"></script>
+
+		<!-- Page Content -->
+		<div id="content" class="nav3">
+			<div id="div1" class="content" style="display: none;">
+				<p class="center">
+					The following builds are listed with no particular order in mind aside from their main damage source.
+					In terms of damage output, right now Ice builds are at the top, followed by Bow builds. 
+					<br>Difficulty denotes how hard a build to use it effectively, while Power denotes the DPS ceiling in respect to other builds.
+					<br><br><strong><u>Color Coded Names</u></strong>
+					<br>Each Souljade's name will have a color assigned to it 
+					that tells the minimum difficulty of the missions that can drop it (including Nirriti's Ruins).
+					<br><br>White = Commemorative Souljade (buy from the Narakapedia).
+					<br><span style="color:lightskyblue">Light Blue = Normal and above difficulty.</span>
+					<br><span style="color:rgb(180, 1, 180);">Purple = Hard and above difficulty.</span>
+					<br><span style="color:red">Red = Nightscream difficulty.</span>
+					<br><span style="color:chocolate">Brown = Enigma Domain.</span>
+				</p>
+
+				<div id="builds"></div>
+				<div id="error"></div>
+
+				<script>
+					// Function to get image path based on Shape and Rarity
+					function getShapeImage(shape, rarity) {
+						const rarityColor = rarity === 'Legendary' ? 'Gold' : 'Purple';
+						return `img/builds/souljades/${shape}_${rarityColor}.png`;
+					}
+
+					// Function to extract shape from JSON image path
+					function extractShapeFromImage(imagePath) {
+						if (!imagePath) return 'Triangle';
+						const filename = imagePath.split('/').pop();
+						const shape = filename.split('_')[0];
+						return shape || 'Triangle';
+					}
+
+					// Function to normalize difficulty string to the lowest tier
+					function normalizeDifficulty(difficultyString) {
+						if (!difficultyString || difficultyString.trim() === '') return 'Any';
+						
+						// Define difficulty ranking (lowest number = easiest to acquire)
+						const difficultyRank = {
+							'commemorative': 0,
+							'any': 1,
+							'hard': 2,
+							'topaz': 3,
+							'nightscream': 4
+						};
+						
+						// Standardized display names
+						const displayNames = {
+							'commemorative': 'Commemorative',
+							'any': 'Any',
+							'hard': 'Hard',
+							'topaz': 'Topaz',
+							'nightscream': 'Nightscream'
+						};
+						
+						// Parse comma-separated difficulties
+						const difficulties = difficultyString.toLowerCase().split(',').map(d => d.trim());
+						let lowestDifficulty = 'any';
+						let lowestRank = 999;
+						
+						difficulties.forEach(diff => {
+							const rank = difficultyRank[diff];
+							if (rank !== undefined && rank < lowestRank) {
+								lowestRank = rank;
+								lowestDifficulty = diff;
+							}
+						});
+						
+						return displayNames[lowestDifficulty] || 'Any';
+					}
+
+					// Function to map difficulty to CSS class
+					function getDifficultyClass(difficulty) {
+						const normalizedDiff = normalizeDifficulty(difficulty);
+						const difficultyMap = {
+							'Commemorative': 'commemorative',
+							'Any': 'normal',
+							'Hard': 'hard',
+							'Topaz': 'topaz',
+							'Nightscream': 'nightscream'
+						};
+						return difficultyMap[normalizedDiff] || 'normal';
+					}
+
+					// Function to generate star ratings
+					function generateStars(rating, maxStars = 5) {
+						let stars = '';
+						for (let i = 1; i <= maxStars; i++) {
+							if (i <= Math.floor(rating)) {
+								stars += `<img src="img/site/filledstar.png" alt="Filled Star" class="icon">`;
+							} else if (i === Math.ceil(rating) && rating % 1 !== 0) {
+								stars += `<img src="img/site/halffilledstar.png" alt="Half-Filled Star" class="icon">`;
+							} else {
+								stars += `<img src="img/site/unfilledstar.png" alt="Empty Star" class="icon">`;
+							}
+						}
+						return stars;
+					}
+
+					// Parse TSV data into a map for quick lookup
+					function parseTSV(tsvText) {
+						const lines = tsvText.trim().split('\n');
+						if (lines.length < 2) return {};
+						
+						const headers = lines[0].split('\t');
+						
+						// Find column indices - adjust these if your TSV headers differ
+						const nameIndex = headers.findIndex(h => h.toLowerCase().includes('souljade') || h.toLowerCase().includes('name'));
+						const effectIndex = headers.findIndex(h => h.toLowerCase().includes('effect') || h.toLowerCase().includes('description'));
+						const shapeIndex = headers.findIndex(h => h.toLowerCase().includes('shape'));
+						const rarityIndex = headers.findIndex(h => h.toLowerCase().includes('rarity'));
+						const difficultyIndex = headers.findIndex(h => h.toLowerCase().includes('difficulty'));
+						
+						const souljadeMap = {};
+						
+						for (let i = 1; i < lines.length; i++) {
+							const columns = lines[i].split('\t');
+							if (columns.length > nameIndex && columns[nameIndex]) {
+								const name = columns[nameIndex].trim();
+								if (name) {
+									souljadeMap[name] = {
+										effect: effectIndex !== -1 && columns[effectIndex] ? columns[effectIndex].trim() : '',
+										shape: shapeIndex !== -1 && columns[shapeIndex] ? columns[shapeIndex].trim() : '',
+										rarity: rarityIndex !== -1 && columns[rarityIndex] ? columns[rarityIndex].trim() : 'Legendary',
+										difficulty: difficultyIndex !== -1 && columns[difficultyIndex] ? columns[difficultyIndex].trim() : ''
+									};
+								}
+							}
+						}
+						
+						return souljadeMap;
+					}
+
+					// Function to render a single souljade
+					function renderSouljade(souljade, souljadeDataMap) {
+						const tsvData = souljadeDataMap[souljade.name] || {};
+						
+						// Use TSV shape if available, otherwise extract from JSON image path
+						const shape = tsvData.shape || extractShapeFromImage(souljade.image);
+						const rarity = tsvData.rarity || 'Legendary';
+						// Use TSV difficulty if available, otherwise use JSON type, default to 'Any'
+						const difficulty = tsvData.difficulty || souljade.type || 'Any';
+						const description = tsvData.effect || souljade.description || '';
+						
+						const difficultyClass = getDifficultyClass(difficulty);
+						const imagePath = getShapeImage(shape, rarity);
+						
+						return `
+							<div class="souljade toggled-description">
+								<div class="${difficultyClass}">
+									<img src="${imagePath}" alt="${souljade.name}">
+									<br>${souljade.name}
+								</div>
+								<div class="description">${description}</div>
+							</div>
+						`;
+					}
+
+					// Function to render a single build
+					function renderBuild(build, souljadeDataMap) {
+						const anchorId = build.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '');
+						
+						return `
+							<div class="${build.type} build" id="${anchorId}">
+								<h3 class="build-name">${build.name}</h3>
+								<div class="section">
+									<h4 class="section-name">Souljades</h4>
+									<div class="souljades">
+										${build.souljades.map(souljade => 
+											renderSouljade(souljade, souljadeDataMap)
+										).join('')}
+									</div>
+								</div>
+								<div class="attributes section">
+									<p class="label">Souljade Attributes</p>
+									<p class="caption">
+										<strong>Target Attributes</strong><br>${build.souljadeAttributes.target.join('<br>')}
+										<br><br><strong>Placeholder Attribute</strong><br>${build.souljadeAttributes.placeholder.join('<br>')}
+									</p>
+								</div>
+								<div class="potential section">
+									<p class="label">Potential Plan</p>
+									<img src="${build.potentialPlan.image}" alt="${build.potentialPlan.alt}" class="potential-plan">
+								</div>
+								<div class="wielding section">
+									<p class="label">Wielding Type</p>
+									<p class="caption">
+										${build.wieldingTypes.map(wt => `
+											+${wt.count} <img src="${wt.image}" alt="${wt.name}" class="wielding"> ${wt.name}
+											<img src="${wt.image}" alt="${wt.name}" class="wielding">
+										`).join('<br>')}
+									</p>
+								</div>
+								<div class="description section">
+									<p class="label">Description</p>
+									<p class="caption">${build.description}</p>
+								</div>
+								<div class="section">
+									<p class="label">Recommended Heroes</p>
+									<p class="caption">${build.recommendedHeroes.join(' & ')}</p>
+								</div>
+								<div class="difficulty section">
+									<p class="label">Difficulty</p>
+									<p>Skill Floor</p>
+									${generateStars(build.difficulty.skillFloor)}
+									<p>Skill Ceiling</p>
+									${generateStars(build.difficulty.skillCeiling)}
+								</div>
+								<div class="power section">
+									<p class="label">Power</p>
+									<p>Single-Target</p>
+									${generateStars(build.power.singleTarget)}
+									<p>Multi-Target</p>
+									${generateStars(build.power.multiTarget)}
+								</div>
+							</div>
+						`;
+					}
+
+					// Generate Table of Contents
+					function generateTOC(builds) {
+						const tocList = document.getElementById('toc-list');
+						tocList.innerHTML = builds.map(build => {
+							const anchorId = build.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '');
+							const displayName = build.name.replace(/•/g, '-');
+							return `
+								<li class="toc-item ${build.type}">
+									<a href="#${anchorId}" class="toc-link ${build.type}-txt">${displayName}</a>
+								</li>
+							`;
+						}).join('');
+					}
+
+					// Function to fetch and render builds from JSON file
+					async function loadBuilds() {
+						const buildsContainer = document.getElementById('builds');
+						const errorContainer = document.getElementById('error');
+						
+						try {
+							const response = await fetch('builds.json');
+							if (!response.ok) {
+								throw new Error(`Failed to load builds.json: ${response.statusText}`);
+							}
+							const builds = await response.json();
+							
+							let souljadeDataMap = {};
+							try {
+								const tsvResponse = await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vQ1pJNzFcZGVidnY3bAvSiO77YxZTMwgksO-BO7cnNAWoXuOlTYTXqMHbWkpARNn6H4Gr4tuRfSoe4T/pub?gid=2037803523&single=true&output=tsv');
+								if (tsvResponse.ok) {
+									const tsvText = await tsvResponse.text();
+									souljadeDataMap = parseTSV(tsvText);
+								}
+							} catch (tsvError) {
+								console.warn('TSV loading failed:', tsvError.message);
+							}
+							
+							generateTOC(builds);
+							buildsContainer.innerHTML = builds.map(build => 
+								renderBuild(build, souljadeDataMap)
+							).join('');
+							
+							// Add smooth scrolling for TOC links
+							document.querySelectorAll('.toc-link').forEach(link => {
+								link.addEventListener('click', function(e) {
+									e.preventDefault();
+									const targetId = this.getAttribute('href').substring(1);
+									const targetElement = document.getElementById(targetId);
+									if (targetElement) {
+										targetElement.scrollIntoView({ 
+											behavior: 'smooth', 
+											block: 'start' 
+										});
+									}
+								});
+							});
+							
+						} catch (error) {
+							errorContainer.innerHTML = `<p class="error">Error loading builds: ${error.message}</p>`;
+						}
+					}
+
+					document.addEventListener('DOMContentLoaded', loadBuilds);
+				</script>
+			</div>
+		</div>
+
+		<script>
+			// Show/hide description on tap
+			document.addEventListener('click', function(e) {
+				if (e.target.closest('.toggled-description')) {
+					const item = e.target.closest('.toggled-description');
+					document.querySelectorAll('.toggled-description').forEach(el => {
+						if (el !== item) el.classList.remove('show');
+					});
+					item.classList.toggle('show');
+					e.stopPropagation();
+				} else {
+					document.querySelectorAll('.toggled-description').forEach(el => el.classList.remove('show'));
+				}
+			});
+		</script>
+	</body>
+</html>
