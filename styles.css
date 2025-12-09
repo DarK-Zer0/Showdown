@@ -424,6 +424,46 @@ img.potential-plan {
     color: var(--bg-primary);
 }
 
+/* Responsive Adjustments */
+@media (max-width: 530px) {
+    .build-section {
+        margin: 15px 0;
+    }
+    
+    .section-content {
+        padding: 15px;
+    }
+    
+    .attributes-grid {
+        gap: 15px;
+    }
+
+    .potential-plan {
+        max-width: 100% !important;
+        height: auto !important;
+        max-height: none !important;
+        width: 100% !important;
+    }
+
+    .souljade-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+    }
+    
+    .souljade-name {
+        width: 100%;
+        word-break: break-word;
+    }
+
+    .souljade-type {
+        text-align: center;
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+
 /* Page Content Area */
 #content {
     position: relative;
@@ -895,6 +935,9 @@ table.changelog td:nth-child(3) {
 }
 
 .attribute-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: rgba(0, 0, 0, 0.3);
     padding: 20px;
     border-radius: 8px;
@@ -902,6 +945,8 @@ table.changelog td:nth-child(3) {
 }
 
 .attribute-title {
+    text-align: center;
+    width: 100%;
     font-weight: 700;
     margin-bottom: 15px;
     color: var(--hover);
@@ -912,6 +957,8 @@ table.changelog td:nth-child(3) {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center; /* Center align tags */
+    padding: 0 10px;
 }
 
 .attribute-tag {
@@ -943,7 +990,7 @@ table.changelog td:nth-child(3) {
 
 .wielding-item {
     display: flex;
-    align-items: center;
+    align-items: center !important;
     gap: 12px;
     padding: 12px 20px;
     background: rgba(0, 0, 0, 0.3);
@@ -960,6 +1007,11 @@ table.changelog td:nth-child(3) {
 .wielding-icon {
     width: 36px;
     height: 36px;
+    flex-shrink: 0 !important;
+    min-width: 36px;
+    min-height: 36px;
+    font-size: 0.9em !important;
+    line-height: 1;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1103,16 +1155,6 @@ table.changelog td:nth-child(3) {
     border-color: var(--hover);
     box-shadow: 0 -2px 0 var(--hover) inset, 0 2px 4px rgba(0,0,0,0.3);
     transform: none;
-}
-
-.modern-toc .toc-item.active {
-    background: rgba(255, 215, 0, 0.1);
-    border-color: var(--hover);
-    box-shadow: 0 -2px 0 var(--hover) inset;
-}
-
-.modern-toc .toc-item.active .toc-link {
-    color: var(--hover);
 }
 
 .modern-toc .toc-link {

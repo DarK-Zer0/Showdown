@@ -166,6 +166,38 @@
         "power": { "singleTarget": 4.5, "multiTarget": 3.5 }   
     },
     {
+        "name": "Thunder Lotus Mark",
+        "type": "thunder",
+        "souljades": [
+        { "name": "Elemental Lotus", "type": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "Elemental Bursts will summon a Lotus around you for 16s, up to 4 per second." },
+        { "name": "Ghastbloom", "type": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "When your number of Lotus summoned exceeds 4 or expire, summons a Blossom Blast." },
+        { "name": "Defuse • Thunder Charge", "type": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "Defuses and Perfect Dodges will charge a meter. When full, applies a Demonbane Mark to the last enemy you evaded." },
+        { "name": "Thunderbind Spell", "type": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "Demonbane Marks will set the cooldown of Divine Thunder to 0s on the targets they're on." },
+        { "name": "Arcane Stratos", "type": "nightscream", "image": "img/builds/souljades/Diagonal_Gold.png", "description": "Summons a powerful Bolt on the nearest enemy when you use a Hero Skill." },
+        { "name": "Defuse • Solidification", "type": "hard", "image": "img/builds/souljades/Cross_Purple.png", "description": "+20% Attack & +40% Elemental Accumulation Rate for 15s after a Defuse." }
+        ],
+        "souljadeAttributes": {
+        "target": ["x3 [Windfall]", "x4 [Moderation]", "x7 Attack", "x7 DMG to Bosses", "x7 Divine Thunder DMG"],
+        "placeholder": ["DMG to Astral Aegis", "Rage/DMG"]
+        },
+        "potentialPlan": { "image": "img/builds/trees/4.0/ThunderLotusMark.png", "alt": "Thunder Lotus Mark Potential Plan" },
+        "wieldingTypes": [
+        { "name": "Thunder-Wielding", "count": 6, "image": "img/builds/souljades/Thunder-Wielding.png" }
+        ],
+        "curios": [
+        { "name": "Tideforce Bead", "image": "img/builds/curios/3.0/TideforceBead.png", "description": "Activating a number of Elemental Bursts will summon Water Spears dealing 5400% of your Attack.", "awakening": "Number of Elemental Bursts required reduced to 3." },
+        { "name": "Verve Banner", "image": "img/builds/curios/3.0/VerveBanner.png", "description": "While in Element Surge state, weapon attacks are granted +60% Rage/DMG & +10% Life steal.", "awakening": "While in Element Surge state, all attacks are granted +60% Rage/DMG & 10% Life steal." }
+        ],
+        "curioAttributes": {
+        "yang": ["Elemental Accumulation Rate", "Skill DMG Bonus", "Attack", "DMG to Bosses"],
+        "yin": ["Rage/DMG Taken", "DMG Reduction", "Boss DMG Reduction", "Luck"]
+        },
+        "description": "Charge and apply Demonbane Mark by Defusing or Perfect Dodging attacks. Once the mark is applied and you land a Defuse, you can rapidly use your Skill against that enemy.",
+        "recommendedHeroes": ["Justina Gu", "Yueshan"],
+        "difficulty": { "skillFloor": 2, "skillCeiling": 4 },
+        "power": { "singleTarget": 5, "multiTarget": 3 }
+    },
+    {
         "name": "Kylin • Thunder Surge",
         "type": "thunder",
         "souljades": [

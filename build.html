@@ -60,7 +60,7 @@
 
     <!-- Definitions Section -->
     <div id="definitions" class="definitions-section">
-        <h2>Build Ratings Guide</h2>
+        <h2>Glossary</h2>
         <div class="definition-grid">
             <div class="definition-item">
                 <h4>Skill Floor</h4>
@@ -79,6 +79,8 @@
                 <p>Effectiveness against multiple enemies (Mobbing potential)</p>
             </div>
         </div>
+        <p><strong>Normal, Hard, Nightscream</strong> & <strong>Topaz</strong> denote the minimum difficulty required for a Souljade to drop.
+        With Topaz meaning it only drops from Enigma Domain or other missions that can drop all Souljades (i.e. Tempered Inferno • Nightscream).</p>
     </div>
 
     <!-- Table of Contents -->
@@ -393,39 +395,19 @@
                             renderBuild(build, souljadeDataMap, index)
                         ).join('');
 
-                        // Initialize scroll spy
-                        const observer = new IntersectionObserver((entries) => {
-                            entries.forEach(entry => {
-                                if (entry.isIntersecting) {
-                                    const buildId = entry.target.dataset.buildId;
-                                    document.querySelectorAll('.toc-item').forEach(item => item.classList.remove('active'));
-                                    const activeItem = document.querySelector(`[data-index="${buildId}"]`);
-                                    if (activeItem) activeItem.classList.add('active');
+                        // Smooth scrolling for TOC links only
+                        document.querySelectorAll('.toc-link').forEach(link => {
+                            link.addEventListener('click', function(e) {
+                                e.preventDefault();
+                                const targetId = this.getAttribute('href').substring(1);
+                                const targetElement = document.getElementById(targetId);
+                                if (targetElement) {
+                                    targetElement.scrollIntoView({ 
+                                        behavior: 'smooth', 
+                                        block: 'start' 
+                                    });
                                 }
                             });
-                        }, { threshold: 0.3 });
-
-                        document.querySelectorAll('.build-card').forEach(card => {
-                            observer.observe(card);
-                        });
-
-                        // Fade-in animation
-                        const cards = document.querySelectorAll('.build-card');
-                        cards.forEach((card, index) => {
-                            card.style.opacity = '0';
-                            card.style.transform = 'translateY(20px)';
-                            card.style.transition = `opacity 0.5s ease ${index * 0.1}s, transform 0.5s ease ${index * 0.1}s`;
-                            
-                            const cardObserver = new IntersectionObserver((entries) => {
-                                entries.forEach(entry => {
-                                    if (entry.isIntersecting) {
-                                        entry.target.style.opacity = '1';
-                                        entry.target.style.transform = 'translateY(0)';
-                                    }
-                                });
-                            }, { threshold: 0.1 });
-                            
-                            cardObserver.observe(card);
                         });
                         
                     } catch (error) {
