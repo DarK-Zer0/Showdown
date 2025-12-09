@@ -424,46 +424,6 @@ img.potential-plan {
     color: var(--bg-primary);
 }
 
-/* Responsive Adjustments */
-@media (max-width: 530px) {
-    .build-section {
-        margin: 15px 0;
-    }
-    
-    .section-content {
-        padding: 15px;
-    }
-    
-    .attributes-grid {
-        gap: 15px;
-    }
-
-    .potential-plan {
-        max-width: 100% !important;
-        height: auto !important;
-        max-height: none !important;
-        width: 100% !important;
-    }
-
-    .souljade-header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 8px;
-    }
-    
-    .souljade-name {
-        width: 100%;
-        word-break: break-word;
-    }
-
-    .souljade-type {
-        text-align: center;
-        width: 100%;
-        margin-top: 5px;
-    }
-}
-
 /* Page Content Area */
 #content {
     position: relative;
@@ -1537,6 +1497,54 @@ p.archetype, p.weapons {
     
     .attributes-grid {
         grid-template-columns: 1fr;
+    }
+
+
+    .build-section {
+        margin: 15px 0;
+    }
+
+    .build-name {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .build-type-badge {
+        margin-top: 5px;
+    }
+    
+    .section-content {
+        padding: 15px;
+    }
+    
+    .attributes-grid {
+        gap: 15px;
+    }
+
+    .potential-plan {
+        max-width: 100% !important;
+        height: auto !important;
+        max-height: none !important;
+        width: 100% !important;
+    }
+
+    .souljade-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+    }
+    
+    .souljade-name {
+        width: 100%;
+        word-break: break-word;
+    }
+
+    .souljade-type {
+        text-align: center;
+        width: 100%;
+        margin-top: 5px;
     }
 }
 
