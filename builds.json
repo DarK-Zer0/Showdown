@@ -27,7 +27,7 @@
         "yin": ["Rage/DMG Taken", "Health", "Armor", "Luck"]
         },
         "description": "Attacks will accumulate Frostbite on enemies, causing Ice Blasts. After 2 Ice Blasts, your Frostbite will fill, activating Frost Surge. During Frost Surge, using a Skill will summon an Ice Thorn that deals 910% of your Attack as Ice Blast DMG on a 4 second cooldown. After 15 Ice Blasts, your next uncharged melee attack will trigger Chain Crush, dealing 3290% of your Attack as Ice Blast DMG.",
-        "recommendedHeroes": ["Viper Ning", "Feria Shen", "Tianhai", "Tarka Ji", "Valda Cui", "Matari", "Yueshan", "Tessa", "Ziping Ying", "Justina Gu", "Akos Hu"],
+        "recommendedHeroes": ["Viper Ning", "Feria Shen", "Tianhai", "Tarka Ji", "Valda Cui", "Matari", "Yueshan", "Tessa", "Ziping Ying", "Justina Gu", "Akos Hu", "Zai"],
         "difficulty": { "skillFloor": 3, "skillCeiling": 4 },
         "power": { "singleTarget": 4, "multiTarget": 4.5 }
     },
@@ -127,7 +127,7 @@
         "yin": ["Health", "Rage/DMG Taken", "Armor", "Luck"]
         },
         "description": "Your attacks will build Thundershock on you overtime. Damaging Skills and Ultimates will build large amounts of Thundershock. When your Thundershock meter fills, Divine Thunder will activate, sending four thunderbolts down on you. You can parry these bolts to activate Scorching, which will apply a massive Burn dealing 5400% of your Attack as Burn DMG over 18 seconds to your next weapon attack. When an enemy is Burning and Soaked, Hydroflare will activate, dealing the remaining Burn damage instantly. You can apply Soak by either dodging near an enemy to hit them with Draco Stride or by activating an Elemental Burst.",
-        "recommendedHeroes": ["Viper Ning", "Feria Shen", "Tianhai", "Tarka Ji", "Valda Cui", "Matari", "Yueshan", "Tessa", "Ziping Ying", "Justina Gu", "Akos Hu"],
+        "recommendedHeroes": ["Viper Ning", "Feria Shen", "Tianhai", "Tarka Ji", "Valda Cui", "Matari", "Yueshan", "Tessa", "Ziping Ying", "Justina Gu", "Akos Hu", "Zai"],
         "difficulty": { "skillFloor": 3, "skillCeiling": 4.5 },
         "power": { "singleTarget": 4.5, "multiTarget": 4 }   
     },
@@ -193,7 +193,7 @@
         "yin": ["Rage/DMG Taken", "DMG Reduction", "Boss DMG Reduction", "Luck"]
         },
         "description": "Charge and apply Demonbane Mark by Defusing or Perfect Dodging attacks. Once the mark is applied and you land a Defuse, you can rapidly use your Skill against that enemy.",
-        "recommendedHeroes": ["Justina Gu", "Yueshan"],
+        "recommendedHeroes": ["Justina Gu", "Yueshan", "Feria Shen", "Viper Ning", "Zai"],
         "difficulty": { "skillFloor": 2, "skillCeiling": 4 },
         "power": { "singleTarget": 5, "multiTarget": 3 }
     },
