@@ -816,7 +816,7 @@ table.changelog td:nth-child(3) {
     font-size: 1.1em;
 }
 
-.souljade-type {
+.souljade-difficulty {
     font-size: 0.75em;
     padding: 4px 10px;
     border-radius: 4px;
@@ -1541,7 +1541,7 @@ p.archetype, p.weapons {
         word-break: break-word;
     }
 
-    .souljade-type {
+    .souljade-difficulty {
         text-align: center;
         width: 100%;
         margin-top: 5px;

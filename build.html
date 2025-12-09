@@ -233,7 +233,7 @@
                                             const tsvData = souljadeDataMap[souljade.name] || {};
                                             const shape = tsvData.shape || extractShapeFromImage(souljade.image);
                                             const rarity = tsvData.rarity || 'Legendary';
-                                            const difficulty = tsvData.difficulty || souljade.type || 'Any';
+                                            const difficulty = tsvData.difficulty || souljade.difficulty || 'Any';
                                             const description = tsvData.effect || souljade.description || '';
                                             const difficultyClass = getDifficultyClass(difficulty);
                                             const imagePath = getShapeImage(shape, rarity);
@@ -242,7 +242,7 @@
                                                 <div class="souljade-card ${difficultyClass}">
                                                     <div class="souljade-header">
                                                         <div class="souljade-name">${souljade.name}</div>
-                                                        <div class="souljade-type">${souljade.type}</div>
+                                                        <div class="souljade-difficulty">${difficulty}</div>
                                                     </div>
                                                     <div class="souljade-image">
                                                         <img src="${imagePath}" alt="${souljade.name}">
