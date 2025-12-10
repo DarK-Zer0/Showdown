@@ -1503,12 +1503,6 @@ p.archetype, p.weapons {
     .build-section {
         margin: 15px 0;
     }
-
-    .build-name {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
     
     .build-type-badge {
         margin-top: 5px;
@@ -1588,7 +1582,14 @@ p.archetype, p.weapons {
     }
     
     .build-name {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
         font-size: 1.8em;
+    }
+
+    .build-type-badge {
+        margin-top: 5px; /* Add spacing between name and type */
     }
 }
 
