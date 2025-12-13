@@ -72,7 +72,7 @@
         { "name": "Thunderpull", "difficulty": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+20% Attack and successful attacks will build Thundershock on yourself." },
         { "name": "Thunder Counter", "difficulty": "nightscream", "image": "img/builds/souljades/Rectangle_Gold.png", "description": "Enables the ability to parry Divine Thunder strikes." },
         { "name": "Thunderproof", "difficulty": "hard", "image": "img/builds/souljades/Rectangle_Purple.png", "description": "Reduces your max Thundershock by 25% and Divine Thunder will no longer stagger you." },
-        { "name": "Element Surge · Poison-Wielding", "difficulty": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "Musket shots will deal Frostbite DMG over time, greatly increasing Ice accumulation rate and Deadeye build rate." },
+        { "name": "Element Surge · Poison-Wielding", "difficulty": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "+20% Attack and Toxin will have a 15s delay where it can't be accumulated when maxed." },
         { "name": "Incineration", "difficulty": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+25% Attack for 10s after activating Hydroflare, but apply a Burn to yourself." },
         { "name": "Backfire", "difficulty": "normal", "image": "img/builds/souljades/Triangle_Purple.png", "description": "+20% Attack, but 4% of your damage dealt will be dealt to yourself. Backlash effect disabled when below 25% Health." }
         ],
