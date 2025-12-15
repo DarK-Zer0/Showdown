@@ -331,6 +331,67 @@ img.potential-plan {
     background: transparent;
 }
 
+/* ==========================================================================
+   Page Navigation
+   ========================================================================== */
+
+.page-nav {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 95%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.page-nav-item {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--nav-text);
+    width: 100%;
+    text-align: center;
+}
+
+.page-nav-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--hover);
+    box-shadow: 0 -2px 0 var(--hover) inset, 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: var(--hover);
+}
+
+.page-nav-item.active {
+    background: rgba(255, 215, 0, 0.1);
+    border-color: var(--hover);
+    color: var(--hover);
+    box-shadow: 0 -2px 0 var(--hover) inset;
+}
+
+/* Update mobile styles */
+@media (max-width: 1240px) {
+    .page-nav {
+        max-width: 100%;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 530px) {
+    .page-nav-item {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
 /* Dropdown Styles */
 .dropdown-content {
     display: none;
@@ -1453,11 +1514,6 @@ p.archetype, p.weapons {
     #title {
         margin-right: 0;
         margin-left: 0;
-    }
-
-    .page-nav-items {
-        flex-direction: column;
-        align-items: center;
     }
 
     .home-button {
