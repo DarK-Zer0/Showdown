@@ -276,14 +276,14 @@
         { "name": "Shattered Edge", "difficulty": "hard", "image": "img/builds/souljades/Triangle_Purple.png", "description": "+18% Attack for 10 seconds after you shoot an arrow." }
         ],
         "souljadeAttributes": {
-        "target": ["x7 [Windfall]", "x7 DMG to Bosses", "x7 Ranged Weapon Damage", "x7 Attack"],
+        "target": ["x7 [Windfall]", "x7 DMG to Bosses", "x7 Ranged Weapon Damage", "x6 Attack", "x1 Deadeye build rate"],
         "placeholder": ["Deadeye build rate"]
         },
         "potentialPlan": { "image": "img/builds/trees/4.0/BowPoisonSurge.png", "alt": "Poison Surge Swarm Potential Plan" },
         "wieldingTypes": [
-        { "name": "Ice-Wielding", "count": 1, "image": "img/builds/souljades/Ice-Wielding.png" },
-        { "name": "Thunder-Wielding", "count": 1, "image": "img/builds/souljades/Thunder-Wielding.png" },
-        { "name": "Poison-Wielding", "count": 4, "image": "img/builds/souljades/Poison-Wielding.png" }
+        { "name": "Ice-Wielding", "count": 2, "image": "img/builds/souljades/Ice-Wielding.png" },
+        { "name": "Thunder-Wielding", "count": 2, "image": "img/builds/souljades/Thunder-Wielding.png" },
+        { "name": "Poison-Wielding", "count": 2, "image": "img/builds/souljades/Poison-Wielding.png" }
         ],
         "curios": [
         { "name": "Tideforce Bead", "image": "img/builds/curios/3.0/TideforceBead.png", "description": "Activating a number of Elemental Bursts will summon Water Spears dealing 5400% of your Attack.", "awakening": "Number of Elemental Bursts required reduced to 3." },
