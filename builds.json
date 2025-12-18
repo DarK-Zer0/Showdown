@@ -276,7 +276,7 @@
         { "name": "Shattered Edge", "difficulty": "hard", "image": "img/builds/souljades/Triangle_Purple.png", "description": "+18% Attack for 10 seconds after you shoot an arrow." }
         ],
         "souljadeAttributes": {
-        "target": ["x7 [Windfall]", "x7 DMG to Bosses", "x7 Ranged Weapon Damage", "x6 Attack", "x1 Deadeye build rate"],
+        "target": ["x6 [Windfall]", "x7 DMG to Bosses", "x7 Ranged Weapon Damage", "x6 Attack", "x2 Deadeye build rate"],
         "placeholder": ["Deadeye build rate"]
         },
         "potentialPlan": { "image": "img/builds/trees/4.0/BowPoisonSurge.png", "alt": "Poison Surge Swarm Potential Plan" },
