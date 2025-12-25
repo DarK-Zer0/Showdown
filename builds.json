@@ -128,8 +128,8 @@
         },
         "description": "Your attacks will build Thundershock on you overtime. Damaging Skills and Ultimates will build large amounts of Thundershock. When your Thundershock meter fills, Divine Thunder will activate, sending four thunderbolts down on you. You can parry these bolts to activate Scorching, which will apply a massive Burn dealing 5400% of your Attack as Burn DMG over 18 seconds to your next weapon attack. When an enemy is Burning and Soaked, Hydroflare will activate, dealing the remaining Burn damage instantly. You can apply Soak by either dodging near an enemy to hit them with Draco Stride or by activating an Elemental Burst.",
         "recommendedHeroes": ["Viper Ning", "Feria Shen", "Tianhai", "Tarka Ji", "Valda Cui", "Matari", "Yueshan", "Tessa", "Ziping Ying", "Justina Gu", "Akos Hu", "Zai"],
-        "difficulty": { "skillFloor": 3, "skillCeiling": 4.5 },
-        "power": { "singleTarget": 4.5, "multiTarget": 4 }   
+        "difficulty": { "skillFloor": 4, "skillCeiling": 4.5 },
+        "power": { "singleTarget": 4, "multiTarget": 4 }   
     },
     {
         "name": "Thunder Scorch Surge",
@@ -162,7 +162,7 @@
         },
         "description": "Your attacks will build Thundershock on you overtime. When your Thundershock meter fills, Thunder Surge will activate, sending a single bolt of Divine Thunder onto you. You can parry this bolt to activate Scorching, which will apply a massive Burn dealing 5400% of your Attack as Burn DMG over 18 seconds to your next weapon attack. When an enemy is Burning and Soaked, Hydroflare will activate, dealing the remaining Burn damage instantly. You can apply Soak by either dodging near an enemy to hit them with Draco Stride or by activating an Elemental Burst.",
         "recommendedHeroes": ["All Heroes"],
-        "difficulty": { "skillFloor": 3.5, "skillCeiling": 4.5 },
+        "difficulty": { "skillFloor": 3, "skillCeiling": 4.5 },
         "power": { "singleTarget": 4.5, "multiTarget": 3.5 }   
     },
     {
