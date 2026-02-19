@@ -215,8 +215,8 @@
         },
         "potentialPlan": { "image": "img/builds/trees/4.0/KylinThunder.png", "alt": "Kylin's Thunder Surge Potential Plan" },
         "wieldingTypes": [
-        { "name": "Ice-Wielding", "count": 2, "image": "img/builds/souljades/Ice-Wielding.png" },
-        { "name": "Thunder-Wielding", "count": 2, "image": "img/builds/souljades/Thunder-Wielding.png" },
+        { "name": "Ice-Wielding", "count": 3, "image": "img/builds/souljades/Ice-Wielding.png" },
+        { "name": "Thunder-Wielding", "count": 1, "image": "img/builds/souljades/Thunder-Wielding.png" },
         { "name": "Poison-Wielding", "count": 2, "image": "img/builds/souljades/Poison-Wielding.png" }
         ],
         "curios": [
