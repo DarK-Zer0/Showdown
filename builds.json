@@ -199,7 +199,7 @@
         "power": { "singleTarget": 5, "multiTarget": 3 }
     },
     {
-        "name": "Kylin · Thunder Surge",
+        "name": "Kylin · Thunder Scorch Surge",
         "type": "thunder",
         "souljades": [
         { "name": "Thunderpull", "difficulty": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+20% Attack and successful attacks will build Thundershock on yourself." },
@@ -210,10 +210,10 @@
         { "name": "Soul-drawing", "difficulty": "nightscream", "image": "img/builds/souljades/Triangle_Purple.png", "description": "When below 45% of your max Health, heal for 12% of your damage dealt." }
         ],
         "souljadeAttributes": {
-        "target": ["x7 [Windfall]", "x7 Rage/DMG", "x7 Attack", "x7 DMG to Bosses"],
+        "target": ["x7 [Windfall]", "x4 [Scorching]", "x7 Rage/DMG", "x7 Attack", "x3 DMG to Bosses"],
         "placeholder": ["Melee Weapon Damage"]
         },
-        "potentialPlan": { "image": "img/builds/trees/4.0/KylinThunder.png", "alt": "Kylin's Thunder Surge Potential Plan" },
+        "potentialPlan": { "image": "img/builds/trees/4.0/ThunderScorchSurge.png", "alt": "Kylin's Thunder Surge Potential Plan" },
         "wieldingTypes": [
         { "name": "Ice-Wielding", "count": 3, "image": "img/builds/souljades/Ice-Wielding.png" },
         { "name": "Thunder-Wielding", "count": 1, "image": "img/builds/souljades/Thunder-Wielding.png" },
