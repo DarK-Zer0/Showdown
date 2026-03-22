@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Showdown Guide - Builds</title>
+    <title>Showdown Guide</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="mobile-web-app-capable" content="yes">
@@ -38,175 +38,6 @@
     <link href="styles.css" rel="stylesheet">
     <script src="src/navbar.js"></script>
     <script src="src/contents.js"></script>
-    
-    <style>
-        /* Hero Selector Styles */
-        .hero-selector {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 25px;
-            margin: 20px auto;
-            max-width: 95%;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-        }
-        
-        .hero-selector-header {
-            font-size: 1.4em;
-            font-weight: 700;
-            margin-bottom: 20px;
-            color: var(--hover);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid var(--border-color);
-        }
-        
-        .hero-portraits-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-            gap: 20px;
-            max-height: 300px;
-            overflow-y: auto;
-            padding: 10px;
-        }
-        
-        .hero-portrait-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            padding: 10px;
-            border-radius: 12px;
-            border: 2px solid transparent;
-            background: rgba(0, 0, 0, 0.3);
-        }
-        
-        .hero-portrait-item:hover {
-            transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.05);
-            border-color: var(--hover);
-        }
-        
-        .hero-portrait-item.active {
-            border-color: var(--hover);
-            background: rgba(255, 215, 0, 0.1);
-            box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
-        }
-        
-        .hero-portrait-item.active .hero-portrait-caption {
-            color: var(--hover);
-            font-weight: 700;
-        }
-        
-        .hero-portrait-img {
-            width: 80px;
-            height: 80px;
-            object-fit: contain;
-            margin-bottom: 8px;
-            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.5));
-            transition: all 0.3s ease;
-        }
-        
-        .hero-portrait-item:hover .hero-portrait-img {
-            transform: scale(1.1);
-            filter: drop-shadow(0 6px 12px rgba(0,0,0,0.6));
-        }
-        
-        .hero-portrait-caption {
-            text-align: center;
-            font-size: 0.85em;
-            color: var(--text-secondary);
-            max-width: 100%;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-        
-        /* Selected Hero Display */
-        .selected-hero-display {
-            text-align: center;
-            margin: 30px 0;
-            padding: 20px;
-        }
-        
-        .selected-hero-name {
-            font-size: 2.5em;
-            font-weight: 700;
-            color: var(--hover);
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        
-        .selected-hero-build-count {
-            color: var(--text-secondary);
-            font-size: 1.1em;
-        }
-        
-        /* Builds Container for Selected Hero */
-        .hero-builds-container {
-            padding: 20px;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-        
-        .empty-builds-state {
-            text-align: center;
-            padding: 60px 20px;
-            background: rgba(0, 0, 0, 0.3);
-            border: 2px dashed var(--border-color);
-            border-radius: 16px;
-            margin: 40px auto;
-            max-width: 600px;
-        }
-        
-        .empty-builds-state h3 {
-            color: var(--text-secondary);
-            margin-bottom: 15px;
-            font-size: 1.8em;
-        }
-        
-        .empty-builds-state p {
-            color: #666;
-        }
-        
-        /* Responsive adjustments for portraits */
-        @media (max-width: 768px) {
-            .hero-portraits-grid {
-                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-                gap: 15px;
-            }
-            
-            .hero-portrait-img {
-                width: 60px;
-                height: 60px;
-            }
-            
-            .selected-hero-name {
-                font-size: 1.8em;
-            }
-        }
-        
-        @media (max-width: 530px) {
-            .hero-portraits-grid {
-                grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-                gap: 10px;
-                max-height: 200px;
-            }
-            
-            .hero-portrait-img {
-                width: 50px;
-                height: 50px;
-            }
-            
-            .hero-portrait-caption {
-                font-size: 0.75em;
-            }
-        }
-    </style>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -252,57 +83,22 @@
         With Topaz meaning it only drops from Enigma Domain or other missions that can drop all Souljades (i.e. Tempered Inferno • Nightscream).</p>
     </div>
 
-    <!-- Hero Selector (Table of Contents Replacement) -->
-    <div class="hero-selector">
-        <div class="hero-selector-header">
-            <span>🦸</span>
-            <span>Select Hero</span>
+    <!-- Table of Contents -->
+    <nav id="toc-container" class="toc-container modern-toc">
+        <div class="toc-header">
+            <span>📚</span>
+            <span>Build Directory</span>
         </div>
-        <div id="hero-portraits" class="hero-portraits-grid">
-            <!-- Hero portraits injected here -->
-        </div>
-    </div>
-
-    <!-- Selected Hero Display -->
-    <div class="selected-hero-display" id="selected-hero-display" style="display: none;">
-        <h2 class="selected-hero-name" id="selected-hero-name"></h2>
-        <p class="selected-hero-build-count" id="selected-hero-build-count"></p>
-    </div>
+        <div id="toc-list" class="toc-list modern-toc-list"></div>
+    </nav>
 
     <!-- Page Content -->
     <div id="content" class="nav3">
         <div id="div1" class="content">
-            <div id="builds" class="hero-builds-container"></div>
+            <div id="builds" class="builds-grid"></div>
             <div id="error"></div>
 
             <script>
-                // Hero roster configuration - maps hero IDs to portrait files and display names
-                const HERO_ROSTER = [
-                    { id: 'viper', name: 'Viper Ning', portrait: 'img/portraits/viper.png', role: 'Control' },
-                    { id: 'feria', name: 'Feria Shen', portrait: 'img/portraits/feria.png', role: 'Damage' },
-                    { id: 'tianhai', name: 'Tianhai', portrait: 'img/portraits/tianhai.png', role: 'Tank' },
-                    { id: 'temulch', name: 'Temulch', portrait: 'img/portraits/temulch.png', role: 'Control' },
-                    { id: 'tarka', name: 'Tarka Ji', portrait: 'img/portraits/tarka.png', role: 'Damage' },
-                    { id: 'kurumi', name: 'Kurumi', portrait: 'img/portraits/kurumi.png', role: 'Support' },
-                    { id: 'valda', name: 'Valda Cui', portrait: 'img/portraits/valda.png', role: 'Control' },
-                    { id: 'yueshan', name: 'Yueshan', portrait: 'img/portraits/yueshan.png', role: 'Bruiser' },
-                    { id: 'matari', name: 'Matari', portrait: 'img/portraits/matari.png', role: 'Assassin' },
-                    { id: 'wuchen', name: 'Wuchen', portrait: 'img/portraits/wuchen.png', role: 'Support' },
-                    { id: 'yoto', name: 'Yoto Hime', portrait: 'img/portraits/yoto.png', role: 'Support' },
-                    { id: 'tessa', name: 'Tessa', portrait: 'img/portraits/tessa.png', role: 'Mage' },
-                    { id: 'ziping', name: 'Ziping Ying', portrait: 'img/portraits/ziping.png', role: 'Support' },
-                    { id: 'justina', name: 'Justina Gu', portrait: 'img/portraits/justina.png', role: 'Assassin' },
-                    { id: 'kylin', name: 'Kylin Zhang', portrait: 'img/portraits/kylin.png', role: 'Bruiser' },
-                    { id: 'akos', name: 'Akos Hu', portrait: 'img/portraits/akos.png', role: 'Bruiser' },
-                    { id: 'zai', name: 'Zai', portrait: 'img/portraits/zai.png', role: 'Assassin' },
-                    { id: 'shayol', name: 'Shayol Wei', portrait: 'img/portraits/shayol.png', role: 'Tank' }
-                ];
-
-                let currentHeroId = 'viper'; // Default to Viper Ning
-                let allBuilds = [];
-                let heroBuildMap = {};
-                let souljadeDataMap = {};
-
                 // Souljade image path generation
                 function getShapeImage(shape, rarity) {
                     const rarityColor = rarity === 'Legendary' ? 'Gold' : 'Purple';
@@ -376,185 +172,9 @@
                     return stars;
                 }
 
-                // Normalize hero name from build data to match roster IDs
-                function normalizeHeroName(heroName) {
-                    const normalized = heroName.toLowerCase().replace(/[•\-]/g, ' ').trim();
-                    
-                    // Direct matches
-                    const hero = HERO_ROSTER.find(h => 
-                        h.name.toLowerCase() === normalized ||
-                        h.id === normalized.replace(/\s+/g, '-') ||
-                        normalized.includes(h.id)
-                    );
-                    
-                    if (hero) return hero.id;
-                    
-                    // Special cases
-                    if (normalized.includes('viper')) return 'viper';
-                    if (normalized.includes('tianhai')) return 'tianhai';
-                    if (normalized.includes('tarka')) return 'tarka';
-                    if (normalized.includes('valda')) return 'valda';
-                    if (normalized.includes('matari')) return 'matari';
-                    if (normalized.includes('yueshan')) return 'yueshan';
-                    if (normalized.includes('tessa')) return 'tessa';
-                    if (normalized.includes('ziping')) return 'ziping';
-                    if (normalized.includes('justina')) return 'justina';
-                    if (normalized.includes('akos')) return 'akos';
-                    if (normalized.includes('zai')) return 'zai';
-                    if (normalized.includes('temulch')) return 'temulch';
-                    if (normalized.includes('kylin')) return 'kylin';
-                    if (normalized.includes('wuchen')) return 'wuchen';
-                    if (normalized.includes('shayol')) return 'shayol';
-                    if (normalized.includes('kurumi')) return 'kurumi';
-                    if (normalized.includes('takeda')) return 'takeda';
-                    if (normalized.includes('feria')) return 'feria';
-                    
-                    return null;
-                }
-
-                // Organize builds by hero
-                function organizeBuildsByHero(builds) {
-                    // Initialize empty arrays for all heroes
-                    HERO_ROSTER.forEach(hero => {
-                        heroBuildMap[hero.id] = [];
-                    });
-                    
-                    // Sort builds into hero categories
-                    builds.forEach((build, index) => {
-                        const recommended = build.recommendedHeroes || [];
-                        
-                        // Handle "All Heroes" case - add to all heroes
-                        if (recommended.includes('All Heroes')) {
-                            HERO_ROSTER.forEach(hero => {
-                                heroBuildMap[hero.id].push({ ...build, originalIndex: index, isUniversal: true });
-                            });
-                        } else {
-                            // Map specific heroes
-                            recommended.forEach(heroName => {
-                                const heroId = normalizeHeroName(heroName);
-                                if (heroId && heroBuildMap[heroId]) {
-                                    heroBuildMap[heroId].push({ ...build, originalIndex: index, isUniversal: false });
-                                }
-                            });
-                        }
-                    });
-                }
-
-                // Render hero selector portraits
-                function renderHeroSelector() {
-                    const container = document.getElementById('hero-portraits');
-                    container.innerHTML = HERO_ROSTER.map(hero => {
-                        const buildCount = heroBuildMap[hero.id]?.length || 0;
-                        const hasBuilds = buildCount > 0;
-                        const countBadge = hasBuilds ? `<span style="position: absolute; top: 5px; right: 5px; background: var(--hover); color: black; border-radius: 50%; width: 20px; height: 20px; font-size: 0.7em; display: flex; align-items: center; justify-content: center; font-weight: bold;">${buildCount}</span>` : '';
-                        
-                        return `
-                            <div class="hero-portrait-item ${hero.id === currentHeroId ? 'active' : ''}" 
-                                 data-hero-id="${hero.id}"
-                                 onclick="selectHero('${hero.id}')"
-                                 style="position: relative;">
-                                ${countBadge}
-                                <img src="${hero.portrait}" alt="${hero.name}" class="hero-portrait-img" 
-                                     onerror="this.src='img/site/icon.png'">
-                                <div class="hero-portrait-caption">${hero.name}</div>
-                            </div>
-                        `;
-                    }).join('');
-                }
-
-                // Select hero and update display
-                function selectHero(heroId) {
-                    currentHeroId = heroId;
-                    
-                    // Update active state in selector
-                    document.querySelectorAll('.hero-portrait-item').forEach(item => {
-                        if (item.dataset.heroId === heroId) {
-                            item.classList.add('active');
-                        } else {
-                            item.classList.remove('active');
-                        }
-                    });
-                    
-                    // Update hero display header
-                    const hero = HERO_ROSTER.find(h => h.id === heroId);
-                    document.getElementById('selected-hero-display').style.display = 'block';
-                    document.getElementById('selected-hero-name').textContent = hero.name;
-                    
-                    const buildCount = heroBuildMap[heroId]?.length || 0;
-                    document.getElementById('selected-hero-build-count').textContent = 
-                        buildCount > 0 ? `${buildCount} Build${buildCount !== 1 ? 's' : ''} Available` : 'No Builds Available';
-                    
-                    // Render builds
-                    renderBuildsForHero(heroId);
-                    
-                    // Scroll to builds
-                    document.getElementById('selected-hero-display').scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-
-                // Render builds for selected hero - UPDATED to pass heroId
-                function renderBuildsForHero(heroId) {
-                    const buildsContainer = document.getElementById('builds');
-                    const heroBuilds = heroBuildMap[heroId] || [];
-                    
-                    if (heroBuilds.length === 0) {
-                        buildsContainer.innerHTML = `
-                            <div class="empty-builds-state">
-                                <h3>⚔️ No Builds Available</h3>
-                                <p>There are currently no builds listed for this hero. Check back later for updates!</p>
-                            </div>
-                        `;
-                    } else {
-                        buildsContainer.innerHTML = heroBuilds.map((build, idx) => 
-                            renderBuild(build, idx, heroId)  // Pass heroId here
-                        ).join('');
-                    }
-                }
-
-                // Generate build card - UPDATED with mastery jades support
-                function renderBuild(build, index, heroId) {
+                // Generate build card
+                function renderBuild(build, souljadeDataMap, index) {
                     const anchorId = build.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '');
-                    
-                    // Filter mastery jades for current hero
-                    const applicableMasteryJades = (build.masteryJades || []).filter(mj => {
-                        if (mj.heroes.includes('All Heroes')) return true;
-                        return mj.heroes.some(heroName => normalizeHeroName(heroName) === heroId);
-                    });
-                    
-                    // Generate Mastery Jade HTML if applicable
-                    let masteryJadeHtml = '';
-                    if (applicableMasteryJades.length > 0) {
-                        masteryJadeHtml = `
-                            <div class="build-section mastery-jades-section">
-                                <div class="section-title">⚡ Mastery Jade</div>
-                                <div class="section-content">
-                                    <div class="souljades-grid">
-                                        ${applicableMasteryJades.map(mj => {
-                                            const tsvData = souljadeDataMap[mj.name] || {};
-                                            const shape = tsvData.shape || extractShapeFromImage(mj.image) || 'Triangle';
-                                            const rarity = tsvData.rarity || mj.rarity || 'Legendary';
-                                            const difficulty = tsvData.difficulty || mj.difficulty || 'Any';
-                                            const description = tsvData.effect || mj.description || '';
-                                            const difficultyClass = getDifficultyClass(difficulty);
-                                            const imagePath = getShapeImage(shape, rarity);
-                                            
-                                            return `
-                                                <div class="souljade-card mastery-jade ${difficultyClass}">
-                                                    <div class="souljade-header">
-                                                        <div class="souljade-name">${mj.name}</div>
-                                                        <div class="souljade-difficulty">${difficulty}</div>
-                                                    </div>
-                                                    <div class="souljade-image">
-                                                        <img src="${imagePath}" alt="${mj.name}">
-                                                    </div>
-                                                    <div class="souljade-description">${description}</div>
-                                                </div>
-                                            `;
-                                        }).join('')}
-                                    </div>
-                                </div>
-                            </div>
-                        `;
-                    }
                     
                     return `
                         <div class="build-card ${build.type}" id="${anchorId}" data-build-id="${index}">
@@ -634,8 +254,6 @@
                                     </div>
                                 </div>
                             </div>
-
-                            ${masteryJadeHtml}
 
                             <div class="build-section">
                                 <div class="section-title">📊 Potential Plan</div>
@@ -719,8 +337,39 @@
                     `;
                 }
 
+                // Generate TOC
+                function generateTOC(builds) {
+                    const tocList = document.getElementById('toc-list');
+                    tocList.innerHTML = builds.map((build, index) => {
+                        const anchorId = build.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '');
+                        const displayName = build.name.replace(/•/g, '-');
+                        return `
+                            <div class="toc-item" data-index="${index}">
+                                <a href="#${anchorId}" class="toc-link ${build.type}">${displayName}</a>
+                                <span class="toc-item-type type-${build.type}">${build.type}</span>
+                            </div>
+                        `;
+                    }).join('');
+
+                    // Add smooth scrolling
+                    document.querySelectorAll('.toc-link').forEach(link => {
+                        link.addEventListener('click', function(e) {
+                            e.preventDefault();
+                            const targetId = this.getAttribute('href').substring(1);
+                            const targetElement = document.getElementById(targetId);
+                            if (targetElement) {
+                                targetElement.scrollIntoView({ 
+                                    behavior: 'smooth', 
+                                    block: 'start' 
+                                });
+                            }
+                        });
+                    });
+                }
+
                 // Load builds
                 async function loadBuilds() {
+                    const buildsContainer = document.getElementById('builds');
                     const errorContainer = document.getElementById('error');
                     
                     try {
@@ -730,7 +379,7 @@
                         }
                         const builds = await response.json();
                         
-                        // Load TSV data
+                        let souljadeDataMap = {};
                         try {
                             const tsvResponse = await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vQ1pJNzFcZGVidnY3bAvSiO77YxZTMwgksO-BO7cnNAWoXuOlTYTXqMHbWkpARNn6H4Gr4tuRfSoe4T/pub?gid=2037803523&single=true&output=tsv');
                             if (tsvResponse.ok) {
@@ -741,17 +390,31 @@
                             console.warn('TSV loading failed:', tsvError.message);
                         }
                         
-                        allBuilds = builds;
-                        organizeBuildsByHero(builds);
-                        renderHeroSelector();
-                        selectHero(currentHeroId); // Default to Viper Ning
+                        generateTOC(builds);
+                        buildsContainer.innerHTML = builds.map((build, index) => 
+                            renderBuild(build, souljadeDataMap, index)
+                        ).join('');
+
+                        // Smooth scrolling for TOC links only
+                        document.querySelectorAll('.toc-link').forEach(link => {
+                            link.addEventListener('click', function(e) {
+                                e.preventDefault();
+                                const targetId = this.getAttribute('href').substring(1);
+                                const targetElement = document.getElementById(targetId);
+                                if (targetElement) {
+                                    targetElement.scrollIntoView({ 
+                                        behavior: 'smooth', 
+                                        block: 'start' 
+                                    });
+                                }
+                            });
+                        });
                         
                     } catch (error) {
                         errorContainer.innerHTML = `<p class="error">Error loading builds: ${error.message}</p>`;
                     }
                 }
 
-                // Initialize on load
                 document.addEventListener('DOMContentLoaded', loadBuilds);
 
                 // Keep existing description toggle functionality

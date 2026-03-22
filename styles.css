@@ -903,6 +903,27 @@ table.changelog td:nth-child(3) {
     line-height: 1.6;
 }
 
+/* Mastery Jade Specific Styling */
+.mastery-jades-section .section-title {
+    color: #ffd700; /* Gold color for distinction */
+}
+
+.souljade-card.mastery-jade {
+    border: 2px solid #ffd700;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.05));
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+}
+
+.souljade-card.mastery-jade:hover {
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+    border-color: #ffec8b;
+}
+
+.souljade-card.mastery-jade .souljade-name {
+    color: #ffd700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
 /* Curio Cards (New) */
 .curios-grid {
     display: grid;

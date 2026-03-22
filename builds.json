@@ -1,71 +1,5 @@
 [
-    {
-        "name": "Ice Surge",
-        "type": "ice",
-        "souljades": [
-        { "name": "Successive Ice Blast" },
-        { "name": "Frozen Blast" },
-        { "name": "Depths Blast" },
-        { "name": "Element Surge · Ice-Wielding", "difficulty": "hard", "description": "Grants +15% Attack and +50% Frostbite Accumulation Rate, allowing you to activate Ice Blasts much easier." },
-        { "name": "Chill Spike" },
-        { "name": "Frostbite Chain" }
-        ],
-        "souljadeAttributes": {
-        "target": ["x4 [Moderation]", "x9 [Windfall]", "x7 Attack", "x7 Ice Blast DMG", "x1 DMG to Bosses"],
-        "placeholder": ["DMG to Bosses", "Melee Weapon Damage"]
-        },
-        "potentialPlan": { "image": "img/builds/trees/4.0/IceSurge.png", "alt": "Ice Surge Potential Plan" },
-        "wieldingTypes": [
-        { "name": "Ice-Wielding", "count": 6, "image": "img/builds/souljades/Ice-Wielding.png" }
-        ],
-        "curios": [
-        { "name": "Wordless Sutra", "image": "img/builds/curios/3.0/WordlessSutra.png", "description": "Chain Crush will deal x1.8 damage.", "awakening": "Chain Crush can execute enemies below 8% of max Health." },
-        { "name": "Verve Banner", "image": "img/builds/curios/3.0/VerveBanner.png", "description": "While in Element Surge state, weapon attacks are granted +60% Rage/DMG & +10% Life steal.", "awakening": "While in Element Surge state, all attacks are granted +60% Rage/DMG & 10% Life steal." }
-        ],
-        "curioAttributes": {
-        "yang": ["Elemental Accumulation Rate", "Attack", "DMG to Bosses", "Weapon DMG Bonus"],
-        "yin": ["Rage/DMG Taken", "Health", "Armor", "Luck"]
-        },
-        "description": "Attacks will accumulate Frostbite on enemies, causing Ice Blasts. After 2 Ice Blasts, your Frostbite will fill, activating Frost Surge. During Frost Surge, using a Skill will summon an Ice Thorn that deals 910% of your Attack as Ice Blast DMG on a 4 second cooldown. After 15 Ice Blasts, your next uncharged melee attack will trigger Chain Crush, dealing 3290% of your Attack as Ice Blast DMG.",
-        "recommendedHeroes": ["Viper Ning", "Feria Shen", "Tianhai", "Tarka Ji", "Valda Cui", "Matari", "Yueshan", "Tessa", "Ziping Ying", "Justina Gu", "Akos Hu", "Zai"],
-        "difficulty": { "skillFloor": 3, "skillCeiling": 4 },
-        "power": { "singleTarget": 4, "multiTarget": 4.5 }
-    },
-    {
-        "name": "Bow · Poison Surge",
-        "type": "poison",
-        "souljades": [
-        { "name": "Scattershot Enhance", "difficulty": "topaz", "image": "img/builds/souljades/Circle_Purple.png", "description": "Bow will fire 5 arrows instead of 3, increasing its spread, damage and Deadeye charge." },
-        { "name": "Desperation", "difficulty": "nightscream", "image": "img/builds/souljades/Flower_Gold.png", "description": "Bow's Stage 2 Charged Attacks will explode for more damage and Deadeye charge." },
-        { "name": "Element Surge · Poison-Wielding", "difficulty": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "+20% Attack bonus and +25% Poison Blast DMG bonus. Toxin Surge doesn't activate normally with this build." },
-        { "name": "Pestilent Pool", "difficulty": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "Poison Blasts summon Toxic Pools applying up to 2 Toxified Stacks to enemies within." },
-        { "name": "Miasma Drive", "difficulty": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+25% Attack for 18s after applying Toxified to an enemy." },
-        { "name": "Backfire", "difficulty": "normal", "image": "img/builds/souljades/Triangle_Purple.png", "description": "+20% Attack at the cost of 4% of damage dealt to self." },
-        { "name": "Bow · Heartbreak Arrows" }
-        ],
-        "souljadeAttributes": {
-        "target": ["x7 [Windfall]", "x7 DMG to Bosses", "x7 Ranged Weapon Damage", "x6 Attack", "x1 Deadeye build rate"],
-        "placeholder": ["Attack", "Charged Attack DMG"]
-        },
-        "potentialPlan": { "image": "img/builds/trees/4.0/BowPoisonSurge.png", "alt": "Poison Surge Bow Potential Plan" },
-        "wieldingTypes": [
-        { "name": "Ice-Wielding", "count": 1, "image": "img/builds/souljades/Ice-Wielding.png" },
-        { "name": "Thunder-Wielding", "count": 1, "image": "img/builds/souljades/Thunder-Wielding.png" },
-        { "name": "Poison-Wielding", "count": 4, "image": "img/builds/souljades/Poison-Wielding.png" }
-        ],
-        "curios": [
-        { "name": "Tideforce Bead", "image": "img/builds/curios/3.0/TideforceBead.png", "description": "Activating a number of Elemental Bursts will summon Water Spears dealing 5400% of your Attack.", "awakening": "Number of Elemental Bursts required reduced to 3." },
-        { "name": "Prevailing Robe", "image": "img/builds/curios/3.0/PrevailingRobe.png", "description": "When Armor goes below 30%, repair 60% of max Armor over 3s with a 10s cooldown.", "awakening": "Gain +15% DMG Bonus while Armor is full." }
-        ],
-        "curioAttributes": {
-        "yang": ["Weapon DMG Bonus", "Attack", "DMG to Bosses", "Elemental Accumulation Rate"],
-        "yin": ["DMG Reduction", "Boss DMG Reduction", "Armor", "Luck"]
-        },
-        "description": "Deal massive damage by using the Stage 2 Charged Attack of your Bow. Perfectly timing the release of the charge, while Deadeye is active, will cast Void Destroyer, a massive 3-part attack that only consumes 1 ammo. Beware, this build will leave you at 1 Health, so you'll mainly rely on your Armor to survive any hits.<br><br>Reaching ~8.5% Deadeye build rate will allow you to activate Deadeye with just 3 Stage 2 Charged Attacks instead of 4. 30.5%+ Deadeye build rate will allow you to activate Deadeye in 2 Stage 2 Charged Attacks if they're headshots. 43.9%+ Deadeye build rate will allow you to activate Deadeye in 2 Stage 2 Charged Attacks as long as one is a headshot.",
-        "recommendedHeroes": ["Temulch", "Tessa", "Justina Gu"],
-        "difficulty": { "skillFloor": 2, "skillCeiling": 3.5 },
-        "power": { "singleTarget": 5, "multiTarget": 2.5 }
-    },
+    
     {
         "name": "Valda · Thunder Scorch",
         "type": "burn",
@@ -77,11 +11,15 @@
         { "name": "Incineration", "difficulty": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+25% Attack for 10s after activating Hydroflare, but apply a Burn to yourself." },
         { "name": "Backfire", "difficulty": "normal", "image": "img/builds/souljades/Triangle_Purple.png", "description": "+20% Attack, but 4% of your damage dealt will be dealt to yourself. Backlash effect disabled when below 25% Health." }
         ],
+        "masteryJades": [
+            { "name": "Musket · Sky-rending Shot",
+                "heroes": ["Valda Cui"] }
+        ],
         "souljadeAttributes": {
         "target": ["x4 [Scorching]", "x4 [Moderation]", "x5 [Windfall]", "x7 Health", "x7 Attack"],
         "placeholder": ["DMG to Bosses", "Counter Recovery", "Rage/DMG"]
         },
-        "potentialPlan": { "image": "img/builds/trees/4.0/ThunderScorch.png", "alt": "Thunder Scorch Potential Plan" },
+        "potentialPlan": { "image": "img/builds/trees/5.0/Hydroflare.png", "alt": "Thunder Scorch Potential Plan" },
         "wieldingTypes": [
         { "name": "Ice-Wielding", "count": 2, "image": "img/builds/souljades/Ice-Wielding.png" },
         { "name": "Poison-Wielding", "count": 4, "image": "img/builds/souljades/Poison-Wielding.png" }
@@ -100,106 +38,7 @@
         "power": { "singleTarget": 5, "multiTarget": 4 }   
     },
     {
-        "name": "Scorch Skill Surge",
-        "type": "burn",
-        "souljades": [
-        { "name": "Thunderpull", "difficulty": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+20% Attack and successful attacks will build Thundershock on yourself." },
-        { "name": "Thunder Counter", "difficulty": "nightscream", "image": "img/builds/souljades/Rectangle_Gold.png", "description": "Enables the ability to parry Divine Thunder strikes." },
-        { "name": "Element Surge · Ice-Wielding", "difficulty": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "+15% Attack bonus and +50% Frostbite Accumulation on enemies." },
-        { "name": "Draco Stride", "difficulty": "normal", "image": "img/builds/souljades/Diagonal_Gold.png", "description": "Dodges will summon a wave 0.5s after, applying Soak to enemies hit." },
-        { "name": "Incineration", "difficulty": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+25% Attack for 10s after activating Hydroflare, but apply a Burn to yourself" },
-        { "name": "Thunderproof", "difficulty": "hard", "image": "img/builds/souljades/Rectangle_Purple.png", "description": "Reduces your max Thundershock by 25% and Divine Thunder will no longer stagger you." }
-        ],
-        "souljadeAttributes": {
-        "target": ["x4 [Scorching]", "x4 [Moderation]", "x5 [Windfall]", "x7 Health", "x7 Attack"],
-        "placeholder": ["DMG to Bosses", "Counter Recovery",  "Rage/DMG"]
-        },
-        "potentialPlan": { "image": "img/builds/trees/4.0/ThunderScorch.png", "alt": "Scorch Skill Surge Potential Plan" },
-        "wieldingTypes": [
-        { "name": "Ice-Wielding", "count": 3, "image": "img/builds/souljades/Ice-Wielding.png" },
-        { "name": "Poison-Wielding", "count": 3, "image": "img/builds/souljades/Poison-Wielding.png" }
-        ],
-        "curios": [
-        { "name": "Tideforce Bead", "image": "img/builds/curios/3.0/TideforceBead.png", "description": "Activating a number of Elemental Bursts will summon Water Spears dealing 5400% of your Attack.", "awakening": "Number of Elemental Bursts required reduced to 3." },
-        { "name": "Verve Banner", "image": "img/builds/curios/3.0/VerveBanner.png", "description": "While in Element Surge state, weapon attacks are granted +60% Rage/DMG & +10% Life steal.", "awakening": "While in Element Surge state, all attacks are granted +60% Rage/DMG & 10% Life steal." }
-        ],
-        "curioAttributes": {
-        "yang": ["Attack", "DMG to Bosses", "Elemental Accumulation Rate", "Weapon DMG Bonus"],
-        "yin": ["Health", "Rage/DMG Taken", "Armor", "Luck"]
-        },
-        "description": "Your attacks will build Thundershock on you overtime. Damaging Skills and Ultimates will build large amounts of Thundershock. When your Thundershock meter fills, Divine Thunder will activate, sending four thunderbolts down on you. You can parry these bolts to activate Scorching, which will apply a massive Burn dealing 5400% of your Attack as Burn DMG over 18 seconds to your next weapon attack. When an enemy is Burning and Soaked, Hydroflare will activate, dealing the remaining Burn damage instantly. You can apply Soak by either dodging near an enemy to hit them with Draco Stride or by activating an Elemental Burst.",
-        "recommendedHeroes": ["Viper Ning", "Feria Shen", "Tianhai", "Tarka Ji", "Valda Cui", "Matari", "Yueshan", "Tessa", "Ziping Ying", "Justina Gu", "Akos Hu", "Zai"],
-        "difficulty": { "skillFloor": 4, "skillCeiling": 4.5 },
-        "power": { "singleTarget": 4, "multiTarget": 4 }   
-    },
-    {
-        "name": "Thunder Scorch Surge",
-        "type": "burn",
-        "souljades": [
-        { "name": "Thunderpull", "difficulty": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+20% Attack and successful attacks will build Thundershock on yourself." },
-        { "name": "Thunder Counter", "difficulty": "nightscream", "image": "img/builds/souljades/Rectangle_Gold.png", "description": "Enables the ability to parry Divine Thunder strikes." },
-        { "name": "Element Surge · Thunder-Wielding", "difficulty": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "+12% Attack bonus and +55% Divine Thunder DMG bonus. When Thundershock is full, will activate Thunder Surge." },
-        { "name": "Thunder Charge", "difficulty": "nightscream", "image": "img/builds/souljades/Diagonal_Gold.png", "description": "During Thunder Surge, everytime you deal 10x your Attack with a Weapon, will summon a strike of Divine Thunder on yourself." },
-        { "name": "Draco Stride", "difficulty": "normal", "image": "img/builds/souljades/Diagonal_Gold.png", "description": "Dodges will summon a wave 0.5s after, applying Soak to enemies hit." },
-        { "name": "Incineration", "difficulty": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+25% Attack for 10s after activating Hydroflare, but apply a Burn to yourself" }
-        ],
-        "souljadeAttributes": {
-        "target": ["x4 [Scorching]", "x9 [Windfall]", "x7 Health", "x7 Attack"],
-        "placeholder": ["DMG to Bosses", "Counter Recovery", "Rage/DMG"]
-        },
-        "potentialPlan": { "image": "img/builds/trees/4.0/ThunderScorchSurge.png", "alt": "Thunder Scorch Surge Potential Plan" },
-        "wieldingTypes": [
-        { "name": "Ice-Wielding", "count": 3, "image": "img/builds/souljades/Ice-Wielding.png" },
-        { "name": "Thunder-Wielding", "count": 1, "image": "img/builds/souljades/Thunder-Wielding.png" },
-        { "name": "Poison-Wielding", "count": 2, "image": "img/builds/souljades/Poison-Wielding.png" }
-        ],
-        "curios": [
-        { "name": "Tideforce Bead", "image": "img/builds/curios/3.0/TideforceBead.png", "description": "Activating a number of Elemental Bursts will summon Water Spears dealing 5400% of your Attack.", "awakening": "Number of Elemental Bursts required reduced to 3." },
-        { "name": "Verve Banner", "image": "img/builds/curios/3.0/VerveBanner.png", "description": "While in Element Surge state, weapon attacks are granted +60% Rage/DMG & +10% Life steal.", "awakening": "While in Element Surge state, all attacks are granted +60% Rage/DMG & 10% Life steal." }
-        ],
-        "curioAttributes": {
-        "yang": ["Attack", "DMG to Bosses", "Elemental Accumulation Rate", "Weapon DMG Bonus"],
-        "yin": ["Health", "Rage/DMG Taken", "Armor", "Luck"]
-        },
-        "description": "Your attacks will build Thundershock on you overtime. When your Thundershock meter fills, Thunder Surge will activate, sending a single bolt of Divine Thunder onto you. You can parry this bolt to activate Scorching, which will apply a massive Burn dealing 5400% of your Attack as Burn DMG over 18 seconds to your next weapon attack. When an enemy is Burning and Soaked, Hydroflare will activate, dealing the remaining Burn damage instantly. You can apply Soak by either dodging near an enemy to hit them with Draco Stride or by activating an Elemental Burst.",
-        "recommendedHeroes": ["All Heroes"],
-        "difficulty": { "skillFloor": 3, "skillCeiling": 4.5 },
-        "power": { "singleTarget": 4.5, "multiTarget": 3.5 }   
-    },
-    {
-        "name": "Thunder Lotus Mark",
-        "type": "thunder",
-        "souljades": [
-        { "name": "Elemental Lotus", "difficulty": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "Elemental Bursts will summon a Lotus around you for 16s, up to 4 per second." },
-        { "name": "Ghastbloom", "difficulty": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "When your number of Lotus summoned exceeds 4 or expire, summons a Blossom Blast." },
-        { "name": "Defuse · Thunder Charge", "difficulty": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "Defuses and Perfect Dodges will charge a meter. When full, applies a Demonbane Mark to the last enemy you evaded." },
-        { "name": "Thunderbind Spell", "difficulty": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "Demonbane Marks will set the cooldown of Divine Thunder to 0s on the targets they're on." },
-        { "name": "Arcane Stratos", "difficulty": "nightscream", "image": "img/builds/souljades/Diagonal_Gold.png", "description": "Summons a powerful Bolt on the nearest enemy when you use a Hero Skill." },
-        { "name": "Defuse · Solidification", "difficulty": "hard", "image": "img/builds/souljades/Cross_Purple.png", "description": "+20% Attack & +40% Elemental Accumulation Rate for 15s after a Defuse." }
-        ],
-        "souljadeAttributes": {
-        "target": ["x3 [Windfall]", "x4 [Moderation]", "x7 Attack", "x7 DMG to Bosses", "x7 Divine Thunder DMG"],
-        "placeholder": ["DMG to Astral Aegis", "Rage/DMG"]
-        },
-        "potentialPlan": { "image": "img/builds/trees/4.0/ThunderLotusMark.png", "alt": "Thunder Lotus Mark Potential Plan" },
-        "wieldingTypes": [
-        { "name": "Thunder-Wielding", "count": 6, "image": "img/builds/souljades/Thunder-Wielding.png" }
-        ],
-        "curios": [
-        { "name": "Tideforce Bead", "image": "img/builds/curios/3.0/TideforceBead.png", "description": "Activating a number of Elemental Bursts will summon Water Spears dealing 5400% of your Attack.", "awakening": "Number of Elemental Bursts required reduced to 3." },
-        { "name": "Verve Banner", "image": "img/builds/curios/3.0/VerveBanner.png", "description": "While in Element Surge state, weapon attacks are granted +60% Rage/DMG & +10% Life steal.", "awakening": "While in Element Surge state, all attacks are granted +60% Rage/DMG & 10% Life steal." }
-        ],
-        "curioAttributes": {
-        "yang": ["Elemental Accumulation Rate", "Skill DMG Bonus", "Attack", "DMG to Bosses"],
-        "yin": ["Rage/DMG Taken", "DMG Reduction", "Boss DMG Reduction", "Luck"]
-        },
-        "description": "Charge and apply Demonbane Mark by Defusing or Perfect Dodging attacks. Once the mark is applied and you land a Defuse, you can rapidly use your Skill against that enemy.",
-        "recommendedHeroes": ["Justina Gu", "Yueshan", "Feria Shen", "Viper Ning", "Zai"],
-        "difficulty": { "skillFloor": 2, "skillCeiling": 4 },
-        "power": { "singleTarget": 5, "multiTarget": 3 }
-    },
-    {
-        "name": "Kylin · Thunder Scorch Surge",
+        "name": "Kylin · Thunder Surge",
         "type": "thunder",
         "souljades": [
         { "name": "Thunderpull", "difficulty": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+20% Attack and successful attacks will build Thundershock on yourself." },
@@ -209,11 +48,15 @@
         { "name": "Backfire", "difficulty": "normal", "image": "img/builds/souljades/Triangle_Purple.png", "description": "+20% Attack, but 4% of your damage dealt will be dealt to yourself. Backlash effect disabled when below 25% Health." },
         { "name": "Soul-drawing", "difficulty": "nightscream", "image": "img/builds/souljades/Triangle_Purple.png", "description": "When below 45% of your max Health, heal for 12% of your damage dealt." }
         ],
+        "masteryJades": [
+            { "name": "Musket · Sky-rending Shot",
+                "heroes": ["Kylin Zhang"] }
+        ],
         "souljadeAttributes": {
-        "target": ["x7 [Windfall]", "x4 [Scorching]", "x7 Rage/DMG", "x7 Attack", "x3 DMG to Bosses"],
+        "target": ["x7 [Windfall]", "x7 Rage/DMG", "x7 Attack", "x7 DMG to Bosses"],
         "placeholder": ["Melee Weapon Damage"]
         },
-        "potentialPlan": { "image": "img/builds/trees/4.0/ThunderScorchSurge.png", "alt": "Kylin's Thunder Surge Potential Plan" },
+        "potentialPlan": { "image": "img/builds/trees/5.0/KylinThunderSurge.png", "alt": "Kylin's Thunder Surge Potential Plan" },
         "wieldingTypes": [
         { "name": "Ice-Wielding", "count": 3, "image": "img/builds/souljades/Ice-Wielding.png" },
         { "name": "Thunder-Wielding", "count": 1, "image": "img/builds/souljades/Thunder-Wielding.png" },
@@ -233,6 +76,155 @@
         "power": { "singleTarget": 4.5, "multiTarget": 5 }   
     },
     {
+        "name": "Ice Surge",
+        "type": "ice",
+        "souljades": [
+        { "name": "Successive Ice Blast" },
+        { "name": "Frozen Blast" },
+        { "name": "Depths Blast" },
+        { "name": "Element Surge · Ice-Wielding", "difficulty": "hard", "description": "Grants +15% Attack and +50% Frostbite Accumulation Rate, allowing you to activate Ice Blasts much easier." },
+        { "name": "Chill Spike" },
+        { "name": "Frostbite Chain" }
+        ],
+        "souljadeAttributes": {
+        "target": ["x4 [Moderation]", "x9 [Windfall]", "x7 Attack", "x7 Ice Blast DMG", "x1 DMG to Bosses"],
+        "placeholder": ["DMG to Bosses", "Melee Weapon Damage"]
+        },
+        "potentialPlan": { "image": "img/builds/trees/5.0/IceSurge.png", "alt": "Ice Surge Potential Plan" },
+        "wieldingTypes": [
+        { "name": "Ice-Wielding", "count": 6, "image": "img/builds/souljades/Ice-Wielding.png" }
+        ],
+        "curios": [
+        { "name": "Wordless Sutra", "image": "img/builds/curios/3.0/WordlessSutra.png", "description": "Chain Crush will deal x1.8 damage.", "awakening": "Chain Crush can execute enemies below 8% of max Health." },
+        { "name": "Verve Banner", "image": "img/builds/curios/3.0/VerveBanner.png", "description": "While in Element Surge state, weapon attacks are granted +60% Rage/DMG & +10% Life steal.", "awakening": "While in Element Surge state, all attacks are granted +60% Rage/DMG & 10% Life steal." }
+        ],
+        "curioAttributes": {
+        "yang": ["Elemental Accumulation Rate", "Attack", "DMG to Bosses", "Weapon DMG Bonus"],
+        "yin": ["Rage/DMG Taken", "Health", "Armor", "Luck"]
+        },
+        "description": "Attacks will accumulate Frostbite on enemies, causing Ice Blasts. After 2 Ice Blasts, your Frostbite will fill, activating Frost Surge. During Frost Surge, using a Skill will summon an Ice Thorn that deals 910% of your Attack as Ice Blast DMG on a 4 second cooldown. After 15 Ice Blasts, your next uncharged melee attack will trigger Chain Crush, dealing 3290% of your Attack as Ice Blast DMG.",
+        "recommendedHeroes": ["Viper Ning", "Feria Shen", "Tianhai", "Tarka Ji", "Valda Cui", "Matari", "Yueshan", "Tessa", "Ziping Ying", "Justina Gu", "Akos Hu", "Zai"],
+        "difficulty": { "skillFloor": 3, "skillCeiling": 4 },
+        "power": { "singleTarget": 4, "multiTarget": 4.5 }
+    },
+    {
+        "name": "Bow · Poison Surge",
+        "type": "poison",
+        "masteryJade": {
+            "name": "Bow · Heartbreak Arrows",
+            "weapon": "Bow",
+            "compatibleHeroes": ["Temulch", "Tessa", "Justina Gu"],
+            "difficulty": "normal",
+            "description": "Charged attacks fire an additional arrow that deals increased damage and applies Poison."
+        },
+        "souljades": [
+        { "name": "Scattershot Enhance", "difficulty": "topaz", "image": "img/builds/souljades/Circle_Purple.png", "description": "Bow will fire 5 arrows instead of 3, increasing its spread, damage and Deadeye charge." },
+        { "name": "Desperation", "difficulty": "nightscream", "image": "img/builds/souljades/Flower_Gold.png", "description": "Bow's Stage 2 Charged Attacks will explode for more damage and Deadeye charge." },
+        { "name": "Element Surge · Poison-Wielding", "difficulty": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "+20% Attack bonus and +25% Poison Blast DMG bonus. Toxin Surge doesn't activate normally with this build." },
+        { "name": "Pestilent Pool", "difficulty": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "Poison Blasts summon Toxic Pools applying up to 2 Toxified Stacks to enemies within." },
+        { "name": "Miasma Drive", "difficulty": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+25% Attack for 18s after applying Toxified to an enemy." },
+        { "name": "Backfire", "difficulty": "normal", "image": "img/builds/souljades/Triangle_Purple.png", "description": "+20% Attack at the cost of 4% of damage dealt to self." }
+        ],
+        "masteryJades": [
+            { "name": "Bow · Heartbreak Arrows",
+                "heroes": ["Valda Cui"] }
+        ],
+        "souljadeAttributes": {
+        "target": ["x7 [Windfall]", "x7 DMG to Bosses", "x7 Ranged Weapon Damage", "x6 Attack", "x1 Deadeye build rate"],
+        "placeholder": ["Attack", "Charged Attack DMG"]
+        },
+        "potentialPlan": { "image": "img/builds/trees/5.0/BowPoisonSurge.png", "alt": "Poison Surge Bow Potential Plan" },
+        "wieldingTypes": [
+        { "name": "Ice-Wielding", "count": 1, "image": "img/builds/souljades/Ice-Wielding.png" },
+        { "name": "Thunder-Wielding", "count": 1, "image": "img/builds/souljades/Thunder-Wielding.png" },
+        { "name": "Poison-Wielding", "count": 4, "image": "img/builds/souljades/Poison-Wielding.png" }
+        ],
+        "curios": [
+        { "name": "Tideforce Bead", "image": "img/builds/curios/3.0/TideforceBead.png", "description": "Activating a number of Elemental Bursts will summon Water Spears dealing 5400% of your Attack.", "awakening": "Number of Elemental Bursts required reduced to 3." },
+        { "name": "Prevailing Robe", "image": "img/builds/curios/3.0/PrevailingRobe.png", "description": "When Armor goes below 30%, repair 60% of max Armor over 3s with a 10s cooldown.", "awakening": "Gain +15% DMG Bonus while Armor is full." }
+        ],
+        "curioAttributes": {
+        "yang": ["Weapon DMG Bonus", "Attack", "DMG to Bosses", "Elemental Accumulation Rate"],
+        "yin": ["DMG Reduction", "Boss DMG Reduction", "Armor", "Luck"]
+        },
+        "description": "Deal massive damage by using the Stage 2 Charged Attack of your Bow. Perfectly timing the release of the charge, while Deadeye is active, will cast Void Destroyer, a massive 3-part attack that only consumes 1 ammo. Beware, this build will leave you at 1 Health, so you'll mainly rely on your Armor to survive any hits.<br><br>Reaching ~8.5% Deadeye build rate will allow you to activate Deadeye with just 3 Stage 2 Charged Attacks instead of 4. 30.5%+ Deadeye build rate will allow you to activate Deadeye in 2 Stage 2 Charged Attacks if they're headshots. 43.9%+ Deadeye build rate will allow you to activate Deadeye in 2 Stage 2 Charged Attacks as long as one is a headshot.",
+        "recommendedHeroes": ["Temulch", "Tessa", "Justina Gu"],
+        "difficulty": { "skillFloor": 2, "skillCeiling": 3.5 },
+        "power": { "singleTarget": 5, "multiTarget": 2.5 }
+    },
+    {
+        "name": "Thunder Scorch Surge",
+        "type": "burn",
+        "souljades": [
+            { "name": "Thunderpull", "difficulty": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+20% Attack and successful attacks will build Thundershock on yourself." },
+            { "name": "Thunder Counter", "difficulty": "nightscream", "image": "img/builds/souljades/Rectangle_Gold.png", "description": "Enables the ability to parry Divine Thunder strikes." },
+            { "name": "Element Surge · Thunder-Wielding", "difficulty": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "+12% Attack bonus and +55% Divine Thunder DMG bonus. When Thundershock is full, will activate Thunder Surge." },
+            { "name": "Thunder Charge", "difficulty": "nightscream", "image": "img/builds/souljades/Diagonal_Gold.png", "description": "During Thunder Surge, everytime you deal 10x your Attack with a Weapon, will summon a strike of Divine Thunder on yourself." },
+            { "name": "Draco Stride", "difficulty": "normal", "image": "img/builds/souljades/Diagonal_Gold.png", "description": "Dodges will summon a wave 0.5s after, applying Soak to enemies hit." },
+            { "name": "Incineration", "difficulty": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+25% Attack for 10s after activating Hydroflare, but apply a Burn to yourself" }
+        ],
+        "masteryJades": [
+            { "name": "General · Sap",
+                "heroes": ["Viper Ning", "Feria Shen", "Tianhai", "Valda Cui", "Matari", "Yueshan", "Tessa", "Ziping Ying", "Justina Gu", "Akos Hu", "Zai", "Temulch", "Kylin Zhang", "Wuchen", "Shayol Wei", "Kurumi", "Takeda Nobutada"] },
+            { "name": "Cannon · Primordial Blast",
+                "heroes": ["Tarka Ji"] }
+        ],
+        "souljadeAttributes": {
+        "target": ["x4 [Scorching]", "x9 [Windfall]", "x7 Health", "x7 Attack"],
+        "placeholder": ["DMG to Bosses", "Counter Recovery", "Rage/DMG"]
+        },
+        "potentialPlan": { "image": "img/builds/trees/5.0/Hydroflare.png", "alt": "Thunder Scorch Surge Potential Plan" },
+        "wieldingTypes": [
+        { "name": "Ice-Wielding", "count": "1-4", "image": "img/builds/souljades/Ice-Wielding.png" },
+        { "name": "Thunder-Wielding", "count": 1, "image": "img/builds/souljades/Thunder-Wielding.png" },
+        { "name": "Poison-Wielding", "count": "1-4", "image": "img/builds/souljades/Poison-Wielding.png" }
+        ],
+        "curios": [
+        { "name": "Tideforce Bead", "image": "img/builds/curios/3.0/TideforceBead.png", "description": "Activating a number of Elemental Bursts will summon Water Spears dealing 5400% of your Attack.", "awakening": "Number of Elemental Bursts required reduced to 3." },
+        { "name": "Verve Banner", "image": "img/builds/curios/3.0/VerveBanner.png", "description": "While in Element Surge state, weapon attacks are granted +60% Rage/DMG & +10% Life steal.", "awakening": "While in Element Surge state, all attacks are granted +60% Rage/DMG & 10% Life steal." }
+        ],
+        "curioAttributes": {
+        "yang": ["Attack", "DMG to Bosses", "Elemental Accumulation Rate", "Weapon DMG Bonus"],
+        "yin": ["Health", "Rage/DMG Taken", "Armor", "Luck"]
+        },
+        "description": "Your attacks will build Thundershock on you overtime. When your Thundershock meter fills, Thunder Surge will activate, sending a single bolt of Divine Thunder onto you. You can parry this bolt to activate Scorching, which will apply a massive Burn dealing 5400% of your Attack as Burn DMG over 18 seconds to your next weapon attack. When an enemy is Burning and Soaked, Hydroflare will activate, dealing the remaining Burn damage instantly. You can apply Soak by either dodging near an enemy to hit them with Draco Stride or by activating an Elemental Burst.",
+        "recommendedHeroes": ["All Heroes"],
+        "difficulty": { "skillFloor": 3, "skillCeiling": 4.5 },
+        "power": { "singleTarget": 4.5, "multiTarget": 3.5 }   
+    },
+    {
+        "name": "Thunder Mark Chain",
+        "type": "thunder",
+        "souljades": [
+        { "name": "Elemental Surge" },
+        { "name": "Thunder Chain" },
+        { "name": "Defuse · Thunder Charge", "difficulty": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "Defuses and Perfect Dodges will charge a meter. When full, applies a Demonbane Mark to the last enemy you evaded." },
+        { "name": "Thunderbind Spell", "difficulty": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "Demonbane Marks will set the cooldown of Divine Thunder to 0s on the targets they're on." },
+        { "name": "Arcane Stratos", "difficulty": "nightscream", "image": "img/builds/souljades/Diagonal_Gold.png", "description": "Summons a powerful Bolt on the nearest enemy when you use a Hero Skill." },
+        { "name": "Defuse · Solidification", "difficulty": "hard", "image": "img/builds/souljades/Cross_Purple.png", "description": "+20% Attack & +40% Elemental Accumulation Rate for 15s after a Defuse." }
+        ],
+        "souljadeAttributes": {
+        "target": ["x3 [Windfall]", "x4 [Moderation]", "x7 Attack", "x7 DMG to Bosses", "x7 Divine Thunder DMG"],
+        "placeholder": ["DMG to Astral Aegis", "Rage/DMG"]
+        },
+        "potentialPlan": { "image": "img/builds/trees/5.0/ThunderMarkChain.png", "alt": "Thunder Lotus Mark Potential Plan" },
+        "wieldingTypes": [
+        { "name": "Thunder-Wielding", "count": 6, "image": "img/builds/souljades/Thunder-Wielding.png" }
+        ],
+        "curios": [
+        { "name": "Tideforce Bead", "image": "img/builds/curios/3.0/TideforceBead.png", "description": "Activating a number of Elemental Bursts will summon Water Spears dealing 5400% of your Attack.", "awakening": "Number of Elemental Bursts required reduced to 3." },
+        { "name": "Verve Banner", "image": "img/builds/curios/3.0/VerveBanner.png", "description": "While in Element Surge state, weapon attacks are granted +60% Rage/DMG & +10% Life steal.", "awakening": "While in Element Surge state, all attacks are granted +60% Rage/DMG & 10% Life steal." }
+        ],
+        "curioAttributes": {
+        "yang": ["Elemental Accumulation Rate", "Skill DMG Bonus", "Attack", "DMG to Bosses"],
+        "yin": ["Rage/DMG Taken", "DMG Reduction", "Boss DMG Reduction", "Luck"]
+        },
+        "description": "Charge and apply Demonbane Mark by Defusing or Perfect Dodging attacks. Once the mark is applied and you land a Defuse, you can rapidly use your Skill against that enemy.",
+        "recommendedHeroes": ["Justina Gu", "Yueshan", "Feria Shen", "Viper Ning", "Zai"],
+        "difficulty": { "skillFloor": 2, "skillCeiling": 4 },
+        "power": { "singleTarget": 5, "multiTarget": 3 }
+    },
+    {
         "name": "Thunder Scorch",
         "type": "burn",
         "souljades": [
@@ -241,16 +233,16 @@
         { "name": "Thunderproof", "difficulty": "hard", "image": "img/builds/souljades/Rectangle_Purple.png", "description": "Reduces your max Thundershock by 25% and Divine Thunder will no longer stagger you." },
         { "name": "Draco Stride", "difficulty": "normal", "image": "img/builds/souljades/Diagonal_Gold.png", "description": "Dodges will summon a wave 0.5s after, applying Soak to enemies hit." },
         { "name": "Incineration", "difficulty": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+25% Attack for 10s after activating Hydroflare, but apply a Burn to yourself" },
-        { "name": "Copper Ward", "difficulty": "hard", "image": "img/builds/souljades/Rectangle_Purple.png", "description": "+40% Health, but removes all Armor." }
+        { "name": "Backfire" }
         ],
         "souljadeAttributes": {
-        "target": ["x4 [Scorching]", "x9 [Windfall]", "x7 Health", "x7 Attack"],
-        "placeholder": ["DMG to Bosses", "Counter Recovery", "Rage/DMG"]
+        "target": ["x4 [Scorching]", "x10 [Windfall]", "x7 Health", "x7 Attack"],
+        "placeholder": ["Armor", "Rage/DMG"]
         },
-        "potentialPlan": { "image": "img/builds/trees/4.0/ThunderScorch.png", "alt": "Thunder Scorch Potential Plan" },
+        "potentialPlan": { "image": "img/builds/trees/5.0/Hydroflare.png", "alt": "Thunder Scorch Potential Plan" },
         "wieldingTypes": [
-        { "name": "Ice-Wielding", "count": 2, "image": "img/builds/souljades/Ice-Wielding.png" },
-        { "name": "Poison-Wielding", "count": 4, "image": "img/builds/souljades/Poison-Wielding.png" }
+        { "name": "Ice-Wielding", "count": "1-5", "image": "img/builds/souljades/Ice-Wielding.png" },
+        { "name": "Poison-Wielding", "count": "1-5", "image": "img/builds/souljades/Poison-Wielding.png" }
         ],
         "curios": [
         { "name": "Tideforce Bead", "image": "img/builds/curios/3.0/TideforceBead.png", "description": "Activating a number of Elemental Bursts will summon Water Spears dealing 5400% of your Attack.", "awakening": "Number of Elemental Bursts required reduced to 3." },
@@ -261,31 +253,39 @@
         "yin": ["Health", "Rage/DMG Taken", "Armor", "Luck"]
         },
         "description": "Your attacks will build Thundershock on you overtime. When your Thundershock meter fills, 4 bolts of Divine Thunder will land on you, which you can parry. By implementing dodge cancels, you can apply Scorching up to twice, which does a massive Burn dealing 5400% of your Attack as Burn DMG over 18 seconds to your weapon attacks. When an enemy is Burning and Soaked, Hydroflare will activate, dealing the remaining Burn damage instantly. You can apply Soak by either dodging near an enemy to hit them with Draco Stride or by activating an Elemental Burst.",
-        "recommendedHeroes": ["All Heroes"],
+        "recommendedHeroes": ["Shayol Wei"],
         "difficulty": { "skillFloor": 4, "skillCeiling": 5 },
         "power": { "singleTarget": 4.5, "multiTarget": 3.5 }   
     },
     {
-        "name": "Swarm · Poison Surge",
-        "type": "poison",
+        "name": "Threefold Thunder",
+        "type": "thunder",
         "souljades": [
-        { "name": "Element Surge · Poison-Wielding", "difficulty": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "+20% Attack bonus and +25% Poison Blast DMG bonus. Toxin Surge doesn't activate normally with this build." },
-        { "name": "Pestilent Pool", "difficulty": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "Poison Blasts summon Toxic Pools applying up to 2 Toxified Stacks to enemies within." },
-        { "name": "Miasma Drive", "difficulty": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+25% Attack for 18s after applying Toxified to an enemy." },
-        { "name": "Renewed Vigor", "difficulty": "nightscream", "image": "img/builds/souljades/Diagonal_Gold.png", "description": "+20% Attack for 4 seconds after you receieve any heal." },
-        { "name": "Backfire", "difficulty": "normal", "image": "img/builds/souljades/Triangle_Purple.png", "description": "+20% Attack at the cost of 4% of damage dealt to self." },
-        { "name": "Shattered Edge", "difficulty": "hard", "image": "img/builds/souljades/Triangle_Purple.png", "description": "+18% Attack for 10 seconds after you shoot an arrow." },
-        { "name": "Swarm · Scorching Sting" }
+            { "name": "Threefold Gathering" },
+            { "name": "Four Spirits Converge" },
+            { "name": "Dual Spirit Marks" },
+            { "name": "Thunderpull" },
+            { "name": "Thunder Counter" },
+            { "name": "Thunderproof" }
+        ],
+        "masteryJades": [
+            { "name": "General · Sap",
+                "heroes": ["Feria Shen", "Kurumi", "Valda Cui", "Shayol Wei"] },
+            { "name": "General · Cyan Fang",
+                "heroes": ["Matari", "Wuchen"] },
+            { "name": "Longsword · Horizontal Energy",
+                "heroes": ["Viper Ning"] },
+            { "name": "Staff · Jabbing",
+                "heroes": ["Tianhai"] }
         ],
         "souljadeAttributes": {
-        "target": ["x6 [Windfall]", "x7 DMG to Bosses", "x7 Ranged Weapon Damage", "x6 Attack", "x2 Deadeye build rate"],
-        "placeholder": ["Deadeye build rate"]
+        "target": ["x14 [Windfall]", "x7 DMG to Bosses", "x7 Attack"],
+        "placeholder": ["DMG to Astral Aegis", "Melee Weapon Damage"]
         },
-        "potentialPlan": { "image": "img/builds/trees/4.0/BowPoisonSurge.png", "alt": "Poison Surge Swarm Potential Plan" },
+        "potentialPlan": { "image": "img/builds/trees/5.0/ThreefoldThunder.png", "alt": "Poison Surge Swarm Potential Plan" },
         "wieldingTypes": [
-        { "name": "Ice-Wielding", "count": 2, "image": "img/builds/souljades/Ice-Wielding.png" },
-        { "name": "Thunder-Wielding", "count": 2, "image": "img/builds/souljades/Thunder-Wielding.png" },
-        { "name": "Poison-Wielding", "count": 2, "image": "img/builds/souljades/Poison-Wielding.png" }
+        { "name": "Ice-Wielding", "count": "1-5", "image": "img/builds/souljades/Ice-Wielding.png" },
+        { "name": "Poison-Wielding", "count": "1-5", "image": "img/builds/souljades/Poison-Wielding.png" }
         ],
         "curios": [
         { "name": "Tideforce Bead", "image": "img/builds/curios/3.0/TideforceBead.png", "description": "Activating a number of Elemental Bursts will summon Water Spears dealing 5400% of your Attack.", "awakening": "Number of Elemental Bursts required reduced to 3." },
@@ -295,9 +295,9 @@
         "yang": ["Weapon DMG Bonus", "Attack", "DMG to Bosses", "Elemental Accumulation Rate"],
         "yin": ["DMG Reduction", "Boss DMG Reduction", "Armor", "Luck"]
         },
-        "description": "Hitting missiles from your Swarm weapon will build Deadeye. Once full, unlocks a special Deadeye attack called Celestial Patrol Order that shoots a salvo of missiles into the sky landing on an enemy nearby for 6000% of your Attack as Charged Ranged Weapon DMG. You use this attack by fully charging the Swarm before releasing. While in Deadeye, your current charge is conserved while dodging. Swarm's counterstrikes deal great damage and build a large amount of Deadeye, so aim for them when possible.",
-        "recommendedHeroes": ["Tianhai", "Wuchen"],
-        "difficulty": { "skillFloor": 2.5, "skillCeiling": 4 },
-        "power": { "singleTarget": 3, "multiTarget": 1.5 }
+        "description": "Successful Counterstrikes will give a Heaven Mark. Defuse Counterattacks will give an Earth Mark. Aegis-breaks Martial Skills will give a Mortal Mark. Begin by first acquiring all 3 Marks, then using a Crouched Horizontal. This will activate Black Tortoise's Aid. From there, try to either get 3 Earth or 3 Mortal Marks and do another Crouched Horizontal to summon high damaging effects. Failing to do so within the 16s window of Black Tortoise's Aid will do 1/4th of the damage.",
+        "recommendedHeroes": ["Viper Ning", "Feria Shen", "Tianhai", "Kurumi", "Valda Cui", "Matari", "Wuchen", "Shayol Wei"],
+        "difficulty": { "skillFloor": 4.5, "skillCeiling": 5 },
+        "power": { "singleTarget": 5, "multiTarget": 3.5 }
     }
 ]
