@@ -76,6 +76,43 @@
         "power": { "singleTarget": 4.5, "multiTarget": 5 }   
     },
     {
+        "name": "Shayol • Armor Surge",
+        "type": "poison",
+        "souljades": [
+                { "name": "Sub-Zero Seal" },
+                { "name": "Soul Shiver" },
+                { "name": "Pestilent Pool" },
+                { "name": "Element Surge · Poison-Wielding" },
+                { "name": "Miasma Drive" },
+                { "name": "Renewed Vigor" }
+        ],
+        "masteryJades": [
+                { "name": "General · Sap", "heroes": ["Shayol Wei"] }
+        ],
+        "souljadeAttributes": {
+            "target": ["x7 [Windfall]","x6 Armor","x5 Attack","x5 DMG to Bosses","x5 Rage/DMG"],
+            "placeholder": ["Armor","Attack","DMG to Bosses","Rage/DMG"]
+        },
+        "potentialPlan": { "image": "img/builds/trees/5.0/ShayolArmorSurge.png", "alt": "Shayol • Armor Surge Potential Plan" },
+        "wieldingTypes": [
+            { "name": "Ice-Wielding", "count": 1, "image": "img/builds/souljades/Ice-Wielding.png" },
+            { "name": "Thunder-Wielding", "count": 1, "image": "img/builds/souljades/Thunder-Wielding.png" },
+            { "name": "Poison-Wielding", "count": 4, "image": "img/builds/souljades/Poison-Wielding.png" }
+        ],
+        "curios": [
+            { "name": "Tideforce Bead", "image": "img/builds/curios/3.0/TideforceBead.png", "description": "Activating a number of Elemental Bursts will summon Water Spears dealing 5400% of your Attack.", "awakening": "Number of Elemental Bursts required reduced to 3." },
+            { "name": "Verve Banner", "image": "img/builds/curios/3.0/VerveBanner.png", "description": "While in Element Surge state, weapon attacks are granted +60% Rage/DMG & +10% Life steal.", "awakening": "While in Element Surge state, all attacks are granted +60% Rage/DMG & 10% Life steal." }
+        ],
+        "curioAttributes": {
+            "yang": ["Attack", "DMG to Bosses", "Rage/DMG", "Weapon DMG Bonus"],
+            "yin": ["Rage/DMG Taken", "Health", "Armor", "Luck"]
+        },
+        "description": "You will generate Frostbite on yourself over time, however, your attacks will heal yourself for 2.4% of your damage dealt.  Entering Shayol's Ultimate will allow you to repeatedly throw your shield for heavy damage and can even stagger bosses.  This build is rather weak while outside of her Ultimate window.",
+        "recommendedHeroes": ["Shayol Wei"],
+        "difficulty": { "skillFloor": 1, "skillCeiling": 2 },
+        "power": { "singleTarget": 4, "multiTarget": 3.5 }
+    },
+    {
         "name": "Ice Surge",
         "type": "ice",
         "souljades": [
