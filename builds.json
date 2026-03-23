@@ -88,7 +88,7 @@
                 { "name": "General · Sap", "heroes": ["Shayol Wei"] }
         ],
         "souljadeAttributes": {
-            "target": ["x7 [Windfall]","x6 Armor","x5 Attack","x5 DMG to Bosses","x5 Rage/DMG"],
+            "target": ["x7 [Windfall]","x6 DMG to Bosses","x5 Armor","x5 Attack","x5 Rage/DMG"],
             "placeholder": ["Armor","Attack","DMG to Bosses","Rage/DMG"]
         },
         "potentialPlan": { "image": "img/builds/trees/5.0/ShayolArmorSurge.png", "alt": "Shayol • Armor Surge Potential Plan" },
