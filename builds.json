@@ -157,6 +157,44 @@
         "power": { "singleTarget": 4, "multiTarget": 4.5 }
     },
     {
+        "name": "Thunder Seal",
+        "type": "thunder",
+        "souljades": [
+                { "name": "Defuse · Thunder Charge" },
+                { "name": "Thunderbind Spell" },
+                { "name": "Defuse · Solidification" },
+                { "name": "Thunderpull" },
+                { "name": "Thunder Counter" },
+                { "name": "Arcane Stratos" }
+        ],
+        "masteryJades": [
+            { "name": "General · Sap", "heroes": ["Feria Shen", "Tianhai", "Valda Cui", "Matari", "Yueshan", "Tessa", "Ziping Ying", "Akos Hu", "Temulch", "Kylin Zhang", "Wuchen", "Shayol Wei", "Kurumi"] },
+            { "name": "Longsword · Horizontal Energy", "heroes": ["Viper Ning", "Justina Gu"] },
+            { "name": "Whipsword · Blazing Slash", "heroes": ["Zai"] },
+            { "name": "Cannon · Primordial Blast", "heroes": ["Tarka Ji"] }
+        ],
+        "souljadeAttributes": {
+            "target": ["x7 [Windfall]","x4 [Moderation]","x3 Attack","x7 DMG to Bosses","x7 Divine Thunder DMG"],
+            "placeholder": ["Attack","DMG to Astral Aegis"]
+        },
+        "potentialPlan": { "image": "img/builds/trees/5.0/ThunderSeal.png", "alt": "Thunder Seal Potential Plan" },
+        "wieldingTypes": [
+            { "name": "Thunder-Wielding", "count": 6, "image": "img/builds/souljades/Thunder-Wielding.png" }
+        ],
+        "curios": [
+            { "name": "Tideforce Bead", "image": "img/builds/curios/3.0/TideforceBead.png", "description": "Activating a number of Elemental Bursts will summon Water Spears dealing 5400% of your Attack.", "awakening": "Number of Elemental Bursts required reduced to 3." },
+            { "name": "Verve Banner", "image": "img/builds/curios/3.0/VerveBanner.png", "description": "While in Element Surge state, weapon attacks are granted +60% Rage/DMG & +10% Life steal.", "awakening": "While in Element Surge state, all attacks are granted +60% Rage/DMG & 10% Life steal." }
+        ],
+        "curioAttributes": {
+            "yang": ["Attack", "DMG to Bosses", "Rage/DMG", "Weapon DMG Bonus"],
+            "yin": ["Rage/DMG Taken", "Health", "Armor", "Luck"]
+        },
+        "description": "Perfect Dodges and Defuses will charge a meter. Once this meter fills, the next Perfect Dodge or Defuse will apply Demonbane Mark · Thunder.  This Mark will allow you to rapidly accumulate Thundershock on that enemy, allow you to repeatedly use your damaging Skill when combined with [Moderation]. Your attacks will also accumulate Thundershock on yourself, which when filled you can parry for massive damage, with additional burst damage on marked targets.",
+        "recommendedHeroes": ["Viper Ning", "Feria Shen", "Tianhai", "Tarka Ji", "Valda Cui", "Yueshan", "Tessa", "Justina Gu", "Kylin Zhang", "Zai", "Shayol Wei"],
+        "difficulty": { "skillFloor": 4, "skillCeiling": 5 },
+        "power": { "singleTarget": 5, "multiTarget": 3 }
+    },
+    {
         "name": "Bow · Poison Surge",
         "type": "poison",
         "masteryJade": {
