@@ -31,7 +31,7 @@
         "yang": ["Attack", "DMG to Bosses", "Elemental Accumulation Rate", "Weapon DMG Bonus"],
         "yin": ["Health", "Rage/DMG Taken", "Armor", "Luck"]
         },
-        "description": "Your attacks will build Thundershock on you overtime. When your Thundershock meter fills, 4 strikes Divine Thunder will land on you, in which you can parry. Valda's ability applies a unique version of Soak that doesn't expire early from Hydroflare. By combining this with a Musket shot before Divine Thunder activates, you can activate up to 4 full Scorchings in quick succession, dealing massive damage.",
+        "description": "Your attacks will build Thundershock on you overtime. When your Thundershock meter fills, 4 strikes Divine Thunder will land on you, in which you can parry. Valda's ability applies a unique version of Soak that doesn't expire early from Hydroflare. By combining this with a Musket shot before Divine Thunder activates, you can activate up to 4 full Scorchings in quick succession, dealing massive damage.<br><br>Make sure <strong>Musket · Sky-rending Shot</strong> is Ice-Wielding for best results.",
         "recommendedHeroes": ["Valda Cui"],
         "difficulty": { "skillFloor": 3, "skillCeiling": 4 },
         "power": { "singleTarget": 5, "multiTarget": 4 }   
