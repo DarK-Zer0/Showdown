@@ -386,7 +386,7 @@
         "yang": ["Weapon DMG Bonus", "Attack", "DMG to Bosses", "Elemental Accumulation Rate"],
         "yin": ["DMG Reduction", "Boss DMG Reduction", "Armor", "Luck"]
         },
-        "description": "Successful Counterstrikes will give a Heaven Mark. Defuse Counterattacks will give an Earth Mark. Aegis-breaks Martial Skills will give a Mortal Mark. Begin by first acquiring all 3 Marks, then using a Crouched Horizontal. This will activate Black Tortoise's Aid. From there, try to either get 3 Earth or 3 Mortal Marks and do another Crouched Horizontal to summon high damaging effects. Failing to do so within the 16s window of Black Tortoise's Aid will do 1/4th of the damage.",
+        "description": "Successful Counterstrikes will give a Heaven Mark. Defuse Counterattacks will give an Earth Mark. Aegis-breaks Martial Skills will give a Mortal Mark. Begin by first acquiring all 3 Marks, then using a Crouched Horizontal. This will activate Black Tortoise's Aid. From there, try to either get 3 Earth or 3 Mortal Marks and do another Crouched Horizontal to summon high damaging effects. Failing to do so within the 16s window of Black Tortoise's Aid will do 1/4th of the damage. <br><br>Use <strong>Counter Prowess</strong> to make landing Counterstrikes easier OR <strong>Defuse Prowess</strong> for high DPS on your Aegis-breaks.",
         "recommendedHeroes": ["Viper Ning", "Feria Shen", "Tianhai", "Kurumi", "Valda Cui", "Matari", "Wuchen", "Shayol Wei"],
         "difficulty": { "skillFloor": 4.5, "skillCeiling": 5 },
         "power": { "singleTarget": 5, "multiTarget": 3.5 }
