@@ -51,8 +51,8 @@
             { "name": "Musket · Sky-rending Shot", "heroes": ["Kylin Zhang"] }
         ],
         "souljadeAttributes": {
-        "target": ["x7 [Windfall]", "x7 Rage/DMG", "x7 Attack", "x7 DMG to Bosses"],
-        "placeholder": ["Melee Weapon Damage"]
+        "target": ["x7 [Windfall]", "x7 Crit Rate", "x7 Crit DMG", "x7 Rage/DMG"],
+        "placeholder": ["Attack"]
         },
         "potentialPlan": { "image": "img/builds/trees/5.0/KylinThunderSurge.png", "alt": "Kylin's Thunder Surge Potential Plan" },
         "wieldingTypes": [
@@ -88,8 +88,8 @@
                 { "name": "General · Sap", "heroes": ["Shayol Wei"] }
         ],
         "souljadeAttributes": {
-            "target": ["x7 [Windfall]","x6 DMG to Bosses","x5 Armor","x5 Attack","x5 Rage/DMG"],
-            "placeholder": ["Armor","Attack","DMG to Bosses","Rage/DMG"]
+            "target": ["x7 [Windfall]","x7 Crit Rate","x7 Crit DMG","x4 DMG to Bosses","x3 Rage/DMG"],
+            "placeholder": ["DMG to Bosses","Rage/DMG"]
         },
         "potentialPlan": { "image": "img/builds/trees/5.0/ShayolArmorSurge.png", "alt": "Shayol • Armor Surge Potential Plan" },
         "wieldingTypes": [
@@ -136,8 +136,8 @@
             { "name": "Heng Sword · Rent Firmament", "heroes": ["Shayol Wei"] }
         ],
         "souljadeAttributes": {
-        "target": ["x4 [Moderation]", "x9 [Windfall]", "x7 Attack", "x7 Ice Blast DMG", "x1 DMG to Bosses"],
-        "placeholder": ["DMG to Bosses", "Melee Weapon Damage"]
+        "target": ["x4 [Moderation]", "x3 [Windfall]", "x7 Crit Rate", "x7 Crit DMG", "x7 Ice Blast DMG"],
+        "placeholder": ["DMG to Bosses"]
         },
         "potentialPlan": { "image": "img/builds/trees/5.0/IceSurge.png", "alt": "Ice Surge Potential Plan" },
         "wieldingTypes": [
@@ -174,8 +174,8 @@
             { "name": "Cannon · Primordial Blast", "heroes": ["Tarka Ji"] }
         ],
         "souljadeAttributes": {
-            "target": ["x7 [Windfall]","x4 [Moderation]","x3 Attack","x7 DMG to Bosses","x7 Divine Thunder DMG"],
-            "placeholder": ["Attack","DMG to Astral Aegis"]
+            "target": ["x3 [Windfall]","x4 [Moderation]","x7 Crit Rate","x7 Crit DMG","x4 Divine Thunder DMG", "x3 DMG to Bosses"],
+            "placeholder": ["Divine Thunder DMG","DMG to Bosses","Attack"]
         },
         "potentialPlan": { "image": "img/builds/trees/5.0/ThunderSeal.png", "alt": "Thunder Seal Potential Plan" },
         "wieldingTypes": [
@@ -216,8 +216,8 @@
             { "name": "Bow · Heartbreak Arrows", "heroes": ["Temulch", "Tessa", "Justina Gu"] }
         ],
         "souljadeAttributes": {
-        "target": ["x7 [Windfall]", "x7 DMG to Bosses", "x7 Ranged Weapon Damage", "x6 Attack", "x1 Deadeye build rate"],
-        "placeholder": ["Attack", "Charged Attack DMG"]
+        "target": ["x7 [Windfall]", "x7 Crit Rate", "x7 Crit DMG", "x6 DMG to Bosses", "x1 Deadeye build rate"],
+        "placeholder": ["Ranged Weapon DMG"]
         },
         "potentialPlan": { "image": "img/builds/trees/5.0/BowPoisonSurge.png", "alt": "Poison Surge Bow Potential Plan" },
         "wieldingTypes": [
@@ -296,8 +296,8 @@
             { "name": "Whipsword · Blazing Slash", "heroes": ["Zai"] }
         ],
         "souljadeAttributes": {
-        "target": ["x3 [Windfall]", "x4 [Moderation]", "x7 Attack", "x7 DMG to Bosses", "x7 Divine Thunder DMG"],
-        "placeholder": ["DMG to Astral Aegis", "Rage/DMG"]
+        "target": ["x3 [Windfall]", "x4 [Moderation]", "x7 Crit Rate", "x7 Crit DMG", "x4 Divine Thunder DMG", "x3 DMG to Bosses"],
+        "placeholder": ["Divine Thunder DMG", "DMG to Bosses", "Attack"]
         },
         "potentialPlan": { "image": "img/builds/trees/5.0/ThunderMarkChain.png", "alt": "Thunder Lotus Mark Potential Plan" },
         "wieldingTypes": [
@@ -370,8 +370,8 @@
             { "name": "Staff · Jabbing", "heroes": ["Tianhai"] }
         ],
         "souljadeAttributes": {
-        "target": ["x14 [Windfall]", "x7 DMG to Bosses", "x7 Attack"],
-        "placeholder": ["DMG to Astral Aegis", "Melee Weapon Damage"]
+        "target": ["x7 [Windfall]", "x7 Crit Rate", "x7 Crit DMG", "x7 DMG to Bosses"],
+        "placeholder": ["Attack"]
         },
         "potentialPlan": { "image": "img/builds/trees/5.0/ThreefoldThunder.png", "alt": "Poison Surge Swarm Potential Plan" },
         "wieldingTypes": [
