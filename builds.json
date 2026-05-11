@@ -279,11 +279,11 @@
         "power": { "singleTarget": 4.5, "multiTarget": 3.5 }   
     },
     {
-        "name": "Thunder Mark Chain",
+        "name": "Thunder Mark Lotus",
         "type": "thunder",
         "souljades": [
-            { "name": "Elemental Surge" },
-            { "name": "Thunder Chain" },
+            { "name": "Elemental Lotus" },
+            { "name": "Ghastbloom" },
             { "name": "Defuse · Thunder Charge", "difficulty": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "Defuses and Perfect Dodges will charge a meter. When full, applies a Demonbane Mark to the last enemy you evaded." },
             { "name": "Thunderbind Spell", "difficulty": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "Demonbane Marks will set the cooldown of Divine Thunder to 0s on the targets they're on." },
             { "name": "Arcane Stratos", "difficulty": "nightscream", "image": "img/builds/souljades/Diagonal_Gold.png", "description": "Summons a powerful Bolt on the nearest enemy when you use a Hero Skill." },
@@ -296,10 +296,10 @@
             { "name": "Whipsword · Blazing Slash", "heroes": ["Zai"] }
         ],
         "souljadeAttributes": {
-        "target": ["x3 [Windfall]", "x4 [Moderation]", "x7 Crit Rate", "x7 Crit DMG", "x4 Divine Thunder DMG", "x3 DMG to Bosses"],
+        "target": ["x6 [Windfall]", "x4 [Moderation]", "x6 Crit Rate", "x6 Crit DMG", "x6 DMG to Bosses"],
         "placeholder": ["Divine Thunder DMG", "DMG to Bosses", "Attack"]
         },
-        "potentialPlan": { "image": "img/builds/trees/5.0/ThunderMarkChain.png", "alt": "Thunder Lotus Mark Potential Plan" },
+        "potentialPlan": { "image": "img/builds/trees/5.0/ThunderMarkLotus.png", "alt": "Thunder Lotus Mark Potential Plan" },
         "wieldingTypes": [
         { "name": "Thunder-Wielding", "count": 6, "image": "img/builds/souljades/Thunder-Wielding.png" }
         ],
@@ -313,7 +313,7 @@
         },
         "description": "Charge and apply Demonbane Mark by Defusing or Perfect Dodging attacks. Once the mark is applied and you land a Defuse, you can rapidly use your Skill against that enemy.",
         "recommendedHeroes": ["Justina Gu", "Yueshan", "Feria Shen", "Viper Ning", "Zai"],
-        "difficulty": { "skillFloor": 2, "skillCeiling": 4 },
+        "difficulty": { "skillFloor": 3, "skillCeiling": 5 },
         "power": { "singleTarget": 5, "multiTarget": 3 }
     },
     {
