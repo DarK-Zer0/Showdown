@@ -70,28 +70,28 @@
         },
         "description": "Your attacks will build Thundershock on you overtime. When your Thundershock meter fills, Thunder Surge will activate, sending a single bolt of Divine Thunder onto you. You can parry this bolt to deal a strong counterstrike. During Kylin's Ultimate, his counterstrikes are significantly enhanced, dealing 5200% of your Attack as Melee & Skill DMG. As you lose more Health in your Ultimate, you'll get an additional DMG Bonus, up to 180%.",
         "recommendedHeroes": ["Kylin Zhang"],
-        "difficulty": { "skillFloor": 3.5, "skillCeiling": 4.5 },
-        "power": { "singleTarget": 4.5, "multiTarget": 5 }   
+        "difficulty": { "skillFloor": 2.5, "skillCeiling": 4.5 },
+        "power": { "singleTarget": 5, "multiTarget": 4 }   
     },
     {
-        "name": "Shayol • Armor Surge",
+        "name": "Shayol • Threefold",
         "type": "poison",
         "souljades": [
                 { "name": "Sub-Zero Seal" },
                 { "name": "Soul Shiver" },
-                { "name": "Pestilent Pool" },
                 { "name": "Element Surge · Poison-Wielding" },
-                { "name": "Miasma Drive" },
-                { "name": "Renewed Vigor" }
+                { "name": "Threefold Gathering" },
+                { "name": "Four Spirits Converge" },
+                { "name": "Dual Spirit Marks" }
         ],
         "masteryJades": [
                 { "name": "General · Sap", "heroes": ["Shayol Wei"] }
         ],
         "souljadeAttributes": {
-            "target": ["x7 [Windfall]","x7 Crit Rate","x7 Crit DMG","x4 DMG to Bosses","x3 Rage/DMG"],
+            "target": ["x7 [Windfall]","x7 Crit Rate","x7 Crit DMG","x7 DMG to Bosses"],
             "placeholder": ["DMG to Bosses","Rage/DMG"]
         },
-        "potentialPlan": { "image": "img/builds/trees/5.0/ShayolArmorSurge.png", "alt": "Shayol • Armor Surge Potential Plan" },
+        "potentialPlan": { "image": "img/builds/trees/5.0/ThreefoldThunder.png", "alt": "Shayol • Threefold Potential Plan" },
         "wieldingTypes": [
             { "name": "Ice-Wielding", "count": 1, "image": "img/builds/souljades/Ice-Wielding.png" },
             { "name": "Thunder-Wielding", "count": 1, "image": "img/builds/souljades/Thunder-Wielding.png" },
@@ -105,10 +105,10 @@
             "yang": ["Attack", "DMG to Bosses", "Rage/DMG", "Weapon DMG Bonus"],
             "yin": ["Rage/DMG Taken", "Health", "Armor", "Luck"]
         },
-        "description": "You will generate Frostbite on yourself over time, however, your attacks will heal yourself for 2.4% of your damage dealt.  Entering Shayol's Ultimate will allow you to repeatedly throw your shield for heavy damage and can even stagger bosses.  This build is rather weak while outside of her Ultimate window.",
+        "description": "You will generate Frostbite on yourself over time, however, your attacks will heal yourself for 2.4% of your damage dealt.  Entering Shayol's Ultimate will allow you to repeatedly throw your shield for heavy damage and can even stagger bosses. Outside of your Ultimate, you can spam Aegis-breaks to activate Vermillion Bird Scorch for decent bursts of damage.",
         "recommendedHeroes": ["Shayol Wei"],
-        "difficulty": { "skillFloor": 1, "skillCeiling": 2 },
-        "power": { "singleTarget": 4, "multiTarget": 3.5 }
+        "difficulty": { "skillFloor": 1, "skillCeiling": 3.5 },
+        "power": { "singleTarget": 4, "multiTarget": 3 }
     },
     {
         "name": "Ice Surge",
@@ -153,8 +153,8 @@
         },
         "description": "Attacks will accumulate Frostbite on enemies, causing Ice Blasts. After 2 Ice Blasts, your Frostbite will fill, activating Frost Surge. During Frost Surge, using a Skill will summon an Ice Thorn that deals 910% of your Attack as Ice Blast DMG on a 4 second cooldown. After 15 Ice Blasts, your next uncharged melee attack will trigger Chain Crush, dealing 3290% of your Attack as Ice Blast DMG.",
         "recommendedHeroes": ["Viper Ning", "Feria Shen", "Tianhai", "Tarka Ji", "Valda Cui", "Matari", "Yueshan", "Tessa", "Ziping Ying", "Justina Gu", "Akos Hu", "Zai", "Shayol Wei"],
-        "difficulty": { "skillFloor": 3, "skillCeiling": 4 },
-        "power": { "singleTarget": 4, "multiTarget": 4.5 }
+        "difficulty": { "skillFloor": 2, "skillCeiling": 3.5 },
+        "power": { "singleTarget": 3.5, "multiTarget": 5 }
     },
     {
         "name": "Thunder Seal",
@@ -191,8 +191,8 @@
         },
         "description": "Perfect Dodges and Defuses will charge a meter. Once this meter fills, the next Perfect Dodge or Defuse will apply Demonbane Mark · Thunder.  This Mark will allow you to rapidly accumulate Thundershock on that enemy, allow you to repeatedly use your damaging Skill when combined with [Moderation]. Your attacks will also accumulate Thundershock on yourself, which when filled you can parry for massive damage, with additional burst damage on marked targets.",
         "recommendedHeroes": ["Viper Ning", "Feria Shen", "Tianhai", "Tarka Ji", "Valda Cui", "Yueshan", "Tessa", "Justina Gu", "Kylin Zhang", "Zai", "Shayol Wei"],
-        "difficulty": { "skillFloor": 4, "skillCeiling": 5 },
-        "power": { "singleTarget": 5, "multiTarget": 3 }
+        "difficulty": { "skillFloor": 3, "skillCeiling": 5 },
+        "power": { "singleTarget": 4.5, "multiTarget": 4.5 }
     },
     {
         "name": "Bow · Poison Surge",
@@ -235,8 +235,8 @@
         },
         "description": "Deal massive damage by using the Stage 2 Charged Attack of your Bow. Perfectly timing the release of the charge, while Deadeye is active, will cast Void Destroyer, a massive 3-part attack that only consumes 1 ammo. Beware, this build will leave you at 1 Health, so you'll mainly rely on your Armor to survive any hits.<br><br>Reaching ~8.5% Deadeye build rate will allow you to activate Deadeye with just 3 Stage 2 Charged Attacks instead of 4. 30.5%+ Deadeye build rate will allow you to activate Deadeye in 2 Stage 2 Charged Attacks if they're headshots. 43.9%+ Deadeye build rate will allow you to activate Deadeye in 2 Stage 2 Charged Attacks as long as one is a headshot.",
         "recommendedHeroes": ["Temulch", "Tessa", "Justina Gu"],
-        "difficulty": { "skillFloor": 2, "skillCeiling": 3.5 },
-        "power": { "singleTarget": 5, "multiTarget": 2.5 }
+        "difficulty": { "skillFloor": 2, "skillCeiling": 4 },
+        "power": { "singleTarget": 5, "multiTarget": 3.5 }
     },
     {
         "name": "Thunder Scorch Surge",
@@ -275,8 +275,8 @@
         },
         "description": "Your attacks will build Thundershock on you overtime. When your Thundershock meter fills, Thunder Surge will activate, sending a single bolt of Divine Thunder onto you. You can parry this bolt to activate Scorching, which will apply a massive Burn dealing 5400% of your Attack as Burn DMG over 18 seconds to your next weapon attack. When an enemy is Burning and Soaked, Hydroflare will activate, dealing the remaining Burn damage instantly. You can apply Soak by either dodging near an enemy to hit them with Draco Stride or by activating an Elemental Burst.",
         "recommendedHeroes": ["All Heroes"],
-        "difficulty": { "skillFloor": 3, "skillCeiling": 4.5 },
-        "power": { "singleTarget": 4.5, "multiTarget": 3.5 }   
+        "difficulty": { "skillFloor": 2.5, "skillCeiling": 4.5 },
+        "power": { "singleTarget": 4.5, "multiTarget": 4 }   
     },
     {
         "name": "Thunder Mark Lotus",
@@ -314,7 +314,7 @@
         "description": "Charge and apply Demonbane Mark by Defusing or Perfect Dodging attacks. Once the mark is applied and you land a Defuse, you can rapidly use your Skill against that enemy.",
         "recommendedHeroes": ["Justina Gu", "Yueshan", "Feria Shen", "Viper Ning", "Zai"],
         "difficulty": { "skillFloor": 3, "skillCeiling": 5 },
-        "power": { "singleTarget": 5, "multiTarget": 3 }
+        "power": { "singleTarget": 5, "multiTarget": 4.5 }
     },
     {
         "name": "Thunder Scorch",
@@ -349,8 +349,8 @@
         },
         "description": "Your attacks will build Thundershock on you overtime. When your Thundershock meter fills, 4 bolts of Divine Thunder will land on you, which you can parry. By implementing dodge cancels, you can apply Scorching up to twice, which does a massive Burn dealing 5400% of your Attack as Burn DMG over 18 seconds to your weapon attacks. When an enemy is Burning and Soaked, Hydroflare will activate, dealing the remaining Burn damage instantly. You can apply Soak by either dodging near an enemy to hit them with Draco Stride or by activating an Elemental Burst.",
         "recommendedHeroes": ["Shayol Wei"],
-        "difficulty": { "skillFloor": 4, "skillCeiling": 5 },
-        "power": { "singleTarget": 4.5, "multiTarget": 3.5 }   
+        "difficulty": { "skillFloor": 3, "skillCeiling": 4.5 },
+        "power": { "singleTarget": 4, "multiTarget": 4 }   
     },
     {
         "name": "Threefold Poison",
@@ -387,8 +387,8 @@
         },
         "description": "Successful Counterstrikes will give a Heaven Mark. Defuse Counterattacks will give an Earth Mark. Aegis-breaks Martial Skills will give a Mortal Mark. Begin by first acquiring all 3 Marks, then use any melee attack. This will activate Black Tortoise's Aid. From there, try to either get 3 Earth or 3 Mortal Marks and do another melee attack to summon high damaging effects. Failing to do so within the 16s window of Black Tortoise's Aid will do 1/4th of the damage. <br><br>Use <strong>Counter Prowess</strong> to make landing Counterstrikes easier OR <strong>Defuse Prowess</strong> for high DPS on your Aegis-breaks.",
         "recommendedHeroes": ["Viper Ning", "Feria Shen", "Tianhai", "Kurumi", "Valda Cui", "Matari", "Wuchen", "Shayol Wei"],
-        "difficulty": { "skillFloor": 4.5, "skillCeiling": 5 },
-        "power": { "singleTarget": 5, "multiTarget": 3.5 }
+        "difficulty": { "skillFloor": 2, "skillCeiling": 4 },
+        "power": { "singleTarget": 4.5, "multiTarget": 3.5 }
     },
     {
         "name": "Threefold Thunder",
@@ -426,7 +426,7 @@
         },
         "description": "Successful Counterstrikes will give a Heaven Mark. Defuse Counterattacks will give an Earth Mark. Aegis-breaks Martial Skills will give a Mortal Mark. Begin by first acquiring all 3 Marks, then use a melee attack. This will activate Black Tortoise's Aid. From there, try to either get 3 Earth or 3 Mortal Marks and do another melee attack to summon high damaging effects. Failing to do so within the 16s window of Black Tortoise's Aid will do 1/4th of the damage. <br><br>Use <strong>Counter Prowess</strong> to make landing Counterstrikes easier OR <strong>Defuse Prowess</strong> for high DPS on your Aegis-breaks.",
         "recommendedHeroes": ["Viper Ning", "Feria Shen", "Tianhai", "Kurumi", "Valda Cui", "Matari", "Wuchen", "Shayol Wei"],
-        "difficulty": { "skillFloor": 4.5, "skillCeiling": 5 },
-        "power": { "singleTarget": 5, "multiTarget": 3.5 }
+        "difficulty": { "skillFloor": 3.5, "skillCeiling": 4 },
+        "power": { "singleTarget": 4.5, "multiTarget": 3 }
     }
 ]
