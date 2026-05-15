@@ -192,7 +192,7 @@
         "description": "Perfect Dodges and Defuses will charge a meter. Once this meter fills, the next Perfect Dodge or Defuse will apply Demonbane Mark · Thunder.  This Mark will allow you to rapidly accumulate Thundershock on that enemy, allow you to repeatedly use your damaging Skill when combined with [Moderation]. Your attacks will also accumulate Thundershock on yourself, which when filled you can parry for massive damage, with additional burst damage on marked targets.",
         "recommendedHeroes": ["Viper Ning", "Feria Shen", "Tianhai", "Tarka Ji", "Valda Cui", "Yueshan", "Tessa", "Justina Gu", "Kylin Zhang", "Zai", "Shayol Wei"],
         "difficulty": { "skillFloor": 3, "skillCeiling": 5 },
-        "power": { "singleTarget": 4.5, "multiTarget": 4.5 }
+        "power": { "singleTarget": 4.0, "multiTarget": 4.0 }
     },
     {
         "name": "Bow · Poison Surge",
@@ -312,7 +312,7 @@
         "yin": ["Rage/DMG Taken", "DMG Reduction", "Boss DMG Reduction", "Luck"]
         },
         "description": "Charge and apply Demonbane Mark by Defusing or Perfect Dodging attacks. Once the mark is applied and you land a Defuse, you can rapidly use your Skill against that enemy.",
-        "recommendedHeroes": ["Justina Gu", "Yueshan", "Feria Shen", "Viper Ning", "Zai"],
+        "recommendedHeroes": ["Viper Ning", "Feria Shen", "Tianhai", "Tarka Ji", "Valda Cui", "Yueshan", "Tessa", "Justina Gu", "Kylin Zhang", "Zai", "Shayol Wei"],
         "difficulty": { "skillFloor": 3, "skillCeiling": 5 },
         "power": { "singleTarget": 5, "multiTarget": 4.5 }
     },
