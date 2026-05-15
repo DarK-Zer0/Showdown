@@ -353,15 +353,15 @@
         "power": { "singleTarget": 4, "multiTarget": 4 }   
     },
     {
-        "name": "Threefold Poison",
+        "name": "Threefold Desperation",
         "type": "poison",
         "souljades": [
             { "name": "Threefold Gathering" },
             { "name": "Four Spirits Converge" },
             { "name": "Dual Spirit Marks" },
-            { "name": "Pestilent Pool" },
+            { "name": "Desperation" },
             { "name": "Element Surge · Poison-Wielding", "difficulty": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "+20% Attack and Toxin will have a 15s delay where it can't be accumulated when maxed." },
-            { "name": "Miasma Drive" }
+            { "name": "Backfire" }
         ],
         "masteryJades": [
             { "name": "General · Sap", "heroes": ["Feria Shen", "Kurumi", "Valda Cui", "Shayol Wei"] },
@@ -373,7 +373,7 @@
         "target": ["x7 [Windfall]", "x7 Crit Rate", "x7 Crit DMG", "x7 DMG to Bosses"],
         "placeholder": ["Attack"]
         },
-        "potentialPlan": { "image": "img/builds/trees/5.0/ThreefoldThunder.png", "alt": "Poison Surge Swarm Potential Plan" },
+        "potentialPlan": { "image": "img/builds/trees/5.0/ThreefoldThunder.png", "alt": "Threefold Desperation Potential Plan" },
         "wieldingTypes": [
         { "name": "Poison-Wielding", "count": "6", "image": "img/builds/souljades/Poison-Wielding.png" }
         ],
