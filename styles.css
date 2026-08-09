@@ -969,6 +969,12 @@ table.changelog td:nth-child(3) {
     font-style: italic;
 }
 
+.curio-image {
+    max-width: 6em;
+    max-height: 6em;
+    /* object-fit: contain; */
+}
+
 /* Attribute Lists (New) */
 .attributes-grid {
     display: grid;
