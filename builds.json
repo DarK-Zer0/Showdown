@@ -14,7 +14,7 @@
             { "name": "Musket · Sky-rending Shot", "heroes": ["Kylin Zhang"] }
         ],
         "souljadeAttributes": {
-        "target": ["x7 [Windfall]", "x7 Crit Rate", "x7 Crit DMG", "x7 Rage/DMG"],
+        "target": ["x7 [Windfall]", "x6 Crit Rate", "x7 Crit DMG", "x1 Attack"],
         "placeholder": ["Attack"]
         },
         "potentialPlan": { "image": "img/builds/trees/5.0/KylinThunderSurge.png", "alt": "Kylin's Thunder Surge Potential Plan" },
