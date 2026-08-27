@@ -294,7 +294,7 @@
         "souljades": [
                 { "name": "Thunderpull" },
                 { "name": "Thunder Counter" },
-                { "name": "Element Surge" },
+            { "name": "Element Surge · Thunder-Wielding", "difficulty": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "+12% Attack bonus and +55% Divine Thunder DMG bonus. When Thundershock is full, will activate Thunder Surge." },
                 { "name": "Thunder Charge" },
                 { "name": "Backfire" },
                 { "name": "Desperation" }
