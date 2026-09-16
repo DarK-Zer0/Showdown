@@ -1,418 +1,822 @@
 [
-    {
-        "name": "Kylin · Thunder Surge",
-        "type": "thunder",
-        "souljades": [
-            { "name": "Thunderpull", "difficulty": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+20% Attack and successful attacks will build Thundershock on yourself." },
-            { "name": "Thunder Counter", "difficulty": "nightscream", "image": "img/builds/souljades/Rectangle_Gold.png", "description": "Enables the ability to parry Divine Thunder strikes." },
-            { "name": "Element Surge · Thunder-Wielding", "difficulty": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "+12% Attack bonus and +55% Divine Thunder DMG bonus. When Thundershock is full, will activate Thunder Surge." },
-            { "name": "Thunder Charge", "difficulty": "nightscream", "image": "img/builds/souljades/Diagonal_Gold.png", "description": "During Thunder Surge, everytime you deal 10x your Attack with a Weapon, will summon a strike of Divine Thunder on yourself." },
-            { "name": "Forsaken Force" },
-            { "name": "Backfire", "difficulty": "normal", "image": "img/builds/souljades/Triangle_Purple.png", "description": "+20% Attack, but 4% of your damage dealt will be dealt to yourself. Backlash effect disabled when below 25% Health." }
-        ],
-        "masteryJades": [
-            { "name": "Musket · Sky-rending Shot", "heroes": ["Kylin Zhang"] }
-        ],
-        "souljadeAttributes": {
-        "target": ["x7 [Windfall]", "x6 Crit Rate", "x7 Crit DMG", "x1 Attack"],
-        "placeholder": ["Attack"]
-        },
-        "potentialPlan": { "image": "img/builds/trees/5.0/KylinThunderSurge.png", "alt": "Kylin's Thunder Surge Potential Plan" },
-        "wieldingTypes": [
-        { "name": "Ice-Wielding", "count": 3, "image": "img/builds/souljades/Ice-Wielding.png" },
-        { "name": "Thunder-Wielding", "count": 1, "image": "img/builds/souljades/Thunder-Wielding.png" },
-        { "name": "Poison-Wielding", "count": 2, "image": "img/builds/souljades/Poison-Wielding.png" }
-        ],
-        "curios": [
-            { "name": "Radiance Flow", "image": "img/builds/curios/4.0/RadianceFlow.png", "description": "Successful Defuses or Parries will summon a Light Orb that will deal 15,600% Attack over its lifetime of 10s.", "awakening": "Light Orb maximum count +2." },
-            { "name": "Verve Banner", "image": "img/builds/curios/3.0/VerveBanner.png", "description": "While in Element Surge state, weapon attacks are granted +60% Rage/DMG & +10% Life steal.", "awakening": "While in Element Surge state, all attacks are granted +60% Rage/DMG & 10% Life steal." }
-        ],
-        "curioAttributes": {
-        "yang": ["Attack", "DMG to Bosses", "Rage/DMG", "Weapon DMG Bonus"],
-        "yin": ["Rage/DMG Taken", "Health", "Armor", "Luck"]
-        },
-        "description": "Your attacks will build Thundershock on you overtime. When your Thundershock meter fills, Thunder Surge will activate, sending a single bolt of Divine Thunder onto you. You can parry this bolt to deal a strong counterstrike. During Kylin's Ultimate, his counterstrikes are significantly enhanced, dealing 5200% of your Attack as Melee & Skill DMG. As you lose more Health in your Ultimate, you'll get an additional DMG Bonus, up to 180%.",
-        "recommendedHeroes": ["Kylin Zhang"],
-        "difficulty": { "skillFloor": 2.5, "skillCeiling": 4.5 },
-        "power": { "singleTarget": 5, "multiTarget": 4 }   
+  {
+    "name": "Ice Fall",
+    "type": "Ice",
+    "souljades": [
+      {
+        "name": "Successive Ice Blast"
+      },
+      {
+        "name": "Frozen Blast"
+      },
+      {
+        "name": "Element Surge · Ice-Wielding"
+      },
+      {
+        "name": "Primal Starfall"
+      },
+      {
+        "name": "Pyreheart"
+      },
+      {
+        "name": "Ice Ring Break"
+      }
+    ],
+    "masteryJades": [
+      {
+        "name": "General · Sap",
+        "heroes": [
+          "Viper Ning",
+          "Feria Shen",
+          "Tianhai",
+          "Tarka Ji",
+          "Valda Cui",
+          "Yueshan",
+          "Matari",
+          "Tessa",
+          "Ziping Ying",
+          "Justina Gu",
+          "Akos Hu",
+          "Zai",
+          "Shayol Wei"
+        ]
+      }
+    ],
+    "souljadeAttributes": {
+      "target": [
+        "x6 Ice Blast DMG",
+        "x6 Critical Rate",
+        "x6 Critical DMG",
+        "x4 [Moderation]",
+        "x6 [Windfall]"
+      ],
+      "placeholder": [
+        "Attack"
+      ]
     },
-    {
-        "name": "Shayol · Armor Surge",
-        "type": "thunder",
-        "souljades": [
-                { "name": "Sub-Zero Seal" },
-                { "name": "Soul Shiver" },
-                { "name": "Element Surge · Thunder-Wielding", "difficulty": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "+12% Attack bonus and +55% Divine Thunder DMG bonus. When Thundershock is full, will activate Thunder Surge." },
-                { "name": "Thunderpull" },
-                { "name": "Renewed Vigor" },
-                { "name": "Basalt Armor" }
-        ],
-        "masteryJades": [
-                { "name": "General · Sap", "heroes": ["Shayol Wei"] }
-        ],
-        "souljadeAttributes": {
-            "target": ["x7 [Windfall]","x7 Crit Rate","x7 Crit DMG","x7 DMG to Bosses"],
-            "placeholder": ["DMG to Bosses","Rage/DMG"]
-        },
-        "potentialPlan": { "image": "img/builds/trees/5.0/TarkaCurio.png", "alt": "Shayol • Threefold Potential Plan" },
-        "wieldingTypes": [
-            { "name": "Ice-Wielding", "count": 1, "image": "img/builds/souljades/Ice-Wielding.png" },
-            { "name": "Thunder-Wielding", "count": 1, "image": "img/builds/souljades/Thunder-Wielding.png" },
-            { "name": "Poison-Wielding", "count": 4, "image": "img/builds/souljades/Poison-Wielding.png" }
-        ],
-        "curios": [
-            { "name": "Suppression Scroll", "image": "img/builds/curios/5.0/Shayol.png", "description": "During Shayol's Ultimate, every Shield Throw will build a stack of concentration. At 4 stacks or higher, your Shield Throws will be enhanced, spawning a Mystic Roar Formation dealing massive damage in an AoE and staggering all enemies within.", "awakening": "Mystic Roar Formation's AoE is increased significantly and deals an additonal strike dealing 4,000% Attack." },
-            { "name": "Frost Dragon Belt", "image": "img/builds/curios/5.0/FrostDragonBelt.png", "description": "Grants +1500 Max Armor and +18% DMG Reduction.", "awakening": "Every 100 points of Armor grants +0.6% Hit DMG." }
-        ],
-        "curioAttributes": {
-            "yang": ["Attack", "DMG to Bosses", "Rage/DMG", "Skill DMG Bonus"],
-            "yin": ["Rage/DMG Taken", "Armor", "Health", "Passive Rage Recovery"]
-        },
-        "description": "You will generate Frostbite on yourself over time, however, your attacks will heal yourself for 2.4% of your damage dealt.  Entering Shayol's Ultimate will allow you to repeatedly throw your shield for heavy damage and can even stagger bosses. Outside of your Ultimate, you can spam Aegis-breaks to activate Vermillion Bird Scorch for decent bursts of damage.",
-        "recommendedHeroes": ["Shayol Wei"],
-        "difficulty": { "skillFloor": 1, "skillCeiling": 3.5 },
-        "power": { "singleTarget": 4, "multiTarget": 3 }
+    "potentialPlan": {
+      "image": "img/builds/trees/6.0/IceFall.png",
+      "alt": "Ice Fall Potential Plan"
     },
-    {
-        "name": "Matari · Thunder Surge",
-        "type": "thunder",
-        "souljades": [
-                { "name": "Thunderpull" },
-                { "name": "Element Surge · Thunder-Wielding", "difficulty": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "+12% Attack bonus and +55% Divine Thunder DMG bonus. When Thundershock is full, will activate Thunder Surge." },
-                { "name": "Thunder Charge" },
-                { "name": "Defuse · Aegis-Break" },
-                { "name": "Defuse · Solidification" },
-                { "name": "Backfire" }
-        ],
-        "masteryJades": [
-                { "name": "General · Sap", "heroes": ["All Heroes"] }
-        ],
-        "souljadeAttributes": {
-            "target": ["x7 [Windfall]","x7 Crit Rate","x7 Crit Damage","x7 DMG to Bosses"],
-            "placeholder": ["Attack"]
-        },
-        "potentialPlan": { "image": "img/builds/trees/5.0/ShayolArmorSurge.png", "alt": "Matari · Thunder Surge Potential Plan" },
-        "wieldingTypes": [
-            { "name": "Thunder-Wielding", "count": 1, "image": "img/builds/souljades/Thunder-Wielding.png" },
-            { "name": "Poison-Wielding", "count": 5, "image": "img/builds/souljades/Poison-Wielding.png" }
-        ],
-        "curios": [
-            { "name": "Dark Plume", "image": "img/builds/curios/4.0/Matari.png", "description": "Matari's Aegis-break will summon Plumes in front of her dealing 2100% Attack. Successful Defuses will recall the Plumes, dealing damage again to enemies in the path.", "awakening": "Max Plumes that can persist is doubled to 12." },
-            { "name": "Frost Dragon Belt", "image": "img/builds/curios/5.0/FrostDragonBelt.png", "description": "Grants +1500 Max Armor and +18% DMG Reduction.", "awakening": "Every 100 points of Armor grants +0.6% Hit DMG." }
-        ],
-        "curioAttributes": {
-            "yang": ["Attack", "DMG to Bosses", "Weapon DMG Bonus", "Rage/DMG"],
-            "yin": ["Armor", "Rage/DMG Taken", "Passive Rage Recovery", "Luck"]
-        },
-        "description": "Using Matari's Aegis-break Martial Skill will summon feathers forward dealing damage to all enemies they pass through. On a successful Defuse, the feathers will return to Matari, dealing damage again to all enemies in their path. In Thunder Surge, you can chain 2 Aegis-breaks into a Defuse to constantly send feathers out and return them for massive damage.",
-        "recommendedHeroes": ["Matari"],
-        "difficulty": { "skillFloor": 3.5, "skillCeiling": 5 },
-        "power": { "singleTarget": 4.5, "multiTarget": 2.5 }
+    "wieldingTypes": [
+      {
+        "name": "Ice-Wielding",
+        "count": 6,
+        "image": "img/builds/souljades/Ice-Wielding.png"
+      },
+      {
+        "name": "Thunder-Wielding",
+        "count": 0,
+        "image": "img/builds/souljades/Thunder-Wielding.png"
+      },
+      {
+        "name": "Poison-Wielding",
+        "count": 0,
+        "image": "img/builds/souljades/Poison-Wielding.png"
+      }
+    ],
+    "curios": [],
+    "curioAttributes": {
+      "yang": [
+        "Attack",
+        "DMG to Bosses",
+        "Elemental Accumulation Rate",
+        "Weapon DMG Bonus"
+      ],
+      "yin": []
     },
-    {
-        "name": "Temulch · Thunderous Wind",
-        "type": "thunder",
-        "souljades": [
-                { "name": "Thunderpull" },
-                { "name": "Thunderproof" },
-                { "name": "Forsaken Force" },
-                { "name": "Tempered Force" },
-                { "name": "Defuse · Aegis-Break" },
-                { "name": "Defuse · Solidification" }
-        ],
-        "masteryJades": [
-                { "name": "General · Sap", "heroes": ["All Heroes"] }
-        ],
-        "souljadeAttributes": {
-            "target": ["x14 [Windfall]","x6 Crit Rate","x7 Crit Damage","x1 Attack"],
-            "placeholder": ["Attack","Crit Rate"]
-        },
-        "potentialPlan": { "image": "img/builds/trees/5.0/Empty.png", "alt": "Temulch · Thunderous Wind Potential Plan" },
-        "wieldingTypes": [
-            { "name": "Thunder-Wielding", "count": 1, "image": "img/builds/souljades/Thunder-Wielding.png" },
-            { "name": "Poison-Wielding", "count": 5, "image": "img/builds/souljades/Poison-Wielding.png" }
-        ],
-        "curios": [
-            { "name": "Wolf Soul Beads", "image": "img/builds/curios/4.0/Temulch.png", "description": "Using Earthshaker will summon enhanced Windballs around Temulch that track to nearby enemies, dealing massive Aegis DMG and decent Health DMG on hit.", "awakening": "During Earthshaker, continously suck enemies towards you, dealing 1,000% Attack and heal for 10% of your damage dealt." },
-            { "name": "Frost Dragon Belt", "image": "img/builds/curios/5.0/FrostDragonBelt.png", "description": "Grants +1500 Max Armor and +18% DMG Reduction.", "awakening": "Every 100 points of Armor grants +0.6% Hit DMG." }
-        ],
-        "curioAttributes": {
-            "yang": ["Attack", "DMG to Bosses", "Skill DMG Bonus", "Weapon DMG Bonus"],
-            "yin": ["Rage/DMG Taken", "Health", "Armor", "Luck"]
-        },
-        "description": "Your attacks will accumulate Thundershock on yourself. When full, you can Defuse it to enter Earthshaker quickly for Temulch's Curio to take effect. To maintain a semi-constant spin, Defuse the 1st and 4th bolt from Divine Thunder.",
-        "recommendedHeroes": ["Temulch"],
-        "difficulty": { "skillFloor": 3, "skillCeiling": 4 },
-        "power": { "singleTarget": 4, "multiTarget": 4 }
+    "description": "Attack enemies to accumulate Frostbite on them. When full, an Ice Blast will occur. If any of it crits, a Meteor will fall and if that is hit, it will explode in a Starburst for massive Ice DMG.",
+    "recommendedHeroes": [
+      "Viper Ning",
+      "Feria Shen",
+      "Tianhai",
+      "Tarka Ji",
+      "Valda Cui",
+      "Yueshan",
+      "Matari",
+      "Tessa",
+      "Ziping Ying",
+      "Justina Gu",
+      "Akos Hu",
+      "Zai",
+      "Shayol Wei"
+    ],
+    "difficulty": {
+      "skillFloor": 2,
+      "skillCeiling": 4
     },
-    {
-        "name": "Wuchen · Forsaken Gale",
-        "type": "poison",
-        "souljades": [
-                { "name": "Forsaken Force" },
-                { "name": "Tempered Force" },
-                { "name": "Backfire" },
-                { "name": "Threefold Gathering" },
-                { "name": "Element Surge · Poison-Wielding", "difficulty": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "+20% Attack bonus and +25% Poison Blast DMG bonus. Toxin Surge doesn't activate normally with this build." },
-                { "name": "Bolt Mastery" }
-        ],
-        "masteryJades": [
-                { "name": "General · Sap", "heroes": ["All Heroes"] }
-        ],
-        "souljadeAttributes": {
-            "target": ["x7 [Windfall]","x6 Crit Rate","x7 Crit Damage","x1 Attack"],
-            "placeholder": ["Attack","Crit Rate"]
-        },
-        "potentialPlan": { "image": "img/builds/trees/5.0/Empty.png", "alt": "Wuchen · Forsaken Gale Potential Plan" },
-        "wieldingTypes": [
-            { "name": "Poison-Wielding", "count": 6, "image": "img/builds/souljades/Poison-Wielding.png" }
-        ],
-        "curios": [
-            { "name": "Qi Defense Vessel", "image": "img/builds/curios/4.0/Wuchen.png", "description": "Aegis-break Martial Skills summons a Windball dealing 250% Attack per 0.25 seconds and explodes over time or when enhanced 3 times with Charged Vertical.", "awakening": "Up to 2 Windballs can exist at once." },
-            { "name": "Frost Dragon Belt", "image": "img/builds/curios/5.0/FrostDragonBelt.png", "description": "Grants +1500 Max Armor and +18% DMG Reduction.", "awakening": "Every 100 points of Armor grants +0.6% Hit DMG." }
-        ],
-        "curioAttributes": {
-            "yang": ["Attack", "DMG to Bosses", "Weapon DMG Bonus", "Uncharged DMG"],
-            "yin": ["Armor", "Rage/DMG Taken", "Passive Rage Recovery", "Luck"]
-        },
-        "description": "Use Wuchen's Aegis-break to summon Windballs that deal 250% Attack per 0.25 seconds to enemies within. Hitting these Windballs with his Charged Vertical attack will empower them, and they will explode after being empowered 3 times for a massive 6,000% Attack.",
-        "recommendedHeroes": ["Wuchen"],
-        "difficulty": { "skillFloor": 2.5, "skillCeiling": 4.5 },
-        "power": { "singleTarget": 3.5, "multiTarget": 5 }
-    },
-    {
-        "name": "Justina · Ice Surge",
-        "type": "ice",
-        "souljades": [
-                { "name": "Successive Ice Blast" },
-                { "name": "Frozen Blast" },
-                { "name": "Depths Blast" },
-                { "name": "Element Surge · Ice-Wielding", "difficulty": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "+15% Attack bonus and +50% Frostbite Accumulation Rate. When Frostbite is full, will activate Ice Surge." },
-                { "name": "Frostbite Chain" },
-                { "name": "Sub-Zero Seal" }
-        ],
-        "masteryJades": [
-                { "name": "General · Sap", "heroes": ["All Heroes"] }
-        ],
-        "souljadeAttributes": {
-            "target": ["x4 [Moderation]","x6 [Windfall]","x6 Ice Blast DMG","x6 Crit Rate","x6 Crit Damage"],
-            "placeholder": ["Attack"]
-        },
-        "potentialPlan": { "image": "img/builds/trees/5.0/IceSurge.png", "alt": "Justina · Ice Surge Potential Plan" },
-        "wieldingTypes": [
-            { "name": "Ice-Wielding", "count": 5, "image": "img/builds/souljades/Ice-Wielding.png" },
-            { "name": "Poison-Wielding", "count": 1, "image": "img/builds/souljades/Poison-Wielding.png" }
-        ],
-        "curios": [
-            { "name": "Aegis Golden Chopsticks", "image": "img/builds/curios/5.0/Justina.png", "description": "Justina's Ultimate is altered, no longer summons an Ice Wind, but enhances her Skill and gives up to 3 charges.", "awakening": "While an Ice Wind is active, Martial Skills will deal Ice Blast DMG." },
-            { "name": "Verve Banner", "image": "img/builds/curios/3.0/VerveBanner.png", "description": "While in Element Surge state, weapon attacks are granted +60% Rage/DMG & +10% Life steal.", "awakening": "While in Element Surge state, all attacks are granted +60% Rage/DMG & 10% Life steal." }
-        ],
-        "curioAttributes": {
-            "yang": ["Attack", "DMG to Bosses", "Rage/DMG", "Skill DMG Bonus"],
-            "yin": ["Armor", "Rage/DMG Taken", "Passive Rage Recovery", "Luck"]
-        },
-        "description": "During Justina's Ultimate, your Skill can have up to 3 charges, is enhanced in that it'll summon an Ice Wind and deals double damage.. With the correct awakening, make sure use the follow up attack after every Skill for massive bursts in damage. While Ice Winds are active, your Defuse Counterattack will deal extreme damage as well.",
-        "recommendedHeroes": ["Justina"],
-        "difficulty": { "skillFloor": 3, "skillCeiling": 4.5 },
-        "power": { "singleTarget": 4, "multiTarget": 4 }
-    },
-    {
-        "name": "Zai · Thunder Soul",
-        "type": "thunder",
-        "souljades": [
-                { "name": "Thunderpull" },
-                { "name": "Incineration" },
-                { "name": "Defuse · Aegis-Break" },
-                { "name": "Defuse · Solidification" },
-                { "name": "Renewed Vigor" },
-                { "name": "Element Surge · Poison-Wielding", "difficulty": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "+20% Attack bonus and +25% Poison Blast DMG bonus. Toxin Surge doesn't activate normally with this build." }
-        ],
-        "masteryJades": [
-                { "name": "General · Sap", "heroes": ["All Heroes"] }
-        ],
-        "souljadeAttributes": {
-            "target": ["x4 [Moderation]","x6 [Windfall]","x6 Crit Rate","x6 Crit Damage","x6 DMG to Bosses"],
-            "placeholder": ["Attack"]
-        },
-        "potentialPlan": { "image": "img/builds/trees/5.0/ZaiCurio.png", "alt": "Zai · Thunder Soul Potential Plan" },
-        "wieldingTypes": [
-            { "name": "Ice-Wielding", "count": 3, "image": "img/builds/souljades/Ice-Wielding.png" },
-            { "name": "Poison-Wielding", "count": 3, "image": "img/builds/souljades/Poison-Wielding.png" }
-        ],
-        "curios": [
-            { "name": "Nether Soul Order", "image": "img/builds/curios/5.0/Zai.png", "description": "After using Zai's Skill, gain access to Soul Smash and become invulnerable for 4s.", "awakening": "Burn damage from Soul Smash is increased and applies and extra stack of Burn." },
-            { "name": "Frost Dragon Belt", "image": "img/builds/curios/5.0/FrostDragonBelt.png", "description": "Grants +1500 Max Armor and +18% DMG Reduction.", "awakening": "Every 100 points of Armor grants +0.6% Hit DMG." }
-        ],
-        "curioAttributes": {
-            "yang": ["Attack", "DMG to Bosses", "Rage/DMG", "Skill DMG Bonus"],
-            "yin": ["Armor", "Rage/DMG Taken", "Passive Rage Recovery", "Luck"]
-        },
-        "description": "After Zai's Skill, an enhanced Skill will be available for up to 4s. In a cone in front of you, this enhanced Skill will apply Burn, deal decent Aegis DMG and Health DMG. The closer the enemy is to you, the more damage the enhance skill will deal.",
-        "recommendedHeroes": ["Zai"],
-        "difficulty": { "skillFloor": 3.5, "skillCeiling": 4 },
-        "power": { "singleTarget": 3, "multiTarget": 2.5 }
-    },
-    {
-        "name": "Tarka Ji · Detonate",
-        "type": "thunder",
-        "souljades": [
-                { "name": "Thunderpull" },
-                { "name": "Element Surge · Thunder-Wielding", "difficulty": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "+12% Attack bonus and +55% Divine Thunder DMG bonus. When Thundershock is full, will activate Thunder Surge." },
-                { "name": "Desperation" },
-                { "name": "Backfire" },
-                { "name": "Bolt Mastery" },
-                { "name": "Enrage" }
-        ],
-        "masteryJades": [
-                { "name": "General · Sap", "heroes": ["All Heroes"] }
-        ],
-        "souljadeAttributes": {
-            "target": ["x14 [Windfall]","x6 Crit Rate","x7 Crit Damage","x1 DMG to Bosses"],
-            "placeholder": ["DMG to Bosses","Attack"]
-        },
-        "potentialPlan": { "image": "img/builds/trees/5.0/TarkaCurio.png", "alt": "Tarka Ji · Detonate Potential Plan" },
-        "wieldingTypes": [
-            { "name": "Thunder-Wielding", "count": 1, "image": "img/builds/souljades/Thunder-Wielding.png" },
-            { "name": "Poison-Wielding", "count": 5, "image": "img/builds/souljades/Poison-Wielding.png" }
-        ],
-        "curios": [
-            { "name": "Flaming Soul Bead", "image": "img/builds/curios/2.5/Tarka.png", "description": "Tarka's Skill will now apply Explosive to enemies hit. This can be detonating with a Universe Slash, Elbow Strike or 3rd Uncharged Attack.", "awakening": "Explosive can stack up to 5 times." },
-            { "name": "Frost Dragon Belt", "image": "img/builds/curios/5.0/FrostDragonBelt.png", "description": "Grants +1500 Max Armor and +18% DMG Reduction.", "awakening": "Every 100 points of Armor grants +0.6% Hit DMG." }
-        ],
-        "curioAttributes": {
-            "yang": ["Attack", "DMG to Bosses", "Rage/DMG", "Weapon DMG Bonus"],
-            "yin": ["Armor", "Rage/DMG Taken", "Passive Rage Recovery", "Luck"]
-        },
-        "description": "Tarka's Skill will now apply Explosive to enemies hit. When 5 stacks of Explosive are stacked, detonating it with an Elbow Strike, Universe Slash or 3rd Uncharged Attack will deal a massive 48,000% Attack.",
-        "recommendedHeroes": ["Tarka Ji"],
-        "difficulty": { "skillFloor": 3.5, "skillCeiling": 5 },
-        "power": { "singleTarget": 5, "multiTarget": 2.5 }
-    },
-    {
-        "name": "Radiant Thunder",
-        "type": "thunder",
-        "souljades": [
-                { "name": "Thunderpull" },
-                { "name": "Thunder Counter" },
-            { "name": "Element Surge · Thunder-Wielding", "difficulty": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "+12% Attack bonus and +55% Divine Thunder DMG bonus. When Thundershock is full, will activate Thunder Surge." },
-                { "name": "Thunder Charge" },
-                { "name": "Backfire" },
-                { "name": "Desperation" }
-        ],
-        "masteryJades": [
-                { "name": "General · Sap", "heroes": ["All Heroes"] }
-        ],
-        "souljadeAttributes": {
-            "target": ["x7 [Windfall]","x7 Crit Rate","x7 Crit Damage","x7 DMG to Bosses"],
-            "placeholder": ["Attack"]
-        },
-        "potentialPlan": { "image": "img/builds/trees/5.0/RadiantThunder.png", "alt": "Radiant Thunder Potential Plan" },
-        "wieldingTypes": [
-        { "name": "Ice-Wielding", "count": 0, "image": "img/builds/souljades/Ice-Wielding.png" },
-            { "name": "Thunder-Wielding", "count": 1, "image": "img/builds/souljades/Thunder-Wielding.png" },
-            { "name": "Poison-Wielding", "count": 5, "image": "img/builds/souljades/Poison-Wielding.png" }
-        ],
-        "curios": [
-            { "name": "Radiance Flow", "image": "img/builds/curios/4.0/RadianceFlow.png", "description": "Successful Defuses or Parries will summon a Light Orb that will deal 15,600% Attack over its lifetime of 10s.", "awakening": "Light Orb maximum count +2." },
-            { "name": "Frost Dragon Belt", "image": "img/builds/curios/5.0/FrostDragonBelt.png", "description": "+1500 Max Armor, +18% Damage Reduction.", "awakening": "Every 100 Max Armor grants an additional 0.6% Hit Damage bonus." }
-        ],
-        "curioAttributes": {
-            "yang": ["Attack", "DMG to Bosses", "Weapon DMG Bonus", "Skill DMG Bonus"],
-            "yin": ["Rage/DMG Taken", "Armor", "Health", "Luck"]
-        },
-        "description": "Successful Parries or Defuses will summon a Light Orb that will shoot at nearby enemies, for massive damage overtime. Fully charging your Thundershock will activate Thunder Surge, allowing you to chain Counterstrikes from Divine Thunder back to back for a limited time.",
-        "recommendedHeroes": ["Viper Ning", "Feria Shen", "Tianhai", "Temulch", "Tarka Ji", "Kurumi", "Valda Cui", "Yueshan", "Yoto Hime", "Tessa", "Justina Gu", "Kylin Zhang", "Akos Hu", "Zai", "Shayol Wei"],
-        "difficulty": { "skillFloor": 2.5, "skillCeiling": 4 },
-        "power": { "singleTarget": 4.5, "multiTarget": 2.5 }
-    },
-    {
-        "name": "Ice Surge",
-        "type": "ice",
-        "souljades": [
-            { "name": "Successive Ice Blast" },
-            { "name": "Frozen Blast" },
-            { "name": "Depths Blast" },
-            { "name": "Element Surge · Ice-Wielding", "difficulty": "hard", "description": "Grants +15% Attack and +50% Frostbite Accumulation Rate, allowing you to activate Ice Blasts much easier." },
-            { "name": "Chill Spike" },
-            { "name": "Frostbite Chain" }
-        ],
-        "masteryJades": [
-            { "name": "Longsword · Horizontal Energy", "heroes": ["Viper Ning", "Justina Gu"] },
-            { "name": "Nunchucks · Velocity Untold", "heroes": ["Feria Shen"] },
-            { "name": "Staff · Jabbing", "heroes": ["Tianhai"] },
-            { "name": "Greatsword · Aerial Rend", "heroes": ["Temulch", "Yoto Hime"] },
-            { "name": "Cannon · Primordial Blast", "heroes": ["Tarka Ji"] },
-            { "name": "Katana · Vertical Blink Strike", "heroes": ["Kurumi"] },
-            { "name": "General · Cyan Fang", "heroes": ["Valda Cui", "Matari", "Wuchen", "Ziping Yin"] },
-            { "name": "Dual Halberds · Whirling Slash", "heroes": ["Tessa"] },
-            { "name": "Heng Sword · Rampage", "heroes": ["Kylin Zhang"] },
-            { "name": "Fist Blades · Sky Slash", "heroes": ["Akos Hu"] },
-            { "name": "Whipsword · Blazing Slash", "heroes": ["Zai"] },
-            { "name": "Heng Sword · Rent Firmament", "heroes": ["Shayol Wei"] }
-        ],
-        "souljadeAttributes": {
-        "target": ["x4 [Moderation]", "x3 [Windfall]", "x7 Crit Rate", "x7 Crit DMG", "x7 Ice Blast DMG"],
-        "placeholder": ["DMG to Bosses"]
-        },
-        "potentialPlan": { "image": "img/builds/trees/5.0/IceSurge.png", "alt": "Ice Surge Potential Plan" },
-        "wieldingTypes": [
-        { "name": "Ice-Wielding", "count": 6, "image": "img/builds/souljades/Ice-Wielding.png" }
-        ],
-        "curios": [
-            { "name": "Five Thunder Banner", "image": "img/builds/curios/5.0/FiveThunderBanner.png", "description": "When landing a Critical Hit, nearby enemies will be struck by Bolts dealing up to 1,600% Attack per 2 seconds for 4 seconds.", "awakening": "Increases the max duration from 4 seconds to 8 seconds per activation." },
-            { "name": "Frost Dragon Belt", "image": "img/builds/curios/5.0/FrostDragonBelt.png", "description": "Grants +1500 Max Armor and +18% DMG Reduction.", "awakening": "Every 100 points of Armor grants +0.6% Hit DMG." }
-        ],
-        "curioAttributes": {
-        "yang": ["Elemental Accumulation Rate", "Attack", "DMG to Bosses", "Weapon DMG Bonus"],
-        "yin": ["Armor", "Rage/DMG Taken", "Health", "Luck"]
-        },
-        "description": "Attacks will accumulate Frostbite on enemies, causing Ice Blasts. After 2 Ice Blasts, your Frostbite will fill, activating Frost Surge. During Frost Surge, using a Skill will summon an Ice Thorn that deals 910% of your Attack as Ice Blast DMG on a 4 second cooldown. After 15 Ice Blasts, your next uncharged melee attack will trigger Chain Crush, dealing 3290% of your Attack as Ice Blast DMG.",
-        "recommendedHeroes": ["Viper Ning", "Feria Shen", "Tianhai", "Tarka Ji", "Valda Cui", "Matari", "Yueshan", "Tessa", "Ziping Ying", "Justina Gu", "Akos Hu", "Zai", "Shayol Wei"],
-        "difficulty": { "skillFloor": 2, "skillCeiling": 3.5 },
-        "power": { "singleTarget": 3.5, "multiTarget": 5 }
-    },
-    {
-        "name": "Bow · Poison Surge",
-        "type": "poison",
-        "masteryJade": {
-            "name": "Bow · Heartbreak Arrows",
-            "weapon": "Bow",
-            "compatibleHeroes": ["Temulch", "Tessa", "Justina Gu"],
-            "difficulty": "normal",
-            "description": "Charged attacks fire an additional arrow that deals increased damage and applies Poison."
-        },
-        "souljades": [
-        { "name": "Scattershot Enhance", "difficulty": "topaz", "image": "img/builds/souljades/Circle_Purple.png", "description": "Bow will fire 5 arrows instead of 3, increasing its spread, damage and Deadeye charge." },
-        { "name": "Desperation", "difficulty": "nightscream", "image": "img/builds/souljades/Flower_Gold.png", "description": "Bow's Stage 2 Charged Attacks will explode for more damage and Deadeye charge." },
-        { "name": "Element Surge · Poison-Wielding", "difficulty": "hard", "image": "img/builds/souljades/Flower_Gold.png", "description": "+20% Attack bonus and +25% Poison Blast DMG bonus. Toxin Surge doesn't activate normally with this build." },
-        { "name": "Pestilent Pool", "difficulty": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "Poison Blasts summon Toxic Pools applying up to 2 Toxified Stacks to enemies within." },
-        { "name": "Miasma Drive", "difficulty": "nightscream", "image": "img/builds/souljades/Triangle_Gold.png", "description": "+25% Attack for 18s after applying Toxified to an enemy." },
-        { "name": "Backfire", "difficulty": "normal", "image": "img/builds/souljades/Triangle_Purple.png", "description": "+20% Attack at the cost of 4% of damage dealt to self." }
-        ],
-        "masteryJades": [
-            { "name": "Bow · Heartbreak Arrows", "heroes": ["Temulch", "Tessa", "Justina Gu"] }
-        ],
-        "souljadeAttributes": {
-        "target": ["x7 [Windfall]", "x7 Crit Rate", "x7 Crit DMG", "x6 DMG to Bosses", "x1 Deadeye build rate"],
-        "placeholder": ["Ranged Weapon DMG"]
-        },
-        "potentialPlan": { "image": "img/builds/trees/5.0/BowPoisonSurge.png", "alt": "Poison Surge Bow Potential Plan" },
-        "wieldingTypes": [
-        { "name": "Ice-Wielding", "count": 1, "image": "img/builds/souljades/Ice-Wielding.png" },
-        { "name": "Thunder-Wielding", "count": 1, "image": "img/builds/souljades/Thunder-Wielding.png" },
-        { "name": "Poison-Wielding", "count": 4, "image": "img/builds/souljades/Poison-Wielding.png" }
-        ],
-        "curios": [
-            { "name": "Five Thunder Banner", "image": "img/builds/curios/5.0/FiveThunderBanner.png", "description": "When landing a Critical Hit, nearby enemies will be struck by Bolts dealing up to 1,600% Attack per 2 seconds for 4 seconds.", "awakening": "Increases the max duration from 4 seconds to 8 seconds per activation." },
-            { "name": "Frost Dragon Belt", "image": "img/builds/curios/5.0/FrostDragonBelt.png", "description": "Grants +1500 Max Armor and +18% DMG Reduction.", "awakening": "Every 100 points of Armor grants +0.6% Hit DMG." }
-        ],
-        "curioAttributes": {
-        "yang": ["Weapon DMG Bonus", "Attack", "DMG to Bosses", "Charged DMG"],
-        "yin": ["Armor", "DMG Reduction", "Boss DMG Reduction", "Luck"]
-        },
-        "description": "Deal massive damage by using the Stage 2 Charged Attack of your Bow. Perfectly timing the release of the charge, while Deadeye is active, will cast Void Destroyer, a massive 3-part attack that only consumes 1 ammo. Beware, this build will leave you at 1 Health, so you'll mainly rely on your Armor to survive any hits.<br><br>Reaching ~8.5% Deadeye build rate will allow you to activate Deadeye with just 3 Stage 2 Charged Attacks instead of 4. 30.5%+ Deadeye build rate will allow you to activate Deadeye in 2 Stage 2 Charged Attacks if they're headshots. 43.9%+ Deadeye build rate will allow you to activate Deadeye in 2 Stage 2 Charged Attacks as long as one is a headshot.",
-        "recommendedHeroes": ["Temulch", "Tessa", "Justina Gu"],
-        "difficulty": { "skillFloor": 2, "skillCeiling": 4 },
-        "power": { "singleTarget": 4, "multiTarget": 3.5 }
+    "power": {
+      "singleTarget": 4,
+      "multiTarget": 4.5
     }
+  },
+  {
+    "name": "Ice Fall (Justina)",
+    "type": "Ice",
+    "souljades": [
+      {
+        "name": "Successive Ice Blast"
+      },
+      {
+        "name": "Frozen Blast"
+      },
+      {
+        "name": "Element Surge · Ice-Wielding"
+      },
+      {
+        "name": "Primal Starfall"
+      },
+      {
+        "name": "Pyreheart"
+      },
+      {
+        "name": "Depths Blast"
+      }
+    ],
+    "masteryJades": [
+      {
+        "name": "General · Sap",
+        "heroes": [
+          "Justina Gu"
+        ]
+      }
+    ],
+    "souljadeAttributes": {
+      "target": [
+        "x6 Ice Blast DMG",
+        "x6 Critical Rate",
+        "x6 Critical DMG",
+        "x4 [Moderation]",
+        "x6 [Windfall]"
+      ],
+      "placeholder": [
+        "Attack"
+      ]
+    },
+    "potentialPlan": {
+      "image": "img/builds/trees/6.0/JustinaIceFall.png",
+      "alt": "Ice Fall (Justina) Potential Plan"
+    },
+    "wieldingTypes": [
+      {
+        "name": "Ice-Wielding",
+        "count": 6,
+        "image": "img/builds/souljades/Ice-Wielding.png"
+      },
+      {
+        "name": "Thunder-Wielding",
+        "count": 0,
+        "image": "img/builds/souljades/Thunder-Wielding.png"
+      },
+      {
+        "name": "Poison-Wielding",
+        "count": 0,
+        "image": "img/builds/souljades/Poison-Wielding.png"
+      }
+    ],
+    "curios": [
+      {
+        "name": "Aegis Golden Chopsticks"
+      }
+    ],
+    "curioAttributes": {
+      "yang": [
+        "Attack",
+        "DMG to Bosses",
+        "Elemental Accumulation Rate",
+        "Skill DMG Bonus"
+      ],
+      "yin": []
+    },
+    "description": "Attack enemies to accumulate Frostbite on them. When full, an Ice Blast will occur. If any of it crits, a Meteor will fall and if that is hit, it will explode in a Starburst for massive Ice DMG.",
+    "recommendedHeroes": [
+      "Justina Gu"
+    ],
+    "difficulty": {
+      "skillFloor": 1,
+      "skillCeiling": 3
+    },
+    "power": {
+      "singleTarget": 5,
+      "multiTarget": 5
+    }
+  },
+  {
+    "name": "Thunder Fall",
+    "type": "Thunder",
+    "souljades": [
+      {
+        "name": "Thunderpull"
+      },
+      {
+        "name": "Thunder Rove"
+      },
+      {
+        "name": "Pyreheart"
+      },
+      {
+        "name": "Primal Starfall"
+      },
+      {
+        "name": "Element Surge · Thunder-Wielding"
+      },
+      {
+        "name": "Thunder Charge"
+      }
+    ],
+    "masteryJades": [
+      {
+        "name": "General · Sap",
+        "heroes": [
+          "Viper Ning",
+          "Feria Shen",
+          "Tianhai",
+          "Temulch",
+          "Tarka Ji",
+          "Kurumi",
+          "Valda Cui",
+          "Matari",
+          "Wuchen",
+          "Yoto Hime",
+          "Tessa",
+          "Ziping Ying",
+          "Justina Gu",
+          "Kylin Zhang",
+          "Akos Hu",
+          "Zai",
+          "Shayol Wei"
+        ]
+      }
+    ],
+    "souljadeAttributes": {
+      "target": [
+        "x7 Divine Thunder DMG",
+        "x4-7 Critical Rate",
+        "x7 Critical DMG",
+        "x7 [Windfall]",
+        "x0-3 [Sortilege]"
+      ],
+      "placeholder": [
+        "Attack"
+      ]
+    },
+    "potentialPlan": {
+      "image": "img/builds/trees/6.0/ThunderFall.png",
+      "alt": "Thunder Fall Potential Plan"
+    },
+    "wieldingTypes": [
+      {
+        "name": "Ice-Wielding",
+        "count": 0,
+        "image": "img/builds/souljades/Ice-Wielding.png"
+      },
+      {
+        "name": "Thunder-Wielding",
+        "count": 6,
+        "image": "img/builds/souljades/Thunder-Wielding.png"
+      },
+      {
+        "name": "Poison-Wielding",
+        "count": 0,
+        "image": "img/builds/souljades/Poison-Wielding.png"
+      }
+    ],
+    "curios": [],
+    "curioAttributes": {
+      "yang": [],
+      "yin": []
+    },
+    "description": "Attack enemies to accumulate Thundershock on yourself and them. When full Divine Thunder will strike, you can parry it on yourself to send it forward hitting enemies twice. If any Divine Thunder crits, a Meteor will be summoned, dealing heavy Divine Thunder DMG and can be exploded with other Divine Thunder DMG.",
+    "recommendedHeroes": [
+      "Viper Ning",
+      "Feria Shen",
+      "Tianhai",
+      "Temulch",
+      "Tarka Ji",
+      "Kurumi",
+      "Valda Cui",
+      "Matari",
+      "Wuchen",
+      "Yoto Hime",
+      "Tessa",
+      "Ziping Ying",
+      "Justina Gu",
+      "Kylin Zhang",
+      "Akos Hu",
+      "Zai",
+      "Shayol Wei"
+    ],
+    "difficulty": {
+      "skillFloor": 3,
+      "skillCeiling": 4.5
+    },
+    "power": {
+      "singleTarget": 4.5,
+      "multiTarget": 4.5
+    }
+  },
+  {
+    "name": "Thunder Fall (Polesword)",
+    "type": "Thunder",
+    "souljades": [
+      {
+        "name": "Thunderpull"
+      },
+      {
+        "name": "Thunder Rove"
+      },
+      {
+        "name": "Pyreheart"
+      },
+      {
+        "name": "Primal Starfall"
+      },
+      {
+        "name": "Element Surge · Thunder-Wielding"
+      },
+      {
+        "name": "Thunder Charge"
+      }
+    ],
+    "masteryJades": [
+      {
+        "name": "General · Sap",
+        "heroes": [
+          "Yueshan",
+          "Inor Wan"
+        ]
+      }
+    ],
+    "souljadeAttributes": {
+      "target": [
+        "x7 Divine Thunder DMG",
+        "x4-7 Critical Rate",
+        "x7 Critical DMG",
+        "x7 [Windfall]",
+        "x0-3 [Sortilege]"
+      ],
+      "placeholder": [
+        "Attack"
+      ]
+    },
+    "potentialPlan": {
+      "image": "img/builds/trees/6.0/ThunderFall.png",
+      "alt": "Thunder Fall (Polesword) Potential Plan"
+    },
+    "wieldingTypes": [
+      {
+        "name": "Ice-Wielding",
+        "count": 0,
+        "image": "img/builds/souljades/Ice-Wielding.png"
+      },
+      {
+        "name": "Thunder-Wielding",
+        "count": 6,
+        "image": "img/builds/souljades/Thunder-Wielding.png"
+      },
+      {
+        "name": "Poison-Wielding",
+        "count": 0,
+        "image": "img/builds/souljades/Poison-Wielding.png"
+      }
+    ],
+    "curios": [],
+    "curioAttributes": {
+      "yang": [],
+      "yin": []
+    },
+    "description": "Attack enemies to accumulate Thundershock on yourself and them. When full Divine Thunder will strike, you can parry it on yourself to send it forward hitting enemies twice. All successful parries will send forward an additional Blistering Edge. If any Divine Thunder crits, a Meteor will be summoned, dealing heavy Divine Thunder DMG and can be exploded with other Divine Thunder DMG.",
+    "recommendedHeroes": [
+      "Yueshan",
+      "Inor Wan"
+    ],
+    "difficulty": {
+      "skillFloor": 3,
+      "skillCeiling": 4.5
+    },
+    "power": {
+      "singleTarget": 5,
+      "multiTarget": 5
+    }
+  },
+  {
+    "name": "Poison Fall (Kurumi)",
+    "type": "Poison",
+    "souljades": [
+      {
+        "name": "Venom Tempering"
+      },
+      {
+        "name": "Pyreheart"
+      },
+      {
+        "name": "Primal Starfall"
+      },
+      {
+        "name": "Pestilent Pool"
+      },
+      {
+        "name": "Defuse · Poison Charge"
+      },
+      {
+        "name": "Mushroom Summoning"
+      }
+    ],
+    "masteryJades": [
+      {
+        "name": "Katana · Thunderstorm",
+        "heroes": [
+          "Kurumi"
+        ]
+      }
+    ],
+    "souljadeAttributes": {
+      "target": [
+        "x7 Poison Blast DMG",
+        "x4-7 Critical Rate",
+        "x7 Critical DMG",
+        "x7 [Windfall]",
+        "x0-3 [Sortilege]"
+      ],
+      "placeholder": [
+        "Attack"
+      ]
+    },
+    "potentialPlan": {
+      "image": "img/builds/trees/6.0/PoisonFall.png",
+      "alt": "Poison Fall (Kurumi) Potential Plan"
+    },
+    "wieldingTypes": [
+      {
+        "name": "Ice-Wielding",
+        "count": 0,
+        "image": "img/builds/souljades/Ice-Wielding.png"
+      },
+      {
+        "name": "Thunder-Wielding",
+        "count": 0,
+        "image": "img/builds/souljades/Thunder-Wielding.png"
+      },
+      {
+        "name": "Poison-Wielding",
+        "count": 6,
+        "image": "img/builds/souljades/Poison-Wielding.png"
+      }
+    ],
+    "curios": [],
+    "curioAttributes": {
+      "yang": [],
+      "yin": []
+    },
+    "description": "Attacking enemies will accumulate Toxin on them, which when surpassing a threshold will activate Poison Blast. When a Poison Blast happens, a Poison Pool will be summoned that applies up to 2 stacks of Toxified and if it crits a Meteor will be summoned. Successful Perfect Dodges and Defuses will charge a meter at the center of your screen, another one when its full will apply Demonbane Poison Mark. While this is active all Defuses and Perfect Dodges will apply a stack of Toxified to enemies nearby. Reaching 4 stacks of Toxified will activate Toxin Blast, dealing massive Poison Blast DMG to all enemies surrounding the target.",
+    "recommendedHeroes": [
+      "Kurumi"
+    ],
+    "difficulty": {
+      "skillFloor": 2.5,
+      "skillCeiling": 4.5
+    },
+    "power": {
+      "singleTarget": 4.5,
+      "multiTarget": 3.5
+    }
+  },
+  {
+    "name": "Threefold Venom",
+    "type": "Poison",
+    "souljades": [
+      {
+        "name": "Threefold Gathering"
+      },
+      {
+        "name": "Four Spirits Converge"
+      },
+      {
+        "name": "Dual Spirit Marks"
+      },
+      {
+        "name": "Venom Tempering"
+      },
+      {
+        "name": "Pestilent Pool"
+      },
+      {
+        "name": "Infectious Touch"
+      }
+    ],
+    "masteryJades": [
+      {
+        "name": "General · Cyan Fang",
+        "heroes": [
+          "Wuchen",
+          "Matari"
+        ]
+      }
+    ],
+    "souljadeAttributes": {
+      "target": [
+        "x6 Critical Rate",
+        "x6 Critical DMG",
+        "x6 Poison Blast DMG",
+        "x4 [Sortilege]",
+        "x6 [Windfall]"
+      ],
+      "placeholder": [
+        "Poison Blast DMG"
+      ]
+    },
+    "potentialPlan": {
+      "image": "img/builds/trees/6.0/KylinThunder.png",
+      "alt": "Threefold Venom Potential Plan"
+    },
+    "wieldingTypes": [
+      {
+        "name": "Ice-Wielding",
+        "count": 0,
+        "image": "img/builds/souljades/Ice-Wielding.png"
+      },
+      {
+        "name": "Thunder-Wielding",
+        "count": 0,
+        "image": "img/builds/souljades/Thunder-Wielding.png"
+      },
+      {
+        "name": "Poison-Wielding",
+        "count": 6,
+        "image": "img/builds/souljades/Poison-Wielding.png"
+      }
+    ],
+    "curios": [],
+    "curioAttributes": {
+      "yang": [],
+      "yin": []
+    },
+    "description": "Repeatedly use your Aegis-break to acquire Mortal Marks. When you acquire 3, your next hit will activate Vermillion Bird Scorch, dealing heavy damage in an AoE. Use Aegis-breaks to also remove Toxin from yourself and to activate Toxin Blast by stacking 4 stacks of Toxified.",
+    "recommendedHeroes": [
+      "Wuchen",
+      "Matari"
+    ],
+    "difficulty": {
+      "skillFloor": 2.5,
+      "skillCeiling": 4.5
+    },
+    "power": {
+      "singleTarget": 4,
+      "multiTarget": 4
+    }
+  },
+  {
+    "name": "Kylin's Thunder",
+    "type": "Thunder",
+    "souljades": [
+      {
+        "name": "Thunderpull"
+      },
+      {
+        "name": "Thunder Counter"
+      },
+      {
+        "name": "Element Surge · Thunder-Wielding"
+      },
+      {
+        "name": "Thunder Charge"
+      },
+      {
+        "name": "Backfire"
+      },
+      {
+        "name": "Soul-drawing"
+      }
+    ],
+    "masteryJades": [
+      {
+        "name": "Musket · Sky-rending Shot",
+        "heroes": [
+          "Kylin Zhang"
+        ]
+      }
+    ],
+    "souljadeAttributes": {
+      "target": [
+        "x6 Critical Rate",
+        "x6 Critical DMG",
+        "x4 [Sortilege]",
+        "x12 [Windfall]"
+      ],
+      "placeholder": [
+        "Attack",
+        "DMG to Bosses"
+      ]
+    },
+    "potentialPlan": {
+      "image": "img/builds/trees/6.0/KylinThunder.png",
+      "alt": "Kylin's Thunder Potential Plan"
+    },
+    "wieldingTypes": [
+      {
+        "name": "Ice-Wielding",
+        "count": 3,
+        "image": "img/builds/souljades/Ice-Wielding.png"
+      },
+      {
+        "name": "Thunder-Wielding",
+        "count": 1,
+        "image": "img/builds/souljades/Thunder-Wielding.png"
+      },
+      {
+        "name": "Poison-Wielding",
+        "count": 2,
+        "image": "img/builds/souljades/Poison-Wielding.png"
+      }
+    ],
+    "curios": [],
+    "curioAttributes": {
+      "yang": [],
+      "yin": []
+    },
+    "description": "An alternative Thunder build that focuses on optimizing Kylin's Ultimate to do as much damage as possible. Charge Thundershock on yourself by attacking enemies. Once it is full, you'll enter Thunder Surge, in which you can continuously parry and counterstrike from Divine Thunder. Doing this in his Ultimate will enable his enhanced attack, dealing massive Weapon DMG.",
+    "recommendedHeroes": [
+      "Kylin Zhang"
+    ],
+    "difficulty": {
+      "skillFloor": 3,
+      "skillCeiling": 4
+    },
+    "power": {
+      "singleTarget": 4,
+      "multiTarget": 3.5
+    }
+  },
+  {
+    "name": "Deadeye Bow",
+    "type": "Poison",
+    "souljades": [
+      {
+        "name": "Scattershot Enhance"
+      },
+      {
+        "name": "Element Surge · Poison-Wielding"
+      },
+      {
+        "name": "Pestilent Pool"
+      },
+      {
+        "name": "Miasma Drive"
+      },
+      {
+        "name": "Backfire"
+      },
+      {
+        "name": "Desperation"
+      }
+    ],
+    "masteryJades": [
+      {
+        "name": "Bow · Heartbreak Arrows",
+        "heroes": [
+          "Temulch",
+          "Tessa",
+          "Justina Gu"
+        ]
+      }
+    ],
+    "souljadeAttributes": {
+      "target": [
+        "x6 Critical Rate",
+        "x6 Critical DMG",
+        "x5 DMG to Bosses",
+        "x1 Deadeye Build Rate",
+        "x4 [Sortilege]",
+        "x6 [Windfall]"
+      ],
+      "placeholder": [
+        "Attack"
+      ]
+    },
+    "potentialPlan": {
+      "image": "img/builds/trees/6.0/Deadeye.png",
+      "alt": "Deadeye Bow Potential Plan"
+    },
+    "wieldingTypes": [
+      {
+        "name": "Ice-Wielding",
+        "count": 2,
+        "image": "img/builds/souljades/Ice-Wielding.png"
+      },
+      {
+        "name": "Thunder-Wielding",
+        "count": 1,
+        "image": "img/builds/souljades/Thunder-Wielding.png"
+      },
+      {
+        "name": "Poison-Wielding",
+        "count": 3,
+        "image": "img/builds/souljades/Poison-Wielding.png"
+      }
+    ],
+    "curios": [],
+    "curioAttributes": {
+      "yang": [],
+      "yin": []
+    },
+    "description": "Attack with fully charged Bow shots to enter Deadeye quickly. Once in Deadeye, charging and releasing your shots within a specific window will allow you to use Void Destroyer, a 3-Part attack that deals heavy Ranged Weapon DMG.",
+    "recommendedHeroes": [
+      "Temulch",
+      "Tessa",
+      "Justina Gu"
+    ],
+    "difficulty": {
+      "skillFloor": 2,
+      "skillCeiling": 3
+    },
+    "power": {
+      "singleTarget": 4,
+      "multiTarget": 2.5
+    }
+  },
+  {
+    "name": "Deadeye Cannon",
+    "type": "Poison",
+    "souljades": [
+      {
+        "name": "Twinshot"
+      },
+      {
+        "name": "Element Surge · Poison-Wielding"
+      },
+      {
+        "name": "Pestilent Pool"
+      },
+      {
+        "name": "Miasma Drive"
+      },
+      {
+        "name": "Backfire"
+      },
+      {
+        "name": "Desperation"
+      }
+    ],
+    "masteryJades": [
+      {
+        "name": "Cannon · Primordial Blast",
+        "heroes": [
+          "Tarka Ji",
+          "Yueshan"
+        ]
+      }
+    ],
+    "souljadeAttributes": {
+      "target": [
+        "x6 Critical Rate",
+        "x6 Critical DMG",
+        "x5 DMG to Bosses",
+        "x1 Deadeye Build Rate",
+        "x4 [Sortilege]",
+        "x6 [Windfall]"
+      ],
+      "placeholder": [
+        "Attack"
+      ]
+    },
+    "potentialPlan": {
+      "image": "img/builds/trees/6.0/Deadeye.png",
+      "alt": "Deadeye Cannon Potential Plan"
+    },
+    "wieldingTypes": [
+      {
+        "name": "Ice-Wielding",
+        "count": 2,
+        "image": "img/builds/souljades/Ice-Wielding.png"
+      },
+      {
+        "name": "Thunder-Wielding",
+        "count": 1,
+        "image": "img/builds/souljades/Thunder-Wielding.png"
+      },
+      {
+        "name": "Poison-Wielding",
+        "count": 3,
+        "image": "img/builds/souljades/Poison-Wielding.png"
+      }
+    ],
+    "curios": [],
+    "curioAttributes": {
+      "yang": [],
+      "yin": []
+    },
+    "description": "Hitting enemies with Cannon shots will charge your Deadeye meter. Once full, you'll enter Deadeye, in which you can access to the Celestial Fire attack that you can use by either shooting a shot while airborne and the center meter is full or by Perfect Dodging an attack with Cannon's special dodge. This attack will deal heavy Ranged Weapon DMG in a large AoE around where it lands.",
+    "recommendedHeroes": [
+      "Tarka Ji",
+      "Yueshan"
+    ],
+    "difficulty": {
+      "skillFloor": 2,
+      "skillCeiling": 3.5
+    },
+    "power": {
+      "singleTarget": 4,
+      "multiTarget": 4
+    }
+  }
 ]

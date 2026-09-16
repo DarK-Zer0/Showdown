@@ -722,25 +722,25 @@ table.changelog td:nth-child(3) {
     border: 1px solid;
 }
 
-.build-type-badge.ice { 
+.build-type-badge.Ice { 
     background: rgba(180, 244, 244, 0.15); 
     color: var(--color-ice-dark); 
     border-color: var(--color-ice-dark);
     box-shadow: 0 0 15px rgba(180, 244, 244, 0.3);
 }
-.build-type-badge.poison { 
+.build-type-badge.Poison { 
     background: rgba(217, 180, 244, 0.15); 
     color: var(--color-poison-dark); 
     border-color: var(--color-poison-dark);
     box-shadow: 0 0 15px rgba(217, 180, 244, 0.3);
 }
-.build-type-badge.burn { 
+.build-type-badge.Burn { 
     background: rgba(244, 180, 180, 0.15); 
     color: var(--color-burn-dark); 
     border-color: var(--color-burn-dark);
     box-shadow: 0 0 15px rgba(244, 180, 180, 0.3);
 }
-.build-type-badge.thunder { 
+.build-type-badge.Thunder { 
     background: rgba(244, 238, 180, 0.15); 
     color: var(--color-thunder-dark); 
     border-color: var(--color-thunder-dark);

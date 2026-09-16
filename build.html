@@ -295,7 +295,8 @@
                     { id: 'kylin', name: 'Kylin Zhang', portrait: 'img/portraits/kylin.png', role: 'Bruiser' },
                     { id: 'akos', name: 'Akos Hu', portrait: 'img/portraits/akos.png', role: 'Bruiser' },
                     { id: 'zai', name: 'Zai', portrait: 'img/portraits/zai.png', role: 'Assassin' },
-                    { id: 'shayol', name: 'Shayol Wei', portrait: 'img/portraits/shayol.png', role: 'Tank' }
+                    { id: 'shayol', name: 'Shayol Wei', portrait: 'img/portraits/shayol.png', role: 'Tank' },
+                    { id: 'inor', name: 'Inor Wan', portrait: 'img/portraits/inor.png', role: 'Damage' }
                 ];
 
                 let currentHeroId = 'viper'; // Default to Viper Ning
@@ -729,7 +730,14 @@
                         if (!response.ok) {
                             throw new Error(`Failed to load builds.json: ${response.statusText}`);
                         }
-                        const builds = await response.json();
+                        
+                        // Read raw text response first
+                        let jsonText = await response.text();
+                        
+                        // Strip out control line-breaks inside values if unescaped
+                        jsonText = jsonText.replace(/[\r\n]+/g, " ");
+                        
+                        const builds = JSON.parse(jsonText);
                         
                         // Load TSV data
                         try {
@@ -745,10 +753,13 @@
                         allBuilds = builds;
                         organizeBuildsByHero(builds);
                         renderHeroSelector();
-                        selectHero(currentHeroId); // Default to Viper Ning
+                        selectHero(currentHeroId);
                         
                     } catch (error) {
-                        errorContainer.innerHTML = `<p class="error">Error loading builds: ${error.message}</p>`;
+                        if (errorContainer) {
+                            errorContainer.innerHTML = `<p class="error">Error loading builds: ${error.message}</p>`;
+                        }
+                        console.error("Error loading builds:", error);
                     }
                 }
 
