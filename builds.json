@@ -77,12 +77,7 @@
     ],
     "curios": [],
     "curioAttributes": {
-      "yang": [
-        "Attack",
-        "DMG to Bosses",
-        "Elemental Accumulation Rate",
-        "Weapon DMG Bonus"
-      ],
+      "yang": [],
       "yin": []
     },
     "description": "Attack enemies to accumulate Frostbite on them. When full, an Ice Blast will occur. If any of it crits, a Meteor will fall and if that is hit, it will explode in a Starburst for massive Ice DMG.",
@@ -174,18 +169,9 @@
         "image": "img/builds/souljades/Poison-Wielding.png"
       }
     ],
-    "curios": [
-      {
-        "name": "Aegis Golden Chopsticks"
-      }
-    ],
+    "curios": [],
     "curioAttributes": {
-      "yang": [
-        "Attack",
-        "DMG to Bosses",
-        "Elemental Accumulation Rate",
-        "Skill DMG Bonus"
-      ],
+      "yang": [],
       "yin": []
     },
     "description": "Attack enemies to accumulate Frostbite on them. When full, an Ice Blast will occur. If any of it crits, a Meteor will fall and if that is hit, it will explode in a Starburst for massive Ice DMG.",
@@ -340,7 +326,7 @@
     ],
     "masteryJades": [
       {
-        "name": "Polesword · Blistering Edge",
+        "name": "General · Sap",
         "heroes": [
           "Yueshan",
           "Inor Wan"
@@ -468,7 +454,7 @@
       "yang": [],
       "yin": []
     },
-    "description": "Attacking enemies will accumulate Toxin on them, which when surpassing a threshold will activate Poison Blast. When a Poison Blast happens, a Poison Pool will be summoned that applies up to 2 stacks of Toxified and if it crits a Meteor will be summoned. Successful Perfect Dodges and Defuses will charge a meter at the center of your screen, another one when its full will apply Demonbane Poison Mark. While this is active all Defuses and Perfect Dodges will apply a stack of Toxified to enemies nearby. Reaching 4 stacks of Toxified will activate Toxin Blast, dealing massive Poison Blast DMG to all enemies surrounding the target.",
+    "description": "Attacking enemies will accumulate Toxin on them, which when surpassing a threshold will activate Poison Blast. When a Poison Blast happens, a Poison Pool will be summoned that applies up to 2 stacks of Toxified and if it crits a Meteor will be summoned. Successful Perfect Dodges or Defuse Counterattacks can be chained into a Dodge into a Thunderstorm, a powerful attack that can activate Poison Blast on its own. Kurumi's Soul Slash is also strong enough to activate it on any enemy, but has a lengthy animation. Reaching 4 stacks of Toxified will activate Toxin Blast, dealing massive Poison Blast DMG to all enemies surrounding the target.",
     "recommendedHeroes": [
       "Kurumi"
     ],
@@ -817,6 +803,90 @@
     "power": {
       "singleTarget": 4,
       "multiTarget": 4
+    }
+  },
+  {
+    "name": "Poison Fall (Spear)",
+    "type": "Poison",
+    "souljades": [
+      {
+        "name": "Venom Tempering"
+      },
+      {
+        "name": "Pyreheart"
+      },
+      {
+        "name": "Primal Starfall"
+      },
+      {
+        "name": "Pestilent Pool"
+      },
+      {
+        "name": "Infectious Touch"
+      },
+      {
+        "name": "Thunder Rove"
+      }
+    ],
+    "masteryJades": [
+      {
+        "name": "Spear · Azure Dragon Break",
+        "heroes": [
+          "Valda Cui",
+          "Ziping Ying"
+        ]
+      }
+    ],
+    "souljadeAttributes": {
+      "target": [
+        "x7 Poison Blast DMG",
+        "x4-7 Critical Rate",
+        "x7 Critical DMG",
+        "x7 [Windfall]",
+        "x0-3 [Sortilege]"
+      ],
+      "placeholder": [
+        "Attack"
+      ]
+    },
+    "potentialPlan": {
+      "image": "img/builds/trees/6.0/PoisonFall.png",
+      "alt": "Poison Fall (Spear) Potential Plan"
+    },
+    "wieldingTypes": [
+      {
+        "name": "Ice-Wielding",
+        "count": 0,
+        "image": "img/builds/souljades/Ice-Wielding.png"
+      },
+      {
+        "name": "Thunder-Wielding",
+        "count": 0,
+        "image": "img/builds/souljades/Thunder-Wielding.png"
+      },
+      {
+        "name": "Poison-Wielding",
+        "count": 6,
+        "image": "img/builds/souljades/Poison-Wielding.png"
+      }
+    ],
+    "curios": [],
+    "curioAttributes": {
+      "yang": [],
+      "yin": []
+    },
+    "description": "Attacking enemies will accumulate Toxin on them, which when surpassing a threshold will activate Poison Blast. When a Poison Blast happens, a Poison Pool will be summoned that applies up to 2 stacks of Toxified and if it crits a Meteor will be summoned. After a successful Perfect Dodge or Horizontal Finisher, tap Vertical to unleash an Azure Dragon Break that will instantly activate Poison Blast on enemies hit by it (if it's not on cooldown). You can chain this into a Horizontal Finisher back into another Azure Dragon Break on repeat. Landing any Martial Skill or Horizontal Finisher while Toxified will apply 2 onto the enemy you hit. Reaching 4 stacks of Toxified will activate Toxin Blast, dealing massive Poison Blast DMG to all enemies surrounding the target.",
+    "recommendedHeroes": [
+      "Valda Cui",
+      "Ziping Ying"
+    ],
+    "difficulty": {
+      "skillFloor": 3,
+      "skillCeiling": 4.5
+    },
+    "power": {
+      "singleTarget": 4.5,
+      "multiTarget": 3.5
     }
   }
 ]
