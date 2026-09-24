@@ -454,7 +454,7 @@
       "yang": [],
       "yin": []
     },
-    "description": "Attacking enemies will accumulate Toxin on them, which when surpassing a threshold will activate Poison Blast. When a Poison Blast happens, a Poison Pool will be summoned that applies up to 2 stacks of Toxified and if it crits a Meteor will be summoned. Successful Perfect Dodges or Defuse Counterattacks can be chained into a Dodge into a Thunderstorm, a powerful attack that can activate Poison Blast on its own. Kurumi's Soul Slash is also strong enough to activate it on any enemy, but has a lengthy animation. Reaching 4 stacks of Toxified will activate Toxin Blast, dealing massive Poison Blast DMG to all enemies surrounding the target.",
+    "description": "Attacking enemies will accumulate Toxin on them, which when surpassing a threshold will activate Poison Blast. When a Poison Blast happens, a Poison Pool will be summoned that applies up to 2 stacks of Toxified and if it crits a Meteor will be summoned. Successful Perfect Dodges or Defuse Counterattacks can be chained into a Dodge into a Thunderstorm, a powerful attack that can activate Poison Blast on its own. Kurumi's Soul Slash is also strong enough to activate it on any enemy, but has a lengthy animation. Reaching 4 stacks of Toxified will activate Toxin Blast, dealing massive Poison Blast DMG to all enemies surrounding the target.  Infectious Touch can be traded out for Element Surge · Poison-Wielding for extra Attack at the cost of being more reliant on Kurumi's Ultimate to activate Toxin Blast rapidly.",
     "recommendedHeroes": [
       "Kurumi"
     ],
@@ -547,8 +547,8 @@
       "skillCeiling": 4.5
     },
     "power": {
-      "singleTarget": 4,
-      "multiTarget": 4
+      "singleTarget": 3.5,
+      "multiTarget": 3.5
     }
   },
   {
@@ -875,7 +875,7 @@
       "yang": [],
       "yin": []
     },
-    "description": "Attacking enemies will accumulate Toxin on them, which when surpassing a threshold will activate Poison Blast. When a Poison Blast happens, a Poison Pool will be summoned that applies up to 2 stacks of Toxified and if it crits a Meteor will be summoned. After a successful Perfect Dodge or Horizontal Finisher, tap Vertical to unleash an Azure Dragon Break that will instantly activate Poison Blast on enemies hit by it (if it's not on cooldown). You can chain this into a Horizontal Finisher back into another Azure Dragon Break on repeat. Landing any Martial Skill or Horizontal Finisher while Toxified will apply 2 onto the enemy you hit. Reaching 4 stacks of Toxified will activate Toxin Blast, dealing massive Poison Blast DMG to all enemies surrounding the target.",
+    "description": "Attacking enemies will accumulate Toxin on them, which when surpassing a threshold will activate Poison Blast. When a Poison Blast happens, a Poison Pool will be summoned that applies up to 2 stacks of Toxified and if it crits a Meteor will be summoned. After a successful Perfect Dodge or Horizontal Finisher, tap Vertical to unleash an Azure Draco Break that will instantly activate Poison Blast on enemies hit by it (if it's not on cooldown). You can chain this into a Horizontal Finisher back into another Azure Draco Break on repeat. Landing any Martial Skill or Horizontal Finisher while Toxified will apply 2 onto the enemy you hit. Reaching 4 stacks of Toxified will activate Toxin Blast, dealing massive Poison Blast DMG to all enemies surrounding the target.",
     "recommendedHeroes": [
       "Valda Cui",
       "Ziping Ying"
@@ -887,6 +887,176 @@
     "power": {
       "singleTarget": 4.5,
       "multiTarget": 3.5
+    }
+  },
+  {
+    "name": "Poison Fall (Cannon)",
+    "type": "Poison",
+    "souljades": [
+      {
+        "name": "Venom Tempering"
+      },
+      {
+        "name": "Pyreheart"
+      },
+      {
+        "name": "Primal Starfall"
+      },
+      {
+        "name": "Pestilent Pool"
+      },
+      {
+        "name": "Element Surge · Poison-Wielding"
+      },
+      {
+        "name": "Twinshot"
+      }
+    ],
+    "masteryJades": [
+      {
+        "name": "Cannon · Primordial Blast",
+        "heroes": [
+          "Tarka Ji",
+          "Yueshan"
+        ]
+      }
+    ],
+    "souljadeAttributes": {
+      "target": [
+        "x7 Poison Blast DMG",
+        "x4-7 Critical Rate",
+        "x7 Critical DMG",
+        "x7 [Windfall]",
+        "x0-3 [Sortilege]"
+      ],
+      "placeholder": [
+        "Attack"
+      ]
+    },
+    "potentialPlan": {
+      "image": "img/builds/trees/6.0/DeadeyePoisonFall.png",
+      "alt": "Poison Fall (Cannon) Potential Plan"
+    },
+    "wieldingTypes": [
+      {
+        "name": "Ice-Wielding",
+        "count": 0,
+        "image": "img/builds/souljades/Ice-Wielding.png"
+      },
+      {
+        "name": "Thunder-Wielding",
+        "count": 0,
+        "image": "img/builds/souljades/Thunder-Wielding.png"
+      },
+      {
+        "name": "Poison-Wielding",
+        "count": 6,
+        "image": "img/builds/souljades/Poison-Wielding.png"
+      }
+    ],
+    "curios": [],
+    "curioAttributes": {
+      "yang": [],
+      "yin": []
+    },
+    "description": "Land attacks with your Cannon to build up Deadeye. Once full, you'll enter Deadeye stance, which enables a new special jump that activates when either the meter is full in the center of your screen or when you successfully Perfect Dodge with while aiming. Shooting a shot while mid-air after this special jump will fire extremely powerful rounds with a larger explosion radius than normal.",
+    "recommendedHeroes": [
+      "Tarka Ji",
+      "Yueshan"
+    ],
+    "difficulty": {
+      "skillFloor": 1.5,
+      "skillCeiling": 3.5
+    },
+    "power": {
+      "singleTarget": 3.5,
+      "multiTarget": 5
+    }
+  },
+  {
+    "name": "Poison Fall (Bow)",
+    "type": "Poison",
+    "souljades": [
+      {
+        "name": "Venom Tempering"
+      },
+      {
+        "name": "Pyreheart"
+      },
+      {
+        "name": "Primal Starfall"
+      },
+      {
+        "name": "Pestilent Pool"
+      },
+      {
+        "name": "Element Surge · Poison-Wielding"
+      },
+      {
+        "name": "Scattershot Enhance"
+      }
+    ],
+    "masteryJades": [
+      {
+        "name": "Bow · Heartbreak Arrows",
+        "heroes": [
+          "Temulch",
+          "Tessa",
+          "Justina Gu"
+        ]
+      }
+    ],
+    "souljadeAttributes": {
+      "target": [
+        "x7 Poison Blast DMG",
+        "x4-7 Critical Rate",
+        "x7 Critical DMG",
+        "x7 [Windfall]",
+        "x0-3 [Sortilege]"
+      ],
+      "placeholder": [
+        "Attack"
+      ]
+    },
+    "potentialPlan": {
+      "image": "img/builds/trees/6.0/DeadeyePoisonFall.png",
+      "alt": "Poison Fall (Bow) Potential Plan"
+    },
+    "wieldingTypes": [
+      {
+        "name": "Ice-Wielding",
+        "count": 0,
+        "image": "img/builds/souljades/Ice-Wielding.png"
+      },
+      {
+        "name": "Thunder-Wielding",
+        "count": 0,
+        "image": "img/builds/souljades/Thunder-Wielding.png"
+      },
+      {
+        "name": "Poison-Wielding",
+        "count": 6,
+        "image": "img/builds/souljades/Poison-Wielding.png"
+      }
+    ],
+    "curios": [],
+    "curioAttributes": {
+      "yang": [],
+      "yin": []
+    },
+    "description": "Land attacks with your Bow to build up Deadeye. Once full, you'll enter Deadeye stance, which grants access to a new special attack when you release your charge within a certain window. This special attack will fire 3 volleys (at the cost of 1 ammo), dealing high damage to any targets it hits.",
+    "recommendedHeroes": [
+      "Temulch",
+      "Tessa",
+      "Justina Gu"
+    ],
+    "difficulty": {
+      "skillFloor": 1.5,
+      "skillCeiling": 3
+    },
+    "power": {
+      "singleTarget": 4,
+      "multiTarget": 4
     }
   }
 ]
