@@ -1,111 +1,5 @@
 [
   {
-    "name": "Ice Fall",
-    "type": "Ice",
-    "souljades": [
-      {
-        "name": "Successive Ice Blast"
-      },
-      {
-        "name": "Frozen Blast"
-      },
-      {
-        "name": "Element Surge · Ice-Wielding"
-      },
-      {
-        "name": "Primal Starfall"
-      },
-      {
-        "name": "Pyreheart"
-      },
-      {
-        "name": "Ice Ring Break"
-      }
-    ],
-    "masteryJades": [
-      {
-        "name": "General · Sap",
-        "heroes": [
-          "Viper Ning",
-          "Feria Shen",
-          "Tianhai",
-          "Tarka Ji",
-          "Valda Cui",
-          "Yueshan",
-          "Matari",
-          "Tessa",
-          "Ziping Ying",
-          "Justina Gu",
-          "Akos Hu",
-          "Zai",
-          "Shayol Wei"
-        ]
-      }
-    ],
-    "souljadeAttributes": {
-      "target": [
-        "x6 Ice Blast DMG",
-        "x6 Critical Rate",
-        "x6 Critical DMG",
-        "x4 [Moderation]",
-        "x6 [Windfall]"
-      ],
-      "placeholder": [
-        "Attack"
-      ]
-    },
-    "potentialPlan": {
-      "image": "img/builds/trees/6.0/IceFall.png",
-      "alt": "Ice Fall Potential Plan"
-    },
-    "wieldingTypes": [
-      {
-        "name": "Ice-Wielding",
-        "count": 6,
-        "image": "img/builds/souljades/Ice-Wielding.png"
-      },
-      {
-        "name": "Thunder-Wielding",
-        "count": 0,
-        "image": "img/builds/souljades/Thunder-Wielding.png"
-      },
-      {
-        "name": "Poison-Wielding",
-        "count": 0,
-        "image": "img/builds/souljades/Poison-Wielding.png"
-      }
-    ],
-    "curios": [],
-    "curioAttributes": {
-      "yang": [],
-      "yin": []
-    },
-    "description": "Attack enemies to accumulate Frostbite on them. When full, an Ice Blast will occur. If any of it crits, a Meteor will fall and if that is hit, it will explode in a Starburst for massive Ice DMG.",
-    "recommendedHeroes": [
-      "Viper Ning",
-      "Feria Shen",
-      "Tianhai",
-      "Tarka Ji",
-      "Valda Cui",
-      "Yueshan",
-      "Matari",
-      "Tessa",
-      "Ziping Ying",
-      "Justina Gu",
-      "Akos Hu",
-      "Zai",
-      "Shayol Wei"
-    ],
-    "difficulty": {
-      "skillFloor": 2,
-      "skillCeiling": 4
-    },
-    "power": {
-      "singleTarget": 4,
-      "multiTarget": 4.5
-    }
-  },
-  {
     "name": "Ice Fall (Justina)",
     "type": "Ice",
     "souljades": [
@@ -185,120 +79,6 @@
     "power": {
       "singleTarget": 5,
       "multiTarget": 5
-    }
-  },
-  {
-    "name": "Thunder Fall",
-    "type": "Thunder",
-    "souljades": [
-      {
-        "name": "Thunderpull"
-      },
-      {
-        "name": "Thunder Rove"
-      },
-      {
-        "name": "Pyreheart"
-      },
-      {
-        "name": "Primal Starfall"
-      },
-      {
-        "name": "Element Surge · Thunder-Wielding"
-      },
-      {
-        "name": "Thunder Charge"
-      }
-    ],
-    "masteryJades": [
-      {
-        "name": "General · Sap",
-        "heroes": [
-          "Viper Ning",
-          "Feria Shen",
-          "Tianhai",
-          "Temulch",
-          "Tarka Ji",
-          "Kurumi",
-          "Valda Cui",
-          "Matari",
-          "Wuchen",
-          "Yoto Hime",
-          "Tessa",
-          "Ziping Ying",
-          "Justina Gu",
-          "Kylin Zhang",
-          "Akos Hu",
-          "Zai",
-          "Shayol Wei"
-        ]
-      }
-    ],
-    "souljadeAttributes": {
-      "target": [
-        "x7 Divine Thunder DMG",
-        "x4-7 Critical Rate",
-        "x7 Critical DMG",
-        "x7 [Windfall]",
-        "x0-3 [Sortilege]"
-      ],
-      "placeholder": [
-        "Attack"
-      ]
-    },
-    "potentialPlan": {
-      "image": "img/builds/trees/6.0/ThunderFall.png",
-      "alt": "Thunder Fall Potential Plan"
-    },
-    "wieldingTypes": [
-      {
-        "name": "Ice-Wielding",
-        "count": 0,
-        "image": "img/builds/souljades/Ice-Wielding.png"
-      },
-      {
-        "name": "Thunder-Wielding",
-        "count": 6,
-        "image": "img/builds/souljades/Thunder-Wielding.png"
-      },
-      {
-        "name": "Poison-Wielding",
-        "count": 0,
-        "image": "img/builds/souljades/Poison-Wielding.png"
-      }
-    ],
-    "curios": [],
-    "curioAttributes": {
-      "yang": [],
-      "yin": []
-    },
-    "description": "Attack enemies to accumulate Thundershock on yourself and them. When full Divine Thunder will strike, you can parry it on yourself to send it forward hitting enemies twice. If any Divine Thunder crits, a Meteor will be summoned, dealing heavy Divine Thunder DMG and can be exploded with other Divine Thunder DMG.",
-    "recommendedHeroes": [
-      "Viper Ning",
-      "Feria Shen",
-      "Tianhai",
-      "Temulch",
-      "Tarka Ji",
-      "Kurumi",
-      "Valda Cui",
-      "Matari",
-      "Wuchen",
-      "Yoto Hime",
-      "Tessa",
-      "Ziping Ying",
-      "Justina Gu",
-      "Kylin Zhang",
-      "Akos Hu",
-      "Zai",
-      "Shayol Wei"
-    ],
-    "difficulty": {
-      "skillFloor": 3,
-      "skillCeiling": 4.5
-    },
-    "power": {
-      "singleTarget": 4.5,
-      "multiTarget": 4.5
     }
   },
   {
@@ -468,52 +248,51 @@
     }
   },
   {
-    "name": "Threefold Venom",
+    "name": "Poison Fall (Wuchen)",
     "type": "Poison",
     "souljades": [
       {
-        "name": "Threefold Gathering"
-      },
-      {
-        "name": "Four Spirits Converge"
-      },
-      {
-        "name": "Dual Spirit Marks"
-      },
-      {
         "name": "Venom Tempering"
+      },
+      {
+        "name": "Pyreheart"
+      },
+      {
+        "name": "Primal Starfall"
       },
       {
         "name": "Pestilent Pool"
       },
       {
         "name": "Infectious Touch"
+      },
+      {
+        "name": "Thunder Rove"
       }
     ],
     "masteryJades": [
       {
-        "name": "General · Cyan Fang",
+        "name": "Fan · Tai-Chi Fan",
         "heroes": [
-          "Wuchen",
-          "Matari"
+          "Wuchen"
         ]
       }
     ],
     "souljadeAttributes": {
       "target": [
-        "x6 Critical Rate",
-        "x6 Critical DMG",
-        "x6 Poison Blast DMG",
-        "x4 [Sortilege]",
-        "x6 [Windfall]"
+        "x7 Poison Blast DMG",
+        "x4-7 Critical Rate",
+        "x7 Critical DMG",
+        "x7 [Windfall]",
+        "x0-3 [Sortilege]"
       ],
       "placeholder": [
-        "Poison Blast DMG"
+        "Attack"
       ]
     },
     "potentialPlan": {
-      "image": "img/builds/trees/6.0/ThreefoldVenom.png",
-      "alt": "Threefold Venom Potential Plan"
+      "image": "img/builds/trees/6.0/PoisonFall.png",
+      "alt": "Poison Fall (Wuchen) Potential Plan"
     },
     "wieldingTypes": [
       {
@@ -539,8 +318,7 @@
     },
     "description": "Repeatedly use your Aegis-break to acquire Mortal Marks. When you acquire 3, your next hit will activate Vermillion Bird Scorch, dealing heavy damage in an AoE. Use Aegis-breaks to also remove Toxin from yourself and to activate Toxin Blast by stacking 4 stacks of Toxified.",
     "recommendedHeroes": [
-      "Wuchen",
-      "Matari"
+      "Wuchen"
     ],
     "difficulty": {
       "skillFloor": 2.5,
@@ -631,178 +409,6 @@
     "power": {
       "singleTarget": 4,
       "multiTarget": 3.5
-    }
-  },
-  {
-    "name": "Deadeye Bow",
-    "type": "Poison",
-    "souljades": [
-      {
-        "name": "Scattershot Enhance"
-      },
-      {
-        "name": "Element Surge · Poison-Wielding"
-      },
-      {
-        "name": "Pestilent Pool"
-      },
-      {
-        "name": "Miasma Drive"
-      },
-      {
-        "name": "Backfire"
-      },
-      {
-        "name": "Desperation"
-      }
-    ],
-    "masteryJades": [
-      {
-        "name": "Bow · Heartbreak Arrows",
-        "heroes": [
-          "Temulch",
-          "Tessa",
-          "Justina Gu"
-        ]
-      }
-    ],
-    "souljadeAttributes": {
-      "target": [
-        "x6 Critical Rate",
-        "x6 Critical DMG",
-        "x5 DMG to Bosses",
-        "x1 Deadeye Build Rate",
-        "x4 [Sortilege]",
-        "x6 [Windfall]"
-      ],
-      "placeholder": [
-        "Attack"
-      ]
-    },
-    "potentialPlan": {
-      "image": "img/builds/trees/6.0/Deadeye.png",
-      "alt": "Deadeye Bow Potential Plan"
-    },
-    "wieldingTypes": [
-      {
-        "name": "Ice-Wielding",
-        "count": 2,
-        "image": "img/builds/souljades/Ice-Wielding.png"
-      },
-      {
-        "name": "Thunder-Wielding",
-        "count": 1,
-        "image": "img/builds/souljades/Thunder-Wielding.png"
-      },
-      {
-        "name": "Poison-Wielding",
-        "count": 3,
-        "image": "img/builds/souljades/Poison-Wielding.png"
-      }
-    ],
-    "curios": [],
-    "curioAttributes": {
-      "yang": [],
-      "yin": []
-    },
-    "description": "Attack with fully charged Bow shots to enter Deadeye quickly. Once in Deadeye, charging and releasing your shots within a specific window will allow you to use Void Destroyer, a 3-Part attack that deals heavy Ranged Weapon DMG.",
-    "recommendedHeroes": [
-      "Temulch",
-      "Tessa",
-      "Justina Gu"
-    ],
-    "difficulty": {
-      "skillFloor": 2,
-      "skillCeiling": 3
-    },
-    "power": {
-      "singleTarget": 4,
-      "multiTarget": 2.5
-    }
-  },
-  {
-    "name": "Deadeye Cannon",
-    "type": "Poison",
-    "souljades": [
-      {
-        "name": "Twinshot"
-      },
-      {
-        "name": "Element Surge · Poison-Wielding"
-      },
-      {
-        "name": "Pestilent Pool"
-      },
-      {
-        "name": "Miasma Drive"
-      },
-      {
-        "name": "Backfire"
-      },
-      {
-        "name": "Desperation"
-      }
-    ],
-    "masteryJades": [
-      {
-        "name": "Cannon · Primordial Blast",
-        "heroes": [
-          "Tarka Ji",
-          "Yueshan"
-        ]
-      }
-    ],
-    "souljadeAttributes": {
-      "target": [
-        "x6 Critical Rate",
-        "x6 Critical DMG",
-        "x5 DMG to Bosses",
-        "x1 Deadeye Build Rate",
-        "x4 [Sortilege]",
-        "x6 [Windfall]"
-      ],
-      "placeholder": [
-        "Attack"
-      ]
-    },
-    "potentialPlan": {
-      "image": "img/builds/trees/6.0/Deadeye.png",
-      "alt": "Deadeye Cannon Potential Plan"
-    },
-    "wieldingTypes": [
-      {
-        "name": "Ice-Wielding",
-        "count": 2,
-        "image": "img/builds/souljades/Ice-Wielding.png"
-      },
-      {
-        "name": "Thunder-Wielding",
-        "count": 1,
-        "image": "img/builds/souljades/Thunder-Wielding.png"
-      },
-      {
-        "name": "Poison-Wielding",
-        "count": 3,
-        "image": "img/builds/souljades/Poison-Wielding.png"
-      }
-    ],
-    "curios": [],
-    "curioAttributes": {
-      "yang": [],
-      "yin": []
-    },
-    "description": "Hitting enemies with Cannon shots will charge your Deadeye meter. Once full, you'll enter Deadeye, in which you can access to the Celestial Fire attack that you can use by either shooting a shot while airborne and the center meter is full or by Perfect Dodging an attack with Cannon's special dodge. This attack will deal heavy Ranged Weapon DMG in a large AoE around where it lands.",
-    "recommendedHeroes": [
-      "Tarka Ji",
-      "Yueshan"
-    ],
-    "difficulty": {
-      "skillFloor": 2,
-      "skillCeiling": 3.5
-    },
-    "power": {
-      "singleTarget": 4,
-      "multiTarget": 4
     }
   },
   {
@@ -1001,8 +607,7 @@
         "name": "Bow · Heartbreak Arrows",
         "heroes": [
           "Temulch",
-          "Tessa",
-          "Justina Gu"
+          "Tessa"
         ]
       }
     ],
@@ -1047,8 +652,7 @@
     "description": "Land attacks with your Bow to build up Deadeye. Once full, you'll enter Deadeye stance, which grants access to a new special attack when you release your charge within a certain window. This special attack will fire 3 volleys (at the cost of 1 ammo), dealing high damage to any targets it hits.",
     "recommendedHeroes": [
       "Temulch",
-      "Tessa",
-      "Justina Gu"
+      "Tessa"
     ],
     "difficulty": {
       "skillFloor": 1.5,
@@ -1057,6 +661,732 @@
     "power": {
       "singleTarget": 4,
       "multiTarget": 4
+    }
+  },
+  {
+    "name": "Poison Fall (Greatsword)",
+    "type": "Poison",
+    "souljades": [
+      {
+        "name": "Venom Tempering"
+      },
+      {
+        "name": "Pyreheart"
+      },
+      {
+        "name": "Primal Starfall"
+      },
+      {
+        "name": "Pestilent Pool"
+      },
+      {
+        "name": "Infectious Touch"
+      },
+      {
+        "name": "Thunder Rove"
+      }
+    ],
+    "masteryJades": [
+      {
+        "name": "Greatsword · Aerial Rend",
+        "heroes": [
+          "Temulch",
+          "Yoto Hime"
+        ]
+      }
+    ],
+    "souljadeAttributes": {
+      "target": [
+        "x7 Poison Blast DMG",
+        "x4-7 Critical Rate",
+        "x7 Critical DMG",
+        "x7 [Windfall]",
+        "x0-3 [Sortilege]"
+      ],
+      "placeholder": [
+        "Attack"
+      ]
+    },
+    "potentialPlan": {
+      "image": "img/builds/trees/6.0/PoisonFall.png",
+      "alt": "Poison Fall (Greatsword) Potential Plan"
+    },
+    "wieldingTypes": [
+      {
+        "name": "Ice-Wielding",
+        "count": 0,
+        "image": "img/builds/souljades/Ice-Wielding.png"
+      },
+      {
+        "name": "Thunder-Wielding",
+        "count": 0,
+        "image": "img/builds/souljades/Thunder-Wielding.png"
+      },
+      {
+        "name": "Poison-Wielding",
+        "count": 6,
+        "image": "img/builds/souljades/Poison-Wielding.png"
+      }
+    ],
+    "curios": [],
+    "curioAttributes": {
+      "yang": [],
+      "yin": []
+    },
+    "description": "Attacking enemies will accumulate Toxin on them, which when surpassing a threshold will activate Poison Blast. When a Poison Blast happens, a Poison Pool will be summoned that applies up to 2 stacks of Toxified and if it crits a Meteor will be summoned. Successful Perfect Dodges or Defuse Counterattacks can be chained into a Dodge into a Thunderstorm, a powerful attack that can activate Poison Blast on its own. Make use of Greatsword's powerful Aerial Rend attack to activate it quickly, the 3rd charge being enough to activate on any enemy. Reaching 4 stacks of Toxified will activate Toxin Blast, dealing massive Poison Blast DMG to all enemies surrounding the target.",
+    "recommendedHeroes": [
+      "Temulch",
+      "Yoto Hime"
+    ],
+    "difficulty": {
+      "skillFloor": 2,
+      "skillCeiling": 3.5
+    },
+    "power": {
+      "singleTarget": 4.5,
+      "multiTarget": 4
+    }
+  },
+  {
+    "name": "Poison Fall (Longsword)",
+    "type": "Poison",
+    "souljades": [
+      {
+        "name": "Venom Tempering"
+      },
+      {
+        "name": "Pyreheart"
+      },
+      {
+        "name": "Primal Starfall"
+      },
+      {
+        "name": "Pestilent Pool"
+      },
+      {
+        "name": "Infectious Touch"
+      },
+      {
+        "name": "Thunder Rove"
+      }
+    ],
+    "masteryJades": [
+      {
+        "name": "Longsword · Horizontal Energy",
+        "heroes": [
+          "Viper Ning"
+        ]
+      }
+    ],
+    "souljadeAttributes": {
+      "target": [
+        "x6 Poison Blast DMG",
+        "x6 Critical Rate",
+        "x6 Critical DMG",
+        "x6 [Windfall]",
+        "x4 [Moderation]"
+      ],
+      "placeholder": [
+        "Attack"
+      ]
+    },
+    "potentialPlan": {
+      "image": "img/builds/trees/6.0/PoisonFall.png",
+      "alt": "Poison Fall (Longsword) Potential Plan"
+    },
+    "wieldingTypes": [
+      {
+        "name": "Ice-Wielding",
+        "count": 0,
+        "image": "img/builds/souljades/Ice-Wielding.png"
+      },
+      {
+        "name": "Thunder-Wielding",
+        "count": 0,
+        "image": "img/builds/souljades/Thunder-Wielding.png"
+      },
+      {
+        "name": "Poison-Wielding",
+        "count": 6,
+        "image": "img/builds/souljades/Poison-Wielding.png"
+      }
+    ],
+    "curios": [],
+    "curioAttributes": {
+      "yang": [],
+      "yin": []
+    },
+    "description": "Attacking enemies will accumulate Toxin on them, which when surpassing a threshold will activate Poison Blast. When a Poison Blast happens, a Poison Pool will be summoned that applies up to 2 stacks of Toxified and if it crits a Meteor will be summoned. Successful Perfect Dodges or Defuse Counterattacks can be chained into a Dodge into a Thunderstorm, a powerful attack that can activate Poison Blast on its own. Longsword's Horizontal attacks will have bonus accumulation for activating Poison Blast quicker in this build. Reaching 4 stacks of Toxified will activate Toxin Blast, dealing massive Poison Blast DMG to all enemies surrounding the target.",
+    "recommendedHeroes": [
+      "Viper Ning"
+    ],
+    "difficulty": {
+      "skillFloor": 2,
+      "skillCeiling": 3
+    },
+    "power": {
+      "singleTarget": 4,
+      "multiTarget": 4
+    }
+  },
+  {
+    "name": "Ice Fall (Bow)",
+    "type": "Ice",
+    "souljades": [
+      {
+        "name": "Successive Ice Blast"
+      },
+      {
+        "name": "Frozen Blast"
+      },
+      {
+        "name": "Element Surge · Ice-Wielding"
+      },
+      {
+        "name": "Pyreheart"
+      },
+      {
+        "name": "Primal Starfall"
+      },
+      {
+        "name": "Scattershot Enhance"
+      }
+    ],
+    "masteryJades": [
+      {
+        "name": "Bow · Heartbreak Arrows",
+        "heroes": [
+          "Temulch",
+          "Justina Gu",
+          "Tessa"
+        ]
+      }
+    ],
+    "souljadeAttributes": {
+      "target": [
+        "x7 Ice Blast DMG",
+        "x4-7 Critical Rate",
+        "x7 Critical DMG",
+        "x7 [Windfall]",
+        "x0-3 [Sortilege]"
+      ],
+      "placeholder": [
+        "Attack"
+      ]
+    },
+    "potentialPlan": {
+      "image": "img/builds/trees/6.0/DeadeyeIceFall.png",
+      "alt": "Ice Fall (Bow) Potential Plan"
+    },
+    "wieldingTypes": [
+      {
+        "name": "Ice-Wielding",
+        "count": 6,
+        "image": "img/builds/souljades/Ice-Wielding.png"
+      },
+      {
+        "name": "Thunder-Wielding",
+        "count": 0,
+        "image": "img/builds/souljades/Thunder-Wielding.png"
+      },
+      {
+        "name": "Poison-Wielding",
+        "count": 0,
+        "image": "img/builds/souljades/Poison-Wielding.png"
+      }
+    ],
+    "curios": [],
+    "curioAttributes": {
+      "yang": [],
+      "yin": []
+    },
+    "description": "Land attacks with your Bow to build up Deadeye. Once full, you'll enter Deadeye stance, which grants access to a new special attack when you release your charge within a certain window. This special attack will fire 3 volleys (at the cost of 1 ammo), dealing high damage to any targets it hits.",
+    "recommendedHeroes": [
+      "Temulch",
+      "Justina Gu",
+      "Tessa"
+    ],
+    "difficulty": {
+      "skillFloor": 1.5,
+      "skillCeiling": 3
+    },
+    "power": {
+      "singleTarget": 4,
+      "multiTarget": 4
+    }
+  },
+  {
+    "name": "Ice Fall (Cannon)",
+    "type": "Ice",
+    "souljades": [
+      {
+        "name": "Successive Ice Blast"
+      },
+      {
+        "name": "Frozen Blast"
+      },
+      {
+        "name": "Element Surge · Ice-Wielding"
+      },
+      {
+        "name": "Pyreheart"
+      },
+      {
+        "name": "Primal Starfall"
+      },
+      {
+        "name": "Twinshot"
+      }
+    ],
+    "masteryJades": [
+      {
+        "name": "Cannon · Primordial Blast",
+        "heroes": [
+          "Yueshan",
+          "Tarka Ji"
+        ]
+      }
+    ],
+    "souljadeAttributes": {
+      "target": [
+        "x7 Ice Blast DMG",
+        "x4-7 Critical Rate",
+        "x7 Critical DMG",
+        "x7 [Windfall]",
+        "x0-3 [Sortilege]"
+      ],
+      "placeholder": [
+        "Attack"
+      ]
+    },
+    "potentialPlan": {
+      "image": "img/builds/trees/6.0/DeadeyeIceFall.png",
+      "alt": "Ice Fall (Cannon) Potential Plan"
+    },
+    "wieldingTypes": [
+      {
+        "name": "Ice-Wielding",
+        "count": 6,
+        "image": "img/builds/souljades/Ice-Wielding.png"
+      },
+      {
+        "name": "Thunder-Wielding",
+        "count": 0,
+        "image": "img/builds/souljades/Thunder-Wielding.png"
+      },
+      {
+        "name": "Poison-Wielding",
+        "count": 0,
+        "image": "img/builds/souljades/Poison-Wielding.png"
+      }
+    ],
+    "curios": [],
+    "curioAttributes": {
+      "yang": [],
+      "yin": []
+    },
+    "description": "Land attacks with your Cannon to build up Deadeye. Once full, you'll enter Deadeye stance, which enables a new special jump that activates when either the meter is full in the center of your screen or when you successfully Perfect Dodge with while aiming. Shooting a shot while mid-air after this special jump will fire extremely powerful rounds with a larger explosion radius than normal.",
+    "recommendedHeroes": [
+      "Yueshan",
+      "Tarka Ji"
+    ],
+    "difficulty": {
+      "skillFloor": 1.5,
+      "skillCeiling": 3
+    },
+    "power": {
+      "singleTarget": 3.5,
+      "multiTarget": 4.5
+    }
+  },
+  {
+    "name": "Deadeye Bow",
+    "type": "Poison",
+    "souljades": [
+      {
+        "name": "Scattershot Enhance"
+      },
+      {
+        "name": "Element Surge · Poison-Wielding"
+      },
+      {
+        "name": "Pestilent Pool"
+      },
+      {
+        "name": "Miasma Drive"
+      },
+      {
+        "name": "Backfire"
+      },
+      {
+        "name": "Desperation"
+      }
+    ],
+    "masteryJades": [
+      {
+        "name": "Bow · Heartbreak Arrows",
+        "heroes": [
+          "Temulch",
+          "Tessa"
+        ]
+      }
+    ],
+    "souljadeAttributes": {
+      "target": [
+        "x6 Critical Rate",
+        "x6 Critical DMG",
+        "x5 DMG to Bosses",
+        "x1 Deadeye Build Rate",
+        "x4 [Sortilege]",
+        "x6 [Windfall]"
+      ],
+      "placeholder": [
+        "Attack"
+      ]
+    },
+    "potentialPlan": {
+      "image": "img/builds/trees/6.0/Deadeye.png",
+      "alt": "Deadeye Bow Potential Plan"
+    },
+    "wieldingTypes": [
+      {
+        "name": "Ice-Wielding",
+        "count": 2,
+        "image": "img/builds/souljades/Ice-Wielding.png"
+      },
+      {
+        "name": "Thunder-Wielding",
+        "count": 1,
+        "image": "img/builds/souljades/Thunder-Wielding.png"
+      },
+      {
+        "name": "Poison-Wielding",
+        "count": 3,
+        "image": "img/builds/souljades/Poison-Wielding.png"
+      }
+    ],
+    "curios": [],
+    "curioAttributes": {
+      "yang": [],
+      "yin": []
+    },
+    "description": "Attack with fully charged Bow shots to enter Deadeye quickly. Once in Deadeye, charging and releasing your shots within a specific window will allow you to use Void Destroyer, a 3-Part attack that deals heavy Ranged Weapon DMG.",
+    "recommendedHeroes": [
+      "Temulch",
+      "Tessa"
+    ],
+    "difficulty": {
+      "skillFloor": 2,
+      "skillCeiling": 3
+    },
+    "power": {
+      "singleTarget": 4,
+      "multiTarget": 2.5
+    }
+  },
+  {
+    "name": "Deadeye Cannon",
+    "type": "Poison",
+    "souljades": [
+      {
+        "name": "Twinshot"
+      },
+      {
+        "name": "Element Surge · Poison-Wielding"
+      },
+      {
+        "name": "Pestilent Pool"
+      },
+      {
+        "name": "Miasma Drive"
+      },
+      {
+        "name": "Backfire"
+      },
+      {
+        "name": "Desperation"
+      }
+    ],
+    "masteryJades": [
+      {
+        "name": "Cannon · Primordial Blast",
+        "heroes": [
+          "Tarka Ji",
+          "Yueshan"
+        ]
+      }
+    ],
+    "souljadeAttributes": {
+      "target": [
+        "x6 Critical Rate",
+        "x6 Critical DMG",
+        "x5 DMG to Bosses",
+        "x1 Deadeye Build Rate",
+        "x4 [Sortilege]",
+        "x6 [Windfall]"
+      ],
+      "placeholder": [
+        "Attack"
+      ]
+    },
+    "potentialPlan": {
+      "image": "img/builds/trees/6.0/Deadeye.png",
+      "alt": "Deadeye Cannon Potential Plan"
+    },
+    "wieldingTypes": [
+      {
+        "name": "Ice-Wielding",
+        "count": 2,
+        "image": "img/builds/souljades/Ice-Wielding.png"
+      },
+      {
+        "name": "Thunder-Wielding",
+        "count": 1,
+        "image": "img/builds/souljades/Thunder-Wielding.png"
+      },
+      {
+        "name": "Poison-Wielding",
+        "count": 3,
+        "image": "img/builds/souljades/Poison-Wielding.png"
+      }
+    ],
+    "curios": [],
+    "curioAttributes": {
+      "yang": [],
+      "yin": []
+    },
+    "description": "Hitting enemies with Cannon shots will charge your Deadeye meter. Once full, you'll enter Deadeye, in which you can access to the Celestial Fire attack that you can use by either shooting a shot while airborne and the center meter is full or by Perfect Dodging an attack with Cannon's special dodge. This attack will deal heavy Ranged Weapon DMG in a large AoE around where it lands.",
+    "recommendedHeroes": [
+      "Tarka Ji",
+      "Yueshan"
+    ],
+    "difficulty": {
+      "skillFloor": 2,
+      "skillCeiling": 3.5
+    },
+    "power": {
+      "singleTarget": 4,
+      "multiTarget": 4
+    }
+  },
+  {
+    "name": "Ice Fall",
+    "type": "Ice",
+    "souljades": [
+      {
+        "name": "Successive Ice Blast"
+      },
+      {
+        "name": "Frozen Blast"
+      },
+      {
+        "name": "Element Surge · Ice-Wielding"
+      },
+      {
+        "name": "Primal Starfall"
+      },
+      {
+        "name": "Pyreheart"
+      },
+      {
+        "name": "Ice Ring Break"
+      }
+    ],
+    "masteryJades": [
+      {
+        "name": "General · Sap",
+        "heroes": [
+          "Viper Ning",
+          "Feria Shen",
+          "Tianhai",
+          "Tarka Ji",
+          "Valda Cui",
+          "Yueshan",
+          "Matari",
+          "Tessa",
+          "Ziping Ying",
+          "Justina Gu",
+          "Akos Hu",
+          "Zai",
+          "Shayol Wei"
+        ]
+      }
+    ],
+    "souljadeAttributes": {
+      "target": [
+        "x6 Ice Blast DMG",
+        "x6 Critical Rate",
+        "x6 Critical DMG",
+        "x4 [Moderation]",
+        "x6 [Windfall]"
+      ],
+      "placeholder": [
+        "Attack"
+      ]
+    },
+    "potentialPlan": {
+      "image": "img/builds/trees/6.0/IceFall.png",
+      "alt": "Ice Fall Potential Plan"
+    },
+    "wieldingTypes": [
+      {
+        "name": "Ice-Wielding",
+        "count": 6,
+        "image": "img/builds/souljades/Ice-Wielding.png"
+      },
+      {
+        "name": "Thunder-Wielding",
+        "count": 0,
+        "image": "img/builds/souljades/Thunder-Wielding.png"
+      },
+      {
+        "name": "Poison-Wielding",
+        "count": 0,
+        "image": "img/builds/souljades/Poison-Wielding.png"
+      }
+    ],
+    "curios": [],
+    "curioAttributes": {
+      "yang": [],
+      "yin": []
+    },
+    "description": "Attack enemies to accumulate Frostbite on them. When full, an Ice Blast will occur. If any of it crits, a Meteor will fall and if that is hit, it will explode in a Starburst for massive Ice DMG.",
+    "recommendedHeroes": [
+      "Viper Ning",
+      "Feria Shen",
+      "Tianhai",
+      "Tarka Ji",
+      "Valda Cui",
+      "Yueshan",
+      "Matari",
+      "Tessa",
+      "Ziping Ying",
+      "Justina Gu",
+      "Akos Hu",
+      "Zai",
+      "Shayol Wei"
+    ],
+    "difficulty": {
+      "skillFloor": 2,
+      "skillCeiling": 4
+    },
+    "power": {
+      "singleTarget": 4,
+      "multiTarget": 4.5
+    }
+  },
+  {
+    "name": "Thunder Fall",
+    "type": "Thunder",
+    "souljades": [
+      {
+        "name": "Thunderpull"
+      },
+      {
+        "name": "Thunder Rove"
+      },
+      {
+        "name": "Pyreheart"
+      },
+      {
+        "name": "Primal Starfall"
+      },
+      {
+        "name": "Element Surge · Thunder-Wielding"
+      },
+      {
+        "name": "Thunder Charge"
+      }
+    ],
+    "masteryJades": [
+      {
+        "name": "General · Sap",
+        "heroes": [
+          "Viper Ning",
+          "Feria Shen",
+          "Tianhai",
+          "Temulch",
+          "Tarka Ji",
+          "Kurumi",
+          "Valda Cui",
+          "Matari",
+          "Wuchen",
+          "Yoto Hime",
+          "Tessa",
+          "Ziping Ying",
+          "Justina Gu",
+          "Kylin Zhang",
+          "Akos Hu",
+          "Zai",
+          "Shayol Wei"
+        ]
+      }
+    ],
+    "souljadeAttributes": {
+      "target": [
+        "x7 Divine Thunder DMG",
+        "x4-7 Critical Rate",
+        "x7 Critical DMG",
+        "x7 [Windfall]",
+        "x0-3 [Sortilege]"
+      ],
+      "placeholder": [
+        "Attack"
+      ]
+    },
+    "potentialPlan": {
+      "image": "img/builds/trees/6.0/ThunderFall.png",
+      "alt": "Thunder Fall Potential Plan"
+    },
+    "wieldingTypes": [
+      {
+        "name": "Ice-Wielding",
+        "count": 0,
+        "image": "img/builds/souljades/Ice-Wielding.png"
+      },
+      {
+        "name": "Thunder-Wielding",
+        "count": 6,
+        "image": "img/builds/souljades/Thunder-Wielding.png"
+      },
+      {
+        "name": "Poison-Wielding",
+        "count": 0,
+        "image": "img/builds/souljades/Poison-Wielding.png"
+      }
+    ],
+    "curios": [],
+    "curioAttributes": {
+      "yang": [],
+      "yin": []
+    },
+    "description": "Attack enemies to accumulate Thundershock on yourself and them. When full Divine Thunder will strike, you can parry it on yourself to send it forward hitting enemies twice. If any Divine Thunder crits, a Meteor will be summoned, dealing heavy Divine Thunder DMG and can be exploded with other Divine Thunder DMG.",
+    "recommendedHeroes": [
+      "Viper Ning",
+      "Feria Shen",
+      "Tianhai",
+      "Temulch",
+      "Tarka Ji",
+      "Kurumi",
+      "Valda Cui",
+      "Matari",
+      "Wuchen",
+      "Yoto Hime",
+      "Tessa",
+      "Ziping Ying",
+      "Justina Gu",
+      "Kylin Zhang",
+      "Akos Hu",
+      "Zai",
+      "Shayol Wei"
+    ],
+    "difficulty": {
+      "skillFloor": 3,
+      "skillCeiling": 4.5
+    },
+    "power": {
+      "singleTarget": 4.5,
+      "multiTarget": 4.5
     }
   }
 ]
