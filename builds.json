@@ -322,11 +322,11 @@
     ],
     "difficulty": {
       "skillFloor": 2.5,
-      "skillCeiling": 4.5
+      "skillCeiling": 3.5
     },
     "power": {
       "singleTarget": 3.5,
-      "multiTarget": 3.5
+      "multiTarget": 4
     }
   },
   {
