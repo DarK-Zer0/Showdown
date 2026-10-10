@@ -575,7 +575,7 @@
       "skillCeiling": 3.5
     },
     "power": {
-      "singleTarget": 3,
+      "singleTarget": 3.5,
       "multiTarget": 5
     }
   },
@@ -913,8 +913,8 @@
       "skillCeiling": 3
     },
     "power": {
-      "singleTarget": 3.5,
-      "multiTarget": 4
+      "singleTarget": 4,
+      "multiTarget": 4.5
     }
   },
   {
@@ -997,7 +997,7 @@
       "skillCeiling": 3
     },
     "power": {
-      "singleTarget": 3,
+      "singleTarget": 3.5,
       "multiTarget": 4.5
     }
   },
