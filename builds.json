@@ -4,22 +4,22 @@
     "type": "Ice",
     "souljades": [
       {
-        "name": "Successive Ice Blast"
-      },
-      {
         "name": "Frozen Blast"
       },
       {
         "name": "Element Surge · Ice-Wielding"
       },
       {
+        "name": "Depths Blast"
+      },
+      {
+        "name": "Ice Ring Break"
+      },
+      {
         "name": "Primal Starfall"
       },
       {
         "name": "Pyreheart"
-      },
-      {
-        "name": "Depths Blast"
       }
     ],
     "masteryJades": [
@@ -322,11 +322,11 @@
     ],
     "difficulty": {
       "skillFloor": 2.5,
-      "skillCeiling": 3.5
+      "skillCeiling": 4.5
     },
     "power": {
       "singleTarget": 3.5,
-      "multiTarget": 4
+      "multiTarget": 3.5
     }
   },
   {
@@ -512,7 +512,7 @@
         "name": "Pestilent Pool"
       },
       {
-        "name": "Element Surge · Poison-Wielding"
+        "name": "Thunder Rove"
       },
       {
         "name": "Twinshot"
@@ -575,7 +575,7 @@
       "skillCeiling": 3.5
     },
     "power": {
-      "singleTarget": 3.5,
+      "singleTarget": 3,
       "multiTarget": 5
     }
   },
@@ -616,7 +616,8 @@
         "x7 Poison Blast DMG",
         "x4-7 Critical Rate",
         "x7 Critical DMG",
-        "x7 [Windfall]",
+        "x1 Deadeye build rate",
+        "x6 [Windfall]",
         "x0-3 [Sortilege]"
       ],
       "placeholder": [
@@ -659,7 +660,7 @@
       "skillCeiling": 3
     },
     "power": {
-      "singleTarget": 4,
+      "singleTarget": 3.5,
       "multiTarget": 4
     }
   },
@@ -834,9 +835,6 @@
     "type": "Ice",
     "souljades": [
       {
-        "name": "Successive Ice Blast"
-      },
-      {
         "name": "Frozen Blast"
       },
       {
@@ -847,6 +845,9 @@
       },
       {
         "name": "Primal Starfall"
+      },
+      {
+        "name": "Ice Ring Break"
       },
       {
         "name": "Scattershot Enhance"
@@ -867,7 +868,8 @@
         "x7 Ice Blast DMG",
         "x4-7 Critical Rate",
         "x7 Critical DMG",
-        "x7 [Windfall]",
+        "x1 Deadeye build rate",
+        "x6 [Windfall]",
         "x0-3 [Sortilege]"
       ],
       "placeholder": [
@@ -911,7 +913,7 @@
       "skillCeiling": 3
     },
     "power": {
-      "singleTarget": 4,
+      "singleTarget": 3.5,
       "multiTarget": 4
     }
   },
@@ -919,9 +921,6 @@
     "name": "Ice Fall (Cannon)",
     "type": "Ice",
     "souljades": [
-      {
-        "name": "Successive Ice Blast"
-      },
       {
         "name": "Frozen Blast"
       },
@@ -933,6 +932,9 @@
       },
       {
         "name": "Primal Starfall"
+      },
+      {
+        "name": "Ice Ring Break"
       },
       {
         "name": "Twinshot"
@@ -995,7 +997,7 @@
       "skillCeiling": 3
     },
     "power": {
-      "singleTarget": 3.5,
+      "singleTarget": 3,
       "multiTarget": 4.5
     }
   },
@@ -1174,9 +1176,6 @@
     "type": "Ice",
     "souljades": [
       {
-        "name": "Successive Ice Blast"
-      },
-      {
         "name": "Frozen Blast"
       },
       {
@@ -1190,6 +1189,9 @@
       },
       {
         "name": "Ice Ring Break"
+      },
+      {
+        "name": "Thunder Rove"
       }
     ],
     "masteryJades": [
